@@ -41,7 +41,7 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-default
+			div(role="navigation").navbar.navbar-custom
 				.container-fluid
 					.navbar-header
 						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -49,18 +49,13 @@ html
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand(href='/') TechItBack
+						a.navbar-brand(href='/') TECH IT BACK
 					.collapse.navbar-collapse
 						ul.nav.navbar-nav.navbar-left
-							each link in navLinks
-								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+							
 						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/admin') Open Keystone
-								li: a(href='/admin/signout') Sign Out
-							else
-								li: a(href='/admin/signin') Sign In
+							each link in navLinks
+								li(class=(section == link.key ? 'active' : null)): a(href=link.href): img.social_link(src=link.image)
 
 		//- BODY
 		#body
@@ -84,7 +79,7 @@ html
 		.container: #footer
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+			p Website by <a href="http://willtachau.com">Will Tachau</a>. Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
 
 
 		//- JAVASCRIPT

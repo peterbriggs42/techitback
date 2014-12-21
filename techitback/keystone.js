@@ -80,7 +80,7 @@ keystone.set('email rules', [{
 	replace: (keystone.get('env') == 'production') ? 'http://www.your-server.com/images/' : 'http://localhost:3000/images/'
 }, {
 	find: '/keystone/',
-	replace: (keystone.get('env') == 'production') ? 'http://www.your-server.com/keystone/' : 'http://localhost:3000/keystone/'
+	replace: (keystone.get('env') == 'production') ? 'http://www.your-server.com/admin/' : 'http://localhost:3000/admin/'
 }]);
 
 // Load your project's email test routes

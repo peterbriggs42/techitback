@@ -1231,8 +1231,7 @@ pre {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px; 
-}
+  padding-right: 15px; }
   .container-fluid:before, .container-fluid:after {
     content: " ";
     display: table; }
@@ -3001,6 +3000,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
+  margin-bottom: 20px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -4821,3 +4821,27 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+/* HEADER */
+.social_link {
+  width: 60px; }
+
+.nav > li > a {
+  padding: 0px; }
+
+.navbar-custom .container-fluid {
+  min-height: 110px;
+  padding-top: 20px; }
+
+.navbar-brand {
+  font-size: 58px;
+  font-weight: bold;
+  float: left;
+  margin-top: 7px;
+  color: black; }
+
+.navbar-header a {
+  color: black; }
+
+.navbar-header:hover {
+  cursor: pointer !important; }

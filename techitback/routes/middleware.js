@@ -26,10 +26,10 @@ exports.initLocals = function(req, res, next) {
 	var locals = res.locals;
 	
 	locals.navLinks = [
-		{ label: 'Home',		key: 'home',		href: '/' },
-		{ label: 'Blog',		key: 'blog',		href: '/blog' },
-		{ label: 'Gallery',		key: 'gallery',		href: '/gallery' },
-		{ label: 'Contact',		key: 'contact',		href: '/contact' }
+		{ image: '/images/social/facebook.png',		href: 'http://www.facebook.com' },
+		{ image: '/images/social/google.png',		href: 'http://plus.google.com' },
+		{ image: '/images/social/twitter.png',		href: 'http://twitter.com' },
+		{ image: '/images/social/pinterest.png',	href: 'http://pinterest.com' }
 	];
 	
 	locals.user = req.user;
