@@ -9,8 +9,6 @@ var keystone = require('keystone');
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
 
-var adminSlug = "admin";
-
 keystone.init({
 
 	'name': 'TechItBack',
@@ -28,8 +26,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': '$zkgDw9F8fr%X;f`Dm`(kF/#zdTLmW~<(Hb?b$;VoJ0Fg@!x_S7Ws]^u%3*w9-@g',
-	'adminURL': adminSlug
+	'cookie secret': '$zkgDw9F8fr%X;f`Dm`(kF/#zdTLmW~<(Hb?b$;VoJ0Fg@!x_S7Ws]^u%3*w9-@g'
 });
 
 // Load your project's Models
@@ -80,7 +77,7 @@ keystone.set('email rules', [{
 	replace: (keystone.get('env') == 'production') ? 'http://www.your-server.com/images/' : 'http://localhost:3000/images/'
 }, {
 	find: '/keystone/',
-	replace: (keystone.get('env') == 'production') ? 'http://54.69.40.209/admin/' : 'http://localhost:3000/admin/'
+	replace: (keystone.get('env') == 'production') ? 'http://54.69.40.209/keystone/' : 'http://localhost:3000/keystone/'
 }]);
 
 // Load your project's email test routes
