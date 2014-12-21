@@ -4845,3 +4845,19 @@ button.close {
 
 .navbar-header:hover {
   cursor: pointer !important; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: inherit;
+  cursor: pointer; }
+
+#join_the_hour {
+  background-color: #e0ec0e;
+  width: 264px;
+  height: 59px;
+  margin-top: 25px;
+  text-align: center; }
+
+#join_the_hour a {
+  font-weight: bold;
+  font-size: 30px; }
