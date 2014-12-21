@@ -37,7 +37,7 @@
 	margin-top: 7px;
 	color: black;
 }
-.navbar-header a {
+.navbar-header a, .navbar-right a {
 	color: black;
 }
 .navbar-header:hover {
@@ -52,7 +52,8 @@
   background-color: rgb(224,236,14);
   width: 264px;
   height: 59px;
-  margin-top:25px;
+  padding-top: 20px;
+  color:black;
   text-align: center;
 }
 #join_the_hour a{
