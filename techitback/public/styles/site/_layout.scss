@@ -15,6 +15,11 @@
     height: auto;
 }
 
+@font-face {
+    font-family: Cardenio Modern;
+    src: url(../fonts/Cardenio_Modern.ttf);
+}
+
 /* HEADER */
 
 .social_link {
@@ -25,11 +30,14 @@
 	padding: 0px;
 }
 
+.navbar-custom {
+	margin-bottom: 0px;
+}
+
 .navbar-custom .container-fluid{
 	min-height: 110px;
 	padding-top: 20px;
 }
-
 .navbar-brand {
 	font-size: 58px;
 	font-weight: bold;
@@ -60,3 +68,96 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+/* GENERAL YANNG STYLING */
+.yanng_title {
+	font-family: Cardenio Modern;
+}
+
+
+/* YANNG HEADER */
+#yanng_header {
+	background-color: $yanng_purple;
+	color:white;
+	height:110px;
+	text-align: center;
+	box-shadow: 3px 3px 5px #888888;
+}
+#yanng_header h2{
+	font-size: 63px;
+	font-weight: bold;
+	padding-top:3px;
+}
+#yanng_header_button {
+	float:left;
+	font-size: 85px;
+}
+#yanng_header_button:hover {
+	cursor: pointer;
+}
+
+/* YAANG BOXES */
+.yanng_box {
+	border: 12px solid $yanng_purple;
+	box-shadow: 3px 3px 5px #888888;
+	font-weight: bold;
+}
+.yanng_box:hover {
+	box-shadow: 1px 1px 1px;
+	cursor: pointer;
+}
+.yanng_box_small {
+	height:150px;
+}
+.yanng_box_large {
+	height:350px;
+	margin-top:-10px;
+}
+.yanng_body {
+	margin-top: 25px;
+	color: $yanng_blue;
+	font-family: Cardenio Modern;
+}
+.yanng_box_container {
+	padding:15px;
+}
+.yanng_home_text {
+	font-size: 52px;
+	text-align: center;
+	font-weight: bold;
+}
+#etiquette {
+	text-align: right;
+	font-size: 62px;
+	margin-right: 21px;
+}
+#about {
+	font-size: 47px;
+	text-align: right;
+	margin-right: 22px;
+	margin-top: 34px;
+}
+#meetus {
+	font-size: 43px;
+	margin-top: 39px;
+	margin-left: 6px;
+}
+#tips {
+	font-size: 57px;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 24px;
+}
+#create {
+	font-size: 50px;
+	line-height: 54px;
+	text-align: center;
+	margin-top: 11px;
+}
+
+
+
+
+
+
+
