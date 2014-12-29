@@ -11,7 +11,13 @@ exports = module.exports = function(req, res) {
 	// Load the galleries by sortOrder
 	view.query('galleries', keystone.list('Gallery').model.find().sort('sortOrder'));
 	
-	// Render the view
-	view.render('yanng');
+	var YanngAbout = keystone.list('Yanng Post');
+	 
+	YanngAbout.model.find().exec(function(err, posts) {
+        // Render the view
+		view.render('yanng', {
+			text: posts[2]
+		});
+    });
 	
 };

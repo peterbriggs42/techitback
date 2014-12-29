@@ -4826,6 +4826,9 @@ button.close {
   font-family: Cardenio Modern;
   src: url(../fonts/Cardenio_Modern.ttf); }
 
+#footer {
+  margin-top: 0px; }
+
 /* HEADER */
 .social_link {
   width: 60px; }
@@ -4887,12 +4890,20 @@ button.close {
   font-weight: bold;
   padding-top: 3px; }
 
-#yanng_header_button {
+.yanng_header_button {
   float: left;
   font-size: 85px; }
 
-#yanng_header_button:hover {
+.yanng_header_button:hover {
   cursor: pointer; }
+
+/* YANNG TIPS HEADER */
+#yanng_tips_header {
+  display: none; }
+
+#yanng_tips_header .yanng_header_button {
+  color: #523276;
+  font-family: Cardenio Modern; }
 
 /* YAANG BOXES */
 .yanng_box {
@@ -4912,9 +4923,15 @@ button.close {
   margin-top: -10px; }
 
 .yanng_body {
-  margin-top: 25px;
+  margin: 25px 35px 0px 35px;
+  font-size: 26px;
+  font-family: Montserrat;
+  color: black; }
+
+.yanng_home {
   color: #72a6f7;
-  font-family: Cardenio Modern; }
+  font-family: Cardenio Modern;
+  margin-bottom: 30px; }
 
 .yanng_box_container {
   padding: 15px; }
@@ -4924,30 +4941,86 @@ button.close {
   text-align: center;
   font-weight: bold; }
 
-#etiquette {
+#etiquette p {
   text-align: right;
   font-size: 62px;
   margin-right: 21px; }
 
-#about {
+.about_link p {
   font-size: 47px;
   text-align: right;
   margin-right: 22px;
   margin-top: 34px; }
 
-#meetus {
+#meetus p {
   font-size: 43px;
   margin-top: 39px;
   margin-left: 6px; }
 
-#tips {
+.tip_link p {
   font-size: 57px;
   text-align: right;
   margin-right: 10px;
   margin-top: 24px; }
 
-#create {
+#create p {
   font-size: 50px;
   line-height: 54px;
   text-align: center;
   margin-top: 11px; }
+
+/* YANNG ABOUT */
+.about_body img {
+  float: left; }
+
+.next_page {
+  margin: 200px 20px 0px 0px;
+  float: right;
+  cursor: pointer;
+  text-decoration: underline; }
+
+/* YANNG_ABOUT 2 */
+.yanng_about2 img {
+  width: 100%; }
+
+.yanng_about2 {
+  font-size: 24px; }
+
+.yanng_about2 .row {
+  margin-bottom: 25px; }
+
+.yanng_about2 .about_link {
+  cursor: pointer;
+  text-decoration: underline; }
+
+/* YANNG TECH ETIQUETTE */
+.etiquette_body img {
+  float: right;
+  margin: 0px 35px 0px 35px;
+  border: 20px solid #523276; }
+
+.etiquette_body .tip_link {
+  text-decoration: underline;
+  font-weight: bold; }
+
+/* YANNG TIPS */
+#tips_home .tips_picture {
+  width: 60%;
+  border: 8px solid #523276;
+  margin: -88px auto 0px auto;
+  height: 390px;
+  text-align: right;
+  padding: 95px 55px 0px 0px;
+  font-family: Cardenio Modern;
+  font-size: 121px;
+  font-weight: bold;
+  color: #72a6f7; }
+
+#tips_home .tips_begin {
+  font-family: Cardenio Modern;
+  text-align: center;
+  font-size: 68px;
+  font-weight: bold;
+  color: #72a6f7;
+  text-decoration: underline;
+  cursor: pointer; }

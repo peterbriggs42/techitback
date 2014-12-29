@@ -1,30 +1,15 @@
 extends ../layouts/default
+include yanng_home
 
 block content
 
 	div.container-fluid#yanng_header.yanng_title 
-		div#yanng_header_button X
+		div.yanng_header_button X
 		h2 Exclusive Tips from the Yes and No No Girls
 
-	div.container.yanng_body
-		div.row
-			div.col-xs-6.yanng_box_container
-				div.yanng_box.yanng_box_large
-					p.yanng_title#etiquette Tech Etiquette
-			div.col-xs-6
-				div.row
-					div.col-xs-6.yanng_box_container
-						div.yanng_box.yanng_box_small
-							p.yanng_title#about About
-					div.col-xs-6.yanng_box_container
-						div.yanng_box.yanng_box_small
-							p.yanng_title#meetus Meet Us
-				div.row
-					div.col-xs-6.yanng_box_container
-						div.yanng_box.yanng_box_small
-							p.yanng_title#tips Tips	
-					div.col-xs-6.yanng_box_container
-						div.yanng_box.yanng_box_small
-							p.yanng_title#create Create + Share
-		div.yanng_home_text.yanng_title The Best Tech Etiquette Ever. The Yes and No No Girls (aka Yaang) Provide Invaluable Advice. 
+	div.container-fluid#yanng_tips_header
+		div.yanng_header_button X
+
+	div.container-fluid.yanng_body
+		include yanng_home		
 
