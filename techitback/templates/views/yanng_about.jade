@@ -1,3 +1,9 @@
-include ../mixins/yanng_post
+include ../mixins/yanng_header
 
-+yanng_post(text)
++yanng_header("About Yes and No No Girls")
+
+div.container-fluid.yanng_body
+	div.about_body
+			p()!=text.content.brief
+			img(src='/images/yanng/11.png')
+		div.next_page Next Page >

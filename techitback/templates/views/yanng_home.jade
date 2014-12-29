@@ -1,21 +1,26 @@
-div.yanng_home
-	div.row
-		div.col-xs-6.yanng_box_container
-			div.yanng_box.yanng_box_large#etiquette
-				p.yanng_title Tech Etiquette
-		div.col-xs-6
-			div.row
-				div.col-xs-6.yanng_box_container
-					div.yanng_box.yanng_box_small.about_link
-						p.yanng_title About
-				div.col-xs-6.yanng_box_container
-					div.yanng_box.yanng_box_small#meetus
-						p.yanng_title Meet Us
-			div.row
-				div.col-xs-6.yanng_box_container
-					div.yanng_box.yanng_box_small.tip_link
-						p.yanng_title Tips	
-				div.col-xs-6.yanng_box_container
-					div.yanng_box.yanng_box_small#create
-						p.yanng_title Create + Share
-	div.yanng_home_text.yanng_title()!=text.content.brief
+include ../mixins/yanng_header
+
++yanng_header("Exclusive Tips from the Yes and No No Girls")
+
+div.container-fluid.yanng_body
+	div.yanng_home
+		div.row
+			div.col-xs-6.yanng_box_container
+				div.yanng_box.yanng_box_large#etiquette
+					p.yanng_title Tech Etiquette
+			div.col-xs-6
+				div.row
+					div.col-xs-6.yanng_box_container
+						div.yanng_box.yanng_box_small.about_link
+							p.yanng_title About
+					div.col-xs-6.yanng_box_container
+						div.yanng_box.yanng_box_small#meetus
+							p.yanng_title Meet Us
+				div.row
+					div.col-xs-6.yanng_box_container
+						div.yanng_box.yanng_box_small.tip_link
+							p.yanng_title Tips	
+					div.col-xs-6.yanng_box_container
+						div.yanng_box.yanng_box_small#create
+							p.yanng_title Create + Share
+		div.yanng_home_text.yanng_title()!=text.content.brief

@@ -4898,9 +4898,6 @@ button.close {
   cursor: pointer; }
 
 /* YANNG TIPS HEADER */
-#yanng_tips_header {
-  display: none; }
-
 #yanng_tips_header .yanng_header_button {
   color: #523276;
   font-family: Cardenio Modern; }
