@@ -256,8 +256,13 @@
 }
 
 /* YANNG MEETUS */
+.meetus_body {
+	padding-bottom:20px;
+}
 .meetus_body .col-xs-4 {
 	text-align: center;
+}
+.meetus_body .col-xs-4 img {
 	cursor: pointer;
 }
 .meetus_body #shlee .name{

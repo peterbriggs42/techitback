@@ -9,7 +9,8 @@ jQuery(function($) {
 	 */
 
 	function yanng_listener (element, URL, replace) {
-		$(document).on('click', element, function () {
+		$(document).on('click', element, function (e) {
+			e.stopPropagation();
 			// change body
 			ajaxRequest(URL, '', 'GET', function(data) {
 				if (replace!= null) {
@@ -32,9 +33,11 @@ jQuery(function($) {
 		// Tip sections
 		{'element':".tips_begin", 			'url':'ajax/yanng_tips/tips1'	, 'replace':null},
 		// Meet Us sections
-		{'element':".meetus_body #shlee",	'url':'ajax/yanng_girls/shlee'	, 'replace':".meetus_body .row_container"},
-		{'element':".meetus_body #goldie",	'url':'ajax/yanng_girls/goldie'	, 'replace':".meetus_body .row_container"},
-		{'element':".meetus_body #yumi",	'url':'ajax/yanng_girls/yumi'	, 'replace':".meetus_body .row_container"}
+		{'element':".meetus_body", 				'url':'ajax/yanng_meetus'		, 'replace':null},
+		{'element':".meetus_body #shlee img",	'url':'ajax/yanng_girls/shlee'	, 'replace':".meetus_body .row_container"},
+		{'element':".meetus_body #goldie img",	'url':'ajax/yanng_girls/goldie'	, 'replace':".meetus_body .row_container"},
+		{'element':".meetus_body #yumi img",	'url':'ajax/yanng_girls/yumi'	, 'replace':".meetus_body .row_container"}
+
 		
 	].map( function(listener) {
 		yanng_listener(listener['element'], listener['url'], listener['replace']);
