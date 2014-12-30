@@ -11,7 +11,7 @@ exports = module.exports = function(req, res) {
 		.where('key', 'etiquette')
 		.exec(function(err, posts) {
         // Render the view
-		view.render('yanng_etiquette', {
+		view.render('yanng/yanng_etiquette', {
 			text: posts[0]
 		});	
     });

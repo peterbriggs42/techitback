@@ -15,7 +15,7 @@ exports = module.exports = function(req, res) {
 	 
 	YanngAbout.model.find().exec(function(err, posts) {
         // Render the view
-		view.render('yanng', {
+		view.render('yanng/yanng', {
 			text: posts[2]
 		});
     });

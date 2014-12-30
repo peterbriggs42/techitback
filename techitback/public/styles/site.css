@@ -4829,6 +4829,9 @@ button.close {
 #footer {
   margin-top: 0px; }
 
+.bold {
+  font-weight: bold; }
+
 /* HEADER */
 .social_link {
   width: 60px; }
@@ -4897,10 +4900,27 @@ button.close {
 .yanng_header_button:hover {
   cursor: pointer; }
 
-/* YANNG TIPS HEADER */
+/* YANNG TIPS HEADERS */
 #yanng_tips_header .yanng_header_button {
-  color: #523276;
+  color: #523276; }
+
+.yanng_header_button {
   font-family: Cardenio Modern; }
+
+.tips_body {
+  background-color: #523276;
+  color: white;
+  font-family: Cardenio Modern;
+  height: 600px; }
+
+.tips_body .yanng_header_button {
+  float: left; }
+
+.tips_body h2 {
+  float: right;
+  font-size: 58px;
+  font-weight: bold;
+  margin-right: 8px; }
 
 /* YAANG BOXES */
 .yanng_box {
@@ -4998,7 +5018,8 @@ button.close {
 
 .etiquette_body .tip_link {
   text-decoration: underline;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 /* YANNG TIPS */
 #tips_home .tips_picture {
@@ -5013,11 +5034,54 @@ button.close {
   font-weight: bold;
   color: #72a6f7; }
 
-#tips_home .tips_begin {
+.tips_begin {
+  cursor: pointer; }
+
+#tips_home .tips_begin_text {
   font-family: Cardenio Modern;
   text-align: center;
   font-size: 68px;
   font-weight: bold;
   color: #72a6f7;
-  text-decoration: underline;
+  text-decoration: underline; }
+
+/* YANNG MEETUS */
+.meetus_body .col-xs-4 {
+  text-align: center;
   cursor: pointer; }
+
+.meetus_body #shlee .name {
+  margin: 181px 0px 0px 203px; }
+
+.meetus_body #goldie .name {
+  margin: 81px 0px 0px 171px; }
+
+.meetus_body #yumi .name {
+  margin: 170px 0px 0px 73px; }
+
+.meetus_body .col-xs-4 .name {
+  position: absolute;
+  font-family: Cardenio Modern;
+  font-weight: bold;
+  font-size: 31px; }
+
+.meetus_body .faded {
+  opacity: 0.5; }
+
+.meetus_body #shlee_info {
+  background-color: #fcf2aa; }
+
+.meetus_body #yumi_info {
+  background-color: #d0d7f8; }
+
+.meetus_body #goldie_info {
+  background-color: #eaa6e1; }
+
+.meetus_body .info_box {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 23px;
+  text-align: left;
+  font-family: Cardenio Modern;
+  padding: 5px 22px;
+  line-height: 30px; }

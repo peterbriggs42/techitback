@@ -5,14 +5,14 @@ exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res),
 		locals = res.locals;
 
-	var YanngAbout = keystone.list('Yanng Post');
+	var YanngGirl = keystone.list('Yanng Girl');
 	 
-	YanngAbout.model.find()
-		.where('key','home')
+	YanngGirl.model.find()
+		.where('key','yumi')
 		.exec(function(err, posts) {
         // Render the view
-		view.render('yanng/yanng_home', {
-			text: posts[0]
+		view.render('yanng/girls/yumi', {
+			girl: posts[0]
 		});	
     });
 };

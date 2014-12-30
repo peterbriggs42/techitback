@@ -30,7 +30,9 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
-	ajax: importRoutes('./ajax')
+	ajax: importRoutes('./ajax'),
+	yanng_tips: importRoutes('./ajax/yanng_tips'),
+	yanng_girls: importRoutes('./ajax/yanng_girls')
 };
 
 // Setup Route Bindings
@@ -42,11 +44,21 @@ exports = module.exports = function(app) {
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 
+	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);
 	app.get('/ajax/yanng_about2', routes.ajax.yanng_about2);
 	app.get('/ajax/yanng_etiquette', routes.ajax.yanng_etiquette);
 	app.get('/ajax/yanng_home', routes.ajax.yanng_home);
 	app.get('/ajax/yanng_tips', routes.ajax.yanng_tips);
+	app.get('/ajax/yanng_meetus', routes.ajax.yanng_meetus);
+
+	// All the YANNG tips
+	app.get('/ajax/yanng_tips/tips1', routes.yanng_tips.tips1);
+
+	// The Yanng Girls section (Meet us)
+	app.get('/ajax/yanng_girls/shlee', routes.yanng_girls.shlee);
+	app.get('/ajax/yanng_girls/goldie', routes.yanng_girls.goldie);
+	app.get('/ajax/yanng_girls/yumi', routes.yanng_girls.yumi);
 
 	app.all('/contact', routes.views.contact);
 	

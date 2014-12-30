@@ -8,10 +8,10 @@ exports = module.exports = function(req, res) {
 	var YanngAbout = keystone.list('Yanng Post');
 	 
 	YanngAbout.model.find()
-		.where('key','home')
+		.where('key','meet-us')
 		.exec(function(err, posts) {
         // Render the view
-		view.render('yanng/yanng_home', {
+		view.render('yanng/yanng_meetus', {
 			text: posts[0]
 		});	
     });

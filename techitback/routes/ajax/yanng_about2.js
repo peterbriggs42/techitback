@@ -11,7 +11,7 @@ exports = module.exports = function(req, res) {
 		.where('key','about-2')
 		.exec(function(err, posts) {
         // Render the view
-		view.render('yanng_about2', {
+		view.render('yanng/yanng_about2', {
 			text: posts[0]
 		});	
     });

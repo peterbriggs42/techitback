@@ -88,10 +88,10 @@ keystone.set('email tests', require('./routes/emails'));
 
 keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
-	'galleries': 'galleries',
-	'enquiries': 'enquiries',
+	// 'galleries': 'galleries',
+	// 'enquiries': 'enquiries',
 	'users': 'users',
-	'yanng-posts' : 'yanng-posts'
+	'yanng' : ['yanng-posts', 'yanng-girls']
 });
 
 // Start Keystone to connect to your database and initialise the web server

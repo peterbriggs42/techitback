@@ -1,0 +1,13 @@
+mixin info(key, value)
+	div.row
+		span.bold #{key}:
+		span #{value}
+
+mixin info_box(info)
+	+info("Name", info.name)
+	+info("Age", info.age)
+	+info("Sign", info.sign)
+	+info("Tech Habits", info.techHabits)
+	+info("Likes", info.likes)
+	+info("Dislikes", info.dislikes)
+	+info("Motto", '"'+info.motto+'"')

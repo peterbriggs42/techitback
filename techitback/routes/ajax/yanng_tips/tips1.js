@@ -5,5 +5,5 @@ exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res),
 		locals = res.locals;
 
-	view.render('yanng/yanng_tips')
+	view.render('yanng/tips/tips1')
 };

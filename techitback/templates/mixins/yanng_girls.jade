@@ -1,0 +1,47 @@
+include ./yanng_header
+include ./yanng_girls_info
+
+mixin yanng_girl(girl, info)
+	div.row
+		// Left section
+		// Unless 'Shlee' is selected, fade out
+		- if (girl == "shlee" || girl == "all") {
+			div.col-xs-4#shlee
+				div.name SHLEE
+				img(src='/images/yanng/11.21.png')
+		- } else {
+			div.col-xs-4#shlee.faded
+				div.name SHLEE
+				img(src='/images/yanng/11.21.png')
+		- }
+
+		// Middle section
+		// If Goldie is selected (or all), show her
+		- if (girl == "goldie" || girl == "all") {
+			div.col-xs-4#goldie
+				div.name GOLDIE
+				img(src='/images/yanng/11.22.png')
+		// If Shlee is selected, show her box
+		- } else if (girl == "shlee") {
+			div.col-xs-4#shlee_info.info_box
+				+info_box(info)
+		// If it's Yumi, show her box
+		- } else {
+			div.col-xs-4#yumi_info.info_box
+				+info_box(info)
+		- }
+
+		// Left Section
+		- if (girl == "yumi" || girl == "all") {
+			div.col-xs-4#yumi
+				div.name YUMI
+				img(src='/images/yanng/11.23.png')
+		- } else if (girl == "shlee") {
+			div.col-xs-4#yumi.faded
+				div.name YUMI
+				img(src='/images/yanng/11.23.png')
+		- } else {
+			div.col-xs-4#goldie_info.info_box
+				+info_box(info)
+		- }
+			
