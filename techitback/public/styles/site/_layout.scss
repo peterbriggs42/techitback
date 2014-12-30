@@ -24,8 +24,19 @@
 	margin-top: 0px;
 }
 
+/* GENERAL TOOLS */
 .bold {
 	font-weight: bold;
+}
+.image-center-parent {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.image-center-child {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
 /* HEADER */
@@ -102,29 +113,6 @@
 }
 .yanng_header_button:hover {
 	cursor: pointer;
-}
-
-/* YANNG TIPS HEADERS */
-#yanng_tips_header .yanng_header_button {
-	color: $yanng_purple;
-}
-.yanng_header_button {
-	font-family: Cardenio Modern;
-}
-.tips_body {
-	background-color: $yanng_purple;
-	color: white;
-	font-family: Cardenio Modern;
-	height:600px;
-}
-.tips_body .yanng_header_button {
-	float:left;
-}
-.tips_body h2 {
-	float: right;
-	font-size: 58px;
-	font-weight: bold;
-	margin-right: 8px;
 }
 
 /* YAANG BOXES */
@@ -230,7 +218,7 @@
 	cursor: pointer;
 }
 
-/* YANNG TIPS */
+/* YANNG TIPS HOME*/
 #tips_home .tips_picture {
 	width: 60%;
 	border: 8px solid $yanng_purple;
@@ -243,7 +231,7 @@
 	font-weight: bold;
 	color: $yanng_blue;
 }
-.tips_begin {
+.tip_link {
 	cursor: pointer;
 }
 #tips_home .tips_begin_text {
@@ -254,6 +242,55 @@
 	color:$yanng_blue;
 	text-decoration: underline;
 }
+
+
+/* YANNG TIPS GENERAL */
+#yanng_tips_header .yanng_header_button {
+	color: $yanng_purple;
+}
+.yanng_header_button {
+	font-family: Cardenio Modern;
+}
+.tips_body {
+	background-color: $yanng_purple;
+	color: white;
+	font-family: Cardenio Modern;
+	height:600px;
+}
+.tips_body .yanng_header_button {
+	position: absolute;
+	z-index: 1;
+}
+.tips_body h2 {
+	font-size: 58px;
+	font-weight: bold;
+	right: 22px;
+	position: absolute;
+}
+.tips_body .row, .tips_body .row .col-xs-1, .tips_body .row .col-xs-5, {
+	height:100%;
+} 
+.tips_body .image-center-child img {
+	width: 30px;
+}
+.tips_footer {
+	position: absolute;
+	bottom: -150px;
+	right: 12px;
+	font-size: 27px;
+	cursor: pointer;
+	z-index: 1; /* show above table */
+}
+.tips_footer:hover{
+	text-decoration: underline;
+}
+.tips_footer .ebook_icon {
+	width: 35px;
+}
+.tips_footer span {
+	padding-left: 7px;
+}	
+
 
 /* YANNG MEETUS */
 .meetus_body {

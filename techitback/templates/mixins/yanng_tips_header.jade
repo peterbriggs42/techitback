@@ -1,4 +1,26 @@
-mixin yanng_tips_header()
+mixin yanng_tips_body(left, image1, image2, right)
 	div.container-fluid.tips_body
 		div.yanng_header_button X
 		h2 Tips
+		div.tips_footer
+			img(src='images/5.3.png', class='ebook_icon')
+			span download book here
+		div.row
+			div.col-xs-1
+				- if (left != "none") {
+					div.image-center-parent
+						div.image-center-child.tip_link
+							img(src='images/left.png' class=left+"_link")
+				- }
+			div.col-xs-5
+				img(src='images/yanng/tips/'+image1+'girl.png', id=image1+'girl').tip_image
+				img(src='images/yanng/tips/'+image1+'.png', id=image1).tip_image
+			div.col-xs-5
+				img(src='images/yanng/tips/'+image2+'girl.png', id=image2+'girl').tip_image
+				img(src='images/yanng/tips/'+image2+'.png', id=image2).tip_image
+			div.col-xs-1
+				div.image-center-parent
+					- if (right != "none") {
+						div.image-center-child.tip_link
+							img(src='images/right.png' class=right+"_link")
+					- }

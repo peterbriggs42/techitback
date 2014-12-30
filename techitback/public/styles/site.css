@@ -4829,8 +4829,19 @@ button.close {
 #footer {
   margin-top: 0px; }
 
+/* GENERAL TOOLS */
 .bold {
   font-weight: bold; }
+
+.image-center-parent {
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+.image-center-child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
 
 /* HEADER */
 .social_link {
@@ -4899,28 +4910,6 @@ button.close {
 
 .yanng_header_button:hover {
   cursor: pointer; }
-
-/* YANNG TIPS HEADERS */
-#yanng_tips_header .yanng_header_button {
-  color: #523276; }
-
-.yanng_header_button {
-  font-family: Cardenio Modern; }
-
-.tips_body {
-  background-color: #523276;
-  color: white;
-  font-family: Cardenio Modern;
-  height: 600px; }
-
-.tips_body .yanng_header_button {
-  float: left; }
-
-.tips_body h2 {
-  float: right;
-  font-size: 58px;
-  font-weight: bold;
-  margin-right: 8px; }
 
 /* YAANG BOXES */
 .yanng_box {
@@ -5021,7 +5010,7 @@ button.close {
   font-weight: bold;
   cursor: pointer; }
 
-/* YANNG TIPS */
+/* YANNG TIPS HOME*/
 #tips_home .tips_picture {
   width: 60%;
   border: 8px solid #523276;
@@ -5034,7 +5023,7 @@ button.close {
   font-weight: bold;
   color: #72a6f7; }
 
-.tips_begin {
+.tip_link {
   cursor: pointer; }
 
 #tips_home .tips_begin_text {
@@ -5044,6 +5033,53 @@ button.close {
   font-weight: bold;
   color: #72a6f7;
   text-decoration: underline; }
+
+/* YANNG TIPS GENERAL */
+#yanng_tips_header .yanng_header_button {
+  color: #523276; }
+
+.yanng_header_button {
+  font-family: Cardenio Modern; }
+
+.tips_body {
+  background-color: #523276;
+  color: white;
+  font-family: Cardenio Modern;
+  height: 600px; }
+
+.tips_body .yanng_header_button {
+  position: absolute;
+  z-index: 1; }
+
+.tips_body h2 {
+  font-size: 58px;
+  font-weight: bold;
+  right: 22px;
+  position: absolute; }
+
+.tips_body .row, .tips_body .row .col-xs-1, .tips_body .row .col-xs-5 {
+  height: 100%; }
+
+.tips_body .image-center-child img {
+  width: 30px; }
+
+.tips_footer {
+  position: absolute;
+  bottom: -150px;
+  right: 12px;
+  font-size: 27px;
+  cursor: pointer;
+  z-index: 1;
+  /* show above table */ }
+
+.tips_footer:hover {
+  text-decoration: underline; }
+
+.tips_footer .ebook_icon {
+  width: 35px; }
+
+.tips_footer span {
+  padding-left: 7px; }
 
 /* YANNG MEETUS */
 .meetus_body {
@@ -5090,3 +5126,49 @@ button.close {
   font-family: Cardenio Modern;
   padding: 5px 22px;
   line-height: 30px; }
+
+/* YANNG TIPS PICTURES */
+.tip_image {
+  position: absolute; }
+
+/* Page 1 */
+#tip_yes1 {
+  right: -97%;
+  top: 3%;
+  width: 124%; }
+
+#tip_no1 {
+  right: 45%;
+  top: 40%;
+  width: 129%; }
+
+#tip_yes1girl {
+  left: 29%;
+  top: 13%;
+  width: 42%; }
+
+#tip_no1girl {
+  left: 60%;
+  top: 52%;
+  width: 36%; }
+
+/* Page 2 */
+#tip_yes2 {
+  left: 46%;
+  width: 84%;
+  top: 5%; }
+
+#tip_no2 {
+  left: -97%;
+  width: 154%;
+  top: 55%; }
+
+#tip_yes2girl {
+  left: 5%;
+  width: 38%;
+  top: 14%; }
+
+#tip_no2girl {
+  left: 39%;
+  width: 64%;
+  top: 11%; }

@@ -54,6 +54,7 @@ exports = module.exports = function(app) {
 
 	// All the YANNG tips
 	app.get('/ajax/yanng_tips/tips1', routes.yanng_tips.tips1);
+	app.get('/ajax/yanng_tips/tips2', routes.yanng_tips.tips2);
 
 	// The Yanng Girls section (Meet us)
 	app.get('/ajax/yanng_girls/shlee', routes.yanng_girls.shlee);

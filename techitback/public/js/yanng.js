@@ -31,7 +31,9 @@ jQuery(function($) {
 		{'element':"#meetus", 				'url':'ajax/yanng_meetus'		, 'replace':null},
 		{'element':".tip_link", 			'url':'ajax/yanng_tips'			, 'replace':null},
 		// Tip sections
-		{'element':".tips_begin", 			'url':'ajax/yanng_tips/tips1'	, 'replace':null},
+		{'element':".tips_footer", 			'url':'ajax/yanng_etiquette'	, 'replace':null},
+		{'element':".tip1_link", 			'url':'ajax/yanng_tips/tips1'	, 'replace':null},
+		{'element':".tip2_link", 			'url':'ajax/yanng_tips/tips2'	, 'replace':null},
 		// Meet Us sections
 		{'element':".meetus_body", 				'url':'ajax/yanng_meetus'		, 'replace':null},
 		{'element':".meetus_body #shlee img",	'url':'ajax/yanng_girls/shlee'	, 'replace':".meetus_body .row_container"},
