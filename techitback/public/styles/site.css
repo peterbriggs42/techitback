@@ -5118,20 +5118,21 @@ button.close {
 .meetus_body {
   padding-bottom: 20px; }
 
-.meetus_body .col-xs-4 {
-  text-align: center; }
+.meetus_body .girl_container {
+  margin: auto;
+  width: 120px; }
 
 .meetus_body .col-xs-4 img {
   cursor: pointer; }
 
 .meetus_body #shlee .name {
-  margin: 181px 0px 0px 203px; }
+  margin: 168px 0px 0px 108px; }
 
 .meetus_body #goldie .name {
-  margin: 81px 0px 0px 171px; }
+  margin: 81px 0px 0px 72px; }
 
 .meetus_body #yumi .name {
-  margin: 170px 0px 0px 73px; }
+  margin: 175px 0px 0px -33px; }
 
 .meetus_body .col-xs-4 .name {
   position: absolute;
