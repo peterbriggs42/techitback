@@ -23,8 +23,6 @@ YanngPost.schema.virtual('content.full').get(function() {
 	return this.content.brief;
 });
 
-YanngPost.relationship({ ref: 'Yanng', path: 'posts' });
-
 YanngPost.defaultColumns = 'title';
 
 YanngPost.register();
