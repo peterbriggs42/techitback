@@ -55,6 +55,17 @@ exports = module.exports = function(app) {
 	// All the YANNG tips
 	app.get('/ajax/yanng_tips/tips1', routes.yanng_tips.tips1);
 	app.get('/ajax/yanng_tips/tips2', routes.yanng_tips.tips2);
+	app.get('/ajax/yanng_tips/tips3', routes.yanng_tips.tips3);
+	app.get('/ajax/yanng_tips/tips4', routes.yanng_tips.tips4);
+	app.get('/ajax/yanng_tips/tips5', routes.yanng_tips.tips5);
+	app.get('/ajax/yanng_tips/tips6', routes.yanng_tips.tips6);
+	app.get('/ajax/yanng_tips/tips7', routes.yanng_tips.tips7);
+	app.get('/ajax/yanng_tips/tips8', routes.yanng_tips.tips8);
+	app.get('/ajax/yanng_tips/tips9', routes.yanng_tips.tips9);
+	app.get('/ajax/yanng_tips/tips10', routes.yanng_tips.tips10);
+	app.get('/ajax/yanng_tips/tips11', routes.yanng_tips.tips11);
+	app.get('/ajax/yanng_tips/tips12', routes.yanng_tips.tips12);
+	app.get('/ajax/yanng_tips/tips13', routes.yanng_tips.tips13);
 
 	// The Yanng Girls section (Meet us)
 	app.get('/ajax/yanng_girls/shlee', routes.yanng_girls.shlee);

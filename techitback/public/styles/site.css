@@ -4963,11 +4963,16 @@ button.close {
   margin-top: 39px;
   margin-left: 6px; }
 
-.tip_link p {
+.tips_link p {
   font-size: 57px;
   text-align: right;
   margin-right: 10px;
   margin-top: 24px; }
+
+.tips_link img {
+  position: absolute;
+  width: 227px;
+  margin-top: -49.5px; }
 
 #create p {
   font-size: 50px;
@@ -5005,7 +5010,7 @@ button.close {
   margin: 0px 35px 0px 35px;
   border: 20px solid #523276; }
 
-.etiquette_body .tip_link {
+.etiquette_body .tips_link {
   text-decoration: underline;
   font-weight: bold;
   cursor: pointer; }
@@ -5065,7 +5070,7 @@ button.close {
 
 .tips_footer {
   position: absolute;
-  bottom: -150px;
+  bottom: -68px;
   right: 12px;
   font-size: 27px;
   cursor: pointer;
@@ -5133,14 +5138,14 @@ button.close {
 
 /* Page 1 */
 #tip_yes1 {
-  right: -97%;
+  left: 66%;
   top: 3%;
-  width: 124%; }
+  width: 136%; }
 
 #tip_no1 {
-  right: 45%;
-  top: 40%;
-  width: 129%; }
+  right: 48%;
+  top: 48%;
+  width: 138%; }
 
 #tip_yes1girl {
   left: 29%;
@@ -5172,3 +5177,35 @@ button.close {
   left: 39%;
   width: 64%;
   top: 11%; }
+
+/* Page 3 */
+#tip_yes3 {
+  width: 96%;
+  right: 50%;
+  top: 8%; }
+
+#tip_no3 {
+  left: 37%;
+  top: 52%;
+  width: 170%; }
+
+#tip_yes3girl {
+  left: 55%;
+  width: 38%;
+  top: 10%; }
+
+#tip_no3girl {
+  top: 23%;
+  width: 47%;
+  left: 2%; }
+
+/* Page 4 */
+/* Page 5 */
+/* Page 6 */
+/* Page 7 */
+/* Page 8 */
+/* Page 9 */
+/* Page 10 */
+/* Page 11 */
+/* Page 12 */
+/* Page 13 */

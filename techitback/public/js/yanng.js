@@ -13,11 +13,15 @@ jQuery(function($) {
 			e.stopPropagation();
 			// change body
 			ajaxRequest(URL, '', 'GET', function(data) {
+				var replaceContent = ".yanng_content";
 				if (replace!= null) {
-					$(replace).html(data);
-				} else { //default to .yanng_content
-					$(".yanng_content").html(data)
+					replaceContent = replace;
 				}
+				var timing = 50;
+			    $( replaceContent ).fadeOut( timing , function(){
+			    	$(replaceContent).html(data);
+			    	$( replaceContent ).fadeIn( timing );
+				});
 			});
 		});
 	}
@@ -29,11 +33,22 @@ jQuery(function($) {
 		{'element':".yanng_body .next_page",'url':'ajax/yanng_about2'		, 'replace':null},
 		{'element':"#etiquette", 			'url':'ajax/yanng_etiquette'	, 'replace':null},
 		{'element':"#meetus", 				'url':'ajax/yanng_meetus'		, 'replace':null},
-		{'element':".tip_link", 			'url':'ajax/yanng_tips'			, 'replace':null},
+		{'element':".tips_link", 			'url':'ajax/yanng_tips'			, 'replace':null},
 		// Tip sections
 		{'element':".tips_footer", 			'url':'ajax/yanng_etiquette'	, 'replace':null},
 		{'element':".tip1_link", 			'url':'ajax/yanng_tips/tips1'	, 'replace':null},
 		{'element':".tip2_link", 			'url':'ajax/yanng_tips/tips2'	, 'replace':null},
+		{'element':".tip3_link", 			'url':'ajax/yanng_tips/tips3'	, 'replace':null},
+		{'element':".tip4_link", 			'url':'ajax/yanng_tips/tips4'	, 'replace':null},
+		{'element':".tip5_link", 			'url':'ajax/yanng_tips/tips5'	, 'replace':null},
+		{'element':".tip6_link", 			'url':'ajax/yanng_tips/tips6'	, 'replace':null},
+		{'element':".tip7_link", 			'url':'ajax/yanng_tips/tips7'	, 'replace':null},
+		{'element':".tip8_link", 			'url':'ajax/yanng_tips/tips8'	, 'replace':null},
+		{'element':".tip9_link", 			'url':'ajax/yanng_tips/tips9'	, 'replace':null},
+		{'element':".tip10_link", 			'url':'ajax/yanng_tips/tips10'	, 'replace':null},
+		{'element':".tip11_link", 			'url':'ajax/yanng_tips/tips11'	, 'replace':null},
+		{'element':".tip12_link", 			'url':'ajax/yanng_tips/tips12'	, 'replace':null},
+		{'element':".tip13_link", 			'url':'ajax/yanng_tips/tips13'	, 'replace':null},
 		// Meet Us sections
 		{'element':".meetus_body", 				'url':'ajax/yanng_meetus'		, 'replace':null},
 		{'element':".meetus_body #shlee img",	'url':'ajax/yanng_girls/shlee'	, 'replace':".meetus_body .row_container"},
