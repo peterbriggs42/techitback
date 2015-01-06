@@ -4922,10 +4922,10 @@ button.close {
   cursor: pointer; }
 
 .yanng_box_small {
-  height: 150px; }
+  height: 160px; }
 
 .yanng_box_large {
-  height: 350px;
+  height: 375px;
   margin-top: -10px; }
 
 .yanng_body {
@@ -4949,8 +4949,18 @@ button.close {
 
 #etiquette p {
   text-align: right;
-  font-size: 62px;
-  margin-right: 21px; }
+  font-size: 87px;
+  margin-right: 21px;
+  margin-top: 26px;
+  line-height: 49px; }
+
+#etiquette p.subtitle {
+  font-size: 34px;
+  margin-top: 0;
+  text-decoration: underline; }
+
+#etiquette img {
+  margin-top: -40px; }
 
 .about_link p {
   font-size: 47px;
@@ -4958,10 +4968,20 @@ button.close {
   margin-right: 22px;
   margin-top: 34px; }
 
+.about_link img {
+  float: left;
+  margin: -34px 0px 0px -13px;
+  width: 124.5px; }
+
 #meetus p {
   font-size: 43px;
   margin-top: 39px;
   margin-left: 6px; }
+
+#meetus img {
+  margin: -152px -11px 0px 0px;
+  float: right;
+  width: 102.5px; }
 
 .tips_link p {
   font-size: 57px;
@@ -4972,7 +4992,7 @@ button.close {
 .tips_link img {
   position: absolute;
   width: 227px;
-  margin-top: -49.5px; }
+  margin-top: -39px; }
 
 #create p {
   font-size: 50px;
