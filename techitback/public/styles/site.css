@@ -5021,12 +5021,20 @@ button.close {
   border: 8px solid #523276;
   margin: -88px auto 0px auto;
   height: 390px;
-  text-align: right;
-  padding: 95px 55px 0px 0px;
   font-family: Cardenio Modern;
   font-size: 121px;
   font-weight: bold;
   color: #72a6f7; }
+
+#tips_home .tips_picture img {
+  float: left;
+  width: 408px;
+  margin-top: -43px; }
+
+#tips_home .tips_picture p {
+  margin-top: 13%;
+  font-size: 142px;
+  margin-left: 64%; }
 
 .tip_link {
   cursor: pointer; }
@@ -5138,9 +5146,9 @@ button.close {
 
 /* Page 1 */
 #tip_yes1 {
-  left: 66%;
-  top: 3%;
-  width: 136%; }
+  left: 53%;
+  top: 5%;
+  width: 133%; }
 
 #tip_no1 {
   right: 48%;
@@ -5148,9 +5156,9 @@ button.close {
   width: 138%; }
 
 #tip_yes1girl {
-  left: 29%;
-  top: 13%;
-  width: 42%; }
+  left: 3%;
+  top: 17%;
+  width: 44%; }
 
 #tip_no1girl {
   left: 60%;

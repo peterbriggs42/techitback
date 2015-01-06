@@ -229,12 +229,20 @@
 	border: 8px solid $yanng_purple;
 	margin: -88px auto 0px auto;
 	height: 390px;
-	text-align: right;
-	padding: 95px 55px 0px 0px;
 	font-family: Cardenio Modern;
 	font-size: 121px;
 	font-weight: bold;
 	color: $yanng_blue;
+}
+#tips_home .tips_picture img {
+	float: left;
+	width: 408px;
+	margin-top: -43px;
+}
+#tips_home .tips_picture p {
+	margin-top: 13%;
+	font-size: 142px;
+	margin-left: 64%;
 }
 .tip_link {
 	cursor: pointer;
@@ -260,7 +268,7 @@
 	background-color: $yanng_purple;
 	color: white;
 	font-family: Cardenio Modern;
-	height:600px;
+	height:630px;
 }
 .tips_body .yanng_header_button {
 	position: absolute;
