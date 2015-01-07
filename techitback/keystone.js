@@ -91,7 +91,7 @@ keystone.set('nav', {
 	// 'galleries': 'galleries',
 	// 'enquiries': 'enquiries',
 	'users': 'users',
-	'yanng' : ['yanng-posts', 'yanng-girls']
+	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips']
 });
 
 // Start Keystone to connect to your database and initialise the web server

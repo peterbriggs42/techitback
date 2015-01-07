@@ -1,0 +1,57 @@
+include ../../mixins/yanng_userinput
+
+div.container-fluid.create_body
+		div.yanng_header_button X
+		h2 Create + Share
+		div.user_tips
+			form(class='form-horizontal', id=form, action=form)
+				+user_input_row("First Name/twitter (Optional)", "firstname")
+				+user_input_row("Age", "age", form)
+				+user_input_row("Country", "country", form)
+				+user_input_row("State/Province", "state", form)
+
+				div.form-description.first_page_only()!=text.content.brief
+
+				div.row.buffer
+					div.col-xs-1
+					div.col-xs-5
+						div YES
+						textarea.form-control(name="yes_box")
+					div.col-xs-5
+						div NO NO
+						textarea.form-control(name="no_box")
+					div.col-xs-1
+
+				div.second_page_only(style='display:none;')
+					div.row.buffer
+						div.col-xs-1.no_padding.right_align
+							input(type='checkbox', name='agree')
+							div.agree_text AGREE
+						div.col-xs-10
+							div.agree_box
+								p To complete submission, you must click this box which indicates that you understand and agree that any information submitted may be posted or printed by the Yes and No No Girls, LLC at their sole discretion. Also understand that you should not use names of individuals or any information that would enable one to identify the source of the technology abuse.
+						div.col-xs-1
+					div.row.buffer
+						div.col-xs-1.no_padding
+							div.row
+								div.col-xs-6
+									input(type='radio', name="name")
+									div.agree_text NAME YES
+								div.col-xs-6
+									input(type='radio', name="name")
+									div.agree_text NAME NO
+						div.col-xs-10
+							div.agree_box
+								p If you desire to have your first name used then click the appropriate box, but first check with a parent if you're under the age of 18. The Yes and No No Girls, LLC believe in protecting people's privacy and online identity. We ask you to refrain from disclosing any information in this submission that would lead one to identify you or others references in the fun yes and no no tips. We will not use last names.
+						div.col-xs-1
+
+				div.row.buffer.first_page_only
+					div#createsharenext.button_style NEXT
+
+				div.form-group.second_page_only(style='display:none;')
+					div.row.submit.buffer
+						div.col-xs-6
+							div#createshareedit.button_style EDIT
+								img(src='images/edit.png')
+						div.col-xs-6
+							button#createsharesubmit.button_style(type="submit") SUBMIT

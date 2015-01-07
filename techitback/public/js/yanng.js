@@ -34,6 +34,7 @@ jQuery(function($) {
 		{'element':"#etiquette", 			'url':'ajax/yanng_etiquette'	, 'replace':null},
 		{'element':"#meetus", 				'url':'ajax/yanng_meetus'		, 'replace':null},
 		{'element':".tips_link", 			'url':'ajax/yanng_tips'			, 'replace':null},
+		{'element':"#create", 				'url':'ajax/yanng_createshare'	, 'replace':null},
 		// Tip sections
 		{'element':".tips_footer", 			'url':'ajax/yanng_etiquette'	, 'replace':null},
 		{'element':".tip1_link", 			'url':'ajax/yanng_tips/tips1'	, 'replace':null},
@@ -60,4 +61,78 @@ jQuery(function($) {
 		yanng_listener(listener['element'], listener['url'], listener['replace']);
 	} );
 
+
+	/* USER CREATE AND SHARE */
+
+	// User clicks to second page
+	$(document).on('click', "#createsharenext", function (e) {
+		// Verify user entered age and country
+		if (!formValidate1()) return;
+
+		$(".first_page_only").hide()
+		$(".second_page_only").show();
+		$(".create_body textarea").prop("disabled", true);
+	});
+
+	// User clicks back to first
+	$(document).on('click', "#createshareedit", function (e) {
+		$(".first_page_only").show()
+		$(".second_page_only").hide();
+		$(".create_body textarea").prop("disabled", false);
+	});
+
+	// Override default action for 'Create + Share' form 
+	$(document).on("submit", "#createshareform", function(e) {
+		e.preventDefault();
+
+		// Verify appropriate combination of checkboxes is selected
+		if (!formValidate2()) return;
+
+		var formAppendage = '<input style="display:none;" name="name_can_use" value="' + $("input[name='name']").first().is(':checked') + '" />';
+		$(".create_body textarea").prop("disabled", false);
+		var postData = $(this).append(formAppendage).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(".yanng_content").html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
+	var formValidate1 = function() {
+		if ($("input[name='age']").val().length < 1) {
+			alert("Please enter your age");
+			return false;
+		} else if ($("input[name='country']").val().length < 1) {
+			alert("Please enter your country");
+			return false;
+		} else if ($(".create_body textarea").first().val().length < 1) {
+			alert("Please enter your 'Yes' tip!");
+			return false;
+		} else if ($(".create_body textarea").last().val().length < 1) {
+			alert("Please enter your 'No No' tip!");
+			return false;
+		}
+		return true;
+	}
+
+	var formValidate2 = function() {
+		if ($("input[name='name']:checked").length < 1) {
+			alert("Please select whether you would like your name used");
+			return false;
+		} else if ($("input[name='agree']:checked").length < 1) {
+			alert("In order to submit a Yes and No No tip, you must agree to the terms and conditions");
+			return false;
+		}
+		return true;
+	}
+
+	
 });

@@ -19,6 +19,22 @@
     font-family: Cardenio Modern;
     src: url(../fonts/Cardenio_Modern.ttf);
 }
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/Gotham-Book.otf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/Gotham-Light.otf);
+	font-weight: lighter;
+}
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/Gotham-Medium.otf);
+	font-weight: bold;
+}
+
 
 #footer {
 	margin-top: 0px;
@@ -27,6 +43,15 @@
 /* GENERAL TOOLS */
 .bold {
 	font-weight: bold;
+}
+.no_padding {
+	padding: 0px;
+}
+.right_align {
+	text-align: right;
+}
+.left_align {
+	text-align: left;
 }
 .image-center-parent {
 	display: table;
@@ -37,6 +62,9 @@
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+}
+input:focus, button:focus {
+	outline: none;
 }
 
 /* HEADER */
@@ -135,7 +163,7 @@
 .yanng_body {
 	margin: 25px 35px 0px 35px;
 	font-size: 26px;
-	font-family: Montserrat;
+	font-family: $yanng_font_2;
 	color: black;
 }
 .yanng_home {
@@ -373,6 +401,150 @@
 	line-height: 30px;
 }
 
+/* YANNG CREATE + SHARE */
+.create_body {
+	background-color: $yanng_purple;
+	color: white;
+	font-family: Cardenio Modern;
+	height:720px;
+}
+.create_body .yanng_header_button {
+	position: absolute;
+	z-index: 1;
+}
+.create_body h2 {
+	text-align: center;
+	font-size: 60px;
+}
+.create_body .user_tips {
+	margin: 32px auto 0px auto;
+	width: 83%;
+	font-family: $yanng_font_2;
+}
+.create_body label {
+	font-size: 26px;
+	font-weight: lighter;
+}
+.create_body input {
+	border-radius: 23px;
+	border: 2px solid black;
+}
+.create_body .control-label {
+	padding-top:0px;
+}
+.create_body .form-group {
+	margin-bottom: 10px;
+}
+.create_body .form-description {
+	text-align: center;
+	font-size: 20px;
+}
+.create_body .buffer, .create_body .submit {
+	text-align: center;
+	margin-top: 20px;
+}
+.create_body .col-xs-5, .create_body .col-xs-10 {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.create_body .button_style{
+	color: black;
+	font-weight: normal;
+	font-size: 22px;
+	padding-top: 6px;
+	line-height: 26px;
+	border: 1px solid black;
+	border-radius: 18px;
+	width: 117px;
+	margin: auto;
+	background: white;
+	cursor: pointer;
+}
+.create_body .col-xs-5 div {
+	text-align: center;
+	font-size: 91px;
+	font-family: Cardenio Modern;
+	color: $yanng_blue;
+	line-height: 85px;
+	font-weight: bold;
+}
+.create_body textarea {
+	height: 150px;
+	width: 100%;
+	margin: auto;
+	border-radius: 18px;
+	border: 2px solid black;
+	resize: none;
+}
+.create_body .agree_box {
+	background: $yanng_blue;
+	padding: 5px 25px 5px 25px;
+	font-size: 11px;
+	color: black;
+	border-radius: 19px;
+	border: 2px solid black;
+}
+.create_body .agree_box p{
+	margin:0px;
+}
+.create_body .agree_text {
+	font-size: 12px;
+	text-align: center;
+	width: 37px;
+}
+.create_body .right_align .agree_text {
+	text-align:right;
+	width:initial;
+}
+.create_body input[type=checkbox],
+	.create_body input[type=radio] {
+	-webkit-appearance: none;
+	width: 37px;
+	height: 37px;
+	background: white;
+	border-radius: 0px;
+	border: 2px solid black;
+	outline: none;
+	margin-top: 6px;
+}
+.create_body input[type=checkbox]:checked,
+	.create_body input[type=radio]:checked {
+	background-image: url(../images/blackcheck.png);
+	background-size: 27px;
+	background-position: 5px 5px;
+	background-repeat: no-repeat;
+} 
+.create_body #createshareedit img {
+	width: 25px;
+	margin-bottom: 3px;
+	margin-right: -16px;
+}
+.create_body .submit {
+	width: 30%;
+	margin: 20px auto 0 auto;
+}
 
-
+/* YANNG CREATE + SHARE THANK YOU */
+.create_body_thanks {
+	background-color: $yanng_purple;
+	color: white;
+	font-family: Cardenio Modern;
+	height:720px;
+}
+.create_body_thanks .yanng_header_button {
+	position: absolute;
+	z-index: 1;
+}
+.create_body_thanks h2 {
+	text-align: center;
+	font-size: 81px;
+	font-weight: bold;
+	margin-top: 103px;
+	color: $yanng_blue;
+}
+.create_body_thanks h3 {
+	text-align: center;
+	font-size: 61px;
+	margin-top: 62px;
+}
 

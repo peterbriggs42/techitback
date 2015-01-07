@@ -30,6 +30,7 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
+	form_requests: importRoutes('./forms/'),
 	ajax: importRoutes('./ajax'),
 	yanng_tips: importRoutes('./ajax/yanng_tips'),
 	yanng_girls: importRoutes('./ajax/yanng_girls')
@@ -44,6 +45,9 @@ exports = module.exports = function(app) {
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 
+	// Form Submissions
+	app.post('/createshareform', routes.form_requests.createshare);
+
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);
 	app.get('/ajax/yanng_about2', routes.ajax.yanng_about2);
@@ -51,6 +55,7 @@ exports = module.exports = function(app) {
 	app.get('/ajax/yanng_home', routes.ajax.yanng_home);
 	app.get('/ajax/yanng_tips', routes.ajax.yanng_tips);
 	app.get('/ajax/yanng_meetus', routes.ajax.yanng_meetus);
+	app.get('/ajax/yanng_createshare', routes.ajax.yanng_createshare);
 
 	// All the YANNG tips
 	app.get('/ajax/yanng_tips/tips1', routes.yanng_tips.tips1);

@@ -1,0 +1,5 @@
+mixin user_input_row(text, slug)
+	div.form-group.first_page_only
+		label(for=slug class='col-sm-6 control-label') #{text}:
+		div.col-sm-6
+			input(id=slug, name=slug, type='text', class='form-control')
