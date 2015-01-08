@@ -23,7 +23,7 @@ function ajaxRequestFromForm(form, event, onSuccess) {
 	});
 }
 
-function ajaxRequest(URL, data, HTTPVerb, onSuccess) {
+function ajaxRequest(event, URL, data, HTTPVerb, onSuccess) {
 	//STOP default action
 	event.preventDefault();
 

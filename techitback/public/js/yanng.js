@@ -12,7 +12,7 @@ jQuery(function($) {
 		$(document).on('click', element, function (e) {
 			e.stopPropagation();
 			// change body
-			ajaxRequest(URL, '', 'GET', function(data) {
+			ajaxRequest(e, URL, '', 'GET', function(data) {
 				var replaceContent = ".yanng_content";
 				if (replace!= null) {
 					replaceContent = replace;
