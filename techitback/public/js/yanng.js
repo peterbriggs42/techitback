@@ -20,18 +20,18 @@ jQuery(function($) {
 			$(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
 
 			// change body
-			ajaxRequest(e, URL, '', 'GET', function(data) {
+			// ajaxRequest(e, URL, '', 'GET', function(data) {
 				
-				if (fade) {
-					var timing = 50;
-				    $( replaceContent ).fadeOut( timing , function(){
-				    	$(replaceContent).html(data);
-				    	$( replaceContent ).fadeIn( timing );
-					});
-			    } else {
-			    	$(replaceContent).html(data);
-			    }
-			});
+			// 	if (fade) {
+			// 		var timing = 50;
+			// 	    $( replaceContent ).fadeOut( timing , function(){
+			// 	    	$(replaceContent).html(data);
+			// 	    	$( replaceContent ).fadeIn( timing );
+			// 		});
+			//     } else {
+			//     	$(replaceContent).html(data);
+			//     }
+			// });
 		});
 	}
 
