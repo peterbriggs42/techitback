@@ -15,11 +15,19 @@ div.container-fluid.create_body
 				div.row.buffer
 					div.col-xs-1
 					div.col-xs-5
-						div YES
-						textarea.form-control(name="yes_box")
+						div.title YES
+						textarea.form-control(name="yes_box", maxlength=120)
+						div.counter 
+							span 0
+							| /120
+
 					div.col-xs-5
-						div NO NO
-						textarea.form-control(name="no_box")
+						div.title NO NO
+						textarea.form-control(name="no_box", maxlength=120)
+						div.counter 
+							span 0
+							| /120
+
 					div.col-xs-1
 
 				div.second_page_only(style='display:none;')
@@ -55,3 +63,4 @@ div.container-fluid.create_body
 								img(src='images/edit.png')
 						div.col-xs-6
 							button#createsharesubmit.button_style(type="submit") SUBMIT
+							

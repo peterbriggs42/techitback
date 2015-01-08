@@ -90,6 +90,7 @@ keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
 	// 'galleries': 'galleries',
 	// 'enquiries': 'enquiries',
+	'join-the-hour':'join-the-hours',
 	'users': 'users',
 	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips']
 });

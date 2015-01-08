@@ -41,12 +41,14 @@ exports = module.exports = function(app) {
 	
 	// Views
 	app.get('/', routes.views.yanng);
-	app.get('/blog/:category?', routes.views.blog);
-	app.get('/blog/post/:post', routes.views.post);
-	app.get('/gallery', routes.views.gallery);
+	app.get('/jointhehour', routes.views.jointhehour);
+	// app.get('/blog/:category?', routes.views.blog);
+	// app.get('/blog/post/:post', routes.views.post);
+	// app.get('/gallery', routes.views.gallery);
 
 	// Form Submissions
 	app.post('/createshareform', routes.form_requests.createshare);
+	app.post('/jointhehourform', routes.form_requests.jointhehour);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

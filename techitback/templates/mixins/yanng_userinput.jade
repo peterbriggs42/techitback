@@ -3,3 +3,11 @@ mixin user_input_row(text, slug)
 		label(for=slug class='col-sm-6 control-label') #{text}:
 		div.col-sm-6
 			input(id=slug, name=slug, type='text', class='form-control')
+
+mixin jointhehour_input_row(text, slug)
+	div.form-group.row
+		div.col-sm-3
+		label(for=slug class='col-sm-3 control-label') #{text}:
+		div.col-sm-3
+			input(id=slug, name=slug, type='text', class='form-control')
+		div.col-sm-3

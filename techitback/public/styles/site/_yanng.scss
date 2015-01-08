@@ -1,0 +1,424 @@
+/* GENERAL YANNG STYLING */
+.yanng_title {
+	font-family: Cardenio Modern;
+}
+
+
+/* YANNG HEADER */
+#yanng_header {
+	background-color: $yanng_purple;
+	color:white;
+	height:110px;
+	text-align: center;
+	box-shadow: 3px 3px 5px #888888;
+}
+#yanng_header h2{
+	font-size: 63px;
+	font-weight: bold;
+	padding-top:3px;
+}
+.yanng_header_button {
+	float:left;
+	font-size: 85px;
+}
+.yanng_header_button:hover {
+	cursor: pointer;
+}
+
+/* YAANG BOXES */
+.yanng_box {
+	border: 12px solid $yanng_purple;
+	box-shadow: 3px 3px 5px #888888;
+	font-weight: bold;
+}
+.yanng_box:hover {
+	box-shadow: 1px 1px 1px;
+	cursor: pointer;
+}
+.yanng_box_small {
+	height:160px;
+}
+.yanng_box_large {
+	height:375px;
+	margin-top:-10px;
+}
+.yanng_body {
+	margin: 25px 35px 0px 35px;
+	font-size: 26px;
+	font-family: $yanng_font_2;
+	color: black;
+}
+.yanng_home {
+	color: $yanng_blue;
+	font-family: Cardenio Modern;
+	margin-bottom: 30px;
+}
+.yanng_box_container {
+	padding:15px;
+}
+.yanng_home_text {
+	font-size: 52px;
+	text-align: center;
+	font-weight: bold;
+}
+#etiquette p{
+	text-align: right;
+	font-size: 87px;
+	margin-right: 21px;
+	margin-top: 26px;
+	line-height: 49px;
+}
+#etiquette p.subtitle{
+	font-size: 34px;
+	margin-top: 0;
+	text-decoration: underline;
+}
+#etiquette img{
+	margin-top: -40px;
+}
+.about_link p{
+	font-size: 47px;
+	text-align: right;
+	margin-right: 22px;
+	margin-top: 34px;
+}
+.about_link img{
+	float: left;
+	margin: -34px 0px 0px -13px;
+	width: 124.5px;
+}
+#meetus p{
+	font-size: 43px;
+	margin-top: 39px;
+	margin-left: 6px;
+}
+#meetus img {
+	margin: -152px -11px 0px 0px;
+	float: right;
+	width: 102.5px;
+}
+.tips_link p{
+	font-size: 57px;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 24px;
+}
+.tips_link img {
+	position: absolute;
+	width: 227px;
+	margin-top: -39px;
+}
+#create p{
+	font-size: 50px;
+	line-height: 54px;
+	text-align: center;
+	margin-top: 11px;
+}
+
+/* YANNG ABOUT */
+.about_body img {
+	float:left;
+}
+.next_page {
+	margin:200px 20px 0px 0px;
+	float:right;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* YANNG_ABOUT 2 */
+.yanng_about2 img{
+	width:100%;
+}
+.yanng_about2 {
+	font-size:24px;
+}
+.yanng_about2 .row {
+	margin-bottom: 25px;
+}
+.yanng_about2 .about_link {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* YANNG TECH ETIQUETTE */
+.etiquette_body img{
+	float: right;
+	margin: 0px 35px 0px 35px;
+	border: 20px solid $yanng_purple;
+}
+.etiquette_body .tips_link {
+	text-decoration: underline;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* YANNG TIPS HOME*/
+#tips_home .tips_picture {
+	width: 60%;
+	border: 8px solid $yanng_purple;
+	margin: -88px auto 0px auto;
+	height: 390px;
+	font-family: Cardenio Modern;
+	font-size: 121px;
+	font-weight: bold;
+	color: $yanng_blue;
+}
+#tips_home .tips_picture img {
+	float: left;
+	width: 408px;
+	margin-top: -43px;
+}
+#tips_home .tips_picture p {
+	margin-top: 13%;
+	font-size: 142px;
+	margin-left: 64%;
+}
+.tip_link {
+	cursor: pointer;
+}
+#tips_home .tips_begin_text {
+	font-family: Cardenio Modern;
+	text-align: center;
+	font-size: 68px;
+	font-weight: bold;
+	color:$yanng_blue;
+	text-decoration: underline;
+}
+
+
+/* YANNG TIPS GENERAL */
+#yanng_tips_header .yanng_header_button {
+	color: $yanng_purple;
+}
+.yanng_header_button {
+	font-family: Cardenio Modern;
+}
+.tips_body {
+	background-color: $yanng_purple;
+	color: white;
+	font-family: Cardenio Modern;
+	height:630px;
+}
+.tips_body .yanng_header_button {
+	position: absolute;
+	z-index: 1;
+}
+.tips_body h2 {
+	font-size: 58px;
+	font-weight: bold;
+	right: 22px;
+	position: absolute;
+}
+.tips_body .row, .tips_body .row .col-xs-1, .tips_body .row .col-xs-5, {
+	height:100%;
+} 
+.tips_body .image-center-child img {
+	width: 30px;
+}
+.tips_footer {
+	position: absolute;
+	bottom: -68px;
+	right: 12px;
+	font-size: 27px;
+	cursor: pointer;
+	z-index: 1; /* show above table */
+}
+.tips_footer:hover{
+	text-decoration: underline;
+}
+.tips_footer .ebook_icon {
+	width: 35px;
+}
+.tips_footer span {
+	padding-left: 7px;
+}	
+
+
+/* YANNG MEETUS */
+.meetus_body {
+	padding-bottom:20px;
+}
+.meetus_body .girl_container {
+	margin:auto;
+	width: 120px;
+}
+.meetus_body .col-xs-4 img {
+	cursor: pointer;
+}
+.meetus_body #shlee .name{
+	margin: 168px 0px 0px 108px;
+}
+.meetus_body #goldie .name{
+	margin: 81px 0px 0px 72px;
+}
+.meetus_body #yumi .name{
+	margin: 175px 0px 0px -33px;
+}
+.meetus_body .col-xs-4 .name{
+	position: absolute;
+	font-family: Cardenio Modern;
+	font-weight: bold;
+	font-size: 31px;
+}
+.meetus_body .faded {
+	opacity: .5;
+}
+.meetus_body #shlee_info {
+	background-color: rgb(252,242,170);
+}
+.meetus_body #yumi_info {
+	background-color: rgb(208,215,248);
+}
+.meetus_body #goldie_info {
+	background-color: rgb(234,166,225);
+}
+.meetus_body .info_box {
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 23px;
+	text-align: left;
+	font-family: Cardenio Modern;
+	padding: 5px 22px;
+	line-height: 30px;
+}
+
+/* YANNG CREATE + SHARE */
+.create_body {
+	background-color: $yanng_purple;
+	color: white;
+	font-family: Cardenio Modern;
+	height:720px;
+}
+.create_body .yanng_header_button {
+	position: absolute;
+	z-index: 1;
+}
+.create_body h2 {
+	text-align: center;
+	font-size: 60px;
+}
+.create_body .user_tips {
+	margin: 32px auto 0px auto;
+	width: 83%;
+	font-family: $yanng_font_2;
+}
+.create_body label {
+	font-size: 26px;
+	font-weight: lighter;
+}
+.create_body input {
+	border-radius: 23px;
+	border: 2px solid black;
+}
+.create_body .control-label {
+	padding-top:0px;
+}
+.create_body .form-group {
+	margin-bottom: 10px;
+}
+.create_body .form-description {
+	text-align: center;
+	font-size: 20px;
+}
+.create_body .buffer, .create_body .submit {
+	text-align: center;
+	margin-top: 20px;
+}
+.create_body .col-xs-5, .create_body .col-xs-10 {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.create_body .col-xs-5 div.title {
+	text-align: center;
+	font-size: 91px;
+	font-family: Cardenio Modern;
+	color: $yanng_blue;
+	line-height: 85px;
+	font-weight: bold;
+}
+.create_body textarea {
+	height: 150px;
+	width: 100%;
+	margin: auto;
+	border-radius: 18px;
+	border: 2px solid black;
+}
+.create_body .agree_box {
+	background: $yanng_blue;
+	padding: 5px 25px 5px 25px;
+	font-size: 11px;
+	color: black;
+	border-radius: 19px;
+	border: 2px solid black;
+}
+.create_body .agree_box p{
+	margin:0px;
+}
+.create_body .agree_text {
+	font-size: 12px;
+	text-align: center;
+	width: 37px;
+}
+.create_body .right_align .agree_text {
+	text-align:right;
+	width:initial;
+}
+.create_body input[type=checkbox],
+	.create_body input[type=radio] {
+	-webkit-appearance: none;
+	width: 37px;
+	height: 37px;
+	background: white;
+	border-radius: 0px;
+	border: 2px solid black;
+	outline: none;
+	margin-top: 6px;
+}
+.create_body input[type=checkbox]:checked,
+	.create_body input[type=radio]:checked {
+	background-image: url(../images/blackcheck.png);
+	background-size: 27px;
+	background-position: 5px 5px;
+	background-repeat: no-repeat;
+} 
+.create_body #createshareedit img {
+	width: 25px;
+	margin-bottom: 3px;
+	margin-right: -16px;
+}
+.create_body .submit {
+	width: 30%;
+	margin: 20px auto 0 auto;
+}
+.create_body .counter {
+	color: black;
+	margin: -33px 14px 0px 0px;
+	text-align: right;
+	font-size: 20px;
+	font-family: Gotham;
+}
+
+/* YANNG CREATE + SHARE THANK YOU */
+.create_body_thanks {
+	background-color: $yanng_purple;
+	color: white;
+	font-family: Cardenio Modern;
+	height:720px;
+}
+.create_body_thanks .yanng_header_button {
+	position: absolute;
+	z-index: 1;
+}
+.create_body_thanks h2 {
+	text-align: center;
+	font-size: 81px;
+	font-weight: bold;
+	margin-top: 103px;
+	color: $yanng_blue;
+}
+.create_body_thanks h3 {
+	text-align: center;
+	font-size: 61px;
+	margin-top: 62px;
+}

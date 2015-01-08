@@ -64,6 +64,14 @@ jQuery(function($) {
 
 	/* USER CREATE AND SHARE */
 
+	// Update text counters
+	$(document).on('keyup', ".create_body textarea[name='yes_box']", function() {
+		$(".counter span").first().html($(this).val().length);
+	})
+	$(document).on('keyup', ".create_body textarea[name='no_box']", function() {
+		$("div.counter span").last().html($(this).val().length);
+	})
+
 	// User clicks to second page
 	$(document).on('click', "#createsharenext", function (e) {
 		// Verify user entered age and country
@@ -134,5 +142,31 @@ jQuery(function($) {
 		return true;
 	}
 
-	
+
+
+	/* JOIN THE HOUR */
+
+	// Override default action for 'Create + Share' form 
+	$(document).on("submit", ".jointhehour form", function(e) {
+		e.preventDefault();
+
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(".jointhehour").html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
+	$(".jointhehour textarea").keyup(function() {
+		$(".counter span").html($(this).val().length);
+	})
 });
