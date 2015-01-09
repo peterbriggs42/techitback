@@ -5140,7 +5140,7 @@ textarea {
   color: #72a6f7; }
 
 #tips_home .tips_picture img {
-  float: left;
+  position: absolute;
   width: 408px;
   margin-top: -43px; }
 
@@ -5678,7 +5678,7 @@ textarea {
     font-size: 5vw; }
 
   #yanng_header h2 {
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     padding-top: 10px; }
 
   .social_link {

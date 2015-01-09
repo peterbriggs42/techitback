@@ -1,12 +1,6 @@
 jQuery(function($) {
 
-	var dragging;
-	$("body").on("touchstart", function(){
-	 	dragging = false;
-	});
-	$("body").on("touchmove", function(){
-	  	dragging = true;
-	});
+	
 
 	/*
 	 * NOTE: Because many of these elements are added dynamically, use 
@@ -17,10 +11,19 @@ jQuery(function($) {
 	 */
 
 	function yanng_listener (element, URL, replace, fade) {
-		// If touch has been dragged, cancel
-		if (dragging) return;
-		
+
+		var dragging;
+		$("body").on("touchstart", function(){
+		 	dragging = false;
+		});
+		$("body").on("touchmove", function(){
+		  	dragging = true;
+		});
+
 		$(document).on('click touchend', element, function (e) {
+			// If touch has been dragged, cancel
+			console.log(dragging);
+			if (dragging) return;
 			e.stopPropagation();
 
 			var replaceContent = ".yanng_content";
