@@ -17,32 +17,33 @@ jQuery(function($) {
 	 */
 
 	function yanng_listener (element, URL, replace, fade) {
-		if (dragging) {
-			$(document).on('click touchend', element, function (e) {
-				e.stopPropagation();
+		// If touch has been dragged, cancel
+		if (dragging) return;
+		
+		$(document).on('click touchend', element, function (e) {
+			e.stopPropagation();
 
-				var replaceContent = ".yanng_content";
-				if (replace!= null) {
-					replaceContent = replace;
-				}
+			var replaceContent = ".yanng_content";
+			if (replace!= null) {
+				replaceContent = replace;
+			}
 
-				$(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
+			$(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
 
-				// change body
-				ajaxRequest(e, URL, '', 'GET', function(data) {
-					
-					if (fade) {
-						var timing = 50;
-					    $( replaceContent ).fadeOut( timing , function(){
-					    	$(replaceContent).html(data);
-					    	$( replaceContent ).fadeIn( timing );
-						});
-				    } else {
+			// change body
+			ajaxRequest(e, URL, '', 'GET', function(data) {
+				
+				if (fade) {
+					var timing = 50;
+				    $( replaceContent ).fadeOut( timing , function(){
 				    	$(replaceContent).html(data);
-				    }
-				});
+				    	$( replaceContent ).fadeIn( timing );
+					});
+			    } else {
+			    	$(replaceContent).html(data);
+			    }
 			});
-		}
+		});
 	}
 
 	// Add a listener event for element and corresponding ajax request
