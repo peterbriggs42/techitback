@@ -9,7 +9,7 @@ jQuery(function($) {
 	 */
 
 	function yanng_listener (element, URL, replace, fade) {
-		$(document).on('click', element, function (e) {
+		$(document).on('click touchstart', element, function (e) {
 			e.stopPropagation();
 
 			var replaceContent = ".yanng_content";
