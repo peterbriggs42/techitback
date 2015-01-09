@@ -4939,12 +4939,11 @@ textarea {
 
 /* Join The Hour */
 .jointhehour {
-  height: 605px;
   background-color: #523276;
   text-align: center;
   color: white;
   font-family: Gotham;
-  padding-top: 20px; }
+  padding: 20px 0px 20px 0px; }
 
 .jointhehour label {
   text-align: right;
@@ -5041,7 +5040,7 @@ textarea {
 
 #etiquette p {
   text-align: right;
-  font-size: 87px;
+  font-size: 7.2vw;
   margin-right: 21px;
   margin-top: 26px;
   line-height: 49px; }
@@ -5052,7 +5051,9 @@ textarea {
   text-decoration: underline; }
 
 #etiquette img {
-  margin-top: -40px; }
+  width: 89%;
+  bottom: 27px;
+  position: absolute; }
 
 .about_link p {
   font-size: 47px;
@@ -5061,7 +5062,7 @@ textarea {
   margin-top: 34px; }
 
 .about_link img {
-  float: left;
+  position: absolute;
   margin: -34px 0px 0px -13px;
   width: 124.5px; }
 
@@ -5258,7 +5259,7 @@ textarea {
   background-color: #523276;
   color: white;
   font-family: Cardenio Modern;
-  height: 720px; }
+  padding-bottom: 20px; }
 
 .create_body .yanng_header_button {
   position: absolute;
@@ -5665,3 +5666,33 @@ textarea {
   right: 149%;
   top: 41%;
   width: 33%; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about_link img, .tips_link img, #meetus img {
+    display: none; }
+
+  #create p {
+    line-height: 41px; }
+
+  .yanng_home_text {
+    font-size: 5vw; }
+
+  #yanng_header h2 {
+    font-size: 6.5vw;
+    padding-top: 10px; }
+
+  .social_link {
+    width: 47px; }
+
+  #join_the_hour {
+    width: 220px; }
+
+  #join_the_hour a {
+    font-size: 23px; }
+
+  .navbar-brand {
+    margin-top: 0px; }
+
+  .navbar-custom .container-fluid {
+    min-height: 97px; }
+ }

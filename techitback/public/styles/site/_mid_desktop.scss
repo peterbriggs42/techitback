@@ -1,0 +1,37 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.about_link img,
+.tips_link img,
+#meetus img {
+	display: none;
+}
+#create p{
+	line-height: 41px;
+}
+.yanng_home_text {
+	font-size: 5vw;
+}
+#yanng_header h2 {
+	font-size: 6.5vw;
+	padding-top: 10px;
+}
+
+.social_link {
+	width: 47px;
+}
+
+#join_the_hour {
+	width: 220px;
+}
+#join_the_hour a {
+	font-size: 23px;
+}
+.navbar-brand {
+	margin-top:0px;
+}
+
+.navbar-custom .container-fluid {
+	min-height: 97px;
+}
+
+}
