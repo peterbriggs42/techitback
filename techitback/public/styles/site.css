@@ -5667,6 +5667,38 @@ textarea {
   top: 41%;
   width: 33%; }
 
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 28px;
+    margin-top: -4px; }
+
+  .navbar-toggle {
+    margin-right: 0px; }
+
+  .navbar-toggle .icon-bar {
+    margin-top: -7px;
+    width: 34px;
+    height: 3px;
+    background: purple; }
+
+  .navbar-custom .container-fluid {
+    min-height: 77px;
+    padding-top: 20px; }
+
+  #yanng_header h2 {
+    font-size: 9vw; }
+
+  /* ETIQUETTE */
+  .etiquette_body img {
+    margin: 0px 0px 15px 0px;
+    border: 8px solid #523276;
+    width: 100%; }
+
+  .yanng_body {
+    margin: 10px 15px 0px 15px;
+    font-size: 15px; }
+ }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .about_link img, .tips_link img, #meetus img {
     display: none; }
