@@ -13,22 +13,22 @@ div.container-fluid.create_body
 				div.form-description.first_page_only()!=text.content.brief
 
 				div.row.buffer
-					div.col-xs-1
-					div.col-xs-5
+					div.col-xs-0.col-sm-1
+					div.col-xs-12.col-sm-5
 						div.title YES
 						textarea.form-control(name="yes_box", maxlength=120)
 						div.counter 
 							span 0
 							| /120
 
-					div.col-xs-5
+					div.col-xs-12.col-sm-5
 						div.title NO NO
 						textarea.form-control(name="no_box", maxlength=120)
 						div.counter 
 							span 0
 							| /120
 
-					div.col-xs-1
+					div.col-xs-0.col-sm-1
 
 				div.second_page_only(style='display:none;')
 					div.row.buffer

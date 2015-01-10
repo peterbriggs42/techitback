@@ -17,8 +17,17 @@
 	min-height: 77px;
 	padding-top: 20px;
 }
+#yanng_header {
+	height:90px;
+}
+
 #yanng_header h2 {
 	font-size: 9vw;
+	margin-top: 14px;
+}
+.yanng_header_button {
+	font-size: 65px;
+	margin-left: -8px;
 }
 
 /* ETIQUETTE */
@@ -32,5 +41,29 @@
 	margin: 10px 15px 0px 15px;
 	font-size: 15px;
 }
+
+/* ABOUT */
+.about_body img {
+	margin-top: 14px;
+}
+.next_page {
+	margin: 16px 20px 0px 0px;
+}
+.yanng_about2 {
+	font-size: 15px;
+}
+.yanng_about2 img {
+	margin-top: 12px;
+}
+.create_body h2 {
+	font-size: 45px;
+}
+
+/* CREATE AND SHARE */
+.create_body .col-sm-5 div.title {
+	font-size: 48px;
+	margin-top: 14px;
+}
+
 
 }
