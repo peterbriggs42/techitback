@@ -1,5 +1,8 @@
 @media (max-width: 767px) {
 
+.nav > li {
+	float: right;
+}
 .navbar-brand {
 	font-size: 28px;
 	margin-top: -4px;
@@ -29,12 +32,22 @@
 	font-size: 65px;
 	margin-left: -8px;
 }
+.yanng_home_text {
+	font-size: 23px;
+}
 
 /* ETIQUETTE */
 .etiquette_body img {
 	margin: 0px 0px 15px 0px;
 	border: 8px solid #523276;
 	width: 100%;
+}
+.yanng_box_large {
+	height: 274px;}
+}
+
+#etiquette p {
+	font-size: 13.2vw;
 }
 
 .yanng_body {
@@ -45,6 +58,7 @@
 /* ABOUT */
 .about_body img {
 	margin-top: 14px;
+	width: 100%;
 }
 .next_page {
 	margin: 16px 20px 0px 0px;
@@ -64,6 +78,33 @@
 	font-size: 48px;
 	margin-top: 14px;
 }
-
-
+.create_body .agree_box {
+	padding: 5px;
 }
+.create_body .submit {
+	width: inherit;
+}
+.create_body .button_style {
+	margin-top: 9px;
+}
+
+/* TIPS */
+#tips_home .tips_picture {
+	width: 100%;
+	height: 326px;
+}
+#tips_home .tips_picture img {
+	position: absolute;
+	width: 67%;
+	margin-top: 91px;
+}
+#tips_home .tips_picture p {
+	margin-top: 0%;
+	font-size: 64px;
+	margin-left: 34%;
+}
+#tips_home .tips_begin_text {
+	font-size: 32px;
+	margin-top: 7px;
+}
+

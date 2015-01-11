@@ -327,7 +327,9 @@
 	text-align: center;
 	margin-top: 20px;
 }
-.create_body .col-xs-5, .create_body .col-xs-10 {
+.create_body .col-xs-5,
+ .create_body .col-sm-10,
+ .create_body .col-xs-11 {
 	padding-left: 25px;
 	padding-right: 25px;
 }
