@@ -40,11 +40,8 @@ var routes = {
 exports = module.exports = function(app) {
 	
 	// Views
-	app.get('/', routes.views.yanng);
+	app.get('/', routes.views.index);
 	app.get('/jointhehour', routes.views.jointhehour);
-	// app.get('/blog/:category?', routes.views.blog);
-	// app.get('/blog/post/:post', routes.views.post);
-	// app.get('/gallery', routes.views.gallery);
 
 	// Form Submissions
 	app.post('/createshareform', routes.form_requests.createshare);

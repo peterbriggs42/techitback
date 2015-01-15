@@ -1,0 +1,8 @@
+mixin home_menu_item(name, number)
+	div.row
+		div.col-xs-12
+			img.menu_icon(src='images/menu_icons/12.'+number+'.png')
+			span.faux_link #{name}
+
+mixin home_picture(image, text)
+	img.img-responsive(src='images/home/'+image)

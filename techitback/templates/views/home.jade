@@ -1,0 +1,24 @@
+extends ../layouts/default
+include ../mixins/home_mixins
+
+block content	
+	div#left_menu
+		div#menu_header #TECHITBACK
+		div#search_bar
+			input(type='text', name='search_bar')
+		+home_menu_item('WELCOME TO OUR HOUR', 1)
+		+home_menu_item('ABOUT', 2)
+		+home_menu_item('BLOG', 3)
+		+home_menu_item('CYBERBULLYING AND ABUSE', 4)
+		+home_menu_item('TECH ADDICTION', 5)
+		+home_menu_item('CYBERCRIME NEWS', 6)
+		+home_menu_item('TIPS FOR TEENS', 7)
+		+home_menu_item('SCHOOLS + PARENTS', 8)
+		+home_menu_item('CORPORATE PARTNERS', 9)
+		+home_menu_item('CONTACT US', 11)
+		+home_menu_item('YES AND NO NO GIRLS', 12)
+
+	div.container-fluid.pictures
+		div.row.row-no-padding
+			div.col-md-5
+				+home_picture("hands.png", "ABOUT")
