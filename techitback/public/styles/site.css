@@ -5710,64 +5710,64 @@ textarea {
 
   .yanng_box_large {
     height: 274px; }
+
+  #etiquette p {
+    font-size: 13.2vw; }
+
+  .yanng_body {
+    margin: 10px 15px 0px 15px;
+    font-size: 15px; }
+
+  /* ABOUT */
+  .about_body img {
+    margin-top: 14px;
+    width: 100%; }
+
+  .next_page {
+    margin: 16px 20px 0px 0px; }
+
+  .yanng_about2 {
+    font-size: 15px; }
+
+  .yanng_about2 img {
+    margin-top: 12px; }
+
+  .create_body h2 {
+    font-size: 45px; }
+
+  /* CREATE AND SHARE */
+  .create_body .col-sm-5 div.title {
+    font-size: 48px;
+    margin-top: 14px; }
+
+  .create_body .agree_box {
+    padding: 5px; }
+
+  .create_body .submit {
+    width: inherit; }
+
+  .create_body .button_style {
+    margin-top: 9px; }
+
+  /* TIPS */
+  #tips_home .tips_picture {
+    width: 100%;
+    height: 326px; }
+
+  #tips_home .tips_picture img {
+    position: absolute;
+    width: 67%;
+    margin-top: 91px; }
+
+  #tips_home .tips_picture p {
+    margin-top: 0%;
+    font-size: 64px;
+    margin-left: 34%; }
+
+  #tips_home .tips_begin_text {
+    font-size: 32px;
+    margin-top: 7px; }
  }
-
-#etiquette p {
-  font-size: 13.2vw; }
-
-.yanng_body {
-  margin: 10px 15px 0px 15px;
-  font-size: 15px; }
-
-/* ABOUT */
-.about_body img {
-  margin-top: 14px;
-  width: 100%; }
-
-.next_page {
-  margin: 16px 20px 0px 0px; }
-
-.yanng_about2 {
-  font-size: 15px; }
-
-.yanng_about2 img {
-  margin-top: 12px; }
-
-.create_body h2 {
-  font-size: 45px; }
-
-/* CREATE AND SHARE */
-.create_body .col-sm-5 div.title {
-  font-size: 48px;
-  margin-top: 14px; }
-
-.create_body .agree_box {
-  padding: 5px; }
-
-.create_body .submit {
-  width: inherit; }
-
-.create_body .button_style {
-  margin-top: 9px; }
-
-/* TIPS */
-#tips_home .tips_picture {
-  width: 100%;
-  height: 326px; }
-
-#tips_home .tips_picture img {
-  position: absolute;
-  width: 67%;
-  margin-top: 91px; }
-
-#tips_home .tips_picture p {
-  margin-top: 0%;
-  font-size: 64px;
-  margin-left: 34%; }
-
-#tips_home .tips_begin_text {
-  font-size: 32px;
-  margin-top: 7px; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .about_link img, .tips_link img, #meetus img {
