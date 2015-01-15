@@ -64,7 +64,7 @@ body {
   font-family: inherit;
   text-align: center;
 }
-.textoverlay#about_hour {
+.textoverlay.about_hour {
   padding-top: 52%;
   text-align: center;
   font-size: 52px;
@@ -114,6 +114,14 @@ body {
   color: rgb(157, 250, 249);
   font-weight: bold;
 }
+
+/*
+ * Header
+ */
+#navbar {
+  margin-left:95px;
+}
+
 
 /*
  * Left Menu

@@ -21,4 +21,30 @@ block content
 	div.container-fluid.pictures
 		div.row.row-no-padding
 			div.col-md-5
-				+home_picture("hands.png", "ABOUT")
+				+home_picture("dude_crop.jpg", "TECH ADDICTION", 'tech_addiction blue')
+			div.col-md-7
+				div.row
+					div.col-md-5
+						+home_picture("hands.png", "ABOUT", 'about_hour')
+					div.col-md-7
+						+home_picture("girls.jpg", "CYBERBULLYING + ABUSE", 'cyberbullying')
+				div.col-md-12
+					+home_picture("hacker.jpg", "CYBERCRIME NEWS", "hacker")
+		div.row.row-no-padding
+			div.col-md-12
+				+home_picture("people.jpg", "WELCOME TO OUR HOUR", "welcome blue")
+		div.row.row-no-padding
+			div.col-md-4
+				div.row
+					+home_picture("desk.jpg", "BLOG", "desk")
+				div.row.row-no-padding
+					div.col-md-12
+						+home_picture("class.jpg", "SCHOOLS + PARENTS", "school")
+				div.row.row-no-padding
+					div.col-md-6
+						+home_picture("phone.jpg", "CONTACT US", "contact")
+					div.col-md-6
+						+home_picture("work.jpg", "CORPORATE PARTNERS", "corporate")
+			div.col-md-8
+				+home_picture("greengirl.jpg", "TIPS FOR TEENS", "teenietips")
+
