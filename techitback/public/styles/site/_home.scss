@@ -213,6 +213,8 @@ body {
 }
 #defaultPopup {
   background: none repeat scroll 0 0 black;
+  overflow-x: hidden;
+  height: calc(100% - #{$navbar_height});
 }
 #defaultPopup .container img{
   width: 100%;
@@ -248,6 +250,15 @@ body {
   padding-right: 0 !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+/* HOME - TECH ADDICTION */
+#tech_addiction_home img {
+  width: 100%;
+}
+#tech_addiction_home span {
+  font-size: 12pt;
+  font-family: Gotham;
 }
 
 

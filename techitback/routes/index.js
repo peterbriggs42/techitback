@@ -33,7 +33,8 @@ var routes = {
 	form_requests: importRoutes('./forms/'),
 	ajax: importRoutes('./ajax'),
 	yanng_tips: importRoutes('./ajax/yanng_tips'),
-	yanng_girls: importRoutes('./ajax/yanng_girls')
+	yanng_girls: importRoutes('./ajax/yanng_girls'),
+	home: importRoutes('./ajax/home')
 };
 
 // Setup Route Bindings
@@ -46,6 +47,9 @@ exports = module.exports = function(app) {
 	// Form Submissions
 	app.post('/createshareform', routes.form_requests.createshare);
 	app.post('/jointhehourform', routes.form_requests.jointhehour);
+
+	// Home content
+	app.get('/ajax/home/tech_addiction', routes.home.tech_addiction);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);
