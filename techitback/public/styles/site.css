@@ -4862,7 +4862,7 @@ button.close {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 548px; }
+    width: 695px; }
 
   .sidebar.sidebar-left {
     left: 0px;
@@ -4873,12 +4873,12 @@ button.close {
     left: auto; }
 
   .toggler {
-    left: 546px; }
+    left: 692px; }
  }
 
 @media (min-width: 992px) {
   .sidebar {
-    width: 548px; }
+    width: 695px; }
 
   .sidebar.sidebar-left {
     left: 0px;
@@ -4889,12 +4889,12 @@ button.close {
     left: auto; }
 
   .toggler {
-    left: 546px; }
+    left: 692px; }
  }
 
 @media (min-width: 1200px) {
   .sidebar {
-    width: 548px; }
+    width: 695px; }
 
   .sidebar.sidebar-left {
     left: 0px;
@@ -4905,7 +4905,7 @@ button.close {
     left: auto; }
 
   .toggler {
-    left: 546px; }
+    left: 692px; }
  }
 
 .toggler {
@@ -4978,7 +4978,8 @@ button.close {
   margin-top: -1px; }
 
 #header {
-  margin-top: 0px; }
+  margin-top: 0px;
+  height: 110px; }
 
 #footer {
   margin-top: 30px;
@@ -5067,7 +5068,8 @@ textarea {
   padding: 0px; }
 
 .navbar-custom {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  background-color: white; }
 
 .navbar-custom .container-fluid {
   min-height: 110px;
@@ -5959,16 +5961,17 @@ html, body {
 #left_menu td {
   border: none; }
 
-#left_menu table {
+#left_menu .menu_link {
   margin: auto;
-  width: 88%;
+  width: 100%;
   color: white;
   font-family: RBNo2;
-  font-size: 140%;
-  margin-top: 21px; }
+  font-size: 28px;
+  margin-top: 21px;
+  padding-left: 20px; }
 
-#left_menu td {
-  padding: 6px; }
+#left_menu .menu_link span {
+  padding-left: 8px; }
 
 #menu_header {
   width: 100%;
@@ -5979,6 +5982,9 @@ html, body {
   text-align: center;
   color: white; }
 
+.menu_padding {
+  height: 30px; }
+
 #search_bar {
   text-align: center; }
 
@@ -5987,7 +5993,7 @@ html, body {
   border-radius: 10px;
   border: 0px none;
   height: 30px;
-  background-image: url(../img/search.png);
+  background-image: url(../images/search.png);
   padding-left: 30px;
   background-position: -1px -2px;
   background-size: 31px;
@@ -5997,7 +6003,7 @@ html, body {
   outline: 0; }
 
 .menu_icon {
-  width: 30px;
+  width: 47px;
   margin-top: -5px; }
 
 .faux_link:hover {

@@ -129,16 +129,17 @@ body {
 #left_menu td{
   border:none;
 }
-#left_menu table{
+#left_menu .menu_link{
   margin: auto;
-  width: 88%;
+  width: 100%;
   color: white;
   font-family: RBNo2;
-  font-size: 140%;
+  font-size: 28px;
   margin-top: 21px;
+  padding-left: 20px;
 }
-#left_menu td{
-  padding: 6px;
+#left_menu .menu_link span{
+  padding-left: 8px; 
 }
 #menu_header {
   width: 100%;
@@ -149,6 +150,9 @@ body {
   text-align: center;
   color: white;
 }
+.menu_padding {
+  height:30px;
+}
 #search_bar {
   text-align: center;
 }
@@ -157,7 +161,7 @@ body {
   border-radius: 10px;
   border: 0px none;
   height: 30px;
-  background-image: url(../img/search.png);
+  background-image: url(../images/search.png);
   padding-left: 30px;
   background-position: -1px -2px;
   background-size: 31px;
@@ -167,7 +171,7 @@ body {
   outline: 0;
 }
 .menu_icon {
-  width:30px;
+  width:47px;
   margin-top: -5px;
 }
 .faux_link:hover{
