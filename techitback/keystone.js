@@ -80,6 +80,8 @@ keystone.set('email rules', [{
 	replace: (keystone.get('env') == 'production') ? 'http://54.69.40.209/keystone/' : 'http://localhost:3000/keystone/'
 }]);
 
+keystone.set('s3 config', { bucket: 'techitbackresources', key: 'AKIAJON3YH3VBNYA2CNA', secret: '3qgwoqSWIsUGGPwb9arcZPm1d6s37buY8Qzv0KR2' });
+
 // Load your project's email test routes
 
 keystone.set('email tests', require('./routes/emails'));
@@ -92,7 +94,8 @@ keystone.set('nav', {
 	// 'enquiries': 'enquiries',
 	'join-the-hour':'join-the-hours',
 	'users': 'users',
-	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips']
+	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips'],
+	'home-content' : ['tech-addictions']
 });
 
 // Start Keystone to connect to your database and initialise the web server
