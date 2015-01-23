@@ -56,13 +56,17 @@ jQuery(function($) {
 		});
 	}
 
-	[ 	// Main links	
+	[ 	// Tech Addiction links	
 		{'element':".tech_addiction_link",	'url':'ajax/home/tech_addiction'},
 		{'element':".tech_addiction_sleep_link",	'url':'ajax/home/tech_addiction_sleep'},
 		{'element':".tech_addiction_multi_link",	'url':'ajax/home/tech_addiction_multi'},
 		{'element':".tech_addiction_desens_link",	'url':'ajax/home/tech_addiction_desens'},
 		{'element':".tech_addiction_stress_link",	'url':'ajax/home/tech_addiction_stress'},
-		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction'}
+		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction'},
+		// About links
+		{'element':".about_link",					'url':'ajax/home/about'},
+		{'element':".about_intralink_link",			'url':'ajax/home/about_intralink'}
+
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);
 	});

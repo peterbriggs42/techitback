@@ -5236,13 +5236,13 @@ textarea {
   bottom: 27px;
   position: absolute; }
 
-.about_link p {
+.yanng_home .about_link p {
   font-size: 47px;
   text-align: right;
   margin-right: 22px;
   margin-top: 34px; }
 
-.about_link img {
+.yanng_home .about_link img {
   position: absolute;
   margin: -34px 0px 0px -13px;
   width: 124.5px; }
@@ -6048,10 +6048,15 @@ html, body {
   border: none !important; }
 
 .upper_right {
-  float: right; }
+  position: absolute;
+  right: 2px;
+  font-size: 30px;
+  text-align: right;
+  text-transform: uppercase;
+  margin: 5px 6px 0px 0px; }
 
 .upper_right img {
-  width: 15% !important;
+  width: 4% !important;
   border: none !important; }
 
 #defaultPopup {
@@ -6063,11 +6068,14 @@ html, body {
   width: 100%;
   border: 5px solid #5a5a5a; }
 
-#defaultPopup p {
+#defaultPopup .text {
   margin: 15px 0px 20px 0px;
   text-align: justify;
   font-family: Gotham;
   font-size: 16px; }
+
+#defaultPopup .text li {
+  padding-bottom: 10px; }
 
 .popup_image {
   margin-left: 12.5%;
@@ -6077,7 +6085,7 @@ html, body {
   margin-top: 10px; }
 
 .popup_header {
-  font-size: 80px;
+  font-size: 70px;
   text-align: center; }
 
 .popup_desc {
@@ -6141,6 +6149,21 @@ html, body {
 
 .tech_addiction#home .main_box {
   width: 94%; }
+
+/* ABOUT */
+#defaultPopup .about .thumbnails {
+  width: 93%;
+  margin: 15px auto 20px auto; }
+
+.about .label_text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 7px; }
+
+.about .big_image {
+  width: 92% !important; }
 
 /*
  * Footer

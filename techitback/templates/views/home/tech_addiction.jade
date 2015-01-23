@@ -2,7 +2,7 @@ include ../../mixins/home_mixins
 extends ../../layouts/home_popup
 
 block header
-	div TECH ADDICTION
+	+popup_header("TECH ADDICTION", "12.5.png", "TECH ADDICTION")
 block body
 	div.container-fluid.tech_addiction#home
 		div.row
@@ -23,4 +23,4 @@ block body
 				div.col-md-2
 					+popup_picture(addiction, "tech_addiction_addiction_link")
 			div.col-md-1
-				img.arrow(src='images/right.png')
+				img.arrow(src='images/right.png', class='about_link')
