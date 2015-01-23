@@ -1,0 +1,12 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	div DESENSITIZATION
+block body
+	+tech_addiction_section('desens','tech_addiction_multi_link', 'tech_addiction_stress_link',
+							multi, 'multi',
+							sleep, 'sleep',
+							stress, 'stress',
+							addiction, 'addiction',
+							desensitization.image.url, desensitization.content.brief)

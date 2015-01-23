@@ -1,9 +1,45 @@
-mixin home_menu_item(name, number)
+// Left menu list items
+mixin home_menu_item(name, number, menu_link)
 	div.row.menu_link
 		div.col-xs-12
 			img.menu_icon(src='images/menu_icons/12.'+number+'.png')
-			span.faux_link #{name}
+			span.faux_link(class=menu_link) #{name}
 
 mixin home_picture(image, text, span_class)
 	img.img-responsive(src='images/home/'+image)
 	span.textoverlay(class=span_class) #{text}
+
+mixin popup_picture(post, class_link)
+	div.popup_picture_box(class=class_link)
+		img(src=post.thumbnail)
+		span()!=post.title
+
+// Thumbnails for Tech Addiction page
+mixin thumbnail_pic(thumbnail, class_link, title)
+	div.col-md-3
+		img(src=thumbnail, class='tech_addiction_' + class_link + '_link pointer')
+		div.label_text #{title}
+
+// Different Tech Addiction sections
+mixin tech_addiction_section(section_id, left_link, right_link, pic_1, pic_1_link, pic_2, pic_2_link, pic_3, pic_3_link, pic_4, pic_4_link, big_image, main_text)
+	div.container-fluid.tech_addiction(id=section_id)
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=left_link)
+			div.col-md-5
+				div.row.center_align
+					img(src=big_image, class='big_image')
+				div.row.thumbnails
+					+thumbnail_pic(pic_1.thumbnail, pic_1_link, pic_1.title)
+					+thumbnail_pic(pic_2.thumbnail, pic_2_link, pic_2.title)
+					+thumbnail_pic(pic_3.thumbnail, pic_3_link, pic_3.title)
+					+thumbnail_pic(pic_4.thumbnail, pic_4_link, pic_4.title)
+			div.col-md-5
+				span()!=main_text
+			div.col-md-1
+				img.arrow(src='images/right.png', class=right_link)
+
+mixin popup_header_label(image, label)
+	div.upper_right
+		img(src='images/menu_icons/'+image)
+		span label

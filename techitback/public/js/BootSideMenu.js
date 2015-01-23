@@ -163,7 +163,6 @@ function doAnimation(container, containerWidth, sidebarSide, sidebarStatus){
 		}
 		container.attr('data-status', 'opened');
 	}
-	console.log("asdf");
 	$(".toggler").fadeIn();
 }
 

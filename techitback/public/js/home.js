@@ -41,15 +41,12 @@ jQuery(function($) {
 
 		$(document).on('click touchend', element, function (e) {
 			// If touch has been dragged, cancel
-			console.log(dragging);
 			if (dragging) return;
 			e.stopPropagation();
 
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
 			loadPopup("#defaultPopup");
-
-			console.log("HEEEE" + URL);
 
 			// change body
 			ajaxRequest(e, URL, '', 'GET', function(data) {
@@ -60,7 +57,12 @@ jQuery(function($) {
 	}
 
 	[ 	// Main links	
-		{'element':".popup_dude",	'url':'ajax/home/tech_addiction'}
+		{'element':".tech_addiction_link",	'url':'ajax/home/tech_addiction'},
+		{'element':".tech_addiction_sleep_link",	'url':'ajax/home/tech_addiction_sleep'},
+		{'element':".tech_addiction_multi_link",	'url':'ajax/home/tech_addiction_multi'},
+		{'element':".tech_addiction_desens_link",	'url':'ajax/home/tech_addiction_desens'},
+		{'element':".tech_addiction_stress_link",	'url':'ajax/home/tech_addiction_stress'},
+		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction'}
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);
 	});

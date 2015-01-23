@@ -50,6 +50,11 @@ exports = module.exports = function(app) {
 
 	// Home content
 	app.get('/ajax/home/tech_addiction', routes.home.tech_addiction);
+	app.get('/ajax/home/tech_addiction_sleep', routes.home.tech_addiction_sleep);
+	app.get('/ajax/home/tech_addiction_desens', routes.home.tech_addiction_desens);
+	app.get('/ajax/home/tech_addiction_multi', routes.home.tech_addiction_multi);
+	app.get('/ajax/home/tech_addiction_stress', routes.home.tech_addiction_stress);
+	app.get('/ajax/home/tech_addiction_addiction', routes.home.tech_addiction_addiction);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

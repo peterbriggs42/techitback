@@ -5,16 +5,16 @@ exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res),
 		locals = res.locals;
 
-	var TechAddiction = keystone.list('Tech Addiction');
+	var TechAddictionSleep = keystone.list('Tech Addiction');
 	 
-	TechAddiction.model.find()
+	TechAddictionSleep.model.find()
 		.exec(function(err, posts) {
 
 			function isType(post) {
 			  return post.title == this;
 			}
 			
-			view.render('home/tech_addiction', {
+			view.render('home/tech_addiction_sleep', {
 				home: posts.filter(isType, "Home")[0],
 				sleep: posts.filter(isType, "Sleep")[0],
 				addiction: posts.filter(isType, "Addiction")[0],

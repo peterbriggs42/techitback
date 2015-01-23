@@ -1,0 +1,15 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	img#popup_exit(src='images/x.png')
+	+popup_header_label('12.5.png', 'Tech Addiction')
+	div.popup_header
+		div ADDICTION
+block body
+	+tech_addiction_section('addiction','tech_addiction_stress_link', 'tech_addiction_sleep_link',
+							multi, 'multi',
+							sleep, 'sleep',
+							desensitization, 'desens',
+							stress, 'stress',
+							addiction.image.url, addiction.content.brief)

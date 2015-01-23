@@ -5022,6 +5022,9 @@ button.close {
 .bold {
   font-weight: bold; }
 
+.pointer {
+  cursor: pointer; }
+
 .no_padding {
   padding: 0px; }
 
@@ -5030,6 +5033,9 @@ button.close {
 
 .left_align {
   text-align: left; }
+
+.center_align {
+  text-align: center; }
 
 .image-center-parent {
   display: table;
@@ -6036,18 +6042,32 @@ html, body {
 
 #popup_exit {
   cursor: pointer;
-  width: 5%;
+  width: 5% !important;
   margin: 18px 0px 0px 2px;
-  float: left; }
+  float: left;
+  border: none !important; }
+
+.upper_right {
+  float: right; }
+
+.upper_right img {
+  width: 15% !important;
+  border: none !important; }
 
 #defaultPopup {
   background: none repeat scroll 0 0 black;
   overflow-x: hidden;
   height: calc(100% - 110px); }
 
-#defaultPopup .container img {
+#defaultPopup img {
   width: 100%;
   border: 5px solid #5a5a5a; }
+
+#defaultPopup p {
+  margin: 15px 0px 20px 0px;
+  text-align: justify;
+  font-family: Gotham;
+  font-size: 16px; }
 
 .popup_image {
   margin-left: 12.5%;
@@ -6067,7 +6087,8 @@ html, body {
 
 .arrow {
   border: none !important;
-  margin-top: 225%; }
+  margin-top: 225%;
+  cursor: pointer; }
 
 /*
  * Cover
@@ -6078,13 +6099,48 @@ html, body {
   margin-left: 0 !important;
   margin-right: 0 !important; }
 
-/* HOME - TECH ADDICTION */
-#tech_addiction_home img {
+/* TECH ADDICTION */
+.tech_addiction .popup_picture_box {
+  cursor: pointer; }
+
+.tech_addiction .big_image {
+  width: 75% !important; }
+
+.tech_addiction .thumbnails {
+  margin: 15px 0px 20px 0px; }
+
+.tech_addiction .thumbnails div.label_text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 7px; }
+
+/* TECH ADDICTION - HOME */
+.tech_addiction#home img {
   width: 100%; }
 
-#tech_addiction_home span {
+.tech_addiction#home span {
   font-size: 12pt;
   font-family: Gotham; }
+
+.tech_addiction#home .popup_picture_box {
+  text-align: center; }
+
+.tech_addiction#home .col-md-6 .popup_picture_box {
+  padding: 21px 0px 20px 0px; }
+
+.tech_addiction#home .col-md-2 .popup_picture_box {
+  margin-top: 88%; }
+
+.tech_addiction#home .popup_picture_box img {
+  width: 85%; }
+
+.tech_addiction#home .col-md-6 {
+  padding-right: 0px; }
+
+.tech_addiction#home .main_box {
+  width: 94%; }
 
 /*
  * Footer

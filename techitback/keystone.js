@@ -97,7 +97,7 @@ keystone.set('nav', {
 	'join-the-hour':'join-the-hours',
 	'users': 'users',
 	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips'],
-	'home-content' : ['tech-addictions']
+	'home-content' : ['tech-addictions', 'about-titles', 'about-questions']
 });
 
 // Start Keystone to connect to your database and initialise the web server

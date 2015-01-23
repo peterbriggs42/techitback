@@ -1,14 +1,26 @@
-img#popup_exit(src='images/x.png')
-div.popup_header#tech_addiction_home TECH ADDICTION
-	div.container-fluid
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	div TECH ADDICTION
+block body
+	div.container-fluid.tech_addiction#home
 		div.row
 			div.col-md-1
 				img.arrow(src='images/left.png')
-			div.col-md-5
-				div.row
-					img(src=text.image.url)
-				div.row
-					span()!= text.content.brief
-			div.col-md-5
+			div.col-md-10
+				div.col-md-6
+					div.main_box
+						img(src=home.image.url)
+						span()!= home.content.brief
+				div.col-md-4
+					div.col-md-6
+						+popup_picture(sleep, "tech_addiction_sleep_link")
+						+popup_picture(multi, "tech_addiction_multi_link")
+					div.col-md-6
+						+popup_picture(desensitization, "tech_addiction_desens_link")
+						+popup_picture(stress, "tech_addiction_stress_link")
+				div.col-md-2
+					+popup_picture(addiction, "tech_addiction_addiction_link")
 			div.col-md-1
 				img.arrow(src='images/right.png')
