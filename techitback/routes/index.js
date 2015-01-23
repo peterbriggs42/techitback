@@ -59,6 +59,7 @@ exports = module.exports = function(app) {
 	// Home content - About
 	app.get('/ajax/home/about', routes.home.about);
 	app.get('/ajax/home/about_intralink', routes.home.about_intralink);
+	app.get('/ajax/home/about_questions', routes.home.about_questions);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

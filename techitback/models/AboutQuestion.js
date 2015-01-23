@@ -13,6 +13,7 @@ var AboutQuestion = new keystone.List('About Question', {
 
 AboutQuestion.add({
 	title: { type: String, required: true },
+	key: { type:Types.Key, noedit:true },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 	},

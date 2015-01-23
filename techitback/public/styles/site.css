@@ -6150,20 +6150,84 @@ html, body {
 .tech_addiction#home .main_box {
   width: 94%; }
 
+.tech_addiction#home .main_box img {
+  margin-bottom: 15px; }
+
 /* ABOUT */
-#defaultPopup .about .thumbnails {
+#defaultPopup .about_section .thumbnails {
   width: 93%;
   margin: 15px auto 20px auto; }
 
-.about .label_text {
+.about_section .label_text {
   text-transform: uppercase;
   text-align: center;
-  font-size: 22px;
-  line-height: 27px;
-  margin-top: 7px; }
+  font-size: 1vw;
+  line-height: 18px;
+  margin-top: 7px;
+  font-family: Gotham;
+  text-overflow: ellipsis;
+  overflow: hidden; }
 
-.about .big_image {
+.about_section .big_image {
   width: 92% !important; }
+
+/* ABOUT - QUESTIONS */
+.about_section .question_title {
+  font-family: Gotham;
+  padding: 2.2% 0% 0% 5%;
+  letter-spacing: 0.5px; }
+
+.about_section.questions #mean_by {
+  font-weight: bold;
+  font-size: 1.6vw; }
+
+.about_section.questions #statistics {
+  text-align: right;
+  padding-right: 6%;
+  font-size: 1.1vw; }
+
+.about_section.questions #updated {
+  font-size: 1.3vw; }
+
+.about_section.questions #social_media {
+  font-size: 1vw; }
+
+.about_section.questions #why_should_i {
+  margin-top: -2.8%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5vw; }
+
+.about_section.questions #arrested {
+  margin-left: 0%;
+  font-size: 1.3vw; }
+
+.about_section.questions #mean_online {
+  text-align: right;
+  font-size: 1.1vw; }
+
+.about_section.questions #bullying {
+  font-size: 1.2vw; }
+
+.about_section.questions #better_tech {
+  text-align: right;
+  font-size: 1.3vw;
+  margin-right: 2%;
+  font-weight: bold; }
+
+.about_section.questions #technology {
+  font-weight: bold;
+  font-size: 1.3vw; }
+
+.about_section.questions #schools {
+  margin-top: -6.5%;
+  text-align: right;
+  font-size: 1.1vw; }
+
+.about_section.questions #educate {
+  padding-top: 5%;
+  margin-left: 2%;
+  font-size: 1.4vw; }
 
 /*
  * Footer

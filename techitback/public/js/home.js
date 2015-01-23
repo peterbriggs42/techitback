@@ -65,7 +65,8 @@ jQuery(function($) {
 		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction'},
 		// About links
 		{'element':".about_link",					'url':'ajax/home/about'},
-		{'element':".about_intralink_link",			'url':'ajax/home/about_intralink'}
+		{'element':".about_intralink_link",			'url':'ajax/home/about_intralink'},
+		{'element':".about_questions_link",			'url':'ajax/home/about_questions'}
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);

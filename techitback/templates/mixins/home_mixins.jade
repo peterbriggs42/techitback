@@ -66,7 +66,7 @@ mixin about_section(section_class, left_link, right_link, pic_1, pic_1_link, pic
 						+thumbnail_pic2(pic_1.thumbnail, pic_1_link, pic_1.title)
 						+thumbnail_pic2(pic_2.thumbnail, pic_2_link, pic_2.title)
 			div.col-md-5
-				span(class='text')!=main_text
+				span(class='text')!=main_text.content.brief
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
 

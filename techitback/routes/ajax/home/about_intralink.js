@@ -13,8 +13,6 @@ exports = module.exports = function(req, res) {
 			function isType(post) {
 			  return post.slug == this;
 			}
-
-			console.log(posts);
 			
 			view.render('home/about_intralink', {
 				about_tech: posts.filter(isType, "about-tech-it-off")[0],
