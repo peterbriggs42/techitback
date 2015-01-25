@@ -6226,7 +6226,7 @@ html, body {
   font-size: 1.1vw; }
 
 .about_section.questions #educate {
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 2%;
   font-size: 1.4vw; }
 
@@ -6236,7 +6236,7 @@ html, body {
   border: 2px solid #dedede;
   background-color: #41464d;
   font-family: Gotham;
-  padding: 20px; }
+  padding: 20px 20px 10px 20px; }
 
 .about_section .question_focus_title {
   color: #20f8f8;
