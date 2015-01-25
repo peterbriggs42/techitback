@@ -1,7 +1,4 @@
 jQuery(function($) {
-
-	
-
 	/*
 	 * NOTE: Because many of these elements are added dynamically, use 
 	 * $(document).on('click', "#<element>", function () { ... }); instead of 
@@ -12,6 +9,7 @@ jQuery(function($) {
 
 	function yanng_listener (element, URL, replace, fade) {
 
+		// necessary for mobile touches
 		var dragging;
 		$("body").on("touchstart", function(){
 		 	dragging = false;

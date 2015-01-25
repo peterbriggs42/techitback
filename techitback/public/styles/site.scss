@@ -18,10 +18,14 @@
 // Site Styles
 // ===========
 
-// Add your own site style includes here
+// Side menu
+@import "site/side_menu";
+
+// Add your own site styling includes here
 @import "site/layout";
 @import "site/yanng";
 @import "site/yanng_tips";
+@import "site/home";
 
 // Responsive styling
 @import "site/phone";

@@ -1,0 +1,96 @@
+// Left menu list items
+mixin home_menu_item(name, number, menu_link)
+	div.row.menu_link
+		div.col-xs-12
+			img.menu_icon(src='images/menu_icons/12.'+number+'.png')
+			span.faux_link(class=menu_link) #{name}
+
+mixin home_picture(image, text, span_class)
+	img.img-responsive(src='images/home/'+image)
+	span.textoverlay(class=span_class) #{text}
+
+mixin popup_picture(post, class_link)
+	div.popup_picture_box(class=class_link)
+		img(src=post.thumbnail)
+		span()!=post.title
+
+mixin popup_header(title, image, label, link)
+	img#popup_exit(src='images/x.png')
+	div.upper_right
+		img(src='images/menu_icons/'+image)
+		span #{label}
+	div(class=link).popup_header
+		div #{title}
+
+// Thumbnails for Tech Addiction page
+mixin thumbnail_pic4(thumbnail, class_link, title)
+	div.col-md-3
+		img(src=thumbnail, class='tech_addiction_' + class_link + '_link pointer')
+		div.label_text #{title}
+
+// Thumbnails for About page
+mixin thumbnail_pic2(thumbnail, class_link, title)
+	div.col-md-6
+		img(src=thumbnail, class='about' + class_link + '_link pointer')
+		div.label_text #{title}
+
+// Different Tech Addiction sections
+mixin tech_addiction_section(section_id, left_link, right_link, pic_1, pic_1_link, pic_2, pic_2_link, pic_3, pic_3_link, pic_4, pic_4_link, big_image, main_text)
+	div.container-fluid.tech_addiction(id=section_id)
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=left_link)
+			div.col-md-5
+				div.row.center_align
+					img(src=big_image, class='big_image')
+				div.row.thumbnails
+					+thumbnail_pic4(pic_1.thumbnail, pic_1_link, pic_1.title)
+					+thumbnail_pic4(pic_2.thumbnail, pic_2_link, pic_2.title)
+					+thumbnail_pic4(pic_3.thumbnail, pic_3_link, pic_3.title)
+					+thumbnail_pic4(pic_4.thumbnail, pic_4_link, pic_4.title)
+			div.col-md-5
+				span(class='text')!=main_text
+			div.col-md-1
+				img.arrow(src='images/right.png', class=right_link)
+
+mixin about_section(section_class, left_link, right_link, pic_1, pic_1_link, pic_2, pic_2_link, big_image, main_text)
+	div.container-fluid(class=section_class)
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=left_link)
+			div.col-md-5
+				div.row.center_align
+					img(src=big_image, class='big_image')
+				div.row.thumbnails
+					div
+						+thumbnail_pic2(pic_1.thumbnail, pic_1_link, pic_1.title)
+						+thumbnail_pic2(pic_2.thumbnail, pic_2_link, pic_2.title)
+			div.col-md-5
+				span(class='text')!=main_text.content.brief
+			div.col-md-1
+				img.arrow(src='images/right.png', class=right_link)
+
+// Questions
+mixin about_question(image_url, pic_1, pic_1_title, pic_2, pic_2_title, all_questions, question_focus)
+	div.container-fluid(class="about_section questions about_questions_link")
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="about_intralink_link")
+			div.col-md-4
+				div.row.center_align
+					img(src=image_url, class='big_image')
+				div.row.thumbnails
+					div
+						+thumbnail_pic2(pic_1.thumbnail, pic_1_title, pic_1.title)
+						+thumbnail_pic2(pic_2.thumbnail, pic_2_title, pic_2.title)
+			div.col-md-6
+				if question_focus
+					div.question_focus_screen
+					div.question_focus(id=question.key+'_box')
+						div.question_focus_title(id=question.key) #{question_focus.title}
+						span()!=question_focus.content.brief
+				each question in all_questions
+					div.row.question_title(id=question.key)=question.title
+			div.col-md-1
+				img.arrow(src='images/right.png', class='about_link')
+

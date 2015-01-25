@@ -44,9 +44,9 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-custom
+			div(role="navigation").navbar.navbar-custom.navbar-fixed-top
 				.container-fluid
-					.navbar-header
+					.navbar-header#navbar
 						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 							span.sr-only Toggle navigation
 							span.icon-bar
@@ -102,6 +102,10 @@ html
 		//- Add scripts that are globally required by your site here.
 		script(src='/js/main.js')
 		script(src='/js/yanng.js')
+		script(src='/js/home.js')
+		script(src='/js/BootSideMenu.js')
+		script.
+			$('#left_menu').BootSideMenu({side:"left", autoClose:false});
 
 		//- Include template-specific javascript files by extending the js block
 		block js

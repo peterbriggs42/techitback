@@ -1,0 +1,10 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("ABOUT INTRALINK GLOBAL", "12.2.png", "ABOUT")
+block body
+	+about_section("about_section intralink", "about_link", 'about_questions_link',
+					questions, '_questions',
+					about_tech, '',
+					about_intralink.image.url, about_intralink)

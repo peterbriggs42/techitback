@@ -1,0 +1,12 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("STRESS AND DEPRESSION", "12.5.png", "TECH ADDICTION")
+block body
+	+tech_addiction_section('stress','tech_addiction_desens_link', 'tech_addiction_addiction_link',
+							multi, 'multi',
+							sleep, 'sleep',
+							desensitization, 'desens',
+							addiction, 'addiction',
+							stress.image.url, stress.content.brief)

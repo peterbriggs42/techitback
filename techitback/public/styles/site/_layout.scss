@@ -1,5 +1,6 @@
 #header {
 	margin-top: 0px;
+	height: $navbar_height;
 }
 
 #footer {
@@ -34,6 +35,11 @@
 	src: url(../fonts/Gotham-Medium.otf);
 	font-weight: bold;
 }
+@font-face {
+    font-family: RBNo2;
+    src: url(../fonts/RBNo2Light.otf);
+}
+
 
 
 #footer {
@@ -44,6 +50,9 @@
 .bold {
 	font-weight: bold;
 }
+.pointer {
+	cursor: pointer;
+}
 .no_padding {
 	padding: 0px;
 }
@@ -52,6 +61,9 @@
 }
 .left_align {
 	text-align: left;
+}
+.center_align {
+	text-align: center;
 }
 .image-center-parent {
 	display: table;
@@ -95,6 +107,7 @@ textarea {
 
 .navbar-custom {
 	margin-bottom: 0px;
+	background-color: white;
 }
 
 .navbar-custom .container-fluid{
