@@ -2,21 +2,9 @@ include ../../mixins/home_mixins
 extends ../../layouts/home_popup
 
 block header
-	+popup_header("QUESTIONS", "12.2.png", "ABOUT")
+	+popup_header("QUESTIONS", "12.2.png", "ABOUT", "about_questions_link")
 block body
-	div.container-fluid(class="about_section questions")
-		div.row
-			div.col-md-1
-				img.arrow(src='images/left.png', class="about_intralink_link")
-			div.col-md-4
-				div.row.center_align
-					img(src=questions.image.url, class='big_image')
-				div.row.thumbnails
-					div
-						+thumbnail_pic2(about_intralink.thumbnail, '_intralink', about_intralink.title)
-						+thumbnail_pic2(about_tech.thumbnail, '', about_tech.title)
-			div.col-md-6
-				each question in all_questions
-					div.row.question_title(id=question.key)=question.title
-			div.col-md-1
-				img.arrow(src='images/right.png', class='about_link')
+	+about_question(questions.image.url, about_intralink, '_intralink',
+										 about_tech, '',
+										 all_questions,
+										 question)

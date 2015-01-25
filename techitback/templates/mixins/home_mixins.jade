@@ -14,12 +14,12 @@ mixin popup_picture(post, class_link)
 		img(src=post.thumbnail)
 		span()!=post.title
 
-mixin popup_header(title, image, label)
+mixin popup_header(title, image, label, link)
 	img#popup_exit(src='images/x.png')
 	div.upper_right
 		img(src='images/menu_icons/'+image)
 		span #{label}
-	div.popup_header
+	div(class=link).popup_header
 		div #{title}
 
 // Thumbnails for Tech Addiction page
@@ -70,4 +70,27 @@ mixin about_section(section_class, left_link, right_link, pic_1, pic_1_link, pic
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
 
+// Questions
+mixin about_question(image_url, pic_1, pic_1_title, pic_2, pic_2_title, all_questions, question_focus)
+	div.container-fluid(class="about_section questions about_questions_link")
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="about_intralink_link")
+			div.col-md-4
+				div.row.center_align
+					img(src=image_url, class='big_image')
+				div.row.thumbnails
+					div
+						+thumbnail_pic2(pic_1.thumbnail, pic_1_title, pic_1.title)
+						+thumbnail_pic2(pic_2.thumbnail, pic_2_title, pic_2.title)
+			div.col-md-6
+				if question_focus
+					div.question_focus_screen
+					div.question_focus(id=question.key+'_box')
+						div.question_focus_title(id=question.key) #{question_focus.title}
+						span()!=question_focus.content.brief
+				each question in all_questions
+					div.row.question_title(id=question.key)=question.title
+			div.col-md-1
+				img.arrow(src='images/right.png', class='about_link')
 

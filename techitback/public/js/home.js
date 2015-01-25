@@ -66,7 +66,20 @@ jQuery(function($) {
 		// About links
 		{'element':".about_link",					'url':'ajax/home/about'},
 		{'element':".about_intralink_link",			'url':'ajax/home/about_intralink'},
-		{'element':".about_questions_link",			'url':'ajax/home/about_questions'}
+		{'element':".about_questions_link",			'url':'ajax/home/about_questions'},
+		// About Questions
+		{'element':".about_section #mean_by",			'url':'ajax/home/about_questions_mean_by'},
+		{'element':".about_section #statistics",		'url':'ajax/home/about_questions_statistics'},
+		{'element':".about_section #updated",			'url':'ajax/home/about_questions_updated'},
+		{'element':".about_section #social_media",		'url':'ajax/home/about_questions_social_media'},
+		{'element':".about_section #why_should_i",		'url':'ajax/home/about_questions_why_should_i'},
+		{'element':".about_section #arrested",			'url':'ajax/home/about_questions_arrested'},
+		{'element':".about_section #mean_online",		'url':'ajax/home/about_questions_mean_online'},
+		{'element':".about_section #bullying",			'url':'ajax/home/about_questions_bullying'},
+		{'element':".about_section #better_tech",		'url':'ajax/home/about_questions_better_tech'},
+		{'element':".about_section #technology",		'url':'ajax/home/about_questions_technology'},
+		{'element':".about_section #schools",			'url':'ajax/home/about_questions_schools'},
+		{'element':".about_section #educate",			'url':'ajax/home/about_questions_educate'}
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);

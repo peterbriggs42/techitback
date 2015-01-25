@@ -29,12 +29,13 @@ keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
 var routes = {
-	views: importRoutes('./views'),
-	form_requests: importRoutes('./forms/'),
-	ajax: importRoutes('./ajax'),
-	yanng_tips: importRoutes('./ajax/yanng_tips'),
-	yanng_girls: importRoutes('./ajax/yanng_girls'),
-	home: importRoutes('./ajax/home')
+	views: 				importRoutes('./views'),
+	form_requests: 		importRoutes('./forms/'),
+	ajax: 				importRoutes('./ajax'),
+	yanng_tips: 		importRoutes('./ajax/yanng_tips'),
+	yanng_girls: 		importRoutes('./ajax/yanng_girls'),
+	home: 				importRoutes('./ajax/home'),
+	about_questions: 	importRoutes('./ajax/home/about_questions')
 };
 
 // Setup Route Bindings
@@ -60,6 +61,20 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/about', routes.home.about);
 	app.get('/ajax/home/about_intralink', routes.home.about_intralink);
 	app.get('/ajax/home/about_questions', routes.home.about_questions);
+
+	// Home content - Questions
+	app.get('/ajax/home/about_questions_mean_by', routes.about_questions.mean_by);
+	app.get('/ajax/home/about_questions_statistics', routes.about_questions.statistics);
+	app.get('/ajax/home/about_questions_updated', routes.about_questions.updated);
+	app.get('/ajax/home/about_questions_social_media', routes.about_questions.social_media);
+	app.get('/ajax/home/about_questions_why_should_i', routes.about_questions.why_should_i);
+	app.get('/ajax/home/about_questions_arrested', routes.about_questions.arrested);
+	app.get('/ajax/home/about_questions_mean_online', routes.about_questions.mean_online);
+	app.get('/ajax/home/about_questions_bullying', routes.about_questions.bullying);
+	app.get('/ajax/home/about_questions_better_tech', routes.about_questions.better_tech);
+	app.get('/ajax/home/about_questions_technology', routes.about_questions.technology);
+	app.get('/ajax/home/about_questions_schools', routes.about_questions.schools);
+	app.get('/ajax/home/about_questions_educate', routes.about_questions.educate);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

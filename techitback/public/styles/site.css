@@ -6175,7 +6175,8 @@ html, body {
 .about_section .question_title {
   font-family: Gotham;
   padding: 2.2% 0% 0% 5%;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  cursor: pointer; }
 
 .about_section.questions #mean_by {
   font-weight: bold;
@@ -6225,9 +6226,62 @@ html, body {
   font-size: 1.1vw; }
 
 .about_section.questions #educate {
-  padding-top: 5%;
+  margin-top: 5%;
   margin-left: 2%;
   font-size: 1.4vw; }
+
+/* ABOUT - QUESTIONS - FOCUS */
+.about_section .question_focus {
+  position: absolute;
+  border: 2px solid #dedede;
+  background-color: #41464d;
+  font-family: Gotham;
+  padding: 20px; }
+
+.about_section .question_focus_title {
+  color: #20f8f8;
+  padding-bottom: 12px;
+  margin-top: 0px !important; }
+
+.about_section .question_focus_screen {
+  height: 100%;
+  width: 100%;
+  background: black;
+  position: absolute;
+  opacity: 0.3; }
+
+.about_section.questions #statistics_box {
+  margin-top: 7%; }
+
+.about_section.questions #updated_box {
+  margin-top: 12%; }
+
+.about_section.questions #social_media_box {
+  margin-top: 19%; }
+
+.about_section.questions #why_should_i_box {
+  margin-top: 19%; }
+
+.about_section.questions #arrested_box {
+  margin-top: 24%; }
+
+.about_section.questions #mean_online_box {
+  margin-top: 27%; }
+
+.about_section.questions #bullying_box {
+  margin-top: 24%; }
+
+.about_section.questions #better_tech_box {
+  margin-top: 14%; }
+
+.about_section.questions #technology_box {
+  margin-top: 27%; }
+
+.about_section.questions #schools_box {
+  margin-top: 34%; }
+
+.about_section.questions #educate_box {
+  margin-top: 34%; }
 
 /*
  * Footer
