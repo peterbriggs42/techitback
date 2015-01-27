@@ -1,0 +1,12 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header(cybersexting.title, "12.4.png", "TYPES OF ONLINE ABUSE")
+block body
+	+online_abuse_section('oa_cybersexting','oa_pranking_link', 'oa_cybersexting_link',
+							cyberbullying, 'oa_cyberbullying_link',
+							cyberstalking, 'oa_cyberstalking_link',
+							pranking, 'oa_pranking_link',
+							stranger, 'oa_stranger_link',
+							cybersexting.image.url, cybersexting.content.brief)

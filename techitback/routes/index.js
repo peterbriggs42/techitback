@@ -35,7 +35,8 @@ var routes = {
 	yanng_tips: 		importRoutes('./ajax/yanng_tips'),
 	yanng_girls: 		importRoutes('./ajax/yanng_girls'),
 	home: 				importRoutes('./ajax/home'),
-	about_questions: 	importRoutes('./ajax/home/about_questions')
+	about_questions: 	importRoutes('./ajax/home/about_questions'),
+	cyberbullying: 		importRoutes('./ajax/home/cyberbullying')
 };
 
 // Setup Route Bindings
@@ -75,6 +76,18 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/about_questions_technology', routes.about_questions.technology);
 	app.get('/ajax/home/about_questions_schools', routes.about_questions.schools);
 	app.get('/ajax/home/about_questions_educate', routes.about_questions.educate);
+
+	// Home content - Cyberbullying
+	app.get('/ajax/home/cyberbullying', routes.cyberbullying.home);
+	app.get('/ajax/home/online_abuse', routes.cyberbullying.online_abuse);
+	app.get('/ajax/home/oa_cyberbullying', routes.cyberbullying.oa_cyberbullying);
+	app.get('/ajax/home/oa_cybersexting', routes.cyberbullying.oa_cybersexting);
+	app.get('/ajax/home/oa_cyberstalking', routes.cyberbullying.oa_cyberstalking);
+	app.get('/ajax/home/oa_pranking', routes.cyberbullying.oa_pranking);
+	app.get('/ajax/home/oa_strangerdanger', routes.cyberbullying.oa_strangerdanger);
+	// app.get('/ajax/home/share_your_story', routes.cyberbullying.share_your_story);
+	// app.get('/ajax/home/our_movement', routes.cyberbullying.our_movement);
+	// app.get('/ajax/home/report_abuse', routes.cyberbullying.report_abuse);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

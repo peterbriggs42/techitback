@@ -6086,7 +6086,11 @@ html, body {
 
 .popup_header {
   font-size: 70px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
+
+.popup_body {
+  font-family: Gotham; }
 
 .popup_desc {
   font-family: Helvetica;
@@ -6282,6 +6286,52 @@ html, body {
 
 .about_section.questions #educate_box {
   margin-top: 34%; }
+
+/* CYBERBULLYING AND ABUSE */
+.cyberbullying_section .popup_picture_box div {
+  font-family: Gotham;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  text-align: center; }
+
+.cyberbullying_section .popup_picture_box img {
+  width: 94% !important; }
+
+.online_abuse_section .popup_picture_box {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4vw; }
+
+.online_abuse_section .popup_picture_box img {
+  margin-top: 10px;
+  width: 65% !important; }
+
+.online_abuse_section .abuse_text {
+  margin-top: 15px; }
+
+.online_abuse_section .thumbnails {
+  margin: 15px 0px 20px 0px; }
+
+.online_abuse_section .thumbnails div.label_text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8vw;
+  line-height: 18px;
+  margin-top: 7px;
+  font-family: Gotham;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.online_abuse_section .big_image {
+  width: 85% !important; }
+
+.online_abuse_section .text {
+  padding: 10px;
+  overflow: scroll;
+  height: 100%; }
+
+.online_abuse_section .text_container {
+  height: 440px; }
 
 /*
  * Footer

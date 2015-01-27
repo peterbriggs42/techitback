@@ -57,16 +57,16 @@ jQuery(function($) {
 	}
 
 	[ 	// Tech Addiction links	
-		{'element':".tech_addiction_link",	'url':'ajax/home/tech_addiction'},
-		{'element':".tech_addiction_sleep_link",	'url':'ajax/home/tech_addiction_sleep'},
-		{'element':".tech_addiction_multi_link",	'url':'ajax/home/tech_addiction_multi'},
-		{'element':".tech_addiction_desens_link",	'url':'ajax/home/tech_addiction_desens'},
-		{'element':".tech_addiction_stress_link",	'url':'ajax/home/tech_addiction_stress'},
+		{'element':".tech_addiction_link",				'url':'ajax/home/tech_addiction'},
+		{'element':".tech_addiction_sleep_link",		'url':'ajax/home/tech_addiction_sleep'},
+		{'element':".tech_addiction_multi_link",		'url':'ajax/home/tech_addiction_multi'},
+		{'element':".tech_addiction_desens_link",		'url':'ajax/home/tech_addiction_desens'},
+		{'element':".tech_addiction_stress_link",		'url':'ajax/home/tech_addiction_stress'},
 		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction'},
 		// About links
-		{'element':".about_link",					'url':'ajax/home/about'},
-		{'element':".about_intralink_link",			'url':'ajax/home/about_intralink'},
-		{'element':".about_questions_link",			'url':'ajax/home/about_questions'},
+		{'element':".about_link",						'url':'ajax/home/about'},
+		{'element':".about_intralink_link",				'url':'ajax/home/about_intralink'},
+		{'element':".about_questions_link",				'url':'ajax/home/about_questions'},
 		// About Questions
 		{'element':".about_section #mean_by",			'url':'ajax/home/about_questions_mean_by'},
 		{'element':".about_section #statistics",		'url':'ajax/home/about_questions_statistics'},
@@ -79,7 +79,19 @@ jQuery(function($) {
 		{'element':".about_section #better_tech",		'url':'ajax/home/about_questions_better_tech'},
 		{'element':".about_section #technology",		'url':'ajax/home/about_questions_technology'},
 		{'element':".about_section #schools",			'url':'ajax/home/about_questions_schools'},
-		{'element':".about_section #educate",			'url':'ajax/home/about_questions_educate'}
+		{'element':".about_section #educate",			'url':'ajax/home/about_questions_educate'},
+		// Cyberbullying and Abuse
+		{'element':".cyberbullying_link",				'url':'ajax/home/cyberbullying'},
+		{'element':".online_abuse_link",				'url':'ajax/home/online_abuse'},
+		{'element':".oa_cyberbullying_link",			'url':'ajax/home/oa_cyberbullying'},
+		{'element':".oa_cybersexting_link",				'url':'ajax/home/oa_cybersexting'},
+		{'element':".oa_cyberstalking_link",			'url':'ajax/home/oa_cyberstalking'},
+		{'element':".oa_pranking_link",					'url':'ajax/home/oa_pranking'},
+		{'element':".oa_stranger_link",			'url':'ajax/home/oa_strangerdanger'},
+		{'element':".share_link",						'url':'ajax/home/share_your_story'},
+		{'element':".movement_link",					'url':'ajax/home/our_movement'},
+		{'element':".report_link",						'url':'ajax/home/report_abuse'}
+
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);

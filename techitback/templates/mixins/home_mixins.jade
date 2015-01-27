@@ -12,7 +12,7 @@ mixin home_picture(image, text, span_class)
 mixin popup_picture(post, class_link)
 	div.popup_picture_box(class=class_link)
 		img(src=post.thumbnail)
-		span()!=post.title
+		div()!=post.title
 
 mixin popup_header(title, image, label, link)
 	img#popup_exit(src='images/x.png')
@@ -26,6 +26,12 @@ mixin popup_header(title, image, label, link)
 mixin thumbnail_pic4(thumbnail, class_link, title)
 	div.col-md-3
 		img(src=thumbnail, class='tech_addiction_' + class_link + '_link pointer')
+		div.label_text #{title}
+
+// Thumbnails for Online Abuse page
+mixin thumbnail_pic_abuse(thumbnail, class_link, title)
+	div.col-md-3
+		img(src=thumbnail, class=class_link+' pointer')
 		div.label_text #{title}
 
 // Thumbnails for About page
@@ -94,3 +100,23 @@ mixin about_question(image_url, pic_1, pic_1_title, pic_2, pic_2_title, all_ques
 			div.col-md-1
 				img.arrow(src='images/right.png', class='about_link')
 
+// Online abuse
+// Different Tech Addiction sections
+mixin online_abuse_section(section_id, left_link, right_link, pic_1, pic_1_link, pic_2, pic_2_link, pic_3, pic_3_link, pic_4, pic_4_link, big_image, main_text)
+	div.container-fluid.online_abuse_section(class=section_id)
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=left_link)
+			div.col-md-5
+				div.row.center_align
+					img(src=big_image, class='big_image')
+				div.row.thumbnails
+					+thumbnail_pic_abuse(pic_1.thumbnail, pic_1_link, pic_1.title)
+					+thumbnail_pic_abuse(pic_2.thumbnail, pic_2_link, pic_2.title)
+					+thumbnail_pic_abuse(pic_3.thumbnail, pic_3_link, pic_3.title)
+					+thumbnail_pic_abuse(pic_4.thumbnail, pic_4_link, pic_4.title)
+			div.col-md-5
+				div.text_container
+					div(class='text')!=main_text
+			div.col-md-1
+				img.arrow(src='images/right.png', class=right_link)

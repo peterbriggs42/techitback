@@ -1,0 +1,26 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("CYBERBULLYING + ABUSE", none, none)
+block body
+	div.container-fluid(class="cyberbullying_section")
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="about_link")
+			div.col-md-5
+				div.row
+					img(src=main.image.url, class='big_image')
+			div.col-md-5
+				div.row
+					div.col-md-6
+						+popup_picture(online_abuse, "online_abuse_link")
+					div.col-md-6
+						+popup_picture(share, "share_link")
+				div.row
+					div.col-md-6
+						+popup_picture(movement, "movement_link")
+					div.col-md-6
+						+popup_picture(report, "report_link")
+			div.col-md-1
+				img.arrow(src='images/right.png', class='cybercrime_link')
