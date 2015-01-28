@@ -1,0 +1,8 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header(amanda.title, "12.4.png", "CYBERBULLYING + ABUSE")
+block body
+	+their_story(amanda, rebecca, 'ts_rebecca_link',
+							marcus, 'ts_marcus_link')

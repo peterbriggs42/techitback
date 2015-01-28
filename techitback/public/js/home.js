@@ -90,6 +90,9 @@ jQuery(function($) {
 		{'element':".oa_stranger_link",			'url':'ajax/home/oa_strangerdanger'},
 		{'element':".share_link",						'url':'ajax/home/share_your_story'},
 		{'element':".movement_link",					'url':'ajax/home/our_movement'},
+		{'element':".ts_amanda_link",					'url':'ajax/home/ts_amanda'},
+		{'element':".ts_rebecca_link",					'url':'ajax/home/ts_rebecca'},
+		{'element':".ts_marcus_link",					'url':'ajax/home/ts_marcus'},
 		{'element':".report_link",						'url':'ajax/home/report_abuse'}
 
 

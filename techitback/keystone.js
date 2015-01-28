@@ -97,7 +97,7 @@ keystone.set('nav', {
 	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips'],
 	'tech-addictions' : 'tech-addictions', 
 	'about' : ['about-titles', 'about-questions'],
-	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses']
+	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses', 'their-stories']
 });
 
 // Start Keystone to connect to your database and initialise the web server

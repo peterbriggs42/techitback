@@ -1,0 +1,23 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("OUR MOVEMENT, THEIR STORIES", "12.4.png", "CYBERBULLYING + ABUSE")
+block body
+	div.container-fluid(class="popup_body their_stories_section")
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="online_abuse_link")
+			div.col-md-5
+				img(src=main.image.url)
+				div(class='stories_text')!=main.content.brief
+			div.col-md-5
+				div.row
+					div.col-md-6
+						div.row
+							+popup_picture(amanda, "ts_amanda_link")
+							+popup_picture(rebecca, "ts_rebecca_link")
+					div.col-md-6
+							+popup_picture(marcus, "ts_marcus_link")
+			div.col-md-1
+				img.arrow(src='images/right.png', class="share_link")

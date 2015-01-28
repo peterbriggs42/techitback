@@ -40,6 +40,12 @@ mixin thumbnail_pic2(thumbnail, class_link, title)
 		img(src=thumbnail, class='about' + class_link + '_link pointer')
 		div.label_text #{title}
 
+// Thumbnails for About page
+mixin thumbnail_pic_stories(thumbnail, class_link, title)
+	div.col-md-6
+		img(src=thumbnail, class=class_link)
+		div.label_text #{title}
+
 // Different Tech Addiction sections
 mixin tech_addiction_section(section_id, left_link, right_link, pic_1, pic_1_link, pic_2, pic_2_link, pic_3, pic_3_link, pic_4, pic_4_link, big_image, main_text)
 	div.container-fluid.tech_addiction(id=section_id)
@@ -120,3 +126,23 @@ mixin online_abuse_section(section_id, left_link, right_link, pic_1, pic_1_link,
 					div(class='text')!=main_text
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
+
+// Questions
+mixin their_story(main, pic_1, pic_1_link, pic_2, pic_2_link)
+	div.container-fluid.their_stories_section
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=pic_1_link)
+			div.col-md-5
+				div.row.center_align
+					img(src=main.image.url, class='big_image')
+				div.row.thumbnails
+					div
+						+thumbnail_pic_stories(pic_1.thumbnail, pic_1_link, pic_1.title)
+						+thumbnail_pic_stories(pic_2.thumbnail, pic_2_link, pic_2.title)
+			div.col-md-5
+				div.stories_text()!=main.content.brief
+			div.col-md-1
+				img.arrow(src='images/right.png', class=pic_2_link)
+
+
