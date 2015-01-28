@@ -6393,6 +6393,7 @@ html, body {
   font-family: Gotham;
   margin-top: 15%; }
 
+/* SHARE YOUR STORIES */
 .share_your_stories_share form label {
   text-align: right;
   font-family: Gotham;
@@ -6483,6 +6484,56 @@ html, body {
   padding-top: 10px; }
 
 .share_your_stories_thanks .thanks {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 2.5vw;
+  margin-top: 12%; }
+
+/* REPORT IT */
+.report_it_section form label {
+  text-align: right;
+  font-family: Gotham;
+  font-size: 1.3vw;
+  font-weight: lighter;
+  padding: 0px; }
+
+.report_it_section .textarea_desc {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: #d2f009; }
+
+.report_it_section .counter {
+  text-align: right;
+  margin: -24px 7px 0px 0px;
+  color: black;
+  font-family: Gotham;
+  font-size: 1.4vw; }
+
+.report_it_section textarea {
+  height: 175px;
+  border-radius: 15px;
+  padding-top: 50px;
+  font-family: Gotham;
+  font-size: 1.3vw; }
+
+.report_it_section .button_container {
+  text-align: center; }
+
+.report_it_section .button_style {
+  font-family: Gotham;
+  font-size: 1.6vw;
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
+.report_it_section input {
+  font-size: 1.4vw;
+  font-family: Gotham;
+  color: black;
+  border-radius: 15px; }
+
+.report_it_thanks .thanks {
   text-align: center;
   font-family: Gotham;
   font-size: 2.5vw;

@@ -165,6 +165,29 @@ jQuery(function($) {
 	}
 
 
+	/* REPORT ONLINE ABUSE */
+	$(document).on('keyup', ".report_it_section textarea", function() {
+		$(".counter span").html($(this).val().length);
+	});
+	$(document).on("submit", ".report_it_section form", function(e) {
+		e.preventDefault();
+
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(defaultReplaceArea).html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
 });
 
 

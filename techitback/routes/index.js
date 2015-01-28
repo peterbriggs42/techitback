@@ -50,6 +50,7 @@ exports = module.exports = function(app) {
 	app.post('/createshareform', routes.form_requests.createshare);
 	app.post('/jointhehourform', routes.form_requests.jointhehour);
 	app.post('/share_your_story_form', routes.form_requests.share_your_story);
+	app.post('/report_it_form', routes.form_requests.report_it);
 
 	// Home content - Tech Addiction
 	app.get('/ajax/home/tech_addiction', routes.home.tech_addiction);

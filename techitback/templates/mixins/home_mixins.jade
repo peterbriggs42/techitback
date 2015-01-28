@@ -152,3 +152,11 @@ mixin share_story_input_row(text, slug)
 		div.col-sm-3
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3
+
+mixin report_it_input_row(text, slug)
+	div.form-group.row.first_page_only
+		div.col-sm-2
+		label(for=slug class='col-sm-4 control-label') #{text}:
+		div.col-sm-3
+			input(id=slug, name=slug, type='text', class='form-control')
+		div.col-sm-3
