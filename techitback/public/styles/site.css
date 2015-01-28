@@ -6377,6 +6377,117 @@ html, body {
   text-align: justify;
   padding: 16px; }
 
+.share_your_stories_section .popup_picture_box {
+  margin-top: 5%; }
+
+.share_your_stories_section .popup_picture_box div {
+  font-family: Gotham;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  margin-top: 14px; }
+
+.share_your_stories_see {
+  text-align: center;
+  font-size: 2.4vw;
+  font-family: Gotham;
+  margin-top: 15%; }
+
+.share_your_stories_share form label {
+  text-align: right;
+  font-family: Gotham;
+  font-size: 1.7vw;
+  font-weight: lighter;
+  padding: 0px; }
+
+.share_your_stories_share .textarea_desc {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: #d2f009; }
+
+.share_your_stories_share .counter {
+  text-align: right;
+  margin: -24px 7px 0px 0px;
+  color: black;
+  font-family: Gotham;
+  font-size: 1.4vw; }
+
+.share_your_stories_share .textarea_popup {
+  position: absolute;
+  background-color: #2e2e2e;
+  text-align: center;
+  width: 95%;
+  margin-left: 1%;
+  border-radius: 14px;
+  font-size: 0.9vw;
+  font-family: Gotham;
+  padding: 5px; }
+
+.share_your_stories_share textarea {
+  height: 175px;
+  border-radius: 15px;
+  padding-top: 50px;
+  font-family: Gotham;
+  font-size: 1.3vw; }
+
+.share_your_stories_share .button_container {
+  text-align: center; }
+
+.share_your_stories_share .button_style {
+  font-family: Gotham;
+  font-size: 1.6vw;
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
+.share_your_stories_share input, .share_your_stories_share select {
+  font-size: 1.4vw;
+  font-family: Gotham;
+  color: black;
+  border-radius: 15px; }
+
+.share_your_stories_share input[type=checkbox], .share_your_stories_share input[type=radio] {
+  -webkit-appearance: none;
+  width: 37px;
+  height: 37px;
+  background: white;
+  border-radius: 0px;
+  border: 2px solid black;
+  outline: none;
+  margin-top: 6px; }
+
+.share_your_stories_share input[type=checkbox]:checked, .share_your_stories_share input[type=radio]:checked {
+  background-image: url(../images/blackcheck.png);
+  background-size: 27px;
+  background-position: 5px 5px;
+  background-repeat: no-repeat; }
+
+.share_your_stories_share .agree_text {
+  font-family: Gotham;
+  background-color: #d2f009;
+  color: black;
+  border-radius: 15px;
+  padding: 11px 35px 1px 35px;
+  margin-top: 5px;
+  text-align: center; }
+
+.share_your_stories_share input[type=checkbox] {
+  margin: 25% 0% 0% 45%; }
+
+.share_your_stories_share .buttons {
+  width: 25%;
+  margin: auto; }
+
+.share_your_stories_share .small_padding {
+  padding-top: 10px; }
+
+.share_your_stories_thanks .thanks {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 2.5vw;
+  margin-top: 12%; }
+
 /*
  * Footer
  */

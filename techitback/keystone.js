@@ -90,14 +90,12 @@ keystone.set('email tests', require('./routes/emails'));
 
 keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
-	// 'galleries': 'galleries',
-	// 'enquiries': 'enquiries',
-	'join-the-hour':'join-the-hours',
+	'User Input': ['join-the-hours', 'user-created-tips', 'share-your-stories'],
 	'users': 'users',
-	'yanng' : ['yanng-posts', 'yanng-girls', 'user-created-tips'],
+	'yanng' : ['yanng-posts', 'yanng-girls'],
 	'tech-addictions' : 'tech-addictions', 
 	'about' : ['about-titles', 'about-questions'],
-	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses', 'their-stories']
+	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses', 'their-stories', 'share-your-story-sections']
 });
 
 // Start Keystone to connect to your database and initialise the web server

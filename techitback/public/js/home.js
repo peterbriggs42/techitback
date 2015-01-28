@@ -1,5 +1,7 @@
 var popupStatus = 0;
 
+var defaultReplaceArea = "#defaultPopup";
+
 function loadPopup(popup) {
         if(popupStatus == 0) {
                 $(popup).fadeIn(0500);
@@ -11,7 +13,7 @@ function loadPopup(popup) {
 
 function disablePopup() {
         if(popupStatus == 1) {
-                $("#defaultPopup").fadeOut("normal");
+                $(defaultReplaceArea).fadeOut("normal");
                 // $("#profilePopup").fadeOut("normal");
                 $("#backgroundPopup").fadeOut("normal");
                 popupStatus = 0;
@@ -26,6 +28,8 @@ jQuery(function($) {
 	 * register clicks on elements that are added later than the initial 
 	 * javascript. The latter will check for the specified element.
 	 */
+
+
 
 
 	function home_listener (element, URL) {
@@ -46,12 +50,12 @@ jQuery(function($) {
 
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
-			loadPopup("#defaultPopup");
+			loadPopup(defaultReplaceArea);
 
 			// change body
 			ajaxRequest(e, URL, '', 'GET', function(data) {
 				console.log(data);
-		    	$("#defaultPopup").html(data);
+		    	$(defaultReplaceArea).html(data);
 			});
 		});
 	}
@@ -89,6 +93,8 @@ jQuery(function($) {
 		{'element':".oa_pranking_link",					'url':'ajax/home/oa_pranking'},
 		{'element':".oa_stranger_link",			'url':'ajax/home/oa_strangerdanger'},
 		{'element':".share_link",						'url':'ajax/home/share_your_story'},
+		{'element':".share_share_link",					'url':'ajax/home/share_story'},
+		{'element':".share_see_link",					'url':'ajax/home/see_story'},
 		{'element':".movement_link",					'url':'ajax/home/our_movement'},
 		{'element':".ts_amanda_link",					'url':'ajax/home/ts_amanda'},
 		{'element':".ts_rebecca_link",					'url':'ajax/home/ts_rebecca'},
@@ -104,6 +110,61 @@ jQuery(function($) {
 	$(document).on('click touchend', "#popup_exit", function (e) {
 		disablePopup();
     });
+
+
+	/* SHARE YOUR STORY */
+	$(document).on('keyup', ".share_your_stories_share textarea", function() {
+		$(".counter span").html($(this).val().length);
+	});
+
+	// User clicks to second page
+	$(document).on('click', ".share_your_stories_share .next_button", function (e) {
+		$(".first_page_only").hide()
+		$(".second_page_only").show();
+		$(".share_your_stories_share textarea").toggleClass("small_padding");
+		$(".share_your_stories_share textarea").prop("disabled", true);
+	});
+
+	// User clicks to first page
+	$(document).on('click', ".share_your_stories_share .edit_button", function (e) {
+		$(".first_page_only").show()
+		$(".second_page_only").hide();
+		$(".share_your_stories_share textarea").toggleClass("small_padding");
+		$(".share_your_stories_share textarea").prop("disabled", false);
+	});
+
+	// Override default action for 'Create + Share' form 
+	$(document).on("submit", ".share_your_stories_share form", function(e) {
+		e.preventDefault();
+
+		if (!formValidate()) return;
+
+		$(".share_your_stories_share textarea").prop("disabled", false);
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(defaultReplaceArea).html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
+	var formValidate = function() {
+		if ($("input[name='agree']:checked").length < 1) {
+			alert("In order to share your story, you must agree to the terms and conditions");
+			return false;
+		}
+		return true;
+	}
+
+
 });
 
 
@@ -115,7 +176,7 @@ jQuery(function($) {
 	/* Listen for events to show or hide popup */
 
     // $(".textoverlay").click(function() {
-    //         loadPopup("#defaultPopup");
+    //         loadPopup(defaultReplaceArea);
     //         return false;
     // });
 

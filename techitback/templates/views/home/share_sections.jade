@@ -1,0 +1,20 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("SHARE YOUR STORY", "12.4.png", "CYBERBULLYING + ABUSE")
+block body
+	div.container-fluid.share_your_stories_section
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="movement_link")
+			div.col-md-5
+				div.popup_picture_box(class="share_share_link")
+					img(src=share.image.url)
+					div()!=share.title
+			div.col-md-5
+				div.popup_picture_box(class="share_see_link")
+					img(src=see.image.url)
+					div()!=see.title
+			div.col-md-1
+				img.arrow(src='images/right.png', class='report_link')

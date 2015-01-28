@@ -1,0 +1,12 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("SHARE YOUR STORIES", "12.4.png", "SHARE YOUR STORY")
+block body
+	div.container-fluid.share_your_stories_thanks
+		div.row
+			div.col-md-12
+				div.thanks Thank you for submitting!
+					br 
+					| Your post is being reviewed.

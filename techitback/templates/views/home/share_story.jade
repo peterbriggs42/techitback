@@ -1,0 +1,62 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("SHARE YOUR STORY", "12.4.png", "CYBERBULLYING + ABUSE")
+block body
+	div.container-fluid.share_your_stories_share
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="share_share_link")
+			div.col-md-10
+				form(id="share_your_story_form" action="share_your_story_form")
+					+share_story_input_row("First Name (Optional)", 'name')
+					+share_story_input_row("Age", "age")
+					+share_story_input_row("Country", "country")
+					+share_story_input_row("State/Province", "state")
+					div.form-group.row.first_page_only
+						div.col-sm-3
+						label(for=slug class='col-sm-3 control-label') Type of Story:
+						div.col-sm-3
+							select(name='type', class='form-control')
+								option(value='Cyberbullying') Cyberbullying
+								option(value='Flaming') Flaming
+								option(value='Harassment') Harassment
+								option(value='Denigration') Denigration
+								option(value='Impersonation') Impersonation
+								option(value='Outing') Outing
+								option(value='Trickery') Trickery
+								option(value='Exclusion') Exclusion
+								option(value='Cyberstalking') Cyberstalking
+								option(value='Cybersexting') Cybersexting
+								option(value='Pranking') Pranking
+								option(value='Stranger Danger') Stranger Danger
+								option(value='Other') Other
+						div.col-sm-3
+					p.textarea_desc.first_page_only How have you or a friend, relative, or peer been affected by cyberbullying?
+					div.textarea_popup.first_page_only ￼Your story needs to be shared safely. 
+						br
+						| Please do not disclose any last names or personal information that would allow others to identify you or the friend, relative, or peer you’re writing about.
+					textarea.form-control(name="text", maxlength=500)
+					div.counter 
+						span 0
+						| /500
+					div.row.second_page_only(style='display:none;')
+						div.col-md-1
+							input(type='checkbox', name='agree')
+						div.col-md-11
+							div.agree_text
+								p To complete submission, you must click this box which indicates that you understand and agree that any information submitted maybe posted to the Tech It Off website excluding your name and hometown.
+					div.button_container
+						div.first_page_only.next_button
+							div.button_style NEXT
+						div.row.buttons
+							div.col-md-6
+								div.second_page_only.edit_button(style='display:none;')
+									div.button_style EDIT
+							div.col-md-6
+								div.second_page_only.submit_button(style='display:none;')
+									button.button_style(type="submit") SUBMIT
+
+			div.col-md-1
+				img.arrow(src='images/right.png', class='share_share_link')

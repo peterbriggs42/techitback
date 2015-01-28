@@ -6,5 +6,5 @@ exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res),
 		locals = res.locals;
 
-	view.render('home/report_abuse');
+	view.render('home/share_story');
 };

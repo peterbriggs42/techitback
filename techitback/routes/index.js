@@ -49,6 +49,7 @@ exports = module.exports = function(app) {
 	// Form Submissions
 	app.post('/createshareform', routes.form_requests.createshare);
 	app.post('/jointhehourform', routes.form_requests.jointhehour);
+	app.post('/share_your_story_form', routes.form_requests.share_your_story);
 
 	// Home content - Tech Addiction
 	app.get('/ajax/home/tech_addiction', routes.home.tech_addiction);
@@ -85,12 +86,14 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/oa_cyberstalking', routes.cyberbullying.oa_cyberstalking);
 	app.get('/ajax/home/oa_pranking', routes.cyberbullying.oa_pranking);
 	app.get('/ajax/home/oa_strangerdanger', routes.cyberbullying.oa_strangerdanger);
-	// app.get('/ajax/home/share_your_story', routes.cyberbullying.share_your_story);
+	app.get('/ajax/home/share_your_story', routes.cyberbullying.share_your_story);
+	app.get('/ajax/home/share_story', routes.cyberbullying.share_story);
+	app.get('/ajax/home/see_story', routes.cyberbullying.see_story);
 	app.get('/ajax/home/our_movement', routes.cyberbullying.our_movement);
 	app.get('/ajax/home/ts_amanda', routes.cyberbullying.ts_amanda);
 	app.get('/ajax/home/ts_rebecca', routes.cyberbullying.ts_rebecca);
 	app.get('/ajax/home/ts_marcus', routes.cyberbullying.ts_marcus);
-	// app.get('/ajax/home/report_abuse', routes.cyberbullying.report_abuse);
+	app.get('/ajax/home/report_abuse', routes.cyberbullying.report_abuse);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);
