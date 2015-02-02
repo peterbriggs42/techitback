@@ -18,7 +18,12 @@ exports = module.exports = function(req, res) {
 		state: state,
 		url: url,
 		abuse: text
-	}).save(function(err) {
+	});
+	newEntry.save(function(err) {
+		newEntry._.image.uploadFile(req.files['file'], true, function(err, fileData) {
+	   		newEntry.image = fileData;
+	   		newEntry.save();
+		});
 		view.render('home/report_it_thanks');	
 	});
 };

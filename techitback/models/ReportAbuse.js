@@ -17,7 +17,7 @@ ReportAbuse.add({
 	country		: String,
 	state		: String,
 	url			: Types.Text,
-	// photo		: Types.S3,
+	image		: { type: Types.S3File },
 	created_at	: { type: Date },
 	abuse 		: Types.Text
 });

@@ -29,9 +29,6 @@ jQuery(function($) {
 	 * javascript. The latter will check for the specified element.
 	 */
 
-
-
-
 	function home_listener (element, URL) {
 
 		// necessary for mobile touches
@@ -54,7 +51,6 @@ jQuery(function($) {
 
 			// change body
 			ajaxRequest(e, URL, '', 'GET', function(data) {
-				console.log(data);
 		    	$(defaultReplaceArea).html(data);
 			});
 		});
@@ -169,24 +165,69 @@ jQuery(function($) {
 	$(document).on('keyup', ".report_it_section textarea", function() {
 		$(".counter span").html($(this).val().length);
 	});
+	// with plugin options
+	// $("#report_it_upload").fileinput({
+	// 	// 'showUpload':false, 
+	// 	// 'previewFileType':'any',
+	// 	'uploadURL':'report_it_form',
+	// 	 uploadExtraData: function() {
+	// 	 	console.log("Asdf2");
+ //            return {
+ //                userid: "Test",
+ //                username: "test2"
+ //            };
+ //        }
+ //    });
 	$(document).on("submit", ".report_it_section form", function(e) {
 		e.preventDefault();
+		// $('#report_it_upload').fileinput('upload');
 
 		var postData = $(this).serializeArray();
+
+		var formData = new FormData($('.report_it_section form')[0]);
+		// var formData = new FormData();
+		var file = $("#report_it_upload")[0].files[0];
+
+		formData.append('file', file);
+		// postData.push(file);
+
+		console.log(postData);
+		console.log(JSON.stringify(formData));
+
+		for (var key in formData) {
+		    console.log(key, formData[key]);
+		    // fd.append(key, formData[key]);
+		}
+		// console.log(formData);
+		// console.log(file);
+
 		var formURL = $(this).attr("action");
 		$.ajax(
 		{
 			url: formURL,
 			type: "POST",
-			data: postData,
+			data: formData,
 			success:function(data, textStatus, jqXHR) {
 				$(defaultReplaceArea).html(data);
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 				console.log(errorThrown + ": " + textStatus);
-			}
+			},
+			//Options to tell jQuery not to process data or worry about content-type.
+	        cache: false,
+	        contentType: false,
+	        processData: false
 		});
 	});
+
+ //    $('#report_it_upload').on('fileuploaded', function(event, data, previewId, index) {
+ //    // var form = data.form, files = data.files, extra = data.extra, 
+ //    //     response = data.response, reader = data.reader;
+ //    // console.log('File uploaded triggered');
+ //    	console.log("here");
+ //    	console.log(data);
+	// });
+
 
 });
 

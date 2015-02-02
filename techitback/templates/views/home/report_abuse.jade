@@ -9,12 +9,18 @@ block body
 			div.col-md-1
 				img.arrow(src='images/left.png', class="share_link")
 			div.col-md-10
-				form(id="report_it_form" action="report_it_form")
+				form(id="report_it_form" action="report_it_form" enctype="multipart/form-data")
 					+report_it_input_row("Age", "age")
 					+report_it_input_row("Country", "country")
 					+report_it_input_row("State/Province", "state")
 					+report_it_input_row("Social media site or webpage/URL", "url")
-					+report_it_input_row("Upload screen-shot photo", "upload")
+					// file input section
+					div.form-group.row
+						div.col-sm-2
+						label(for="report_it_upload" class='col-sm-4 control-label') Upload screen-shot photo:
+						div.col-sm-3
+							input(id="report_it_upload", name="upload", type='file', class='form-control file')
+						div.col-sm-3
 					p.textarea_desc Please give a short description of what you observed
 					textarea.form-control(name="text", maxlength=500)
 					div.counter 
