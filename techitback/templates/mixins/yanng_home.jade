@@ -1,0 +1,37 @@
+include ./home_mixins
+include ./yanng_header
+
+mixin yanng_home_content()
+	div.yanng_content
+		+yanng_header("Exclusive Tips from the Yes and No No Girls")
+
+		div#defaultPopup.container-fluid.popup
+		div#backgroundPopup
+
+		div.container-fluid.yanng_body
+			div.yanng_home
+				div.row
+					div.col-xs-12.col-sm-6.yanng_box_container
+						div.yanng_box.yanng_box_large#etiquette
+							p.yanng_title Tech Etiquette
+							p.yanng_title.subtitle Free Book
+							img(src='images/yanng/11.5.png')
+					div.col-xs-12.col-sm-6
+						div.row
+							div.col-xs-12.col-sm-6.yanng_box_container
+								div.yanng_box.yanng_box_small.about_link
+									img(src='images/yanng/11.1.png')
+									p.yanng_title About
+							div.col-xs-12.col-sm-6.yanng_box_container
+								div.yanng_box.yanng_box_small#meetus
+									p.yanng_title Meet Us
+									img(src='images/yanng/11.2.png')
+						div.row
+							div.col-xs-12.col-sm-6.yanng_box_container
+								div.yanng_box.yanng_box_small.tips_link
+									img(src='images/yanng/11tips.png')
+									p.yanng_title Tips	
+							div.col-xs-12.col-sm-6.yanng_box_container
+								div.yanng_box.yanng_box_small#create
+									p.yanng_title Create + Share
+				div.yanng_home_text.yanng_title()!=text.content.brief

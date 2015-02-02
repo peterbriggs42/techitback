@@ -2,9 +2,22 @@ include ../../mixins/home_mixins
 extends ../../layouts/home_popup
 
 block header
-	+popup_header("ABOUT TECH IT OFF", "12.2.png", "ABOUT")
+	+popup_header("ABOUT")
 block body
-	+about_section("about_section", "tech_addiction_link", 'about_intralink_link',
-					about_intralink, '_intralink',
-					questions, '_questions',
-					about_tech.image.url, about_tech)
+	div.container-fluid.about_section
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="tech_addiction_link")
+			div.col-md-5
+				div.row.center_align
+					iframe(src=main.video_link, frameborder="0", allowfullscreen)
+			div.col-md-5
+				div.row
+					+thumbnail_pic2(about_tech.thumbnail, "_tib", about_tech.title)
+					+thumbnail_pic2(questions.thumbnail, "_questions", questions.title)
+				div.row.second_row
+					div.col-md-3
+					+thumbnail_pic2(about_intralink.thumbnail, "_intralink", about_intralink.title)
+					div.col-md-3
+			div.col-md-1
+				img.arrow(src='images/right.png', class="about_intralink_link")

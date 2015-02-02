@@ -5,6 +5,24 @@ mixin home_menu_item(name, number, menu_link)
 			img.menu_icon(src='images/menu_icons/12.'+number+'.png')
 			span.faux_link(class=menu_link) #{name}
 
+mixin side_menu()
+	div#left_menu
+		div#menu_header #TECHITBACK
+		div#search_bar
+			input(type='text', name='search_bar')
+		+home_menu_item('WELCOME TO OUR HOUR', 1, '')
+		+home_menu_item('ABOUT', 2, 'about_link')
+		+home_menu_item('BLOG', 3, '')
+		+home_menu_item('CYBERBULLYING AND ABUSE', 4, '')
+		+home_menu_item('TECH ADDICTION', 5, 'tech_addiction_link')
+		+home_menu_item('CYBERCRIME NEWS', 6, '')
+		+home_menu_item('TIPS FOR TEENS', 7, '')
+		+home_menu_item('SCHOOLS + PARENTS', 8, '')
+		+home_menu_item('CORPORATE PARTNERS', 9, '')
+		+home_menu_item('CONTACT US', 11, '')
+		+home_menu_item('YES AND NO NO GIRLS', 12, '')
+		div.menu_padding
+
 mixin home_picture(image, text, span_class)
 	img.img-responsive(src='images/home/'+image)
 	span.textoverlay(class=span_class) #{text}
@@ -61,7 +79,8 @@ mixin tech_addiction_section(section_id, left_link, right_link, pic_1, pic_1_lin
 					+thumbnail_pic4(pic_3.thumbnail, pic_3_link, pic_3.title)
 					+thumbnail_pic4(pic_4.thumbnail, pic_4_link, pic_4.title)
 			div.col-md-5
-				span(class='text')!=main_text
+				div.text_container
+					div(class='text')!=main_text
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
 

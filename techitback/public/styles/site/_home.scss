@@ -178,6 +178,21 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+.yanng_girls {
+  margin-top: -50px;
+  position: relative;
+}
+.yanng_footer .logo {
+  width: 7%;
+  margin-top: .5%;
+}
+.yanng_footer div {
+  font-family: RBNo2;
+  text-transform: uppercase;
+  color: rgb(157, 250, 249);
+  font-size: 3.5vw;
+  margin: 4% 2%;
+}
 
 
 
@@ -316,6 +331,11 @@ body {
 .tech_addiction#home .col-md-2 .popup_picture_box {
   margin-top: 88%;
 }
+.tech_addiction#home .popup_picture_box div {
+  font-family: Gotham;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
 
 .tech_addiction#home .popup_picture_box img {
   width: 85%;
@@ -329,11 +349,28 @@ body {
 .tech_addiction#home .main_box img {
   margin-bottom: 15px;
 }
+.tech_addiction .text_container {
+  height:520px;
+}
+.tech_addiction div.text {
+  overflow: scroll;
+  height: 100%;
+  padding: 10px;
+}
+
 
 /* ABOUT */
 #defaultPopup .about_section .thumbnails {
   width: 93%;
   margin: 15px auto 20px auto;
+}
+.about_section iframe {
+  width:100%;
+  height: 30vw;
+  border: 5px solid rgb(90,90,90);
+}
+.about_section .second_row {
+  margin-top: 15px;
 }
 .about_section .label_text {
   text-transform: uppercase;

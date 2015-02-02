@@ -17,6 +17,7 @@ AboutTitle.add({
 	title: { type: String, required: true },
 	image: { type: Types.S3File },
 	thumbnail: {type: String, noedit: true},
+	video_link: {type: Types.Url},
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 	},

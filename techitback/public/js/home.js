@@ -65,6 +65,7 @@ jQuery(function($) {
 		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction'},
 		// About links
 		{'element':".about_link",						'url':'ajax/home/about'},
+		{'element':".about_tib_link",					'url':'ajax/home/about_tib'},
 		{'element':".about_intralink_link",				'url':'ajax/home/about_intralink'},
 		{'element':".about_questions_link",				'url':'ajax/home/about_questions'},
 		// About Questions
@@ -87,7 +88,7 @@ jQuery(function($) {
 		{'element':".oa_cybersexting_link",				'url':'ajax/home/oa_cybersexting'},
 		{'element':".oa_cyberstalking_link",			'url':'ajax/home/oa_cyberstalking'},
 		{'element':".oa_pranking_link",					'url':'ajax/home/oa_pranking'},
-		{'element':".oa_stranger_link",			'url':'ajax/home/oa_strangerdanger'},
+		{'element':".oa_stranger_link",					'url':'ajax/home/oa_strangerdanger'},
 		{'element':".share_link",						'url':'ajax/home/share_your_story'},
 		{'element':".share_share_link",					'url':'ajax/home/share_story'},
 		{'element':".share_see_link",					'url':'ajax/home/see_story'},
@@ -95,7 +96,7 @@ jQuery(function($) {
 		{'element':".ts_amanda_link",					'url':'ajax/home/ts_amanda'},
 		{'element':".ts_rebecca_link",					'url':'ajax/home/ts_rebecca'},
 		{'element':".ts_marcus_link",					'url':'ajax/home/ts_marcus'},
-		{'element':".report_link",						'url':'ajax/home/report_abuse'}
+		{'element':".report_link",						'url':'ajax/home/report_abuse'},
 
 
 	].map( function(listener) {
@@ -165,41 +166,12 @@ jQuery(function($) {
 	$(document).on('keyup', ".report_it_section textarea", function() {
 		$(".counter span").html($(this).val().length);
 	});
-	// with plugin options
-	// $("#report_it_upload").fileinput({
-	// 	// 'showUpload':false, 
-	// 	// 'previewFileType':'any',
-	// 	'uploadURL':'report_it_form',
-	// 	 uploadExtraData: function() {
-	// 	 	console.log("Asdf2");
- //            return {
- //                userid: "Test",
- //                username: "test2"
- //            };
- //        }
- //    });
+
 	$(document).on("submit", ".report_it_section form", function(e) {
 		e.preventDefault();
-		// $('#report_it_upload').fileinput('upload');
-
-		var postData = $(this).serializeArray();
 
 		var formData = new FormData($('.report_it_section form')[0]);
-		// var formData = new FormData();
-		var file = $("#report_it_upload")[0].files[0];
-
-		formData.append('file', file);
-		// postData.push(file);
-
-		console.log(postData);
-		console.log(JSON.stringify(formData));
-
-		for (var key in formData) {
-		    console.log(key, formData[key]);
-		    // fd.append(key, formData[key]);
-		}
-		// console.log(formData);
-		// console.log(file);
+		formData.append('file', $("#report_it_upload")[0].files[0]);
 
 		var formURL = $(this).attr("action");
 		$.ajax(
@@ -219,15 +191,6 @@ jQuery(function($) {
 	        processData: false
 		});
 	});
-
- //    $('#report_it_upload').on('fileuploaded', function(event, data, previewId, index) {
- //    // var form = data.form, files = data.files, extra = data.extra, 
- //    //     response = data.response, reader = data.reader;
- //    // console.log('File uploaded triggered');
- //    	console.log("here");
- //    	console.log(data);
-	// });
-
 
 });
 

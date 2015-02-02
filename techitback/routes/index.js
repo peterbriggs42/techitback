@@ -45,6 +45,7 @@ exports = module.exports = function(app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/jointhehour', routes.views.jointhehour);
+	app.get('/yanng', routes.views.yanng);
 
 	// Form Submissions
 	app.post('/createshareform', routes.form_requests.createshare);
@@ -62,6 +63,7 @@ exports = module.exports = function(app) {
 
 	// Home content - About
 	app.get('/ajax/home/about', routes.home.about);
+	app.get('/ajax/home/about_tib', routes.home.about_tib);
 	app.get('/ajax/home/about_intralink', routes.home.about_intralink);
 	app.get('/ajax/home/about_questions', routes.home.about_questions);
 
