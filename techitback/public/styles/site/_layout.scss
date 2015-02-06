@@ -139,13 +139,12 @@ textarea {
   background-color: rgb(224,236,14);
   width: 264px;
   height: 59px;
-  padding-top: 20px;
+  padding-top: 10px;
   color:black;
   text-align: center;
-}
-#join_the_hour a{
   font-weight: bold;
-  font-size: 30px;
+	font-size: 30px;
+	cursor: pointer;
 }
 #loading_body {
 	text-align: center;
@@ -157,7 +156,7 @@ textarea {
 
 /* Join The Hour */
 .jointhehour {
-	background-color: $yanng_purple;
+	margin-top: -15%;
 	text-align: center;
 	color: white;
 	font-family: Gotham;
@@ -171,9 +170,14 @@ textarea {
 .jointhehour h2 {
 	font-family: Cardenio Modern;
 	font-size: 60px;
+	color: $tib_red;
+}
+.jointhehour h2 span {
+	color: $tib_blue;
 }
 .jointhehour h2.thanks {
 	margin-top: 260px;
+	color: white;
 }
 .jointhehour form {
 	width:80%;
@@ -181,6 +185,10 @@ textarea {
 }
 .jointhehour .textarea_desc {
 	font-size: 26px;
+	color: $tib_yellow;
+}
+.jointhehour input {
+	border-radius: 10px;
 }
 .jointhehour textarea {
 	height: 158px;

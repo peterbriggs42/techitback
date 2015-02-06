@@ -89,13 +89,15 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'posts': ['posts', 'post-categories'],
-	'User Input': ['join-the-hours', 'user-created-tips', 'share-your-stories', 'report-abuses'],
-	'users': 'users',
-	'yanng' : ['yanng-posts', 'yanng-girls'],
+	'posts': 			['posts', 'post-categories'],
+	'User Input': 		['join-the-hours', 'user-created-tips', 'share-your-stories', 'report-abuses'],
+	'users': 			'users',
+	'yanng' : 			['yanng-posts', 'yanng-girls'],
 	'tech-addictions' : 'tech-addictions', 
-	'about' : ['about-titles', 'about-questions'],
-	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses', 'their-stories', 'share-your-story-sections']
+	'about' : 			['about-titles', 'about-questions'],
+	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses', 'their-stories', 'share-your-story-sections'],
+	'cybercrime' : 		['cybercrimes', 'cyber-mistakes'],
+	'welcome to our hour': ['welcome-sections', 'welcome-games']
 });
 
 // Start Keystone to connect to your database and initialise the web server

@@ -57,7 +57,7 @@ html
 						ul.nav.navbar-nav.navbar-right
 							each link in navLinks
 								li(class=(section == link.key ? 'active' : null)): a(href=link.href): img.social_link(src=link.image)
-							li#join_the_hour: a(href='/jointhehour') JOIN THE HOUR
+							li#join_the_hour.welcome_join_link JOIN THE HOUR
 		//- BODY
 		#body
 

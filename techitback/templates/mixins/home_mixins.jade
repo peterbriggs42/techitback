@@ -10,17 +10,18 @@ mixin side_menu()
 		div#menu_header #TECHITBACK
 		div#search_bar
 			input(type='text', name='search_bar')
-		+home_menu_item('WELCOME TO OUR HOUR', 1, '')
+		+home_menu_item('WELCOME TO OUR HOUR', 1, 'welcome_link')
 		+home_menu_item('ABOUT', 2, 'about_link')
 		+home_menu_item('BLOG', 3, '')
-		+home_menu_item('CYBERBULLYING AND ABUSE', 4, '')
+		+home_menu_item('CYBERBULLYING AND ABUSE', 4, 'cyberbullying_link')
 		+home_menu_item('TECH ADDICTION', 5, 'tech_addiction_link')
-		+home_menu_item('CYBERCRIME NEWS', 6, '')
+		+home_menu_item('CYBERCRIME NEWS', 6, 'cybercrime_link')
 		+home_menu_item('TIPS FOR TEENS', 7, '')
 		+home_menu_item('SCHOOLS + PARENTS', 8, '')
 		+home_menu_item('CORPORATE PARTNERS', 9, '')
 		+home_menu_item('CONTACT US', 11, '')
-		+home_menu_item('YES AND NO NO GIRLS', 12, '')
+		a(href='yanng')
+			+home_menu_item('YES AND NO NO GIRLS', 12, '')
 		div.menu_padding
 
 mixin home_picture(image, text, span_class)
@@ -40,6 +41,13 @@ mixin popup_header(title, image, label, link)
 	div(class=link).popup_header
 		div #{title}
 
+mixin popup_welcome_header(section)
+	img#popup_exit(src='images/x.png')
+	div.welcome_upper_left
+		img(src=section.image.url)
+	div.welcome_label
+		div #{section.title}
+
 // Thumbnails for Tech Addiction page
 mixin thumbnail_pic4(thumbnail, class_link, title)
 	div.col-md-3
@@ -58,8 +66,8 @@ mixin thumbnail_pic2(thumbnail, class_link, title)
 		img(src=thumbnail, class='about' + class_link + '_link pointer')
 		div.label_text #{title}
 
-// Thumbnails for About page
-mixin thumbnail_pic_stories(thumbnail, class_link, title)
+// Thumbnails for stories page
+mixin thumbnail_pic_double(thumbnail, class_link, title)
 	div.col-md-6
 		img(src=thumbnail, class=class_link)
 		div.label_text #{title}
@@ -157,8 +165,8 @@ mixin their_story(main, pic_1, pic_1_link, pic_2, pic_2_link)
 					img(src=main.image.url, class='big_image')
 				div.row.thumbnails
 					div
-						+thumbnail_pic_stories(pic_1.thumbnail, pic_1_link, pic_1.title)
-						+thumbnail_pic_stories(pic_2.thumbnail, pic_2_link, pic_2.title)
+						+thumbnail_pic_double(pic_1.thumbnail, pic_1_link, pic_1.title)
+						+thumbnail_pic_double(pic_2.thumbnail, pic_2_link, pic_2.title)
 			div.col-md-5
 				div.stories_text()!=main.content.brief
 			div.col-md-1
@@ -179,3 +187,41 @@ mixin report_it_input_row(text, slug)
 		div.col-sm-3
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3
+
+
+// CYBERCRIME MISTAKES
+mixin cybercrime_mistake(section_class, left_link, right_link, pic_1, pic_1_link, pic_2, pic_2_link, big_image, main_text)
+	div.container-fluid(class=section_class)
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=left_link)
+			div.col-md-5
+				div.row.center_align
+					img(src=big_image, class='big_image')
+				div.row.thumbnails
+					div
+						+thumbnail_pic_double(pic_1.thumbnail, pic_1_link, pic_1.title)
+						+thumbnail_pic_double(pic_2.thumbnail, pic_2_link, pic_2.title)
+			div.col-md-5
+				span(class='text')!=main_text.content.brief
+			div.col-md-1
+				img.arrow(src='images/right.png', class=right_link)
+
+// WELCOME TO OUR HOUR
+mixin welcome_button (name, image, position, link)
+	div.welcome_button(class=position+" "+link)
+		img(src='images/welcome_icons/'+image)
+		div.button_label #{name}
+
+mixin welcome_left_button (section)
+	div.row.welcome_left_button(class=section.link)
+		img(src=section.image.url)
+		div.left_button_label #{section.title}
+
+mixin welcome_games_icon (game, selected)
+	div.row.welcome_games_icon(class=game.link)
+		img(src='images/welcome_icons/5.21.png')
+		if game.title == selected.title
+			span.selected #{game.title}
+		else 
+			span #{game.title}

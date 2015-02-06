@@ -1,0 +1,14 @@
+include ../../mixins/home_mixins
+extends ../../layouts/welcome_section
+
+block body
+	div.row.games_body_individual
+		div.col-md-11
+			div.games_title() #{selected.title}
+			div.games_text()!= selected.content.brief
+		div.col-md-1
+			+welcome_games_icon(games_challenge, selected)
+			+welcome_games_icon(games_forward, selected)
+			+welcome_games_icon(games_talk, selected)
+			+welcome_games_icon(games_wikipedia, selected)
+			+welcome_games_icon(games_band, selected)

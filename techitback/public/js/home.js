@@ -97,7 +97,28 @@ jQuery(function($) {
 		{'element':".ts_rebecca_link",					'url':'ajax/home/ts_rebecca'},
 		{'element':".ts_marcus_link",					'url':'ajax/home/ts_marcus'},
 		{'element':".report_link",						'url':'ajax/home/report_abuse'},
+		// Cybercrime
+		{'element':".cybercrime_link",					'url':'ajax/home/cybercrime_home'},
+		{'element':".crime_whatis_link",				'url':'ajax/home/cybercrime_whatis'},
+		{'element':".crime_mistakes_link",				'url':'ajax/home/cybercrime_mistakes'},
+		{'element':".crime_stalking_link",				'url':'ajax/home/cybercrime_stalking'},
+		{'element':".crime_sexting_link",				'url':'ajax/home/cybercrime_sexting'},
+		{'element':".crime_bullying_link",				'url':'ajax/home/cybercrime_bullying'},
 
+		// Welcome to Our Hour
+		{'element':".welcome_link",						'url':'ajax/home/welcome_home'},
+		{'element':".welcome_join_link",				'url':'ajax/home/welcome_join'},			
+		{'element':".welcome_games_link",				'url':'ajax/home/welcome_games'},
+		{'element':".welcome_downloadable_link",		'url':'ajax/home/welcome_downloadable'},
+		{'element':".welcome_video_link",				'url':'ajax/home/welcome_video'},
+		{'element':".welcome_causes_link",				'url':'ajax/home/welcome_causes'},
+		{'element':".welcome_quizzes_link",				'url':'ajax/home/welcome_quizzes'},
+		// Welcome - Games
+		{'element':".welcome_games_band_link",			'url':'ajax/home/welcome_games_band'},
+		{'element':".welcome_games_forward_link",		'url':'ajax/home/welcome_games_forward'},
+		{'element':".welcome_games_talk_link",			'url':'ajax/home/welcome_games_talk'},
+		{'element':".welcome_games_challenge_link",		'url':'ajax/home/welcome_games_challenge'},
+		{'element':".welcome_games_wikipedia_link",		'url':'ajax/home/welcome_games_wikipedia'},
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);

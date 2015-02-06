@@ -1,0 +1,31 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+
+block header
+	div.welcome_header
+		div.container-fluid
+			img.img-responsive(src='images/home/people_crop.jpg')
+			span.img-background
+			div.img-textoverlay WELCOME TO OUR HOUR
+block body
+	div.container-fluid.welcome_body
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="tech_addiction_link")
+			div.col-md-10
+				div.row
+					div.col-md-2
+						+welcome_button("Join","5.1.png", "mid", "welcome_join_link")
+					div.col-md-2
+						+welcome_button("Games","5.2.png", "top", "welcome_games_link")
+					div.col-md-2
+						+welcome_button("Downloadable","5.3.png", "bottom", "welcome_downloadable_link")
+					div.col-md-2
+						+welcome_button("Video","5.4.png", "top", "welcome_video_link")
+					div.col-md-2
+						+welcome_button("Causes","5.5.png", "bottom", "welcome_causes_link")
+					div.col-md-2
+						+welcome_button("Quizzes","5.6.png", "top", "welcome_quizzes_link")
+			div.col-md-1
+				img.arrow(src='images/right.png', class="about_intralink_link")

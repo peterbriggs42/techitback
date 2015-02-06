@@ -1,19 +1,1 @@
 extends ../layouts/default
-include ../mixins/yanng_userinput
-
-block content
-	div.container-fluid.jointhehour
-		h2 CLICK TO JOIN THE HOUR!
-		form(action="jointhehourform")
-			+jointhehour_input_row("Name", 'name')
-			+jointhehour_input_row("Email", "email")
-			+jointhehour_input_row("Country", "country")
-			+jointhehour_input_row("State/Province", "state")
-			p.textarea_desc Why do you Tech It Off? (optional)
-			textarea.form-control(name="text", maxlength=500)
-			div.counter 
-				span 0
-				| /500
-
-			button.button_style(type="submit") SUBMIT
-

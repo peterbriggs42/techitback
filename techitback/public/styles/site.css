@@ -5106,13 +5106,12 @@ textarea {
   background-color: #e0ec0e;
   width: 264px;
   height: 59px;
-  padding-top: 20px;
+  padding-top: 10px;
   color: black;
-  text-align: center; }
-
-#join_the_hour a {
+  text-align: center;
   font-weight: bold;
-  font-size: 30px; }
+  font-size: 30px;
+  cursor: pointer; }
 
 #loading_body {
   text-align: center;
@@ -5123,7 +5122,7 @@ textarea {
 
 /* Join The Hour */
 .jointhehour {
-  background-color: #523276;
+  margin-top: -15%;
   text-align: center;
   color: white;
   font-family: Gotham;
@@ -5136,17 +5135,26 @@ textarea {
 
 .jointhehour h2 {
   font-family: Cardenio Modern;
-  font-size: 60px; }
+  font-size: 60px;
+  color: #ba1209; }
+
+.jointhehour h2 span {
+  color: #9dfaf9; }
 
 .jointhehour h2.thanks {
-  margin-top: 260px; }
+  margin-top: 260px;
+  color: white; }
 
 .jointhehour form {
   width: 80%;
   margin: auto; }
 
 .jointhehour .textarea_desc {
-  font-size: 26px; }
+  font-size: 26px;
+  color: #e0ec0e; }
+
+.jointhehour input {
+  border-radius: 10px; }
 
 .jointhehour textarea {
   height: 158px;
@@ -6061,7 +6069,7 @@ html, body {
 #popup_exit {
   cursor: pointer;
   width: 5% !important;
-  margin: 18px 0px 0px 2px;
+  margin: 18px 0px 0px 18px;
   float: left;
   border: none !important; }
 
@@ -6081,6 +6089,9 @@ html, body {
   background: none repeat scroll 0 0 black;
   overflow-x: hidden;
   height: calc(100% - 110px); }
+
+#defaultPopup.container-fluid {
+  padding: 0px; }
 
 #defaultPopup img {
   width: 100%;
@@ -6577,6 +6588,198 @@ html, body {
   font-size: 2.5vw;
   margin-top: 12%; }
 
+/* CYBERCRIME */
+.cybercrime_section .popup_picture_box {
+  width: 63%;
+  margin: auto;
+  font-family: Gotham;
+  text-transform: uppercase;
+  font-size: 1.4vw;
+  text-align: center; }
+
+.cybercrime_section .popup_picture_box div {
+  margin: 10px 0px 10px 0px; }
+
+.cybercrime_section .text {
+  font-family: Gotham;
+  font-size: 1.4vw;
+  padding-top: 30px;
+  line-height: 24px; }
+
+.cybercrime_section.mistakes .popup_picture_box {
+  width: 80%; }
+
+.cybercrime_section.mistakes .first_row {
+  margin-top: 20px; }
+
+.cybercrime_section .image_label {
+  font-family: Gotham;
+  margin-top: 10px;
+  font-size: 1.1vw; }
+
+.cybercrime_section .big_image {
+  width: 80%; }
+
+.cybercrime_section .thumbnails {
+  width: 84%;
+  margin: 15px auto 20px auto;
+  font-family: Gotham;
+  text-align: center;
+  text-transform: uppercase; }
+
+.cybercrime_section .label_text {
+  margin-top: 10px; }
+
+/* WELCOME TO OUR HOUR */
+.welcome_header img {
+  border: none !important; }
+
+.welcome_header .container-fluid {
+  padding: 0px; }
+
+.welcome_header .img-textoverlay {
+  color: #9dfaf9;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  top: 5%;
+  position: absolute;
+  font-size: 7.3vw;
+  font-weight: bold; }
+
+.welcome_header .img-background {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  opacity: 0.6; }
+
+.welcome_body .col-md-2 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.welcome_button {
+  color: #9dfaf9;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3vw; }
+
+.welcome_button.top {
+  margin-top: 5%; }
+
+.welcome_button.bottom {
+  margin-top: 85%; }
+
+.welcome_button.mid {
+  margin-top: 50%; }
+
+.welcome_body img, .welcome_upper_left img {
+  border: none !important; }
+
+.welcome_upper_left img {
+  width: 10% !important;
+  margin: 1%;
+  float: left; }
+
+.welcome_label {
+  margin: 3%;
+  font-size: 4.5vw;
+  color: #9dfaf9;
+  text-transform: uppercase; }
+
+.welcome_left_button {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7vw;
+  color: #9dfaf9; }
+
+.welcome_left_button img {
+  width: 70% !important; }
+
+.welcome_body .left_buttons {
+  margin-bottom: 35px; }
+
+/* WELCOME TO OUR HOUR - GAMES */
+.games_body {
+  margin-top: -5%; }
+
+.games_body .games_text {
+  margin-top: 6%; }
+
+.games_body_individual {
+  margin-top: -10%; }
+
+.games_body_individual .games_text {
+  line-height: 2; }
+
+.games_text {
+  padding: 0% 6% 0% 6%;
+  font-size: 1.3vw;
+  font-family: Gotham; }
+
+.games_title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5vw;
+  margin-top: 5%; }
+
+.welcome_games_icon {
+  position: relative;
+  margin-bottom: 30%; }
+
+.welcome_games_icon span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  font-family: rbno2;
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 17%;
+  width: 100%; }
+
+.welcome_games_icon span.selected {
+  color: #ba1209; }
+
+.games_body .welcome_games_icon.welcome_games_wikipedia_link {
+  margin-top: 80%; }
+
+.games_body .welcome_games_forward_link span {
+  margin-top: 11%; }
+
+.games_body .welcome_games_band_link span {
+  margin-top: 12%; }
+
+.games_body .welcome_games_talk_link span {
+  margin-top: 25%; }
+
+.games_body_individual .welcome_games_challenge_link span {
+  font-size: 1.1vw; }
+
+.games_body_individual .welcome_games_talk_link span {
+  /*font-size: vw;*/ }
+
+.games_body_individual .welcome_games_forward_link span {
+  font-size: 1.5vw; }
+
+.games_body_individual .welcome_games_band_link span {
+  font-size: 1.2vw;
+  margin-top: 8%; }
+
+.games_body_individual .welcome_games_wikipedia_link span {
+  font-size: 1.1vw; }
+
+/* WELCOME TO OUR HOUR - DOWNLOADABLE */
+.welcome_body .downloadable {
+  font-size: 1.5vw;
+  font-family: Gotham;
+  text-align: center;
+  margin-top: 15%; }
+
+/* WELCOME TO OUR HOUR - VIDEO */
+/* WELCOME TO OUR HOUR - CAUSES */
 /*
  * Footer
  */

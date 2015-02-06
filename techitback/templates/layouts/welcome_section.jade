@@ -1,0 +1,15 @@
++popup_welcome_header(main)
+div.container-fluid.welcome_body
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class=five.link)
+			div.col-md-1.left_buttons
+					+welcome_left_button(one)
+					+welcome_left_button(two)
+					+welcome_left_button(three)
+					+welcome_left_button(four)
+					+welcome_left_button(five)
+			div.col-md-9
+				block body
+			div.col-md-1
+				img.arrow(src='images/right.png', class=one.link)

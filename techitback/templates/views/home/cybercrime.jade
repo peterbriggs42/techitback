@@ -1,0 +1,19 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header("CYBERCRIME NEWS", "12.6.png", "CYBERCRIME NEWS")
+block body
+	div.container-fluid(class="cybercrime_section")
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="crime_whatis_link")
+			div.col-md-6
+				img(src=main.image.url)
+			div.col-md-4
+				div.row
+					+popup_picture(whatis, "crime_whatis_link")
+				div.row
+					+popup_picture(mistakes, "crime_mistakes_link")
+			div.col-md-1
+				img.arrow(src='images/right.png', class="crime_mistakes_link")

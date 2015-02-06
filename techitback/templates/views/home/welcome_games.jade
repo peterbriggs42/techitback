@@ -1,0 +1,17 @@
+include ../../mixins/home_mixins
+extends ../../layouts/welcome_section
+
+block body
+	div.row.games_body
+		div.col-md-8
+			div(class='games_text')!= stacking.content.brief
+		div.col-md-4
+			div.row
+				div.col-md-5
+					+welcome_games_icon(challenge, stacking)
+					+welcome_games_icon(forward, stacking)
+					+welcome_games_icon(talk, stacking)
+				div.col-md-2
+				div.col-md-5
+					+welcome_games_icon(wikipedia, stacking)
+					+welcome_games_icon(band, stacking)

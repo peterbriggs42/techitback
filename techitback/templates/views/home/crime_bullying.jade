@@ -1,0 +1,10 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header(bullying.title, "12.6.png", "CYBERCRIME NEWS")
+block body
+	+cybercrime_mistake("cybercrime_section", "crime_stalking_link", 'crime_sexting_link',
+					cyberstalking, 'crime_stalking_link',
+					cybersexting, 'crime_sexting_link',
+					bullying.image.url, bullying)

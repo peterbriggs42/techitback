@@ -186,8 +186,7 @@ jQuery(function($) {
 			}
 		});
 	});
-
-	$(".jointhehour textarea").keyup(function() {
-		$(".counter span").html($(this).val().length);
+	$(document).on('keyup', ".jointhehour textarea", function() {
+		$(".counter span").last().html($(this).val().length);
 	})
 });

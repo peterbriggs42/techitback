@@ -36,7 +36,9 @@ var routes = {
 	yanng_girls: 		importRoutes('./ajax/yanng_girls'),
 	home: 				importRoutes('./ajax/home'),
 	about_questions: 	importRoutes('./ajax/home/about_questions'),
-	cyberbullying: 		importRoutes('./ajax/home/cyberbullying')
+	cyberbullying: 		importRoutes('./ajax/home/cyberbullying'),
+	cybercrime: 		importRoutes('./ajax/home/cybercrime'),
+	welcome: 			importRoutes('./ajax/home/welcome')
 };
 
 // Setup Route Bindings
@@ -97,6 +99,30 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/ts_rebecca', routes.cyberbullying.ts_rebecca);
 	app.get('/ajax/home/ts_marcus', routes.cyberbullying.ts_marcus);
 	app.get('/ajax/home/report_abuse', routes.cyberbullying.report_abuse);
+
+	// Home content - Cybercrime
+	app.get('/ajax/home/cybercrime_home', routes.cybercrime.home);
+	app.get('/ajax/home/cybercrime_whatis', routes.cybercrime.whatis);
+	app.get('/ajax/home/cybercrime_mistakes', routes.cybercrime.mistakes);
+	app.get('/ajax/home/cybercrime_stalking', routes.cybercrime.stalking);
+	app.get('/ajax/home/cybercrime_sexting', routes.cybercrime.sexting);
+	app.get('/ajax/home/cybercrime_bullying', routes.cybercrime.bullying);
+
+	// Home content - Welcome to Our Hour
+	app.get('/ajax/home/welcome_home', routes.welcome.home);
+	app.get('/ajax/home/welcome_join', routes.welcome.join);
+	app.get('/ajax/home/welcome_games', routes.welcome.games);
+	app.get('/ajax/home/welcome_downloadable', routes.welcome.downloadable);
+	app.get('/ajax/home/welcome_video', routes.welcome.video);
+	app.get('/ajax/home/welcome_causes', routes.welcome.causes);
+	app.get('/ajax/home/welcome_quizzes', routes.welcome.quizzes);
+
+	// Welcome -- Games
+	app.get('/ajax/home/welcome_games_band', routes.welcome.games_band);
+	app.get('/ajax/home/welcome_games_forward', routes.welcome.games_forward);
+	app.get('/ajax/home/welcome_games_talk', routes.welcome.games_talk);
+	app.get('/ajax/home/welcome_games_challenge', routes.welcome.games_challenge);
+	app.get('/ajax/home/welcome_games_wikipedia', routes.welcome.games_wikipedia);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

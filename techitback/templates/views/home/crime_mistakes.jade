@@ -1,0 +1,26 @@
+include ../../mixins/home_mixins
+extends ../../layouts/home_popup
+
+block header
+	+popup_header(mistakes.title, "12.6.png", "CYBERCRIME NEWS")
+block body
+	div.container-fluid(class="cybercrime_section mistakes")
+		div.row
+			div.col-md-1
+				img.arrow(src='images/left.png', class="crime_whatis_link")
+			div.col-md-5
+				img(src=mistakes.image.url)
+				div.image_label()!=mistakes.content.brief
+			div.col-md-5
+				div.row.first_row
+					div.col-md-6
+						+popup_picture(cyberstalking, "crime_stalking_link")
+					div.col-md-6
+						+popup_picture(cybersexting, "crime_sexting_link")
+				div.row
+					div.col-md-3
+					div.col-md-6
+						+popup_picture(bullying, "crime_bullying_link")
+					div.col-md-3
+			div.col-md-1
+				img.arrow(src='images/right.png', class="crime_whatis_link")
