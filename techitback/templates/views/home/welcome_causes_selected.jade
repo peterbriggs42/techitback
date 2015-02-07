@@ -1,0 +1,12 @@
+include ../../mixins/home_mixins
+extends ../../layouts/welcome_section
+
+block left_arrow
+	+arrow("left", "welcome_causes_"+ previous.key +"_link")
+block body
+	div.cause_selected(class="cause_"+selected.key)
+		div.image_container
+			img(src=selected.image.url)
+		div.selected_text()!=selected.content.brief
+block right_arrow
+	+arrow("right", "welcome_causes_"+ next.key +"_link")

@@ -225,3 +225,9 @@ mixin welcome_games_icon (game, selected)
 			span.selected #{game.title}
 		else 
 			span #{game.title}
+mixin cause_box(cause)
+	div.cause_image(class="welcome_causes_"+cause.key+"_link")
+		img(src=cause.image.url)
+
+mixin arrow(arrow, link)
+	img.arrow(src='images/'+arrow+'.png', class=link)

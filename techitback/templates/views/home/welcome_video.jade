@@ -1,5 +1,10 @@
 include ../../mixins/home_mixins
 extends ../../layouts/welcome_section
 
+block left_arrow
+	+arrow("left", five.link)
 block body
-	div	hey
+	div.video
+		iframe(src=video.link allowfullscreen)
+block right_arrow
+	+arrow("right", one.link)

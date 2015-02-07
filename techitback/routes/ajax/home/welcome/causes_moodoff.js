@@ -16,7 +16,7 @@ exports = module.exports = function(req, res) {
 		WelcomeCauses.model.find()
 			.exec(function(err, causes) {
 		
-			view.render('home/welcome_causes', {
+			view.render('home/welcome_causes_selected', {
 				main: 			sections.filter(common.getItemByKey, "causes")[0],
 				one: 			sections.filter(common.getItemByKey, "quizzes")[0],
 				two: 			sections.filter(common.getItemByKey, "join")[0],
@@ -24,16 +24,9 @@ exports = module.exports = function(req, res) {
 				four: 			sections.filter(common.getItemByKey, "downloadable")[0],
 				five: 			sections.filter(common.getItemByKey, "video")[0],
 				// Causes
-				responsibility: causes.filter(common.getItemByKey, "responsibility")[0],
-				think: 			causes.filter(common.getItemByKey, "think")[0],
-				healthy: 		causes.filter(common.getItemByKey, "healthy")[0],
-				stomp: 			causes.filter(common.getItemByKey, "stomp")[0],
-				moodoff: 		causes.filter(common.getItemByKey, "moodoff")[0],
-				campaign: 		causes.filter(common.getItemByKey, "campaign")[0],
-				headspace: 		causes.filter(common.getItemByKey, "headspace")[0],
-				tyler: 			causes.filter(common.getItemByKey, "tyler")[0],
-				megan: 			causes.filter(common.getItemByKey, "megan")[0],
-				amanda: 		causes.filter(common.getItemByKey, "amanda")[0]
+				previous: 		causes.filter(common.getItemByKey, "stomp")[0],
+				selected: 		causes.filter(common.getItemByKey, "moodoff")[0],
+				next: 			causes.filter(common.getItemByKey, "campaign")[0],
 			});
 		});
 	});

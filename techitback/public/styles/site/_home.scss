@@ -948,8 +948,72 @@ body {
   margin-top: 15%;
 }
 /* WELCOME TO OUR HOUR - VIDEO */
-
+.welcome_body .video {
+  text-align: center;
+}
+.welcome_body .video iframe {
+  width: 75%;
+  height:385px;
+}
 /* WELCOME TO OUR HOUR - CAUSES */
+.cause_boxes{ 
+  div {
+    padding: 3px 0px 0px 3px !important;
+    margin: 0px;
+  }
+  .top_left {
+    height: 175px;
+  }
+  .bottom_left {
+    height: 150px;
+  }
+  .top_right {
+    height: 125px;
+  }
+  .bottom_right {
+    height: 200px;
+  }
+  .half_height {
+    height: 50%;
+  }
+}
+.cause_boxes .full_height,
+.cause_boxes .cause_image,
+.cause_boxes .cause_image img {
+  height:100%;
+}
+.cause_selected {
+  .image_container {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 50% !important;
+  }
+  .selected_text {
+    font-family: Gotham;
+    margin-top: 25px;
+    font-size: 1.2vw;
+    line-height: 1.5;
+  }
+  &.cause_stomp img{
+    width: 25% !important;
+  }
+  &.cause_campaign img{
+    width: 30% !important;
+  }
+  &.cause_headspace img{
+    width: 25% !important;
+  }
+  &.cause_memorial img{
+    width: 30% !important;
+  }
+}
+.cause_link {
+  margin-top: 10px;
+  font-family: Gotham;
+  font-size: 1.2vw;
+}
 
 /*
  * Footer

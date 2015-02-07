@@ -115,6 +115,7 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/welcome_downloadable', routes.welcome.downloadable);
 	app.get('/ajax/home/welcome_video', routes.welcome.video);
 	app.get('/ajax/home/welcome_causes', routes.welcome.causes);
+	app.get('/ajax/home/welcome_causes2', routes.welcome.causes2);
 	app.get('/ajax/home/welcome_quizzes', routes.welcome.quizzes);
 
 	// Welcome -- Games
@@ -123,6 +124,21 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/welcome_games_talk', routes.welcome.games_talk);
 	app.get('/ajax/home/welcome_games_challenge', routes.welcome.games_challenge);
 	app.get('/ajax/home/welcome_games_wikipedia', routes.welcome.games_wikipedia);
+
+	// Welcome -- Causes
+	app.get('/ajax/home/welcome_causes_responsibility', routes.welcome.causes_responsibility);
+	app.get('/ajax/home/welcome_causes_think', routes.welcome.causes_think);
+	app.get('/ajax/home/welcome_causes_stomp', routes.welcome.causes_stomp);
+	app.get('/ajax/home/welcome_causes_healthy', routes.welcome.causes_healthy);
+	app.get('/ajax/home/welcome_causes_moodoff', routes.welcome.causes_moodoff);
+	app.get('/ajax/home/welcome_causes_campaign', routes.welcome.causes_campaign);
+	app.get('/ajax/home/welcome_causes_tyler', routes.welcome.causes_tyler);
+	app.get('/ajax/home/welcome_causes_headspace', routes.welcome.causes_headspace);
+	app.get('/ajax/home/welcome_causes_megan', routes.welcome.causes_megan);
+	app.get('/ajax/home/welcome_causes_amanda', routes.welcome.causes_amanda);
+	app.get('/ajax/home/welcome_causes_stopbullying', routes.welcome.causes_stopbullying);
+	app.get('/ajax/home/welcome_causes_thrive', routes.welcome.causes_thrive);
+	app.get('/ajax/home/welcome_causes_memorial', routes.welcome.causes_memorial);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

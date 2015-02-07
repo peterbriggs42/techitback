@@ -1,5 +1,9 @@
 include ../../mixins/home_mixins
 extends ../../layouts/welcome_section
 
+block left_arrow
+	+arrow("left", five.link)
 block body
 	div.downloadable Downloadable infographics, signs, and flyers coming soon!
+block right_arrow
+	+arrow("right", one.link)

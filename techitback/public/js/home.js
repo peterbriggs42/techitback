@@ -112,6 +112,7 @@ jQuery(function($) {
 		{'element':".welcome_downloadable_link",		'url':'ajax/home/welcome_downloadable'},
 		{'element':".welcome_video_link",				'url':'ajax/home/welcome_video'},
 		{'element':".welcome_causes_link",				'url':'ajax/home/welcome_causes'},
+		{'element':".welcome_causes2_link",				'url':'ajax/home/welcome_causes2'},
 		{'element':".welcome_quizzes_link",				'url':'ajax/home/welcome_quizzes'},
 		// Welcome - Games
 		{'element':".welcome_games_band_link",			'url':'ajax/home/welcome_games_band'},
@@ -119,7 +120,20 @@ jQuery(function($) {
 		{'element':".welcome_games_talk_link",			'url':'ajax/home/welcome_games_talk'},
 		{'element':".welcome_games_challenge_link",		'url':'ajax/home/welcome_games_challenge'},
 		{'element':".welcome_games_wikipedia_link",		'url':'ajax/home/welcome_games_wikipedia'},
-
+		// Welcome - Causes
+		{'element':".welcome_causes_responsibility_link",		'url':'ajax/home/welcome_causes_responsibility'},
+		{'element':".welcome_causes_think_link",		'url':'ajax/home/welcome_causes_think'},
+		{'element':".welcome_causes_stomp_link",		'url':'ajax/home/welcome_causes_stomp'},
+		{'element':".welcome_causes_healthy_link",		'url':'ajax/home/welcome_causes_healthy'},
+		{'element':".welcome_causes_moodoff_link",		'url':'ajax/home/welcome_causes_moodoff'},
+		{'element':".welcome_causes_campaign_link",		'url':'ajax/home/welcome_causes_campaign'},
+		{'element':".welcome_causes_tyler_link",		'url':'ajax/home/welcome_causes_tyler'},
+		{'element':".welcome_causes_headspace_link",	'url':'ajax/home/welcome_causes_headspace'},
+		{'element':".welcome_causes_megan_link",		'url':'ajax/home/welcome_causes_megan'},
+		{'element':".welcome_causes_amanda_link",		'url':'ajax/home/welcome_causes_amanda'},
+		{'element':".welcome_causes_stopbullying_link",	'url':'ajax/home/welcome_causes_stopbullying'},
+		{'element':".welcome_causes_thrive_link",		'url':'ajax/home/welcome_causes_thrive'},
+		{'element':".welcome_causes_memorial_link",		'url':'ajax/home/welcome_causes_memorial'},
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);
 	});

@@ -1,6 +1,8 @@
 include ../../mixins/home_mixins
 extends ../../layouts/welcome_section
 
+block left_arrow
+	+arrow("left", five.link)
 block body
 	div.row.games_body
 		div.col-md-8
@@ -15,3 +17,5 @@ block body
 				div.col-md-5
 					+welcome_games_icon(wikipedia, stacking)
 					+welcome_games_icon(band, stacking)
+block right_arrow
+	+arrow("right", one.link)

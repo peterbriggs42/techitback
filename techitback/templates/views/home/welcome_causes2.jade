@@ -1,0 +1,18 @@
+include ../../mixins/home_mixins
+extends ../../layouts/welcome_section
+
+block left_arrow
+	+arrow("left", five.link)
+block body
+	div.container-fluid.cause_boxes
+		div.row
+			div.col-md-3
+				div.row.top_left
+					+cause_box(stopbullying)
+				div.row.middle_left
+					+cause_box(thrive)
+				div.row.bottom_left
+					+cause_box(memorial)
+	div.faux_link.cause_link.welcome_causes_link < Back
+block right_arrow
+	+arrow("right", one.link)

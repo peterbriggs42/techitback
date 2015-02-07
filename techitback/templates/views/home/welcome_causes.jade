@@ -1,5 +1,40 @@
 include ../../mixins/home_mixins
 extends ../../layouts/welcome_section
 
+block left_arrow
+	+arrow("left", five.link)
 block body
-	div	hey
+	div.container-fluid.cause_boxes
+		div.row
+			div.col-md-6
+				div.row.top_left
+					div.col-md-7.full_height
+						div.row.half_height
+							+cause_box(responsibility)
+						div.row.half_height
+							+cause_box(think)
+					div.col-md-5.full_height
+						+cause_box(stomp)
+				div.row.bottom_left
+					div.col-md-7.full_height
+						+cause_box(healthy)
+					div.col-md-5.full_height
+						+cause_box(moodoff)
+			div.col-md-6
+				div.row.top_right
+					div.col-md-6.full_height
+						+cause_box(campaign)
+					div.col-md-6.full_height
+						+cause_box(tyler)
+				div.row.bottom_right
+					div.col-md-6.full_height
+						+cause_box(headspace)
+					div.col-md-6.full_height
+						div.row.half_height
+							+cause_box(megan)
+						div.row.half_height
+							+cause_box(amanda)
+	div.faux_link.welcome_causes2_link.right_align.cause_link More >
+
+block right_arrow
+	+arrow("right", one.link)

@@ -2,7 +2,8 @@ include ../../mixins/home_mixins
 extends ../../layouts/welcome_section
 include ../../mixins/yanng_userinput
 
-
+block left_arrow
+	+arrow("left", five.link)
 block body
 	div.container-fluid.jointhehour
 		h2 CLICK TO 
@@ -20,4 +21,5 @@ block body
 				| /500
 
 			button.button_style(type="submit") SUBMIT
-
+block right_arrow
+	+arrow("right", one.link)
