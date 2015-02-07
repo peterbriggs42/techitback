@@ -26,7 +26,9 @@ exports = module.exports = function(req, res) {
 				five: 			sections.filter(common.getItemByKey, "join")[0],
 
 				// Games
+				previous: 				games.filter(common.getItemByKey, "band")[0],
 				selected: 				games.filter(common.getItemByKey, "challenge")[0],
+				next: 					games.filter(common.getItemByKey, "forward")[0],
 				games_challenge:  		games.filter(common.getItemByKey, "challenge")[0],
 				games_forward:  		games.filter(common.getItemByKey, "forward")[0],
 				games_talk: 		 	games.filter(common.getItemByKey, "talk")[0],

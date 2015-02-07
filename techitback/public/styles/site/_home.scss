@@ -1014,7 +1014,54 @@ body {
   font-family: Gotham;
   font-size: 1.2vw;
 }
+.quizzes_body {
+  margin-top: 5%;
+}
+.quiz_container {
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: 16%;
+  a {
+    display: inline-block;
+  }
+  &.bottom {
+    margin-top: 10%;
+  }
+  span {
+    font-weight: bold;
+    color:black;
+    position: absolute;
+    left: 0;
+    font-size: 1.4vw;
+    padding: 14%;
+    font-family: Gotham;
+    text-transform: uppercase;
+    text-align: center;
+    pointer-events: none;
+  }
+  #quiz_realorfake {
+    top: 23%;
+  }
+  #quiz_techitoff {
+    top: 18%;
+  }
+  #quiz_cellphone {
+    top: 11%;
+    font-size: 1.3vw;
+  }
+  #quiz_survive {
+    top: 10%;
+    font-size: 1.3vw;
+  }
+  #quiz_geek {
 
+  }
+  #quiz_technology {
+    top: 20%;
+    font-size: 1.1vw;
+  }
+}
 /*
  * Footer
  */

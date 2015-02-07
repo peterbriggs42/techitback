@@ -4,6 +4,12 @@ extends ../../layouts/welcome_section
 block left_arrow
 	+arrow("left", five.link)
 block body
-	h1	hey kerul
+	div.quizzes_body
+		+quiz_link(realorfake)
+		+quiz_link(techitoff, "true")
+		+quiz_link(cellphone)
+		+quiz_link(survive, "true")
+		+quiz_link(geek)
+		+quiz_link(technology, "true")
 block right_arrow
 	+arrow("right", one.link)

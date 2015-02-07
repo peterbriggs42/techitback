@@ -231,3 +231,13 @@ mixin cause_box(cause)
 
 mixin arrow(arrow, link)
 	img.arrow(src='images/'+arrow+'.png', class=link)
+
+mixin quiz_link(quiz, bottom)
+	- var quiz_class = "quiz_container"
+	if bottom
+		- quiz_class = "quiz_container bottom"
+	div(class=quiz_class)
+		a(href=quiz.link target="_blank")
+			img(src='images/5.61.png')
+		span(id="quiz_"+quiz.key) #{quiz.title}
+

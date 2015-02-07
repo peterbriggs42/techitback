@@ -6811,7 +6811,7 @@ html, body {
   width: 50% !important; }
 .cause_selected .selected_text {
   font-family: Gotham;
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 1.2vw;
   line-height: 1.5; }
 .cause_selected.cause_stomp img {
@@ -6827,6 +6827,43 @@ html, body {
   margin-top: 10px;
   font-family: Gotham;
   font-size: 1.2vw; }
+
+.quizzes_body {
+  margin-top: 5%; }
+
+.quiz_container {
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: 16%; }
+  .quiz_container a {
+    display: inline-block; }
+  .quiz_container.bottom {
+    margin-top: 10%; }
+  .quiz_container span {
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 0;
+    font-size: 1.4vw;
+    padding: 14%;
+    font-family: Gotham;
+    text-transform: uppercase;
+    text-align: center;
+    pointer-events: none; }
+  .quiz_container #quiz_realorfake {
+    top: 23%; }
+  .quiz_container #quiz_techitoff {
+    top: 18%; }
+  .quiz_container #quiz_cellphone {
+    top: 11%;
+    font-size: 1.3vw; }
+  .quiz_container #quiz_survive {
+    top: 10%;
+    font-size: 1.3vw; }
+  .quiz_container #quiz_technology {
+    top: 20%;
+    font-size: 1.1vw; }
 
 /*
  * Footer
