@@ -1,0 +1,7 @@
+include ../../mixins/home_mixins
+include ../../mixins/blog_mixins
+extends ../../layouts/blog_layout
+
+block blog_body
+	div.container-fluid.blog_article_content
+		#{post}

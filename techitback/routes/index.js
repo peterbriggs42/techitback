@@ -38,7 +38,8 @@ var routes = {
 	about_questions: 	importRoutes('./ajax/home/about_questions'),
 	cyberbullying: 		importRoutes('./ajax/home/cyberbullying'),
 	cybercrime: 		importRoutes('./ajax/home/cybercrime'),
-	welcome: 			importRoutes('./ajax/home/welcome')
+	welcome: 			importRoutes('./ajax/home/welcome'),
+	blog: 				importRoutes('./ajax/home/blog')
 };
 
 // Setup Route Bindings
@@ -139,6 +140,10 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/welcome_causes_stopbullying', routes.welcome.causes_stopbullying);
 	app.get('/ajax/home/welcome_causes_thrive', routes.welcome.causes_thrive);
 	app.get('/ajax/home/welcome_causes_memorial', routes.welcome.causes_memorial);
+
+	// BLOG
+	app.get('/ajax/home/blog_home', routes.blog.home);
+	app.get('/ajax/home/blog_article/:id', routes.blog.article)
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

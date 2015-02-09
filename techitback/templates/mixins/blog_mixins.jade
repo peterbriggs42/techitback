@@ -1,0 +1,9 @@
+mixin blog_section_title(text)
+	div.section_title_container
+		.section_title #{text}
+
+mixin blog_preview(post)
+	div.blog_preview_link(id=post._id)
+		img(src=post.image.url)
+		div.preview_title #{post.title}
+		div.content()!=post.content.brief
