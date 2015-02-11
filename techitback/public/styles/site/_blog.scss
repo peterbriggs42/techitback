@@ -2,7 +2,7 @@
 .blog_body {
 	background: white;
 	color: black;
-
+	min-height: 100%;
 	.section_title {
 		-webkit-transform: rotate(305deg);
 		-moz-transform: rotate(305deg);
@@ -35,6 +35,7 @@
 		color: white;
 		padding: 0px;
 		border-bottom: 2px solid black;
+		cursor: pointer;
 	}
 	.blog_section {
 		float: left;
@@ -47,35 +48,39 @@
 		&.small {
 			padding-top: 2.5%;
 		}
-		&.tech_health_link {
+		&.blog_tech_link {
 			width: 12%;
 		}
-		&.cybercrime_link {
+		&.blog_cybercrime_link {
 			width: 10%;
 		}
-		&.cyberbullying_link {
+		&.blog_cyberbullying_link {
 			width: 13%
 		}
-		&.sexting_link {
+		&.blog_sexting_link {
 			width: 13%;
 		}
-		&.app_link {
+		&.blog_app_link {
 			width: 9%;
 		}
-		&.tips_link {
+		&.blog_tips_link {
 			width: 5%;
 		}
-		&.preparing_link {
+		&.blog_preparing_link {
 			width: 12.5%;
 		}
-		&.oped_link {
+		&.blog_op_link {
 			width: 6.5%;
 		}
-		&.ask_link {
+		&.blog_ask_link {
 			width: 7.5%;
 		}
-		&.corporate_link {
+		&.blog_corporate_link {
 			width: 11.5%;
+		}
+		&.selected {
+			background-color: $blog_yellow;
+			color: black;
 		}
 	}
 
@@ -87,7 +92,7 @@
 	}
 
 	.blog_preview_link {
-		border: 3px solid rgb(240,240,240) !important;
+		border: 3px solid $blog_lightgray !important;
 		font-family: Gotham;
 		margin-bottom: 15px;
 		img {
@@ -109,6 +114,37 @@
 		}
 	}
 
+	.blog_article_content {
+		min-height: 400px;
+		overflow: auto;
+		.link_to_blog_home {
+			text-align: right;
+			cursor: pointer;
+			text-decoration: underline;
+			font-size: 1.8vw;
+			font-family: Gotham;
+			margin-top: 15px;
+		}
+		.article_content {
+			border: 3px solid $blog_lightgray;
+			font-family: Gotham;
+			margin-bottom: 30px;
+		}
+		.article_title {
+			padding: 15px;
+			font-size: 2.7vw;
+			text-decoration: underline;
+		}
+		img {
+			width: 45% !important;
+			float: right;
+			border: none !important;
+			padding: 0px 0px 10px 10px;
+		}
+		.article_body {
+			padding: 0px 17px 0px 17px;
+		}
+	}
 	
 
 }

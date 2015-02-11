@@ -14,10 +14,8 @@ exports = module.exports = function(req, res) {
 		console.log(posts);
 		
 		view.render('home/blog', {
-			post1: 		posts[0],
-			post2:  	posts[1],
-			post3: 		posts[2],
-			post4:  	posts[3]
+			postsLeft: 		posts.filter(function(element) { return posts.indexOf(element) % 2 != 0; }),
+			postsRight:  	posts.filter(function(element) { return posts.indexOf(element) % 2 == 0; })
 		});
 	});
 };

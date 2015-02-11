@@ -29,7 +29,7 @@ jQuery(function($) {
 	 * javascript. The latter will check for the specified element.
 	 */
 
-	function home_listener (element, URL, blog) {
+	function home_listener (element, URL, callback) {
 
 		// necessary for mobile touches
 		var dragging;
@@ -48,10 +48,10 @@ jQuery(function($) {
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
 			loadPopup(defaultReplaceArea);
-
-			// If this is a request for a blog post, append the blog ID
-			if (blog) {
-				URL = URL+= $(this).attr('id');
+			
+			// If there's a callback for that element to modify the URL
+			if (callback) {
+				URL = callback(this, URL);
 			}
 
 			// change body
@@ -62,90 +62,101 @@ jQuery(function($) {
 	}
 
 	[ 	// Tech Addiction links	
-		{'element':".tech_addiction_link",				'url':'ajax/home/tech_addiction', 'blog':false },
-		{'element':".tech_addiction_sleep_link",		'url':'ajax/home/tech_addiction_sleep', 'blog':false },
-		{'element':".tech_addiction_multi_link",		'url':'ajax/home/tech_addiction_multi', 'blog':false },
-		{'element':".tech_addiction_desens_link",		'url':'ajax/home/tech_addiction_desens', 'blog':false },
-		{'element':".tech_addiction_stress_link",		'url':'ajax/home/tech_addiction_stress', 'blog':false },
-		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction', 'blog':false },
+		{'element':".tech_addiction_link",				'url':'ajax/home/tech_addiction', 'callback':null },
+		{'element':".tech_addiction_sleep_link",		'url':'ajax/home/tech_addiction_sleep', 'callback':null },
+		{'element':".tech_addiction_multi_link",		'url':'ajax/home/tech_addiction_multi', 'callback':null },
+		{'element':".tech_addiction_desens_link",		'url':'ajax/home/tech_addiction_desens', 'callback':null },
+		{'element':".tech_addiction_stress_link",		'url':'ajax/home/tech_addiction_stress', 'callback':null },
+		{'element':".tech_addiction_addiction_link",	'url':'ajax/home/tech_addiction_addiction', 'callback':null },
 		// About links
-		{'element':".about_link",						'url':'ajax/home/about', 'blog':false },
-		{'element':".about_tib_link",					'url':'ajax/home/about_tib', 'blog':false },
-		{'element':".about_intralink_link",				'url':'ajax/home/about_intralink', 'blog':false },
-		{'element':".about_questions_link",				'url':'ajax/home/about_questions', 'blog':false },
+		{'element':".about_link",						'url':'ajax/home/about', 'callback':null },
+		{'element':".about_tib_link",					'url':'ajax/home/about_tib', 'callback':null },
+		{'element':".about_intralink_link",				'url':'ajax/home/about_intralink', 'callback':null },
+		{'element':".about_questions_link",				'url':'ajax/home/about_questions', 'callback':null },
 		// About Questions
-		{'element':".about_section #mean_by",			'url':'ajax/home/about_questions_mean_by', 'blog':false },
-		{'element':".about_section #statistics",		'url':'ajax/home/about_questions_statistics', 'blog':false },
-		{'element':".about_section #updated",			'url':'ajax/home/about_questions_updated', 'blog':false },
-		{'element':".about_section #social_media",		'url':'ajax/home/about_questions_social_media', 'blog':false },
-		{'element':".about_section #why_should_i",		'url':'ajax/home/about_questions_why_should_i', 'blog':false },
-		{'element':".about_section #arrested",			'url':'ajax/home/about_questions_arrested', 'blog':false },
-		{'element':".about_section #mean_online",		'url':'ajax/home/about_questions_mean_online', 'blog':false },
-		{'element':".about_section #bullying",			'url':'ajax/home/about_questions_bullying', 'blog':false },
-		{'element':".about_section #better_tech",		'url':'ajax/home/about_questions_better_tech', 'blog':false },
-		{'element':".about_section #technology",		'url':'ajax/home/about_questions_technology', 'blog':false },
-		{'element':".about_section #schools",			'url':'ajax/home/about_questions_schools', 'blog':false },
-		{'element':".about_section #educate",			'url':'ajax/home/about_questions_educate', 'blog':false },
+		{'element':".about_section #mean_by",			'url':'ajax/home/about_questions_mean_by', 'callback':null },
+		{'element':".about_section #statistics",		'url':'ajax/home/about_questions_statistics', 'callback':null },
+		{'element':".about_section #updated",			'url':'ajax/home/about_questions_updated', 'callback':null },
+		{'element':".about_section #social_media",		'url':'ajax/home/about_questions_social_media', 'callback':null },
+		{'element':".about_section #why_should_i",		'url':'ajax/home/about_questions_why_should_i', 'callback':null },
+		{'element':".about_section #arrested",			'url':'ajax/home/about_questions_arrested', 'callback':null },
+		{'element':".about_section #mean_online",		'url':'ajax/home/about_questions_mean_online', 'callback':null },
+		{'element':".about_section #bullying",			'url':'ajax/home/about_questions_bullying', 'callback':null },
+		{'element':".about_section #better_tech",		'url':'ajax/home/about_questions_better_tech', 'callback':null },
+		{'element':".about_section #technology",		'url':'ajax/home/about_questions_technology', 'callback':null },
+		{'element':".about_section #schools",			'url':'ajax/home/about_questions_schools', 'callback':null },
+		{'element':".about_section #educate",			'url':'ajax/home/about_questions_educate', 'callback':null },
 		// Cyberbullying and Abuse
-		{'element':".cyberbullying_link",				'url':'ajax/home/cyberbullying', 'blog':false },
-		{'element':".online_abuse_link",				'url':'ajax/home/online_abuse', 'blog':false },
-		{'element':".oa_cyberbullying_link",			'url':'ajax/home/oa_cyberbullying', 'blog':false },
-		{'element':".oa_cybersexting_link",				'url':'ajax/home/oa_cybersexting', 'blog':false },
-		{'element':".oa_cyberstalking_link",			'url':'ajax/home/oa_cyberstalking', 'blog':false },
-		{'element':".oa_pranking_link",					'url':'ajax/home/oa_pranking', 'blog':false },
-		{'element':".oa_stranger_link",					'url':'ajax/home/oa_strangerdanger', 'blog':false },
-		{'element':".share_link",						'url':'ajax/home/share_your_story', 'blog':false },
-		{'element':".share_share_link",					'url':'ajax/home/share_story', 'blog':false },
-		{'element':".share_see_link",					'url':'ajax/home/see_story', 'blog':false },
-		{'element':".movement_link",					'url':'ajax/home/our_movement', 'blog':false },
-		{'element':".ts_amanda_link",					'url':'ajax/home/ts_amanda', 'blog':false },
-		{'element':".ts_rebecca_link",					'url':'ajax/home/ts_rebecca', 'blog':false },
-		{'element':".ts_marcus_link",					'url':'ajax/home/ts_marcus', 'blog':false },
-		{'element':".report_link",						'url':'ajax/home/report_abuse', 'blog':false },
+		{'element':".cyberbullying_link",				'url':'ajax/home/cyberbullying', 'callback':null },
+		{'element':".online_abuse_link",				'url':'ajax/home/online_abuse', 'callback':null },
+		{'element':".oa_cyberbullying_link",			'url':'ajax/home/oa_cyberbullying', 'callback':null },
+		{'element':".oa_cybersexting_link",				'url':'ajax/home/oa_cybersexting', 'callback':null },
+		{'element':".oa_cyberstalking_link",			'url':'ajax/home/oa_cyberstalking', 'callback':null },
+		{'element':".oa_pranking_link",					'url':'ajax/home/oa_pranking', 'callback':null },
+		{'element':".oa_stranger_link",					'url':'ajax/home/oa_strangerdanger', 'callback':null },
+		{'element':".share_link",						'url':'ajax/home/share_your_story', 'callback':null },
+		{'element':".share_share_link",					'url':'ajax/home/share_story', 'callback':null },
+		{'element':".share_see_link",					'url':'ajax/home/see_story', 'callback':null },
+		{'element':".movement_link",					'url':'ajax/home/our_movement', 'callback':null },
+		{'element':".ts_amanda_link",					'url':'ajax/home/ts_amanda', 'callback':null },
+		{'element':".ts_rebecca_link",					'url':'ajax/home/ts_rebecca', 'callback':null },
+		{'element':".ts_marcus_link",					'url':'ajax/home/ts_marcus', 'callback':null },
+		{'element':".report_link",						'url':'ajax/home/report_abuse', 'callback':null },
 		// Cybercrime
-		{'element':".cybercrime_link",					'url':'ajax/home/cybercrime_home', 'blog':false },
-		{'element':".crime_whatis_link",				'url':'ajax/home/cybercrime_whatis', 'blog':false },
-		{'element':".crime_mistakes_link",				'url':'ajax/home/cybercrime_mistakes', 'blog':false },
-		{'element':".crime_stalking_link",				'url':'ajax/home/cybercrime_stalking', 'blog':false },
-		{'element':".crime_sexting_link",				'url':'ajax/home/cybercrime_sexting', 'blog':false },
-		{'element':".crime_bullying_link",				'url':'ajax/home/cybercrime_bullying', 'blog':false },
+		{'element':".cybercrime_link",					'url':'ajax/home/cybercrime_home', 'callback':null },
+		{'element':".crime_whatis_link",				'url':'ajax/home/cybercrime_whatis', 'callback':null },
+		{'element':".crime_mistakes_link",				'url':'ajax/home/cybercrime_mistakes', 'callback':null },
+		{'element':".crime_stalking_link",				'url':'ajax/home/cybercrime_stalking', 'callback':null },
+		{'element':".crime_sexting_link",				'url':'ajax/home/cybercrime_sexting', 'callback':null },
+		{'element':".crime_bullying_link",				'url':'ajax/home/cybercrime_bullying', 'callback':null },
 
 		// Welcome to Our Hour
-		{'element':".welcome_link",						'url':'ajax/home/welcome_home', 'blog':false },
-		{'element':".welcome_join_link",				'url':'ajax/home/welcome_join', 'blog':false }, 		
-		{'element':".welcome_games_link",				'url':'ajax/home/welcome_games', 'blog':false },
-		{'element':".welcome_downloadable_link",		'url':'ajax/home/welcome_downloadable', 'blog':false },
-		{'element':".welcome_video_link",				'url':'ajax/home/welcome_video', 'blog':false },
-		{'element':".welcome_causes_link",				'url':'ajax/home/welcome_causes', 'blog':false },
-		{'element':".welcome_causes2_link",				'url':'ajax/home/welcome_causes2', 'blog':false },
-		{'element':".welcome_quizzes_link",				'url':'ajax/home/welcome_quizzes', 'blog':false },
+		{'element':".welcome_link",						'url':'ajax/home/welcome_home', 'callback':null },
+		{'element':".welcome_join_link",				'url':'ajax/home/welcome_join', 'callback':null }, 		
+		{'element':".welcome_games_link",				'url':'ajax/home/welcome_games', 'callback':null },
+		{'element':".welcome_downloadable_link",		'url':'ajax/home/welcome_downloadable', 'callback':null },
+		{'element':".welcome_video_link",				'url':'ajax/home/welcome_video', 'callback':null },
+		{'element':".welcome_causes_link",				'url':'ajax/home/welcome_causes', 'callback':null },
+		{'element':".welcome_causes2_link",				'url':'ajax/home/welcome_causes2', 'callback':null },
+		{'element':".welcome_quizzes_link",				'url':'ajax/home/welcome_quizzes', 'callback':null },
 		// Welcome - Games
-		{'element':".welcome_games_band_link",			'url':'ajax/home/welcome_games_band', 'blog':false },
-		{'element':".welcome_games_forward_link",		'url':'ajax/home/welcome_games_forward', 'blog':false },
-		{'element':".welcome_games_talk_link",			'url':'ajax/home/welcome_games_talk', 'blog':false },
-		{'element':".welcome_games_challenge_link",		'url':'ajax/home/welcome_games_challenge', 'blog':false },
-		{'element':".welcome_games_wikipedia_link",		'url':'ajax/home/welcome_games_wikipedia', 'blog':false },
+		{'element':".welcome_games_band_link",			'url':'ajax/home/welcome_games_band', 'callback':null },
+		{'element':".welcome_games_forward_link",		'url':'ajax/home/welcome_games_forward', 'callback':null },
+		{'element':".welcome_games_talk_link",			'url':'ajax/home/welcome_games_talk', 'callback':null },
+		{'element':".welcome_games_challenge_link",		'url':'ajax/home/welcome_games_challenge', 'callback':null },
+		{'element':".welcome_games_wikipedia_link",		'url':'ajax/home/welcome_games_wikipedia', 'callback':null },
 		// Welcome - Causes
-		{'element':".welcome_causes_responsibility_link",		'url':'ajax/home/welcome_causes_responsibility', 'blog':false },
-		{'element':".welcome_causes_think_link",		'url':'ajax/home/welcome_causes_think', 'blog':false },
-		{'element':".welcome_causes_stomp_link",		'url':'ajax/home/welcome_causes_stomp', 'blog':false },
-		{'element':".welcome_causes_healthy_link",		'url':'ajax/home/welcome_causes_healthy', 'blog':false },
-		{'element':".welcome_causes_moodoff_link",		'url':'ajax/home/welcome_causes_moodoff', 'blog':false },
-		{'element':".welcome_causes_campaign_link",		'url':'ajax/home/welcome_causes_campaign', 'blog':false },
-		{'element':".welcome_causes_tyler_link",		'url':'ajax/home/welcome_causes_tyler', 'blog':false },
-		{'element':".welcome_causes_headspace_link",	'url':'ajax/home/welcome_causes_headspace', 'blog':false },
-		{'element':".welcome_causes_megan_link",		'url':'ajax/home/welcome_causes_megan', 'blog':false },
-		{'element':".welcome_causes_amanda_link",		'url':'ajax/home/welcome_causes_amanda', 'blog':false },
-		{'element':".welcome_causes_stopbullying_link",	'url':'ajax/home/welcome_causes_stopbullying', 'blog':false },
-		{'element':".welcome_causes_thrive_link",		'url':'ajax/home/welcome_causes_thrive', 'blog':false },
-		{'element':".welcome_causes_memorial_link",		'url':'ajax/home/welcome_causes_memorial', 'blog':false },
+		{'element':".welcome_causes_responsibility_link",		'url':'ajax/home/welcome_causes_responsibility', 'callback':null },
+		{'element':".welcome_causes_think_link",		'url':'ajax/home/welcome_causes_think', 'callback':null },
+		{'element':".welcome_causes_stomp_link",		'url':'ajax/home/welcome_causes_stomp', 'callback':null },
+		{'element':".welcome_causes_healthy_link",		'url':'ajax/home/welcome_causes_healthy', 'callback':null },
+		{'element':".welcome_causes_moodoff_link",		'url':'ajax/home/welcome_causes_moodoff', 'callback':null },
+		{'element':".welcome_causes_campaign_link",		'url':'ajax/home/welcome_causes_campaign', 'callback':null },
+		{'element':".welcome_causes_tyler_link",		'url':'ajax/home/welcome_causes_tyler', 'callback':null },
+		{'element':".welcome_causes_headspace_link",	'url':'ajax/home/welcome_causes_headspace', 'callback':null },
+		{'element':".welcome_causes_megan_link",		'url':'ajax/home/welcome_causes_megan', 'callback':null },
+		{'element':".welcome_causes_amanda_link",		'url':'ajax/home/welcome_causes_amanda', 'callback':null },
+		{'element':".welcome_causes_stopbullying_link",	'url':'ajax/home/welcome_causes_stopbullying', 'callback':null },
+		{'element':".welcome_causes_thrive_link",		'url':'ajax/home/welcome_causes_thrive', 'callback':null },
+		{'element':".welcome_causes_memorial_link",		'url':'ajax/home/welcome_causes_memorial', 'callback':null },
 
 		// BLOG
-		{'element':".blog_link",						'url':'ajax/home/blog_home', 'blog':false },
-		{'element':".blog_preview_link",				'url':'ajax/home/blog_article/', 'blog':true },
+		{'element':".blog_link",						'url':'ajax/home/blog_home', 'callback':null },
+		{'element':".blog_preview_link",				'url':'ajax/home/blog_article/', 'callback': function(elmt, URL) {
+				// For some reason URL keeps the last ID bit, so strip it if it's there
+				URL = URL.substr(0, URL.lastIndexOf('/') + 1);
+				return URL += $(elmt).attr('id');
+			}
+		},
+		{'element':".blog_section",						'url':'ajax/home/blog_section/', 'callback': function(elmt, URL) {
+				// For some reason URL keeps the last ID bit, so strip it if it's there
+				URL = URL.substr(0, URL.lastIndexOf('/') + 1);
+				return URL += ($(elmt).attr('class').trim().split(" ")[1]);
+			}
+		},
 
 	].map( function(listener) {
-		home_listener(listener['element'], listener['url'], listener['blog']);
+		home_listener(listener['element'], listener['url'], listener['callback']);
 	});
 
 

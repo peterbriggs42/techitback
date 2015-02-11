@@ -3,5 +3,14 @@ include ../../mixins/blog_mixins
 extends ../../layouts/blog_layout
 
 block blog_body
-	div.container-fluid.blog_article_content
-		#{post}
+	div.container-fluid
+		div.row
+			div.col-md-10.blog_article_content
+				div.link_to_blog_home.blog_link Back to main page >>>
+				div.article_content
+					if post.image
+						div.article_image
+							img(src=post.image.url)
+					div.article_title #{post.title}
+					div.article_body()!=post.content.brief
+			div.col-md-2.favorites

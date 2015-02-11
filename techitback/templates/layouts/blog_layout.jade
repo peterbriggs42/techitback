@@ -20,15 +20,14 @@ div.blog_body
 		//- div.blog_search
 
 	div.container-fluid.blog_sections
-		div.blog_section.tech_health_link.small 	Tech Health
-		div.blog_section.cybercrime_link.small 	Cybercrime
-		div.blog_section.cyberbullying_link.small	Cyberbullying
-		div.blog_section.sexting_link		Sexting and Other Abuses
-		div.blog_section.app_link.small 		App Update
-		div.blog_section.tips_link.small 	Tips
-		div.blog_section.preparing_link 		Preparing For the Hour
-		div.blog_section.oped_link.small 	Op-Ed
-		div.blog_section.ask_link			Ask Tech It Back
-		div.blog_section.corporate_link 		Corporate Initiatives
-
+		+blog_section('Tech Health', 'blog_tech_link', 'small', selected)
+		+blog_section('Cybercrime', 'blog_cybercrime_link', 'small', selected)
+		+blog_section('Cyberbullying', 'blog_cyberbullying_link', 'small', selected)
+		+blog_section('Sexting and Other Abuses', 'blog_sexting_link', none, selected)
+		+blog_section('App Update', 'blog_app_link', 'small', selected)
+		+blog_section('Tips', 'blog_tips_link', 'small', selected)
+		+blog_section('Preparing For the Hour', 'blog_preparing_link', none, selected)
+		+blog_section('Op-Ed', 'blog_op_link', 'small', selected)
+		+blog_section('Ask Tech It Back', 'blog_ask_link', none, selected)
+		+blog_section('Corporate Initiatives', 'blog_corporate_link', none, selected)
 	block blog_body

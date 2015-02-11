@@ -7,3 +7,14 @@ mixin blog_preview(post)
 		img(src=post.image.url)
 		div.preview_title #{post.title}
 		div.content()!=post.content.brief
+
+mixin blog_section(text, link, small, selected)
+	- var class_addition = ''
+	if small
+		- class_addition += ' small'
+	if selected == link
+		- class_addition += ' selected'
+	div.blog_section(class=link+class_addition) #{text}
+
+
+	

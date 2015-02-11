@@ -6,10 +6,10 @@ block blog_body
 	div.container-fluid.blog_content
 		div.row
 			div.col-md-4.preview_column_1
-				+blog_preview(post1)
-				+blog_preview(post2)
+				each post in postsLeft
+					+blog_preview(post)
 			div.col-md-4.preview_column_2
-				+blog_preview(post3)
-				+blog_preview(post4)
+				each post in postsRight
+					+blog_preview(post)
 			div.col-md-3
 
