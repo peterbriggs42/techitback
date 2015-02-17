@@ -27,7 +27,7 @@ exports = module.exports = function(req, res) {
 			});
 
 			view.render('home/blog_article', {
-				favorites: 		posts, //fixme
+				favorites: common.getFavoritePosts(posts),
 				post: 	 selected_post,
 				comments: comments
 			});

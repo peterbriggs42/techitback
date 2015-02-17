@@ -1,5 +1,6 @@
 var keystone = require('keystone'),
-	PostComment = keystone.list('PostComment');
+	PostComment = keystone.list('PostComment'),
+	common = require('../common');
 
 exports = module.exports = function(req, res) {
 
@@ -35,7 +36,7 @@ exports = module.exports = function(req, res) {
 				});
 
 				view.render('home/blog_article', {
-					favorites: posts,
+					favorites: common.getFavoritePosts(posts),
 					post: 	 selected_post,
 					comments: comments
 				});

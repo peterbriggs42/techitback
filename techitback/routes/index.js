@@ -144,7 +144,7 @@ exports = module.exports = function(app) {
 	// BLOG
 	app.get('/blog', routes.blog.home);
 	app.get('/blog_article/:id', routes.blog.article)
-	app.post('/blog_article/:id', routes.form_requests.blog_comment);
+	app.post('/blog_article/:id', routes.blog.blog_comment);
 	app.get('/blog_section/:section', routes.blog.section)
 
 
