@@ -27,6 +27,7 @@ exports = module.exports = function(req, res) {
 
 			var BlogComments = keystone.list('PostComment');
 			BlogComments.model.find()
+				.sort('-created_at')
 				.exec(function(err, comments) {
 
 				comments = comments.filter(function(comment) {

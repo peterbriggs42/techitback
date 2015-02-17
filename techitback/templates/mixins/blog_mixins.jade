@@ -1,6 +1,7 @@
-mixin blog_section_title(text)
-	div.section_title_container
-		.section_title #{text}
+mixin blog_section_title(text, title_class)
+	th.rotate
+		div(class=title_class)
+			span #{text}
 
 mixin blog_section_link(link, image)
 	a(href=link)
@@ -29,4 +30,13 @@ mixin article_comment(comment)
 			div.name
 				b #{comment.name}:
 		div.text #{comment.text}
-		
+
+mixin blog_favorites(posts)
+	div.popular_articles
+		div.title Popular Articles
+		div.articles
+			each post in posts
+				a(href='/blog_article/'+post.id)
+					div.blog_favorites
+						img(src=post.image.url)
+						div.post_title #{post.title}

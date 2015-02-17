@@ -19,6 +19,7 @@ exports = module.exports = function(req, res) {
 			.exec(function(err, posts) {
 			
 			view.render('home/blog', {
+				favorites: 		posts,
 				selected: 		req.params['section'],
 				postsLeft: 		posts.filter(function(element) { return posts.indexOf(element) % 2 != 0; }),
 				postsRight:  	posts.filter(function(element) { return posts.indexOf(element) % 2 == 0; })

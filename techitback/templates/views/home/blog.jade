@@ -5,11 +5,15 @@ extends ../../layouts/blog_layout
 block blog_body
 	div.container-fluid.blog_content
 		div.row
-			div.col-md-4.preview_column_1
-				each post in postsLeft
-					+blog_preview(post)
-			div.col-md-4.preview_column_2
-				each post in postsRight
-					+blog_preview(post)
+			div.col-md-9
+				div.row
+					div.col-md-6.preview_column_1
+						each post in postsLeft
+							+blog_preview(post)
+					div.col-md-6.preview_column_2
+						each post in postsRight
+							+blog_preview(post)
 			div.col-md-3
+				+blog_favorites(favorites)
+
 

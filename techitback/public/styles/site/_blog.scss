@@ -22,7 +22,7 @@
 		margin-top: 1px;
 	}
 	.title {
-		font-size: 3vw;
+		font-size: 40px;
 		text-transform: uppercase;
 		float:left;
 	}
@@ -31,9 +31,11 @@
 		border: 2px solid black !important;
 		border-radius: 20px;
 		float: right;
-		margin-right: 5px;
+		margin: 3px 7px 0px 0px;
 	}
-
+	.welcome_video_header img {
+		margin-right: 20px;
+	}
 	.blog_sections {
 		background-color: $blog_purple;
 		color: white;
@@ -132,7 +134,7 @@
 		.article_content {
 			border: 3px solid $blog_lightgray;
 			font-family: Gotham;
-			margin-bottom: 30px;
+			margin: 5px 0px 30px 20px;
 		}
 		.article_title {
 			padding: 15px;
@@ -173,6 +175,56 @@
 			}
 		}
 	}
-	
+	.welcome_video_diagonal {
+		margin-right: 48px;
+	}
+	.header_container {
+		height: 93px;
+		margin-top: -6px;
+		text-transform: uppercase;
+		font-size: 20px;
+		.table-header-rotated {
+			float: right;
+			width: 200px;
+			border-collapse: collapse;
+			.csstransforms & td {
+				width: 30px;
+			}
+			.no-csstransforms & th {
+				padding: 5px 10px;
+			}
+			th.rotate {
+				height: 70px;
+				white-space: nowrap;
+				// Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate 
+				div {
+				  transform: 
+				    // Magic Numbers
+				    translate(25px, 51px)
+				    // 45 is really 360-45
+				    rotate(315deg);
+				  width: 30px;
+				}
+			}
+		}
+	}
 
+	.popular_articles {
+		border: solid 2px gray;
+		margin-top: 20px;
+		.title {
+			text-align: center;
+			text-transform: uppercase;
+			padding: 10px;
+			font-size: 26px;
+			background: $blog_blue;
+			width: 100%;
+		}
+		.post_title {
+			text-align: center;
+			font-family: Gotham;
+			margin: 10px;
+			font-size: 18px
+		}
+	}
 }

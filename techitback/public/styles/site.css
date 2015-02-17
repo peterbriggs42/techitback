@@ -6910,7 +6910,7 @@ html, body {
     border-bottom: 2px solid black;
     margin-top: 1px; }
   .blog_body .title {
-    font-size: 3vw;
+    font-size: 40px;
     text-transform: uppercase;
     float: left; }
   .blog_body .section_icon {
@@ -6918,7 +6918,9 @@ html, body {
     border: 2px solid black !important;
     border-radius: 20px;
     float: right;
-    margin-right: 5px; }
+    margin: 3px 7px 0px 0px; }
+  .blog_body .welcome_video_header img {
+    margin-right: 20px; }
   .blog_body .blog_sections {
     background-color: #b142f7;
     color: white;
@@ -6993,7 +6995,7 @@ html, body {
     .blog_body .blog_article_content .article_content {
       border: 3px solid #f0f0f0;
       font-family: Gotham;
-      margin-bottom: 30px; }
+      margin: 5px 0px 30px 20px; }
     .blog_body .blog_article_content .article_title {
       padding: 15px;
       font-size: 2.7vw;
@@ -7021,6 +7023,42 @@ html, body {
         margin-bottom: 10px; }
         .blog_body .blog_article_content .article_comments .comment .date_posted {
           float: right; }
+  .blog_body .welcome_video_diagonal {
+    margin-right: 48px; }
+  .blog_body .header_container {
+    height: 93px;
+    margin-top: -6px;
+    text-transform: uppercase;
+    font-size: 20px; }
+    .blog_body .header_container .table-header-rotated {
+      float: right;
+      width: 200px;
+      border-collapse: collapse; }
+      .csstransforms .blog_body .header_container .table-header-rotated td {
+        width: 30px; }
+      .no-csstransforms .blog_body .header_container .table-header-rotated th {
+        padding: 5px 10px; }
+      .blog_body .header_container .table-header-rotated th.rotate {
+        height: 70px;
+        white-space: nowrap; }
+        .blog_body .header_container .table-header-rotated th.rotate div {
+          transform: translate(25px, 51px) rotate(315deg);
+          width: 30px; }
+  .blog_body .popular_articles {
+    border: solid 2px gray;
+    margin-top: 20px; }
+    .blog_body .popular_articles .title {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      font-size: 26px;
+      background: #149edf;
+      width: 100%; }
+    .blog_body .popular_articles .post_title {
+      text-align: center;
+      font-family: Gotham;
+      margin: 10px;
+      font-size: 18px; }
 
 @media (max-width: 767px) {
   .nav > li {
