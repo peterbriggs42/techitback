@@ -6891,9 +6891,12 @@ html, body {
 
 /* Blog */
 .blog_body {
+  font-family: rbno2;
   background: white;
   color: black;
   min-height: 100%; }
+  .blog_body img {
+    width: 100%; }
   .blog_body .section_title {
     -webkit-transform: rotate(305deg);
     -moz-transform: rotate(305deg);
@@ -6932,25 +6935,25 @@ html, body {
     text-align: center; }
     .blog_body .blog_section.small {
       padding-top: 2.5%; }
-    .blog_body .blog_section.blog_tech_link {
+    .blog_body .blog_section.tech {
       width: 12%; }
-    .blog_body .blog_section.blog_cybercrime_link {
+    .blog_body .blog_section.cybercrime {
       width: 10%; }
-    .blog_body .blog_section.blog_cyberbullying_link {
+    .blog_body .blog_section.cyberbullying {
       width: 13%; }
-    .blog_body .blog_section.blog_sexting_link {
+    .blog_body .blog_section.sexting {
       width: 13%; }
-    .blog_body .blog_section.blog_app_link {
+    .blog_body .blog_section.app {
       width: 9%; }
-    .blog_body .blog_section.blog_tips_link {
+    .blog_body .blog_section.tips {
       width: 5%; }
-    .blog_body .blog_section.blog_preparing_link {
+    .blog_body .blog_section.preparing {
       width: 12.5%; }
-    .blog_body .blog_section.blog_op_link {
+    .blog_body .blog_section.op {
       width: 6.5%; }
-    .blog_body .blog_section.blog_ask_link {
+    .blog_body .blog_section.ask {
       width: 7.5%; }
-    .blog_body .blog_section.blog_corporate_link {
+    .blog_body .blog_section.corporate {
       width: 11.5%; }
     .blog_body .blog_section.selected {
       background-color: #efff4b;

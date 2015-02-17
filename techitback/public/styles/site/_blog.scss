@@ -1,8 +1,12 @@
 /* Blog */
 .blog_body {
+	font-family: rbno2;
 	background: white;
 	color: black;
 	min-height: 100%;
+	img {
+		width: 100%;
+	}
 	.section_title {
 		-webkit-transform: rotate(305deg);
 		-moz-transform: rotate(305deg);
@@ -48,34 +52,34 @@
 		&.small {
 			padding-top: 2.5%;
 		}
-		&.blog_tech_link {
+		&.tech {
 			width: 12%;
 		}
-		&.blog_cybercrime_link {
+		&.cybercrime {
 			width: 10%;
 		}
-		&.blog_cyberbullying_link {
+		&.cyberbullying {
 			width: 13%
 		}
-		&.blog_sexting_link {
+		&.sexting {
 			width: 13%;
 		}
-		&.blog_app_link {
+		&.app {
 			width: 9%;
 		}
-		&.blog_tips_link {
+		&.tips {
 			width: 5%;
 		}
-		&.blog_preparing_link {
+		&.preparing {
 			width: 12.5%;
 		}
-		&.blog_op_link {
+		&.op {
 			width: 6.5%;
 		}
-		&.blog_ask_link {
+		&.ask {
 			width: 7.5%;
 		}
-		&.blog_corporate_link {
+		&.corporate {
 			width: 11.5%;
 		}
 		&.selected {

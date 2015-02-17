@@ -10,8 +10,6 @@ exports = module.exports = function(req, res) {
  
 	BlogHome.model.find()
 		.exec(function(err, posts) {
-
-		console.log(posts);
 		
 		view.render('home/blog', {
 			postsLeft: 		posts.filter(function(element) { return posts.indexOf(element) % 2 != 0; }),

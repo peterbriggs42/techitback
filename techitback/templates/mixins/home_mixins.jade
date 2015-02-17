@@ -5,6 +5,11 @@ mixin home_menu_item(name, number, menu_link)
 			img.menu_icon(src='images/menu_icons/12.'+number+'.png')
 			span.faux_link(class=menu_link) #{name}
 
+// Accompanying mixin for the side_menu_foreign (below)
+mixin home_menu_item_foreign(name, number, menu_link)
+	a(href='/#'+menu_link)
+		+home_menu_item(name,number)
+
 mixin side_menu()
 	div#left_menu
 		div#menu_header #TECHITBACK
@@ -12,7 +17,8 @@ mixin side_menu()
 			input(type='text', name='search_bar')
 		+home_menu_item('WELCOME TO OUR HOUR', 1, 'welcome_link')
 		+home_menu_item('ABOUT', 2, 'about_link')
-		+home_menu_item('BLOG', 3, 'blog_link')
+		a(href='blog')
+			+home_menu_item('BLOG', 3)
 		+home_menu_item('CYBERBULLYING AND ABUSE', 4, 'cyberbullying_link')
 		+home_menu_item('TECH ADDICTION', 5, 'tech_addiction_link')
 		+home_menu_item('CYBERCRIME NEWS', 6, 'cybercrime_link')
@@ -23,6 +29,28 @@ mixin side_menu()
 		a(href='yanng')
 			+home_menu_item('YES AND NO NO GIRLS', 12, '')
 		div.menu_padding
+
+// Side menu for blog and yanng, where the links need hashes
+mixin side_menu_foreign()
+	div#left_menu
+		div#menu_header #TECHITBACK
+		div#search_bar
+			input(type='text', name='search_bar')
+		+home_menu_item_foreign('WELCOME TO OUR HOUR', 1, 'welcome_link')
+		+home_menu_item_foreign('ABOUT', 2, 'about_link')
+		a(href='blog')
+			+home_menu_item('BLOG', 3)
+		+home_menu_item_foreign('CYBERBULLYING AND ABUSE', 4, 'cyberbullying_link')
+		+home_menu_item_foreign('TECH ADDICTION', 5, 'tech_addiction_link')
+		+home_menu_item_foreign('CYBERCRIME NEWS', 6, 'cybercrime_link')
+		+home_menu_item_foreign('TIPS FOR TEENS', 7, '')
+		+home_menu_item_foreign('SCHOOLS + PARENTS', 8, '')
+		+home_menu_item_foreign('CORPORATE PARTNERS', 9, '')
+		+home_menu_item_foreign('CONTACT US', 11, '')
+		a(href='yanng')
+			+home_menu_item('YES AND NO NO GIRLS', 12, '')
+		div.menu_padding
+
 
 mixin home_picture(image, text, span_class)
 	img.img-responsive(src='images/home/'+image)

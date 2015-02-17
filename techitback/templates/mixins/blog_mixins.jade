@@ -2,19 +2,25 @@ mixin blog_section_title(text)
 	div.section_title_container
 		.section_title #{text}
 
+mixin blog_section_link(link, image)
+	a(href=link)
+		img.section_icon(src=image)
+
 mixin blog_preview(post)
-	div.blog_preview_link(id=post._id)
-		img(src=post.image.url)
-		div.preview_title #{post.title}
-		div.content()!=post.content.brief
+	a(href='/blog_article/'+post.id)
+		div.blog_preview_link
+			img(src=post.image.url)
+			div.preview_title #{post.title}
+			div.content()!=post.content.brief
 
 mixin blog_section(text, link, small, selected)
 	- var class_addition = ''
 	if small
-		- class_addition += ' small'
+		- class_addition += 'small '
 	if selected == link
-		- class_addition += ' selected'
-	div.blog_section(class=link+class_addition) #{text}
+		- class_addition += 'selected'
+	a(href='/blog_section/'+link)
+		div.blog_section(class=link+' '+class_addition) #{text}
 
 
 	

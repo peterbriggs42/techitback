@@ -1,33 +1,39 @@
-div.blog_body
+extends ./default
 
-	//- div.container-fluid.blog_sections
-	//- 	+blog_section_title("Poll-A-Thon")
-	//- 	+blog_section_title("Downloadables")
-	//- 	+blog_section_title("Games")
-	//- 	+blog_section_title("Join")
-	//- 	+blog_section_title("Quizzes")
-	//- 	+blog_section_title("Causes")
-	//- 	+blog_section_title("Videos")
-	div.container-fluid.title_header 
-		div.title Tech It Off Blog
-		img.section_icon(src='images/welcome_icons/5.4.png')
-		img.section_icon(src='images/welcome_icons/5.5.png')
-		img.section_icon(src='images/welcome_icons/5.6.png')
-		img.section_icon(src='images/welcome_icons/5.2.png')
-		img.section_icon(src='images/welcome_icons/5.3.png')
-		img.section_icon(src='images/welcome_icons/6.11.png')
-		
-		//- div.blog_search
+block content
+	+side_menu_foreign
+	div.blog_body
 
-	div.container-fluid.blog_sections
-		+blog_section('Tech Health', 'blog_tech_link', 'small', selected)
-		+blog_section('Cybercrime', 'blog_cybercrime_link', 'small', selected)
-		+blog_section('Cyberbullying', 'blog_cyberbullying_link', 'small', selected)
-		+blog_section('Sexting and Other Abuses', 'blog_sexting_link', none, selected)
-		+blog_section('App Update', 'blog_app_link', 'small', selected)
-		+blog_section('Tips', 'blog_tips_link', 'small', selected)
-		+blog_section('Preparing For the Hour', 'blog_preparing_link', none, selected)
-		+blog_section('Op-Ed', 'blog_op_link', 'small', selected)
-		+blog_section('Ask Tech It Back', 'blog_ask_link', none, selected)
-		+blog_section('Corporate Initiatives', 'blog_corporate_link', none, selected)
-	block blog_body
+		//- div.container-fluid.blog_sections
+		//- 	+blog_section_title("Poll-A-Thon")
+		//- 	+blog_section_title("Downloadables")
+		//- 	+blog_section_title("Games")
+		//- 	+blog_section_title("Join")
+		//- 	+blog_section_title("Quizzes")
+		//- 	+blog_section_title("Causes")
+		//- 	+blog_section_title("Videos")
+
+		div.container-fluid.title_header
+			a(href='/blog')
+				div.title Tech It Off Blog
+			+blog_section_link('/#welcome_video_link','/images/welcome_icons/5.4.png')
+			+blog_section_link('/#welcome_causes_link','/images/welcome_icons/5.5.png')
+			+blog_section_link('/#welcome_quizzes_link','/images/welcome_icons/5.6.png')
+			+blog_section_link('/#welcome_games_link','/images/welcome_icons/5.2.png')
+			+blog_section_link('/#welcome_downloadable_link','/images/welcome_icons/5.3.png')
+			//- +blog_section_link('/#welcome_downloadable_link','/images/welcome_icons/6.11.png')
+			
+			//- div.blog_search
+
+		div.container-fluid.blog_sections
+			+blog_section('Tech Health', 'tech', 'small', selected)
+			+blog_section('Cybercrime', 'cybercrime', 'small', selected)
+			+blog_section('Cyberbullying', 'cyberbullying', 'small', selected)
+			+blog_section('Sexting and Other Abuses', 'sexting', none, selected)
+			+blog_section('App Update', 'app', 'small', selected)
+			+blog_section('Tips', 'tips', 'small', selected)
+			+blog_section('Preparing For the Hour', 'preparing', none, selected)
+			+blog_section('Op-Ed', 'op', 'small', selected)
+			+blog_section('Ask Tech It Back', 'ask', none, selected)
+			+blog_section('Corporate Initiatives', 'corporate', none, selected)
+		block blog_body

@@ -142,9 +142,9 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/welcome_causes_memorial', routes.welcome.causes_memorial);
 
 	// BLOG
-	app.get('/ajax/home/blog_home', routes.blog.home);
-	app.get('/ajax/home/blog_article/:id', routes.blog.article)
-	app.get('/ajax/home/blog_section/:section', routes.blog.section)
+	app.get('/blog', routes.blog.home);
+	app.get('/blog_article/:id', routes.blog.article)
+	app.get('/blog_section/:section', routes.blog.section)
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

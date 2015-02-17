@@ -6,7 +6,8 @@ block blog_body
 	div.container-fluid
 		div.row
 			div.col-md-10.blog_article_content
-				div.link_to_blog_home.blog_link Back to main page >>>
+				a(href='/blog')
+					div.link_to_blog_home Back to main page >>>
 				div.article_content
 					if post.image
 						div.article_image

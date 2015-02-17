@@ -25,8 +25,9 @@ block content
 				+home_picture("people.jpg", "WELCOME TO OUR HOUR", "welcome blue")
 		div.row.row-no-padding
 			div.col-md-4
-				div.row.blog_link
-					+home_picture("desk.jpg", "BLOG", "desk")
+				a(href='/blog')
+					div.row
+						+home_picture("desk.jpg", "BLOG", "desk")
 				div.row.row-no-padding
 					div.col-md-12
 						+home_picture("class.jpg", "SCHOOLS + PARENTS", "school")

@@ -142,28 +142,42 @@ jQuery(function($) {
 
 		// BLOG
 		{'element':".blog_link",						'url':'ajax/home/blog_home', 'callback':null },
-		{'element':".blog_preview_link",				'url':'ajax/home/blog_article/', 'callback': function(elmt, URL) {
-				// For some reason URL keeps the last ID bit, so strip it if it's there
-				URL = URL.substr(0, URL.lastIndexOf('/') + 1);
-				return URL += $(elmt).attr('id');
-			}
-		},
-		{'element':".blog_section",						'url':'ajax/home/blog_section/', 'callback': function(elmt, URL) {
-				// For some reason URL keeps the last ID bit, so strip it if it's there
-				URL = URL.substr(0, URL.lastIndexOf('/') + 1);
-				return URL += ($(elmt).attr('class').trim().split(" ")[1]);
-			}
-		},
+		// {'element':".blog_preview_link",				'url':'ajax/home/blog_article/', 'callback': function(elmt, URL) {
+		// 		// For some reason URL keeps the last ID bit, so strip it if it's there
+		// 		URL = URL.substr(0, URL.lastIndexOf('/') + 1);
+		// 		return URL += $(elmt).attr('id');
+		// 	}
+		// },
+		// {'element':".blog_section",						'url':'ajax/home/blog_section/', 'callback': function(elmt, URL) {
+		// 		// For some reason URL keeps the last ID bit, so strip it if it's there
+		// 		URL = URL.substr(0, URL.lastIndexOf('/') + 1);
+		// 		return URL += ($(elmt).attr('class').trim().split(" ")[1]);
+		// 	}
+		// },
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url'], listener['callback']);
+
+		// If there is a hash (i.e. techitback.com#games), then go there
+		var hash;
+		if (hash = window.location.hash.replace('#','.')) {
+			if (listener['element'] == hash) {
+
+				$(document).ready(function () {
+					ajaxRequest(null, listener['url'], '', 'GET', function(data) {
+						loadPopup(defaultReplaceArea);
+						$(defaultReplaceArea).html(data);
+						document.location.hash = ''
+					}); 
+				});
+			}
+		}
 	});
 
 
 	$(document).on('click touchend', "#popup_exit", function (e) {
 		disablePopup();
     });
-
 
 	/* SHARE YOUR STORY */
 	$(document).on('keyup', ".share_your_stories_share textarea", function() {

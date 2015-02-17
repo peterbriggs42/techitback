@@ -25,7 +25,9 @@ function ajaxRequestFromForm(form, event, onSuccess) {
 
 function ajaxRequest(event, URL, data, HTTPVerb, onSuccess) {
 	//STOP default action
-	event.preventDefault();
+	if(event) {
+		event.preventDefault();
+	}
 
 	$.ajax(
 	{
