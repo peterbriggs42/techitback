@@ -144,8 +144,9 @@ exports = module.exports = function(app) {
 	// BLOG
 	app.get('/blog', routes.blog.home);
 	app.get('/blog_article/:id', routes.blog.article)
+	app.post('/blog_article/:id', routes.form_requests.blog_comment);
 	app.get('/blog_section/:section', routes.blog.section)
-	app.post('/article/:id/comment', routes.form_requests.blog_comment);
+
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

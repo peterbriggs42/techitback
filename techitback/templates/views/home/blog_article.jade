@@ -20,7 +20,7 @@ block blog_body
 							div.right_align comment
 						div.col-md-10
 							div.comment_box
-								form(action='/article/#{post.id}/comment', method='POST')
+								form(action='/blog_article/#{post.id}', method='POST')
 									input(name='name', type='text', class='form-control name', placeholder='Your name')
 									textarea.form-control.text(name="text", maxlength=500)
 									div.center_align
