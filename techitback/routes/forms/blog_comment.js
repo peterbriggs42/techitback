@@ -35,6 +35,7 @@ exports = module.exports = function(req, res) {
 				});
 
 				view.render('home/blog_article', {
+					favorites: posts,
 					post: 	 selected_post,
 					comments: comments
 				});
