@@ -7005,6 +7005,22 @@ html, body {
       padding: 0px 0px 10px 10px; }
     .blog_body .blog_article_content .article_body {
       padding: 0px 17px 0px 17px; }
+    .blog_body .blog_article_content .article_comments {
+      font-family: Gotham; }
+      .blog_body .blog_article_content .article_comments .comment_box form .name {
+        margin-bottom: 10px;
+        width: 20%; }
+      .blog_body .blog_article_content .article_comments .comment_box form .text {
+        height: 100px; }
+      .blog_body .blog_article_content .article_comments .comment_box form button[type='submit'] {
+        margin: 10px; }
+      .blog_body .blog_article_content .article_comments .comment {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px; }
+        .blog_body .blog_article_content .article_comments .comment .date_posted {
+          float: right; }
 
 @media (max-width: 767px) {
   .nav > li {

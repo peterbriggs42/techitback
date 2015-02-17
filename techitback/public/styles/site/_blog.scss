@@ -148,6 +148,30 @@
 		.article_body {
 			padding: 0px 17px 0px 17px;
 		}
+		.article_comments {
+			font-family: Gotham;
+			.comment_box form {
+				.name {
+					margin-bottom: 10px;
+					width: 20%;
+				}
+				.text {
+					height: 100px;
+				}
+				button[type='submit'] {
+					margin: 10px;
+				}
+			}
+			.comment {
+				border: 1px solid lightgray;
+				border-radius: 5px;
+				padding: 10px;
+				margin-bottom: 10px;
+				.date_posted {
+					float: right;
+				}
+			}
+		}
 	}
 	
 

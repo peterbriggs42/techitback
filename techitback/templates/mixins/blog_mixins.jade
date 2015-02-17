@@ -22,5 +22,11 @@ mixin blog_section(text, link, small, selected)
 	a(href='/blog_section/'+link)
 		div.blog_section(class=link+' '+class_addition) #{text}
 
-
-	
+mixin article_comment(comment)
+	div.comment
+		div.date_posted #{moment(comment.created_at).format('MMMM Do[,] YYYY [at] h:mm a')}
+		if comment.name
+			div.name
+				b #{comment.name}:
+		div.text #{comment.text}
+		
