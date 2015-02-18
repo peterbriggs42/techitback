@@ -157,6 +157,9 @@ jQuery(function($) {
 		{'element': '.tech-check-link', 				'url':'ajax/home/parents/tech-check'},
 		{'element': '.report-it-link', 					'url':'ajax/home/parents/report-it'},
 		{'element': '.just-say-no-link', 				'url':'ajax/home/parents/just-say-no'},
+		// Schools and Parents - Share Tips
+		{'element': '.share-tips-link', 				'url':'ajax/home/school/share-tips'},
+		{'element': '.your-tips-link', 					'url':'ajax/home/school/your-tips'},
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);

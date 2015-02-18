@@ -1,0 +1,24 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("SHARE TIPS", "12.8.png", " TIPS FOR EDUCATORS + PARENTS")
+block left_arrow
+	a(href='/blog')
+		+arrow_with_link("left", left.key)
+block body
+	div.container-fluid.schools_body.share_tips
+		div.row
+				div.join_title()!=main.content.brief
+				form(action="/form/schools/join", method='POST')
+					+schools_join_input_row("Name", 'name')
+					+schools_join_input_row("State/Province", "state")
+					+schools_join_input_row("Country", "country")
+
+					// TEXTAREA
+
+					div.center_align
+						button(type="submit") SUBMIT
+block right_arrow
+	+arrow_with_link("right", right.key)

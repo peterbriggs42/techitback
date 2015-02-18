@@ -7181,6 +7181,17 @@ html, body {
   margin-top: 160px;
   font-family: Gotham;
   font-size: 31px; }
+.schools_body.share .row {
+  margin-top: 50px; }
+.schools_body.share_tips .join_title {
+  font-family: Gotham;
+  font-size: 18px;
+  line-height: 1.6; }
+.schools_body.your_tips div {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 28px;
+  margin-top: 130px; }
 
 @media (max-width: 767px) {
   .nav > li {

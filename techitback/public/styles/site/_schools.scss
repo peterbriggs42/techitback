@@ -87,4 +87,27 @@
 		}
 	}
 
+	&.share {
+		.row {
+			margin-top: 50px;
+		}
+	}
+
+	&.share_tips {
+		.join_title {
+			font-family: Gotham;
+			font-size: 18px;
+			line-height: 1.6;
+		}
+	}
+
+	&.your_tips {
+		div {
+			text-align: center;
+			font-family: Gotham;
+			font-size: 28px;
+			margin-top: 130px;
+		}
+	}
+
 }
