@@ -1,0 +1,29 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("SCHOOLS + PARENTS")
+block left_arrow
+	a(href='/blog')
+		+arrow_with_link("left")
+block body
+	div.container-fluid.schools_body
+		div.row
+			div.col-md-6
+				img(src=main.image.url)
+				div.title()!=main.content.brief
+			div.col-md-6
+				div.row
+					div.col-md-6
+						div.row
+							+popup_picture_v2(models_schools)
+						div.row
+							+popup_picture_v2(models_parents)
+					div.col-md-6
+						div.row
+							+popup_picture_v2(join)
+						div.row
+							+popup_picture_v2(share)
+block right_arrow
+	+arrow_with_link("right", "contact_us")

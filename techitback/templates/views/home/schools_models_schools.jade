@@ -1,0 +1,33 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("MODELS + FOR SCHOOLS", "12.8.png", " SCHOOLS + PARENTS")
+block left_arrow
+	+arrow_with_link("left", left.key)
+block body
+	div.container-fluid.schools_body
+		div.row
+			div.col-md-5
+				img(src=main.image.url)
+				div.title()!=main.content.brief
+			div.col-md-7
+				div.row
+					div.col-md-4
+						div.row
+							+popup_picture_v2(talk)
+						div.row
+							+popup_picture_v2(tech_health)
+					div.col-md-4
+						div.row
+							+popup_picture_v2(tech_use)
+						div.row
+							+popup_picture_v2(parent)
+					div.col-md-4
+						div.row
+							+popup_picture_v2(discuss)
+						div.row
+							+popup_picture_v2(establish)
+block right_arrow
+	+arrow_with_link("right", right.key)

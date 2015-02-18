@@ -39,7 +39,8 @@ var routes = {
 	cyberbullying: 		importRoutes('./ajax/home/cyberbullying'),
 	cybercrime: 		importRoutes('./ajax/home/cybercrime'),
 	welcome: 			importRoutes('./ajax/home/welcome'),
-	blog: 				importRoutes('./ajax/home/blog')
+	blog: 				importRoutes('./ajax/home/blog'),
+	schools:			importRoutes('./ajax/home/schools')
 };
 
 // Setup Route Bindings
@@ -146,6 +147,16 @@ exports = module.exports = function(app) {
 	app.get('/blog_article/:id', routes.blog.article)
 	app.post('/blog_article/:id', routes.blog.blog_comment);
 	app.get('/blog_section/:section', routes.blog.section)
+
+	// Schools and Parents
+	app.get('/ajax/home/schools_home', routes.schools.home);
+	app.get('/ajax/home/schools_models_schools', routes.schools.models_schools);
+	// app.get('ajax/home/schools_join', routes.schools.join);
+	// app.get('ajax/home/schools_models_parents', routes.schools.models_parents);
+	// app.get('ajax/home/schools_share', routes.schools.share);
+
+	// Schools and Parents - Models + Tips For Schools
+	app.get('/ajax/home/schools/:section', routes.schools.models_schools_section);
 
 
 	// Main YANNG pages

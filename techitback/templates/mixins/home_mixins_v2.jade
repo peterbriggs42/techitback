@@ -1,0 +1,9 @@
+mixin popup_picture_v2(post)
+	div.popup_picture_box(class=post.key+"-link")
+		img(src=post.thumbnail)
+		div()!=post.title
+
+mixin thumbnail_pic_five(post)
+	div.col-md-2.fifth
+		img(src=post.thumbnail, class=post.key+"-link pointer")
+		div.label_text #{post.title}	
