@@ -153,14 +153,14 @@ exports = module.exports = function(app) {
 	// Schools and Parents
 	app.get('/ajax/home/schools_home', routes.schools.home);
 	app.get('/ajax/home/schools_models_schools', routes.schools.models_schools);
-	// app.get('ajax/home/schools_join', routes.schools.join);
+	app.get('/ajax/home/schools_join', routes.schools.join);
 	app.get('/ajax/home/schools_models_parents', routes.schools.models_parents);
-	// app.get('ajax/home/schools_share', routes.schools.share);
+	// app.get('/ajax/home/schools_share', routes.schools.share);
 
-	// Schools and Parents - Models + Tips For Schools
+	// Schools and Parents - Helpers
 	app.get('/ajax/home/schools/:section', routes.schools.models_schools_section);
 	app.get('/ajax/home/parents/:section', routes.schools.models_parents_section);
-
+	app.post('/form/schools/join', routes.schools.join_submit);
 
 
 	// Main YANNG pages

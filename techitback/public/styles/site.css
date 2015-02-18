@@ -7157,6 +7157,30 @@ html, body {
   line-height: 1;
   margin: 5px auto 0px auto;
   width: 75%; }
+.schools_body.join .join_title {
+  font-family: Gotham;
+  font-size: 17px;
+  line-height: 1.6; }
+.schools_body.join form {
+  font-family: Gotham; }
+  .schools_body.join form label {
+    text-align: right;
+    font-weight: normal;
+    font-size: 17px; }
+  .schools_body.join form input, .schools_body.join form select {
+    border-radius: 20px; }
+  .schools_body.join form button {
+    color: black;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    font-size: 20px; }
+.schools_body.join .join_thanks {
+  text-align: center;
+  margin-top: 160px;
+  font-family: Gotham;
+  font-size: 31px; }
 
 @media (max-width: 767px) {
   .nav > li {

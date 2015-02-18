@@ -283,6 +283,27 @@ jQuery(function($) {
 			e.preventDefault();
 	});
 
+
+	/* SCHOOLS JOIN */
+	$(document).on("submit", ".schools_body.join form", function(e) {
+		e.preventDefault();
+
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(defaultReplaceArea).html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
 });
 
 

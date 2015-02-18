@@ -1,0 +1,33 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("JOIN OUR EMAIL LIST", "12.8.png", " SCHOOLS + PARENTS")
+block left_arrow
+	a(href='/blog')
+		+arrow_with_link("left", left.key)
+block body
+	div.container-fluid.schools_body.join
+		div.row
+				div.join_title()!=main.content.brief
+				form(action="/form/schools/join", method='POST')
+					+schools_join_input_row("Name", 'name')
+					div.form-group.row
+						div.col-sm-3
+						label(for=slug class='col-sm-2 control-label') Position:
+						div.col-sm-4
+							select(name='type', class='form-control')
+								option(value='Educator') Educator 
+								option(value='School Administrator') School Administrator 
+								option(value='Parent') Parent 
+								option(value='Other') Other 
+						div.col-sm-3
+					+schools_join_input_row("School Name", "school")
+					+schools_join_input_row("State/Province", "state")
+					+schools_join_input_row("Country", "country")
+					+schools_join_input_row("E-mail Address", "email")
+					div.center_align
+						button(type="submit") SUBMIT
+block right_arrow
+	+arrow_with_link("right", right.key)
