@@ -1,0 +1,24 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header(main.title, "12.8.png", " MODELS + TIPS FOR PARENTS")
+block left_arrow
+	+arrow_with_link("left", left.key)
+block body
+	div.container-fluid.schools_body
+		div.row
+			div.col-md-6
+				img(src=main.image.url)
+				div.row
+					+thumbnail_pic_six(one)
+					+thumbnail_pic_six(two)
+					+thumbnail_pic_six(three)
+					+thumbnail_pic_six(four)
+					+thumbnail_pic_six(five)
+					+thumbnail_pic_six(six)
+			div.col-md-6
+				div.text()!=main.content.brief
+block right_arrow
+	+arrow_with_link("right", right.key)

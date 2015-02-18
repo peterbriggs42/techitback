@@ -16,13 +16,15 @@
 			margin-top: 5px;
 		}
 	}
-	.col-md-2.fifth {
-		width: 20%;
+	.col-md-2 {
 		margin-top: 20px;
 		padding: 5px;
 		font-family: Gotham;
 		text-transform: uppercase;
 		text-align: center;
+		&.fifth {
+			width: 20%;	
+		}
 		div {
 			margin-top: 5px;
 			font-size: .8vw;

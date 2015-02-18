@@ -7127,14 +7127,15 @@ html, body {
     text-align: center;
     font-size: 1.4vw;
     margin-top: 5px; }
-.schools_body .col-md-2.fifth {
-  width: 20%;
+.schools_body .col-md-2 {
   margin-top: 20px;
   padding: 5px;
   font-family: Gotham;
   text-transform: uppercase;
   text-align: center; }
-  .schools_body .col-md-2.fifth div {
+  .schools_body .col-md-2.fifth {
+    width: 20%; }
+  .schools_body .col-md-2 div {
     margin-top: 5px;
     font-size: 0.8vw; }
 .schools_body .text {

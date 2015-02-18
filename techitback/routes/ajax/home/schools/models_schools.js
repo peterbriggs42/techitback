@@ -14,7 +14,7 @@ exports = module.exports = function(req, res) {
 
 		var school_category = categories.filter(common.getItemByKey, "models-tips-for-schools")[0];
 		var share = categories.filter(common.getItemByKey, "share-what-works")[0];
-		var join = categories.filter(common.getItemByKey, "join-our-e-mail-list")[0];
+		var join = categories.filter(common.getItemByKey, "models-tips-for-parents")[0];
 
 		var SchoolsParentsSections = keystone.list('SchoolsParentsSection');
 

@@ -143,12 +143,20 @@ jQuery(function($) {
 		{'element':".share-what-works-link", 			'url':'ajax/home/schools_share'},
 
 		// Schools and Parents - Models + Tips For Schools
-		{'element':'.talk-about-it-link', 	'url':'ajax/home/schools/talk-about-it'},
-		{'element':'.tech-use-in-school-link', 	'url':'ajax/home/schools/tech-use-in-school'},
+		{'element':'.talk-about-it-link', 				'url':'ajax/home/schools/talk-about-it'},
+		{'element':'.tech-use-in-school-link', 			'url':'ajax/home/schools/tech-use-in-school'},
 		{'element':'.discuss-in-the-classroom-link', 	'url':'ajax/home/schools/discuss-in-the-classroom'},
-		{'element':'.tech-health-curriculum-link', 	'url':'ajax/home/schools/tech-health-curriculum'},
-		{'element':'.parent-school-communication-link', 	'url':'ajax/home/schools/parent-school-communication'},
+		{'element':'.tech-health-curriculum-link', 		'url':'ajax/home/schools/tech-health-curriculum'},
+		{'element':'.parent-school-communication-link', 'url':'ajax/home/schools/parent-school-communication'},
 		{'element':'.establish-a-tech-policy-link', 	'url':'ajax/home/schools/establish-a-tech-policy'},
+		// Schools and Parents - Models + Tips for Parents 
+		{'element': '.talk-it-out-link', 				'url':'ajax/home/parents/talk-it-out'},
+		{'element': '.keep-up-with-apps-link', 			'url':'ajax/home/parents/keep-up-with-apps'},
+		{'element': '.set-boundaries-link', 			'url':'ajax/home/parents/set-boundaries'},
+		{'element': '.join-them-link', 					'url':'ajax/home/parents/join-them'},
+		{'element': '.tech-check-link', 				'url':'ajax/home/parents/tech-check'},
+		{'element': '.report-it-link', 					'url':'ajax/home/parents/report-it'},
+		{'element': '.just-say-no-link', 				'url':'ajax/home/parents/just-say-no'},
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);
