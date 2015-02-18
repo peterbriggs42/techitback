@@ -1,0 +1,48 @@
+include ../../mixins/home_mixins
+include ../../mixins/blog_mixins
+extends ../../layouts/blog_layout
+
+block blog_body
+	div.container-fluid.blog_submit_page
+		div.row
+			div.col-md-9
+				div.row
+					div.col-md-6
+						div.submit_title SUBMIT YOUR ARTICLE:
+						div.instructions Want to see your article posted on our site? Submit here! We may publish your work!
+							br 
+							br
+							| guidelines:
+							| Submissions should be related to our site with a recommended word count of 600 words or less. Please do not submit content that has already been published on other sites or that you are planning on submitting to other sites.
+							br
+							br
+							| Thanks for your contributions!
+					div.col-md-6
+						form(action='/blog/submit', method='POST')
+							div.form-group.row
+								div.col-sm-3
+								label(for='name' class='col-sm-2 control-label') Name:
+								div.col-sm-7
+									input(id='name', name='name', type='text', class='form-control')
+							div.form-group.row
+								div.col-sm-3
+								label(for='email' class='col-sm-2 control-label') Email:
+								div.col-sm-7
+									input(id='email', name='email', type='text', class='form-control')
+							textarea.form-control.text(name="text", maxlength=800, placeholder='(type your article here)')
+							div.counter 
+								span 0
+								| /800
+							div.row
+								div.col-xs-1.no_padding.right_align
+									input(type='checkbox', name='agree')
+								div.col-sm-10.col-xs-11
+									div.agree_box
+										p by checking this box, you hereby understand that any information you submit to this form may be posted to the Tech It Off blog site, excluding your email address.
+							div.center_align
+								button.btn(type='submit') Submit
+			div.col-md-3
+				+blog_submit()
+				+blog_favorites(favorites)
+
+

@@ -34,4 +34,5 @@ block blog_body
 								each comment in comments
 									+article_comment(comment)
 			div.col-md-3.favorites
+				+blog_submit()
 				+blog_favorites(favorites)

@@ -40,3 +40,7 @@ mixin blog_favorites(posts)
 					div.blog_favorites
 						img(src=post.image.url)
 						div.post_title #{post.title}
+
+mixin blog_submit()
+	a(href='/blog/submit')
+		div.blog_submit Submit Your Article

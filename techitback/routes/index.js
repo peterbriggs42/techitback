@@ -144,9 +144,11 @@ exports = module.exports = function(app) {
 
 	// BLOG
 	app.get('/blog', routes.blog.home);
-	app.get('/blog_article/:id', routes.blog.article)
+	app.get('/blog_article/:id', routes.blog.article);
 	app.post('/blog_article/:id', routes.blog.blog_comment);
-	app.get('/blog_section/:section', routes.blog.section)
+	app.get('/blog_section/:section', routes.blog.section);
+	app.get('/blog/submit', routes.blog.submit);
+	app.post('/blog/submit', routes.blog.submit_blog);
 
 	// Schools and Parents
 	app.get('/ajax/home/schools_home', routes.schools.home);

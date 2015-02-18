@@ -1,0 +1,16 @@
+include ../../mixins/home_mixins
+include ../../mixins/blog_mixins
+extends ../../layouts/blog_layout
+
+block blog_body
+	div.container-fluid.blog_content.blog_submit_thanks_page
+		div.row
+			div.col-md-9
+				div.thanks_title Thank you for your contribution :)
+				div.thanks_subtitle as we continue to review submissions, we will contact you by e-mail if we feel your article is a good fit for the Tech It Off blog.
+				a(href='/blog')
+					div.return Return To Site >>>
+			div.col-md-3
+				+blog_submit()
+				+blog_favorites(favorites)
+

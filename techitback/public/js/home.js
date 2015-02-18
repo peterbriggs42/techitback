@@ -257,6 +257,24 @@ jQuery(function($) {
 		});
 	});
 
+	/* BLOG SUBMIT */
+	$(document).on('keyup', ".blog_submit_page textarea", function() {
+		$(".counter span").html($(this).val().length);
+	});
+
+	var blogFormValidate = function() {
+		if ($("input[name='agree']:checked").length < 1) {
+			alert("In order to submit an article, you must agree to the terms and conditions");
+			return false;
+		}
+		return true;
+	}
+
+	$(document).on("submit", ".blog_submit_page form", function(e) {
+		if (!blogFormValidate())
+			e.preventDefault();
+	});
+
 });
 
 
