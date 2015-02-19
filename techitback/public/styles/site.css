@@ -7208,8 +7208,10 @@ html, body {
   color: black;
   font-family: Gotham;
   font-size: 20px; }
-.schools_body.share_tips button {
-  margin: 8px 0px 20px 0px;
+.schools_body.share_tips .faux_button {
+  display: inline-block; }
+.schools_body.share_tips button, .schools_body.share_tips .faux_button {
+  margin: 8px 10px 20px 10px;
   padding: 10px;
   width: 120px;
   color: black;
@@ -7217,7 +7219,28 @@ html, body {
   border: none;
   border-radius: 25px;
   font-family: Gotham;
-  font-size: 18px; }
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer; }
+.schools_body.share_tips input[type='checkbox'] {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 0px;
+  outline: none;
+  margin-top: 8px; }
+  .schools_body.share_tips input[type='checkbox']:checked {
+    background-image: url(../images/blackcheck.png);
+    background-size: 27px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat; }
+.schools_body.share_tips .agree_box p {
+  font-family: Gotham;
+  background: yellow;
+  color: black;
+  padding: 8px 25px 8px 25px;
+  border-radius: 29px; }
 .schools_body.share_tips_thanks div {
   text-align: center;
   font-family: Gotham;

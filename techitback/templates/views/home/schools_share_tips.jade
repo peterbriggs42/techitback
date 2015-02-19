@@ -10,18 +10,30 @@ block left_arrow
 block body
 	div.container-fluid.schools_body.share_tips
 		div.row
-				div.join_title()!=main.content.brief
+				div.join_title.first_page_only()!=main.content.brief
 				form(action="/form/schools/share_tips", method='POST')
-					+schools_join_input_row("Name", 'name')
-					+schools_join_input_row("State/Province", "state")
-					+schools_join_input_row("Country", "country")
+					div.first_page_only
+						+schools_join_input_row("Name", 'name')
+						+schools_join_input_row("State/Province", "state")
+						+schools_join_input_row("Country", "country")
 
 					textarea.form-control(name="text", maxlength=500)
 					div.counter 
 						span 0
 						| /500
 
-					div.center_align
+					div.agree_container
+						div.second_page_only(style='display:none;')
+							div.col-xs-1.no_padding.right_align
+								input(type='checkbox', name='agree')
+							div.col-sm-10.col-xs-11
+								div.agree_box
+									p To complete submission, you must click this box which indicates that you understand and agree that any information submitted may be posted to the Tech It Off website excluding your name.
+
+					div.center_align.first_page_only
+						div.faux_button#next NEXT
+					div.center_align.second_page_only(style='display:none;')
+						div.faux_button#edit EDIT
 						button(type="submit") SUBMIT
 block right_arrow
 	+arrow_with_link("right", right.key)

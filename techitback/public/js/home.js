@@ -311,9 +311,32 @@ jQuery(function($) {
 	$(document).on('keyup', ".share_tips textarea", function() {
 		$(".counter span").html($(this).val().length);
 	});
+
+	// User clicks to second page
+	$(document).on('click', ".share_tips #next", function (e) {
+		$(".first_page_only").hide()
+		$(".second_page_only").show();
+		$(".share_tips textarea").toggleClass("small_padding");
+		$(".share_tips textarea").prop("disabled", true);
+	});
+
+	// User clicks to first page
+	$(document).on('click', ".share_tips #edit", function (e) {
+		$(".first_page_only").show()
+		$(".second_page_only").hide();
+		$(".share_tips textarea").toggleClass("small_padding");
+		$(".share_tips textarea").prop("disabled", false);
+	});
+
 	$(document).on("submit", ".share_tips form", function(e) {
 		e.preventDefault();
 
+		if ($("input[name='agree']:checked").length < 1) {
+			alert("In order to share a tip, you must agree to the terms and conditions");
+			return false;
+		}
+
+		$(".share_tips textarea").prop("disabled", false);
 		var postData = $(this).serializeArray();
 		var formURL = $(this).attr("action");
 		$.ajax(
