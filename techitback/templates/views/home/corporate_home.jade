@@ -1,0 +1,22 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("CORPORATE PARTNERS")
+block left_arrow
+	a(href='/blog')
+		+arrow("left", "contact_us_link")
+block body
+	div.container-fluid.schools_body.share
+		div.row
+			div.col-md-6
+				div.popup_picture_box(class=partners.key+"-link")
+					img(src=partners.image.url)
+					div()!=partners.title
+			div.col-md-6
+				div.popup_picture_box(class=partnerwithus.key+"-link")
+					img(src=partnerwithus.image.url)
+					div()!=partnerwithus.title
+block right_arrow
+	+arrow("right", "tips_for_teens_link")

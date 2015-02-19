@@ -20,3 +20,10 @@ mixin schools_join_input_row(text, slug)
 		div.col-sm-4
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3
+
+mixin partnerwithus_input_row(text, slug)
+	div.form-group.row
+		label(for=slug class='col-sm-5 control-label') #{text}:
+		div.col-sm-5
+			input(id=slug, name=slug, type='text', class='form-control')
+		div.col-sm-2

@@ -7304,6 +7304,59 @@ html, body {
   width: 70%;
   margin: 100px auto 0 auto; }
 
+.corporate_body .desc {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family: Gotham;
+  margin: 10px; }
+.corporate_body form label {
+  font-family: Gotham;
+  font-weight: normal;
+  text-align: right;
+  font-size: 20px; }
+.corporate_body form input {
+  border-radius: 20px;
+  font-family: Gotham; }
+.corporate_body textarea {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: Gotham;
+  font-size: 18px; }
+.corporate_body .counter {
+  text-align: right;
+  margin: -35px 12% 20px 0px;
+  color: black;
+  font-family: Gotham;
+  font-size: 20px; }
+.corporate_body .faux_button {
+  display: inline-block; }
+.corporate_body button, .corporate_body .faux_button {
+  margin: 8px 10px 20px 10px;
+  padding: 10px;
+  width: 120px;
+  color: black;
+  background: white;
+  border: none;
+  border-radius: 25px;
+  font-family: Gotham;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer; }
+.corporate_body .thanks {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 27px;
+  width: 70%;
+  margin: 100px auto 0 auto; }
+.corporate_body .coming {
+  text-align: center;
+  font-size: 50px;
+  font-family: Gotham;
+  margin-top: 160px; }
+
 @media (max-width: 767px) {
   .nav > li {
     float: right; }

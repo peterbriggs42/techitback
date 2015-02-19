@@ -89,7 +89,7 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'User Input': 		['join-the-hours', 'user-created-tips', 'share-your-stories', 'report-abuses', 'email-lists', 'share-tips', 'contact-us'],
+	'User Input': 		['join-the-hours', 'user-created-tips', 'share-your-stories', 'report-abuses', 'email-lists', 'share-tips', 'contact-us', 'corporate-partner-submissions'],
 	'users': 			'users',
 	'yanng' : 			['yanng-posts', 'yanng-girls'],
 	'tech-addictions' : 'tech-addictions', 

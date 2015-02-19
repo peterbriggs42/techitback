@@ -41,7 +41,8 @@ var routes = {
 	welcome: 			importRoutes('./ajax/home/welcome'),
 	blog: 				importRoutes('./ajax/home/blog'),
 	schools:			importRoutes('./ajax/home/schools'),
-	contact_us:			importRoutes('./ajax/home/contact_us')
+	contact_us:			importRoutes('./ajax/home/contact_us'),
+	corporate:			importRoutes('./ajax/home/corporate'),
 };
 
 // Setup Route Bindings
@@ -169,6 +170,13 @@ exports = module.exports = function(app) {
 	// Contact us
 	app.get('/ajax/home/contact_us', routes.contact_us.home);
 	app.post('/ajax/home/contact_us', routes.contact_us.submit);
+
+	// Corporate Partners
+	app.get('/ajax/home/corporate', routes.corporate.home);
+	app.get('/ajax/home/corporate/partners', routes.corporate.partners);
+	app.get('/ajax/home/corporate/partnerwithus', routes.corporate.partnerwithus);
+	app.post('/ajax/home/corporatepartners', routes.corporate.submit);
+
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

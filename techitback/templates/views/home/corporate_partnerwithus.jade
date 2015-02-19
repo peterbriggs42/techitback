@@ -1,0 +1,38 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("PARTNER WITH US", "12.9.png", "CORPORATE PARTNERS")
+block left_arrow
+	+arrow("left", "corporatepartners-link")
+block body
+	div.container-fluid.corporate_body
+		
+		form(action="/ajax/home/corporatepartners", method='POST')
+					div.row
+						div.col-md-6
+							+partnerwithus_input_row("First Name", 'first_name')
+							+partnerwithus_input_row("Title", "title")
+							+partnerwithus_input_row("Website", 'website')
+							+partnerwithus_input_row("Address (Line 1)", 'address1')
+							+partnerwithus_input_row("City", 'city')
+							+partnerwithus_input_row("Country", 'country')
+						div.col-md-6
+							+partnerwithus_input_row("Last Name", 'last_name')
+							+partnerwithus_input_row("Company", 'company')
+							+partnerwithus_input_row("E-mail address", 'email')
+							+partnerwithus_input_row("Address (Line 2)", 'address2')
+							+partnerwithus_input_row("State/Province", 'state')
+							+partnerwithus_input_row("Zip Code", 'zip')
+
+					div.desc Description of your company
+					textarea.form-control(name="text", maxlength=500)
+					div.counter 
+						span 0
+						| /500
+					div.center_align
+						button(type="submit") SUBMIT
+				
+block right_arrow
+	+arrow("right", "corporatepartners-link")

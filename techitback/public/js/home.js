@@ -160,9 +160,13 @@ jQuery(function($) {
 		// Schools and Parents - Share Tips
 		{'element': '.share-tips-link', 				'url':'ajax/home/school/share-tips'},
 		{'element': '.your-tips-link', 					'url':'ajax/home/school/your-tips'},
-
 		// Contact us
-		{'element': '.contact_us_link', 					'url':'ajax/home/contact_us'},
+		{'element': '.contact_us_link', 				'url':'ajax/home/contact_us'},
+		// Corporate Partners
+		{'element': '.corporate_link', 					'url':'ajax/home/corporate'},
+		{'element': '.corporatepartners-link', 			'url':'ajax/home/corporate/partners'},
+		{'element': '.partnerwithus-link', 				'url':'ajax/home/corporate/partnerwithus'},
+
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);
@@ -182,6 +186,40 @@ jQuery(function($) {
 			}
 		}
 	});
+
+
+	/* FORMS */
+
+	// Take a body class and alter the form inside of it.
+	// Disable default form submission, replace popup HTML with response
+	// -- counter: update a counter within the textarea
+	var customizeForm = function(body, counter) {
+
+		if (counter) {
+			$(document).on('keyup', body+" textarea", function() {
+				$(".counter span").html($(this).val().length);
+			});
+		}
+
+		$(document).on("submit", body+" form", function(e) {
+			e.preventDefault();
+
+			var postData = $(this).serializeArray();
+			var formURL = $(this).attr("action");
+			$.ajax(
+			{
+				url: formURL,
+				type: "POST",
+				data: postData,
+				success:function(data, textStatus, jqXHR) {
+					$(defaultReplaceArea).html(data);
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					console.log(errorThrown + ": " + textStatus);
+				}
+			});
+		});
+	}
 
 
 	$(document).on('click touchend', "#popup_exit", function (e) {
@@ -289,27 +327,6 @@ jQuery(function($) {
 			e.preventDefault();
 	});
 
-
-	/* SCHOOLS JOIN */
-	$(document).on("submit", ".schools_body.join form", function(e) {
-		e.preventDefault();
-
-		var postData = $(this).serializeArray();
-		var formURL = $(this).attr("action");
-		$.ajax(
-		{
-			url: formURL,
-			type: "POST",
-			data: postData,
-			success:function(data, textStatus, jqXHR) {
-				$(defaultReplaceArea).html(data);
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				console.log(errorThrown + ": " + textStatus);
-			}
-		});
-	});
-
 	/* SHARE TIPS */
 	$(document).on('keyup', ".share_tips textarea", function() {
 		$(".counter span").html($(this).val().length);
@@ -356,28 +373,12 @@ jQuery(function($) {
 		});
 	});
 
+	/* SCHOOLS JOIN */
+	customizeForm('schools_body.join');
 	/* CONTACT US */
-	$(document).on('keyup', ".contact_body textarea", function() {
-		$(".counter span").html($(this).val().length);
-	});
-	$(document).on("submit", ".contact_body form", function(e) {
-		e.preventDefault();
-
-		var postData = $(this).serializeArray();
-		var formURL = $(this).attr("action");
-		$.ajax(
-		{
-			url: formURL,
-			type: "POST",
-			data: postData,
-			success:function(data, textStatus, jqXHR) {
-				$(defaultReplaceArea).html(data);
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				console.log(errorThrown + ": " + textStatus);
-			}
-		});
-	});
+	customizeForm('.contact_body');
+	/* PARTNER WITH US */
+	customizeForm('.corporate_body', true);
 
 });
 
