@@ -1,0 +1,28 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("CONTACT US")
+block left_arrow
+	+arrow("left", "schools_link")
+block body
+	div.container-fluid.contact_body
+
+		div.title We want to hear your input &mdash; if you have a comment, question, or concern that does not match the criteria of any of our other submission sections, please let us know here:
+		
+		form(action="/ajax/home/contact_us", method='POST')
+					div.first_page_only
+						+schools_join_input_row("Name", 'name')
+						+schools_join_input_row("E-mail", "email")
+
+					div.mind What's on your mind?
+					textarea.form-control(name="text", maxlength=500)
+					div.counter 
+						span 0
+						| /500
+					div.center_align
+						button(type="submit") SUBMIT
+				
+block right_arrow
+	+arrow("right", "corporate_link")

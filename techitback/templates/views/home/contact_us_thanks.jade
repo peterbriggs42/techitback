@@ -1,0 +1,13 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("CONTACT US", "12.11.png", " CONTACT US")
+block left_arrow
+block body
+	div.container-fluid.contact_body
+
+		div.thanks Thank you for your input! We will respond to your message in the order in which it was received.
+				
+block right_arrow

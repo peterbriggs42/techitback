@@ -40,7 +40,8 @@ var routes = {
 	cybercrime: 		importRoutes('./ajax/home/cybercrime'),
 	welcome: 			importRoutes('./ajax/home/welcome'),
 	blog: 				importRoutes('./ajax/home/blog'),
-	schools:			importRoutes('./ajax/home/schools')
+	schools:			importRoutes('./ajax/home/schools'),
+	contact_us:			importRoutes('./ajax/home/contact_us')
 };
 
 // Setup Route Bindings
@@ -164,6 +165,10 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/school/share-tips', routes.schools.share_tips);
 	app.get('/ajax/home/school/your-tips', routes.schools.your_tips);
 	app.post('/form/schools/share_tips', routes.schools.share_submit);
+
+	// Contact us
+	app.get('/ajax/home/contact_us', routes.contact_us.home);
+	app.post('/ajax/home/contact_us', routes.contact_us.submit);
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

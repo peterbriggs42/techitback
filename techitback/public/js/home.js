@@ -161,6 +161,9 @@ jQuery(function($) {
 		{'element': '.share-tips-link', 				'url':'ajax/home/school/share-tips'},
 		{'element': '.your-tips-link', 					'url':'ajax/home/school/your-tips'},
 
+		// Contact us
+		{'element': '.contact_us_link', 					'url':'ajax/home/contact_us'},
+
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);
 
@@ -353,37 +356,28 @@ jQuery(function($) {
 		});
 	});
 
+	/* CONTACT US */
+	$(document).on('keyup', ".contact_body textarea", function() {
+		$(".counter span").html($(this).val().length);
+	});
+	$(document).on("submit", ".contact_body form", function(e) {
+		e.preventDefault();
+
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(defaultReplaceArea).html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
 });
-
-
-
-
-
-
-
-	/* Listen for events to show or hide popup */
-
-    // $(".textoverlay").click(function() {
-    //         loadPopup(defaultReplaceArea);
-    //         return false;
-    // });
-
-    // $(this).keyup(function(event) {
-    //         if (event.which == 27) { // 27 is 'Esc'
-    //                 disablePopup();
-    //         }
-    // });
-
-    // $("div#backgroundPopup").click(function() {
-    //         disablePopup();
-    // });
-
-    // $(".navbar").click(function() {
-    //         disablePopup();
-    // });
-
-    // $("#popup_exit").click(function() {
-    //         disablePopup();
-    // });
-
 
