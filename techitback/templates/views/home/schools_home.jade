@@ -16,14 +16,13 @@ block body
 			div.col-md-6
 				div.row
 					div.col-md-6
-						div.row
-							+popup_picture_v2(models_schools)
-						div.row
-							+popup_picture_v2(models_parents)
+						+popup_picture_v2(models_schools)
 					div.col-md-6
-						div.row
-							+popup_picture_v2(join)
-						div.row
-							+popup_picture_v2(share)
+						+popup_picture_v2(join)
+				div.row
+					div.col-md-6
+						+popup_picture_v2(models_parents)
+					div.col-md-6
+						+popup_picture_v2(share)
 block right_arrow
 	+arrow_with_link("right", "contact_us")

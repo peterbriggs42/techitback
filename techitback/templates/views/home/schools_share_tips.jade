@@ -11,12 +11,15 @@ block body
 	div.container-fluid.schools_body.share_tips
 		div.row
 				div.join_title()!=main.content.brief
-				form(action="/form/schools/join", method='POST')
+				form(action="/form/schools/share_tips", method='POST')
 					+schools_join_input_row("Name", 'name')
 					+schools_join_input_row("State/Province", "state")
 					+schools_join_input_row("Country", "country")
 
-					// TEXTAREA
+					textarea.form-control(name="text", maxlength=500)
+					div.counter 
+						span 0
+						| /500
 
 					div.center_align
 						button(type="submit") SUBMIT

@@ -1,0 +1,16 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("SHARE TIPS", "12.8.png", " TIPS FOR EDUCATORS + PARENTS")
+block left_arrow
+	a(href='/blog')
+		+arrow_with_link("left", left.key)
+block body
+	div.container-fluid.schools_body.share_tips_thanks
+		div Thank you for submitting! 
+			br
+			| Your post is being reviewed.
+block right_arrow
+	+arrow_with_link("right", right.key)

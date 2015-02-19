@@ -307,6 +307,29 @@ jQuery(function($) {
 		});
 	});
 
+	/* SHARE TIPS */
+	$(document).on('keyup', ".share_tips textarea", function() {
+		$(".counter span").html($(this).val().length);
+	});
+	$(document).on("submit", ".share_tips form", function(e) {
+		e.preventDefault();
+
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		$.ajax(
+		{
+			url: formURL,
+			type: "POST",
+			data: postData,
+			success:function(data, textStatus, jqXHR) {
+				$(defaultReplaceArea).html(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown + ": " + textStatus);
+			}
+		});
+	});
+
 });
 
 
