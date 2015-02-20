@@ -207,6 +207,16 @@ jQuery(function($) {
 	});
 
 
+	/* LISTEN FOR KEY PRESSES */
+	$(document).keydown(function(e) {
+	    if (e.keyCode == 37) {
+	    	$(".arrow")[0].click()
+	    } else if (e.keyCode == 39) {
+	    	$(".arrow")[1].click()
+	    }
+	});
+
+
 	/* FORMS */
 
 	// Take a body class and alter the form inside of it.
