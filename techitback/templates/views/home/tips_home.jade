@@ -1,0 +1,22 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("TIPS FOR TEENS")
+block left_arrow
+	+arrow("left", "corporate_link")
+block body
+	div.container-fluid.teen_tips_body
+		div.row
+			div.col-md-6
+					img(src=main.image.url)
+					div.desc()!=main.content.brief
+			div.col-md-1
+			div.col-md-4
+				+popup_picture_v2(top)
+				+popup_picture_v2(bottom)
+			div.col-md-1
+block right_arrow
+	a(href='/yanng')
+		+arrow("right")

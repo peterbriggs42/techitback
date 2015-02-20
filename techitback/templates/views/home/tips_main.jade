@@ -1,0 +1,24 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("TIPS FOR USING TECH RESPONSIBLY", "12.7.png", "TIPS FOR TEENS")
+block left_arrow
+	+arrow_with_link("left", link.key)
+block body
+	div.container-fluid.teen_tips_body
+		div.row
+			div.col-md-6
+					img(src=main.image.url)
+					div.desc()!=main.content.brief
+			div.col-md-1
+			div.col-md-2
+				+popup_picture_v2(watch)
+				+popup_picture_v2(check)
+				+popup_picture_v2(once)
+			div.col-md-3
+				+popup_picture_v2(techbreak)
+				+popup_picture_v2(solution)
+block right_arrow
+	+arrow_with_link("right", link.key)

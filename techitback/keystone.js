@@ -97,7 +97,8 @@ keystone.set('nav', {
 	'cyberbullying-and-abuse' : ['cyberbullying-sections','online-abuses', 'their-stories', 'share-your-story-sections'],
 	'cybercrime' : 		['cybercrimes', 'cyber-mistakes'],
 	'welcome to our hour': ['welcome-sections', 'welcome-games', 'welcome-videos', 'welcome-causes', 'welcome-quizzes'],
-	'schools and parents': ['schools-parents-categories', 'schools-parents-sections']
+	'schools and parents': ['schools-parents-categories', 'schools-parents-sections'],
+	'tips for teens' 	: 'tips-for-teens'
 });
 
 // Start Keystone to connect to your database and initialise the web server

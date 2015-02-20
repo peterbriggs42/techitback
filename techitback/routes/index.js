@@ -43,6 +43,7 @@ var routes = {
 	schools:			importRoutes('./ajax/home/schools'),
 	contact_us:			importRoutes('./ajax/home/contact_us'),
 	corporate:			importRoutes('./ajax/home/corporate'),
+	tips_for_teens: 	importRoutes('./ajax/home/tips_for_teens'),
 };
 
 // Setup Route Bindings
@@ -177,6 +178,11 @@ exports = module.exports = function(app) {
 	app.get('/ajax/home/corporate/partnerwithus', routes.corporate.partnerwithus);
 	app.post('/ajax/home/corporatepartners', routes.corporate.submit);
 
+	// Tips for Teens
+	app.get('/ajax/home/tips_for_teens', routes.tips_for_teens.home);
+	app.get('/ajax/home/tips-for-using-tech-responsibly', routes.tips_for_teens.tips_for_using_tech_responsibly);
+	app.get('/ajax/home/the-yes-and-no-nos-of-online-behavior', routes.tips_for_teens.the_yes_and_no_nos_of_online_behavior);
+	app.get('/ajax/home/tips_section/:section', routes.tips_for_teens.section)
 
 	// Main YANNG pages
 	app.get('/ajax/yanng_about', routes.ajax.yanng_about);

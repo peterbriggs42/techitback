@@ -1,0 +1,22 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header(main.title, "12.7.png", "TIPS FOR TEENS")
+block left_arrow
+	+arrow_with_link("left", left.key)
+block body
+	div.container-fluid.teen_tips_body
+		div.row
+			div.col-md-6
+				img(src=main.image.url)
+				div.row
+					+thumbnail_pic_four(one)
+					+thumbnail_pic_four(two)
+					+thumbnail_pic_four(three)
+					+thumbnail_pic_four(four)
+			div.col-md-6
+				div.text()!=main.content.brief
+block right_arrow
+	+arrow_with_link("right", right.key)

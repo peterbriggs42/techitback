@@ -141,7 +141,6 @@ jQuery(function($) {
 		{'element':".join-our-e-mail-list-link", 		'url':'ajax/home/schools_join'},
 		{'element':".models-tips-for-parents-link", 	'url':'ajax/home/schools_models_parents'},
 		{'element':".share-what-works-link", 			'url':'ajax/home/schools_share'},
-
 		// Schools and Parents - Models + Tips For Schools
 		{'element':'.talk-about-it-link', 				'url':'ajax/home/schools/talk-about-it'},
 		{'element':'.tech-use-in-school-link', 			'url':'ajax/home/schools/tech-use-in-school'},
@@ -160,13 +159,24 @@ jQuery(function($) {
 		// Schools and Parents - Share Tips
 		{'element': '.share-tips-link', 				'url':'ajax/home/school/share-tips'},
 		{'element': '.your-tips-link', 					'url':'ajax/home/school/your-tips'},
+		
 		// Contact us
 		{'element': '.contact_us_link', 				'url':'ajax/home/contact_us'},
+		
 		// Corporate Partners
 		{'element': '.corporate_link', 					'url':'ajax/home/corporate'},
 		{'element': '.corporatepartners-link', 			'url':'ajax/home/corporate/partners'},
 		{'element': '.partnerwithus-link', 				'url':'ajax/home/corporate/partnerwithus'},
 
+		// Tips for Teens
+		{'element': '.tips_for_teens_link', 			'url':'ajax/home/tips_for_teens'},
+		{'element': '.tips-for-using-tech-responsibly-link', 			'url':'ajax/home/tips-for-using-tech-responsibly'},
+		{'element': '.the-yes-and-no-nos-of-online-behavior-link', 		'url':'ajax/home/the-yes-and-no-nos-of-online-behavior'},
+		{'element': '.watch-what-you-post-link', 						'url':'ajax/home/tips_section/watch-what-you-post'},
+		{'element': '.check-your-connects-link', 						'url':'ajax/home/tips_section/check-your-connects'},
+		{'element': '.once-its-there-its-there-link', 					'url':'ajax/home/tips_section/once-its-there-its-there'},
+		{'element': '.its-ok-to-take-a-tech-break-link', 				'url':'ajax/home/tips_section/its-ok-to-take-a-tech-break'},
+		{'element': '.be-a-part-of-the-solution-link', 					'url':'ajax/home/tips_section/be-a-part-of-the-solution'},
 
 	].map( function(listener) {
 		home_listener(listener['element'], listener['url']);

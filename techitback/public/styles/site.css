@@ -7357,6 +7357,39 @@ html, body {
   font-family: Gotham;
   margin-top: 160px; }
 
+.teen_tips_body .popup_picture_box {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 85%; }
+  .teen_tips_body .popup_picture_box div {
+    text-transform: uppercase;
+    font-family: Gotham;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px; }
+.teen_tips_body .desc p {
+  font-family: Gotham;
+  font-size: 17px;
+  margin-top: 10px;
+  width: 116%;
+  margin-left: -8%; }
+.teen_tips_body .yanng_callout {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 30px;
+  margin-top: 115px; }
+.teen_tips_body .text {
+  line-height: 1.8;
+  font-size: 18px; }
+.teen_tips_body .thumb {
+  margin-top: 10px;
+  font-family: Gotham;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px; }
+  .teen_tips_body .thumb .label_text {
+    margin-top: 6px; }
+
 @media (max-width: 767px) {
   .nav > li {
     float: right; }

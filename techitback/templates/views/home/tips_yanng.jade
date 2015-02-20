@@ -1,0 +1,19 @@
+include ../../mixins/home_mixins
+include ../../mixins/home_mixins_v2
+extends ../../layouts/popup_section
+
+block header
+	+popup_header("THE YES AND NO NO'S OF ONLINE BEHAVIOR", "12.7.png", "TIPS FOR TEENS")
+block left_arrow
+	+arrow_with_link("left", link.key)
+block body
+	div.container-fluid.teen_tips_body
+		div.row
+			div.col-md-6
+					img(src=main.image.url)
+			div.col-md-6
+				div.yanng_callout 
+					a(href='/yanng') Click here 
+					| to see exclusive tips from the Yes and No No Girls
+block right_arrow
+	+arrow_with_link("right", link.key)

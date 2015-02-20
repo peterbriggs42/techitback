@@ -1,0 +1,41 @@
+.teen_tips_body {
+	.popup_picture_box {
+		margin: auto;
+		margin-bottom: 10px;
+		width: 85%;
+		div {
+			text-transform: uppercase;
+			font-family: Gotham;
+			text-align: center;
+			font-size: 15px;
+			margin-top: 5px;
+		}
+	}
+	.desc p {
+		font-family: Gotham;
+		font-size: 17px;
+		margin-top: 10px;
+		width: 116%;
+		margin-left: -8%;
+	}
+	.yanng_callout {
+		text-align: center;
+		font-family: Gotham;
+		font-size: 30px;
+		margin-top: 115px;
+	}
+	.text {
+		line-height: 1.8;
+		font-size: 18px;
+	}
+	.thumb {
+		margin-top: 10px;
+		font-family: Gotham;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 12px;
+		.label_text {
+			margin-top: 6px;
+		}
+	}
+}
