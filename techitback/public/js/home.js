@@ -45,6 +45,11 @@ jQuery(function($) {
 			if (dragging) return;
 			e.stopPropagation();
 
+			// If link was clicked inside menu, close it
+			if($(e.target).parents("#left_menu").length) {
+				$(".toggler").click()
+			}
+
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
 			loadPopup(defaultReplaceArea);
