@@ -12,7 +12,7 @@ block body
 	div.container-fluid.welcome_body
 		div.row
 			div.col-md-1
-				img.arrow(src='images/left.png', class="tech_addiction_link")
+				img.arrow(src='images/left.png', class="cybercrime_link")
 			div.col-md-10
 				div.row
 					div.col-md-2
@@ -28,4 +28,5 @@ block body
 					div.col-md-2
 						+welcome_button("Quizzes","5.6.png", "top", "welcome_quizzes_link")
 			div.col-md-1
-				img.arrow(src='images/right.png', class="about_intralink_link")
+				a(href="/blog")
+					img.arrow(src='images/right.png')

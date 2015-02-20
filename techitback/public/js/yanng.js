@@ -20,7 +20,6 @@ jQuery(function($) {
 
 		$(document).on('click touchend', element, function (e) {
 			// If touch has been dragged, cancel
-			console.log(dragging);
 			if (dragging) return;
 			e.stopPropagation();
 

@@ -13,16 +13,23 @@ exports = module.exports = function(req, res) {
 		.exec(function(err, categories) { 
 		
 		var BlogSection = keystone.list('Post');
- 
 		BlogSection.model.find()
+
 			.where('categories').in([categories[0]['_id']])
 			.exec(function(err, posts) {
+
+
+				var AllBlogSections = keystone.list('Post');
+				AllBlogSections.model.find()
+					.exec(function(err, all_posts) {
+
 			
-			view.render('home/blog', {
-				favorites: 		common.getFavoritePosts(posts),
-				selected: 		req.params['section'],
-				postsLeft: 		posts.filter(function(element) { return posts.indexOf(element) % 2 != 0; }),
-				postsRight:  	posts.filter(function(element) { return posts.indexOf(element) % 2 == 0; })
+				view.render('home/blog', {
+					favorites: 		common.getFavoritePosts(all_posts),
+					selected: 		req.params['section'],
+					postsLeft: 		posts.filter(function(element) { return posts.indexOf(element) % 2 != 0; }),
+					postsRight:  	posts.filter(function(element) { return posts.indexOf(element) % 2 == 0; })
+				});
 			});
 		});
 	});

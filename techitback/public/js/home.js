@@ -43,7 +43,11 @@ jQuery(function($) {
 		$(document).on('click touchend', element, function (e) {
 			// If touch has been dragged, cancel
 			if (dragging) return;
-			e.stopPropagation();
+			if(!$(e.target).is('a')) {
+				e.stopPropagation();
+			} else {
+				document.location = e.target.href;
+			}
 
 			// If link was clicked inside menu, close it
 			if($(e.target).parents("#left_menu").length) {
