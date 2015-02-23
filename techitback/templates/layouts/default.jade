@@ -46,6 +46,7 @@ html
 
 			div(role="navigation").navbar.navbar-custom.navbar-fixed-top
 				.container-fluid
+					#trigger #
 					.navbar-header#navbar
 						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 							span.sr-only Toggle navigation
@@ -104,8 +105,22 @@ html
 		script(src='/js/yanng.js')
 		script(src='/js/home.js')
 		script(src='/js/BootSideMenu.js')
+		script(src='/js/jquery.jpanelmenu.js')
 		script.
-			$('#left_menu').BootSideMenu({side:"left", autoClose:false});
+			var width = $(window).width(), height = $(window).height();
+			if ((width <= 767)) {
+				var jPM = $.jPanelMenu({
+				    menu: '#left_menu',
+				    trigger: '#trigger',
+				    clone: false
+				});
+				jPM.on();
+			} else {
+				$('#left_menu').BootSideMenu({side:"left", autoClose:false});
+				// And hide mobile menu callout
+				$('#trigger').hide();
+			}
+			
 
 		//- Include template-specific javascript files by extending the js block
 		block js

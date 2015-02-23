@@ -11,10 +11,11 @@ mixin home_menu_item_foreign(name, number, menu_link)
 		+home_menu_item(name,number)
 
 mixin side_menu()
+	div#trigger
 	div#left_menu
 		div#menu_header #TECHITBACK
-		div#search_bar
-			input(type='text', name='search_bar')
+		//- div#search_bar
+		//- 	input(type='text', name='search_bar')
 		+home_menu_item('WELCOME TO OUR HOUR', 1, 'welcome_link')
 		+home_menu_item('ABOUT', 2, 'about_link')
 		a(href='/blog')
@@ -34,8 +35,8 @@ mixin side_menu()
 mixin side_menu_foreign()
 	div#left_menu
 		div#menu_header #TECHITBACK
-		div#search_bar
-			input(type='text', name='search_bar')
+		//- div#search_bar
+		//- 	input(type='text', name='search_bar')
 		+home_menu_item_foreign('WELCOME TO OUR HOUR', 1, 'welcome_link')
 		+home_menu_item_foreign('ABOUT', 2, 'about_link')
 		a(href='/blog')

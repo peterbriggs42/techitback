@@ -7521,3 +7521,39 @@ html, body {
   .navbar-custom .container-fluid {
     min-height: 97px; }
  }
+
+@media (max-width: 767px) {
+  /* toggle stuff */
+  .sidebar-left > .toggler {
+    left: 297px; }
+
+  #menu_header {
+    font-size: 45px;
+    height: 90px;
+    margin-top: 28px; }
+
+  #jPanelMenu-menu {
+    color: white;
+    font-family: rbno2;
+    font-size: 22px;
+    background-color: black; }
+    #jPanelMenu-menu .menu_link {
+      padding: 5px; }
+    #jPanelMenu-menu span {
+      margin-left: 5px; }
+
+  #trigger {
+    margin-left: -15px;
+    margin-top: -20px;
+    padding-top: 9px;
+    height: 100%;
+    background-color: black;
+    width: 105px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-size: 100px;
+    line-height: 95px;
+    padding-left: 23px; }
+ }

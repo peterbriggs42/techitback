@@ -53,6 +53,8 @@ jQuery(function($) {
 			if($(e.target).parents("#left_menu").length) {
 				$(".toggler").click()
 			}
+			// Try to close mobile menu, as well
+			jPM.close();
 
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
