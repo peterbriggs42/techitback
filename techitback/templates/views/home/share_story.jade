@@ -16,7 +16,7 @@ block body
 					+share_story_input_row("State/Province", "state")
 					div.form-group.row.first_page_only
 						div.col-sm-3
-						label(for=slug class='col-sm-3 control-label') Type of Story:
+						label(for=slug class='col-sm-3 col-xs-12 control-label') Type of Story:
 						div.col-sm-3
 							select(name='type', class='form-control')
 								option(value='Cyberbullying') Cyberbullying
@@ -41,20 +41,20 @@ block body
 					div.counter 
 						span 0
 						| /500
-					div.row.second_page_only(style='display:none;')
-						div.col-md-1
+					div.row.second_page_only.agree_row(style='display:none;')
+						div.col-md-1.col-xs-2
 							input(type='checkbox', name='agree')
-						div.col-md-11
+						div.col-md-11.col-xs-10
 							div.agree_text
 								p To complete submission, you must click this box which indicates that you understand and agree that any information submitted maybe posted to the Tech It Off website excluding your name and hometown.
 					div.button_container
 						div.first_page_only.next_button
 							div.button_style NEXT
 						div.row.buttons
-							div.col-md-6
+							div.col-xs-6
 								div.second_page_only.edit_button(style='display:none;')
 									div.button_style EDIT
-							div.col-md-6
+							div.col-xs-6
 								div.second_page_only.submit_button(style='display:none;')
 									button.button_style(type="submit") SUBMIT
 

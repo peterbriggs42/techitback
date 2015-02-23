@@ -173,13 +173,15 @@ mixin online_abuse_section(section_id, left_link, right_link, pic_1, pic_1_link,
 			div.col-md-5
 				div.row.center_align
 					img(src=big_image, class='big_image')
+					div.text_container.mobile_only
+						div(class='text')!=main_text
 				div.row.thumbnails
 					+thumbnail_pic_abuse(pic_1.thumbnail, pic_1_link, pic_1.title)
 					+thumbnail_pic_abuse(pic_2.thumbnail, pic_2_link, pic_2.title)
 					+thumbnail_pic_abuse(pic_3.thumbnail, pic_3_link, pic_3.title)
 					+thumbnail_pic_abuse(pic_4.thumbnail, pic_4_link, pic_4.title)
 			div.col-md-5
-				div.text_container
+				div.text_container.not_mobile
 					div(class='text')!=main_text
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
@@ -193,19 +195,20 @@ mixin their_story(main, pic_1, pic_1_link, pic_2, pic_2_link)
 			div.col-md-5
 				div.row.center_align
 					img(src=main.image.url, class='big_image')
+					div.stories_text.mobile_only()!=main.content.brief
 				div.row.thumbnails
 					div
 						+thumbnail_pic_double(pic_1.thumbnail, pic_1_link, pic_1.title)
 						+thumbnail_pic_double(pic_2.thumbnail, pic_2_link, pic_2.title)
 			div.col-md-5
-				div.stories_text()!=main.content.brief
+				div.stories_text.not_mobile()!=main.content.brief
 			div.col-md-1
 				img.arrow(src='images/right.png', class=pic_2_link)
 
 mixin share_story_input_row(text, slug)
 	div.form-group.row.first_page_only
 		div.col-sm-3
-		label(for=slug class='col-sm-3 control-label') #{text}:
+		label(for=slug class='col-sm-3 col-xs-12 control-label') #{text}:
 		div.col-sm-3
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3
@@ -213,7 +216,7 @@ mixin share_story_input_row(text, slug)
 mixin report_it_input_row(text, slug)
 	div.form-group.row
 		div.col-sm-2
-		label(for=slug class='col-sm-4 control-label') #{text}:
+		label(for=slug class='col-sm-4c control-label') #{text}:
 		div.col-sm-3
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3

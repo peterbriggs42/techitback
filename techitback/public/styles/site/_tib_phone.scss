@@ -67,6 +67,9 @@
 .arrow {
 	display: none;
 }
+.counter {
+	font-size: 20px;
+}
 
 /* Text boxes, etc. */
 .main_box {
@@ -123,4 +126,74 @@
 		}
 	}
 }
+
+.cyberbullying_section {
+	.popup_picture_box div {
+		font-size: 16px;
+	}
+	.thumbs {
+		margin-top: 20px;
+	}
+}
+.online_abuse_section {
+	.popup_picture_box {
+		font-size: 21px;
+	}
+	.thumbnails div.label_text {
+		font-size: 22px;
+		padding: 10px 0px 15px 0px;
+	}
+}
+.share_your_stories_section {
+	.popup_picture_box div {
+		font-size: 22px;
+	}
+}
+#share_your_story_form {
+	label, input {
+		text-align: center;
+		font-size: 18px;
+	}
+}
+.share_your_stories_share {
+	.textarea_desc {
+		font-size: 17px;
+	}
+	.textarea_popup {
+		width: 90%;
+		font-size: 12px;
+	}
+	textarea {
+		padding-top: 85px;
+		font-size: 16px;
+	}
+	.button_style {
+		font-size: 18px;
+		margin-top: 25px;
+	}
+	.agree_row {
+		margin-top: 25px;
+	}
+	.buttons {
+		width: 80%;
+	}
+}
+.share_your_stories_see {
+	font-size: 24px;
+}
+.their_stories_section {
+	.stories_text {
+		font-size: 15px;
+	}
+	.popup_picture_box div {
+		font-size: 20px;
+	}
+	.popup_picture_box.ts_marcus_link {
+		margin-top: 12px;
+	}
+	.thumbnails div {
+		font-size: 20px;
+	}
+}
+
 }

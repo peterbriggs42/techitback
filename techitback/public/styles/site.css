@@ -7544,7 +7544,7 @@ html, body {
     font-size: 34px; }
 
   #menu_header {
-    font-size: 45px;
+    font-size: 40px;
     height: 90px;
     margin-top: 28px; }
 
@@ -7587,6 +7587,9 @@ html, body {
   .arrow {
     display: none; }
 
+  .counter {
+    font-size: 20px; }
+
   /* Text boxes, etc. */
   .main_box {
     padding-bottom: 20px; }
@@ -7625,4 +7628,50 @@ html, body {
     margin-top: 196%; }
   .about_section.questions #educate_box {
     margin-top: 211%; }
+
+  .cyberbullying_section .popup_picture_box div {
+    font-size: 16px; }
+  .cyberbullying_section .thumbs {
+    margin-top: 20px; }
+
+  .online_abuse_section .popup_picture_box {
+    font-size: 21px; }
+  .online_abuse_section .thumbnails div.label_text {
+    font-size: 22px;
+    padding: 10px 0px 15px 0px; }
+
+  .share_your_stories_section .popup_picture_box div {
+    font-size: 22px; }
+
+  #share_your_story_form label, #share_your_story_form input {
+    text-align: center;
+    font-size: 18px; }
+
+  .share_your_stories_share .textarea_desc {
+    font-size: 17px; }
+  .share_your_stories_share .textarea_popup {
+    width: 90%;
+    font-size: 12px; }
+  .share_your_stories_share textarea {
+    padding-top: 85px;
+    font-size: 16px; }
+  .share_your_stories_share .button_style {
+    font-size: 18px;
+    margin-top: 25px; }
+  .share_your_stories_share .agree_row {
+    margin-top: 25px; }
+  .share_your_stories_share .buttons {
+    width: 80%; }
+
+  .share_your_stories_see {
+    font-size: 24px; }
+
+  .their_stories_section .stories_text {
+    font-size: 15px; }
+  .their_stories_section .popup_picture_box div {
+    font-size: 20px; }
+  .their_stories_section .popup_picture_box.ts_marcus_link {
+    margin-top: 12px; }
+  .their_stories_section .thumbnails div {
+    font-size: 20px; }
  }

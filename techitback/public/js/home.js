@@ -56,9 +56,7 @@ jQuery(function($) {
 			// Try to close mobile menu, as well
 			if (jPM) {
 				jPM.close();
-				console.log("Scrolling to top");
-				// $.mobile.silentScroll(0)
-				$("html, body").animate({ "scrollTop" : 0 }, 500);
+				// need to scroll here
 			}
 
 			// var replaceContent = ".popup";
