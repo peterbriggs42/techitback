@@ -1,5 +1,12 @@
 @media (max-width: 767px) {
 
+.mobile_only {
+	display: inherit;
+}
+.not_mobile {
+	display: none;
+}
+
 /* toggle stuff */
 .sidebar-left > .toggler {
 	left: 297px;
@@ -14,7 +21,7 @@
 }
 
 #menu_header {
-	font-size: 45px;
+	font-size: 40px;
 	height: 90px;
 	margin-top: 28px;
 }
@@ -46,4 +53,74 @@
 	padding-left: 23px;
 }
 
+/* GENERAL FORMATTING FOR SECTION PAGES */
+.upper_right {
+	display: none;
+}
+.popup_header {
+	font-size: 45px;
+	margin: 10px 0px 0px 0px;
+}
+#backgroundPopup {
+	display: none !important;
+}
+.arrow {
+	display: none;
+}
+
+/* Text boxes, etc. */
+.main_box {
+	padding-bottom: 20px;
+}
+
+/* Tech Addiction */
+.tech_addiction .text_container {
+	padding: 0px 15px 0px 15px;
+}
+
+/* About */
+.about_section {
+	iframe {
+		width: 93%;
+		height: 260px;
+		border: 5px solid #5a5a5a;
+		margin: 0px auto 40px auto;
+	}
+	.label_text {
+		font-size: 26px;
+		padding: 12px 0px 5px 0px;
+		line-height: 1.4;
+	}
+	.text p, .text ul {
+		padding: 0px 10px 0px 10px;
+	}
+	.row.question_title {
+		font-size: 21px !important;
+		padding-bottom: 19px;
+		width: 100%;
+	}
+	.question_focus_title {
+		font-size: 22px !important;
+	}
+	&.questions {
+		#mean_online_box {
+			margin-top: 118%;
+		}
+		#bullying_box {
+			margin-top: 134%;
+		}
+		#better_tech_box {
+			margin-top: 150%;
+		}
+		#technology_box {
+			margin-top: 185%;
+		}
+		#schools_box {
+			margin-top: 196%;
+		}
+		#educate_box {
+			margin-top: 211%;
+		}
+	}
+}
 }

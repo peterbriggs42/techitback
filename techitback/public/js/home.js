@@ -54,7 +54,12 @@ jQuery(function($) {
 				$(".toggler").click()
 			}
 			// Try to close mobile menu, as well
-			jPM.close();
+			if (jPM) {
+				jPM.close();
+				console.log("Scrolling to top");
+				// $.mobile.silentScroll(0)
+				$("html, body").animate({ "scrollTop" : 0 }, 500);
+			}
 
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");

@@ -109,13 +109,15 @@ mixin tech_addiction_section(section_id, left_link, right_link, pic_1, pic_1_lin
 			div.col-md-5
 				div.row.center_align
 					img(src=big_image, class='big_image')
+					div.text_container.mobile_only
+						div(class='text')!=main_text
 				div.row.thumbnails
 					+thumbnail_pic4(pic_1.thumbnail, pic_1_link, pic_1.title)
 					+thumbnail_pic4(pic_2.thumbnail, pic_2_link, pic_2.title)
 					+thumbnail_pic4(pic_3.thumbnail, pic_3_link, pic_3.title)
 					+thumbnail_pic4(pic_4.thumbnail, pic_4_link, pic_4.title)
 			div.col-md-5
-				div.text_container
+				div.text_container.not_mobile
 					div(class='text')!=main_text
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
