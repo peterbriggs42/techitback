@@ -7,6 +7,10 @@
 	display: none;
 }
 
+#popup_exit {
+	margin: 28px 0px 0px 11px;
+}
+
 /* toggle stuff */
 .sidebar-left > .toggler {
 	left: 297px;
@@ -127,6 +131,7 @@
 	}
 }
 
+/* CYBERBULLYING */
 .cyberbullying_section {
 	.popup_picture_box div {
 		font-size: 16px;
@@ -149,13 +154,14 @@
 		font-size: 22px;
 	}
 }
-#share_your_story_form {
+#share_your_story_form, .report_it_section form {
 	label, input {
 		text-align: center;
 		font-size: 18px;
 	}
 }
-.share_your_stories_share {
+
+.share_your_stories_share, .report_it_section {
 	.textarea_desc {
 		font-size: 17px;
 	}
@@ -195,5 +201,149 @@
 		font-size: 20px;
 	}
 }
+
+/* CYBERCRIME */
+.cybercrime_section {
+	.popup_picture_box.crime_whatis_link {
+		margin-top: 25px;
+		font-size: 20px;
+	}
+	.text {
+		padding: 0px 15px 0px 15px;
+	}
+	.image_label {
+		font-size: 15px;
+	}
+	.popup_picture_box div {
+		font-size: 20px;
+	}
+	.label_text {
+		margin-bottom: 20px;
+	}
+}
+
+/* WELCOME SECTION */
+.welcome_header {
+	img {
+		max-width: inherit;
+		width: 200% !important;
+		height: 100px;
+		margin-left: -200px;
+	}
+	.img-textoverlay {
+		top: 0%;
+		font-size: 45px;
+		margin-top: 20px;
+	}
+}
+.welcome_upper_left img {
+	margin: 5%;
+}
+.welcome_label {
+	margin: 5%;
+	font-size: 30px;
+}
+.welcome_body{
+	.welcome_button {
+		width: 50%;
+		margin: auto;
+	}
+	.button_label {
+		font-size: 40px;
+	}
+	.welcome_button {
+		&.bottom, &.mid, &.top {
+			margin-top: inherit;
+		}
+		img {
+			margin-top: 10px;
+			width: 50% !important;
+		}
+		.button_label {
+			font-size: 35px;
+		}
+	}
+	.icons {
+		height: 75px;
+	}
+	.welcome_left_button_mobile {
+		width: 16%;
+		float: left;
+		margin: 0px 2px 0px 6px;
+	}
+	.jointhehour {
+		margin-top: -5%;
+		padding: 0px;
+	}
+	.welcome_games_icon {
+		width: 25%;
+		float: left;
+		margin-left: 30px;
+		margin-bottom: 15px;
+	}
+	.games_container {
+		margin: auto;
+		text-align: center;
+		width: 100%;
+		.welcome_games_challenge_link {
+			margin-left: 30px;
+		}
+		.welcome_games_wikipedia_link {
+			margin-left: 80px;
+		}
+	}
+	.games_body_individual {
+		.games_title {
+			font-size: 35px;
+			margin-top: 25px;
+		}	
+	}
+	.games_text {
+		font-size: 13px;
+		padding-bottom: 10px;
+	}
+	.games_body .welcome_games_icon.welcome_games_wikipedia_link {
+		margin-top: inherit;
+	}
+	.welcome_games_wikipedia_link span {
+		font-size: 16px;
+	}
+	.welcome_games_challenge_link span {
+		font-size: 16px;
+	}
+	.welcome_games_forward_link span {
+		font-size: 20px;
+	}
+	.welcome_games_talk_link span {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.welcome_games_band_link span {
+		font-size: 18px;
+	}
+
+	.downloadable {
+		font-size: 22px;
+	}
+	.video iframe {
+		width: 100%;
+		height: 264px;
+		margin-top: 30px;
+	}
+	.quiz_container {
+		position: relative;
+		float: left;
+		padding: 23px;
+		width: inherit;
+		span {
+			font-size: 13px !important;
+			padding: 29% 27% 0% 27%;
+		}
+	}
+}
+
+
+
+
 
 }

@@ -8,11 +8,18 @@ block body
 		div.col-md-11
 			div.games_title() #{selected.title}
 			div.games_text()!= selected.content.brief
-		div.col-md-1
+		div.col-md-1.not_mobile
 			+welcome_games_icon(games_challenge, selected)
 			+welcome_games_icon(games_forward, selected)
 			+welcome_games_icon(games_talk, selected)
 			+welcome_games_icon(games_wikipedia, selected)
 			+welcome_games_icon(games_band, selected)
+		div.row.games_container
+			+welcome_games_icon_mobile(games_challenge, selected)
+			+welcome_games_icon_mobile(games_forward, selected)
+			+welcome_games_icon_mobile(games_talk, selected)
+		div.row.games_container
+			+welcome_games_icon_mobile(games_wikipedia, selected)
+			+welcome_games_icon_mobile(games_band, selected)
 block right_arrow
 	+arrow("right", next.link)

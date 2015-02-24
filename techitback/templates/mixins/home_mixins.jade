@@ -216,7 +216,7 @@ mixin share_story_input_row(text, slug)
 mixin report_it_input_row(text, slug)
 	div.form-group.row
 		div.col-sm-2
-		label(for=slug class='col-sm-4c control-label') #{text}:
+		label(for=slug class='col-sm-4c col-xs-12 control-label') #{text}:
 		div.col-sm-3
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3
@@ -231,12 +231,13 @@ mixin cybercrime_mistake(section_class, left_link, right_link, pic_1, pic_1_link
 			div.col-md-5
 				div.row.center_align
 					img(src=big_image, class='big_image')
+					span(class='mobile_only text')!=main_text.content.brief
 				div.row.thumbnails
 					div
 						+thumbnail_pic_double(pic_1.thumbnail, pic_1_link, pic_1.title)
 						+thumbnail_pic_double(pic_2.thumbnail, pic_2_link, pic_2.title)
 			div.col-md-5
-				span(class='text')!=main_text.content.brief
+				span(class='text not_mobile')!=main_text.content.brief
 			div.col-md-1
 				img.arrow(src='images/right.png', class=right_link)
 
@@ -251,6 +252,10 @@ mixin welcome_left_button (section)
 		img(src=section.image.url)
 		div.left_button_label #{section.title}
 
+mixin welcome_mobile_button(section)
+	div.row.welcome_left_button_mobile.mobile_only(class=section.link)
+		img(src=section.image.url)
+
 mixin welcome_games_icon (game, selected)
 	div.row.welcome_games_icon(class=game.link)
 		img(src='images/welcome_icons/5.21.png')
@@ -258,6 +263,15 @@ mixin welcome_games_icon (game, selected)
 			span.selected #{game.title}
 		else 
 			span #{game.title}
+
+mixin welcome_games_icon_mobile (game, selected)
+	div.row.welcome_games_icon.mobile_only(class=game.link)
+		img(src='images/welcome_icons/5.21.png')
+		if game.title == selected.title
+			span.selected #{game.title}
+		else 
+			span #{game.title}
+
 mixin cause_box(cause)
 	div.cause_image(class="welcome_causes_"+cause.key+"_link")
 		img(src=cause.image.url)

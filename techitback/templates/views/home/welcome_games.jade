@@ -9,13 +9,20 @@ block body
 			div(class='games_text')!= stacking.content.brief
 		div.col-md-4
 			div.row
-				div.col-md-5
+				div.col-md-5.not_mobile
 					+welcome_games_icon(challenge, stacking)
 					+welcome_games_icon(forward, stacking)
 					+welcome_games_icon(talk, stacking)
 				div.col-md-2
-				div.col-md-5
+				div.col-md-5.not_mobile
 					+welcome_games_icon(wikipedia, stacking)
 					+welcome_games_icon(band, stacking)
+				div.row.games_container
+					+welcome_games_icon_mobile(challenge, stacking)
+					+welcome_games_icon_mobile(forward, stacking)
+					+welcome_games_icon_mobile(talk, stacking)
+				div.row.games_container
+					+welcome_games_icon_mobile(wikipedia, stacking)
+					+welcome_games_icon_mobile(band, stacking)
 block right_arrow
 	+arrow("right", one.link)

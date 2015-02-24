@@ -7532,6 +7532,9 @@ html, body {
   .not_mobile {
     display: none; }
 
+  #popup_exit {
+    margin: 28px 0px 0px 11px; }
+
   /* toggle stuff */
   .sidebar-left > .toggler {
     left: 297px; }
@@ -7629,6 +7632,7 @@ html, body {
   .about_section.questions #educate_box {
     margin-top: 211%; }
 
+  /* CYBERBULLYING */
   .cyberbullying_section .popup_picture_box div {
     font-size: 16px; }
   .cyberbullying_section .thumbs {
@@ -7643,24 +7647,24 @@ html, body {
   .share_your_stories_section .popup_picture_box div {
     font-size: 22px; }
 
-  #share_your_story_form label, #share_your_story_form input {
+  #share_your_story_form label, #share_your_story_form input, .report_it_section form label, .report_it_section form input {
     text-align: center;
     font-size: 18px; }
 
-  .share_your_stories_share .textarea_desc {
+  .share_your_stories_share .textarea_desc, .report_it_section .textarea_desc {
     font-size: 17px; }
-  .share_your_stories_share .textarea_popup {
+  .share_your_stories_share .textarea_popup, .report_it_section .textarea_popup {
     width: 90%;
     font-size: 12px; }
-  .share_your_stories_share textarea {
+  .share_your_stories_share textarea, .report_it_section textarea {
     padding-top: 85px;
     font-size: 16px; }
-  .share_your_stories_share .button_style {
+  .share_your_stories_share .button_style, .report_it_section .button_style {
     font-size: 18px;
     margin-top: 25px; }
-  .share_your_stories_share .agree_row {
+  .share_your_stories_share .agree_row, .report_it_section .agree_row {
     margin-top: 25px; }
-  .share_your_stories_share .buttons {
+  .share_your_stories_share .buttons, .report_it_section .buttons {
     width: 80%; }
 
   .share_your_stories_see {
@@ -7674,4 +7678,103 @@ html, body {
     margin-top: 12px; }
   .their_stories_section .thumbnails div {
     font-size: 20px; }
+
+  /* CYBERCRIME */
+  .cybercrime_section .popup_picture_box.crime_whatis_link {
+    margin-top: 25px;
+    font-size: 20px; }
+  .cybercrime_section .text {
+    padding: 0px 15px 0px 15px; }
+  .cybercrime_section .image_label {
+    font-size: 15px; }
+  .cybercrime_section .popup_picture_box div {
+    font-size: 20px; }
+  .cybercrime_section .label_text {
+    margin-bottom: 20px; }
+
+  /* WELCOME SECTION */
+  .welcome_header img {
+    max-width: inherit;
+    width: 200% !important;
+    height: 100px;
+    margin-left: -200px; }
+  .welcome_header .img-textoverlay {
+    top: 0%;
+    font-size: 45px;
+    margin-top: 20px; }
+
+  .welcome_upper_left img {
+    margin: 5%; }
+
+  .welcome_label {
+    margin: 5%;
+    font-size: 30px; }
+
+  .welcome_body .welcome_button {
+    width: 50%;
+    margin: auto; }
+  .welcome_body .button_label {
+    font-size: 40px; }
+  .welcome_body .welcome_button.bottom, .welcome_body .welcome_button.mid, .welcome_body .welcome_button.top {
+    margin-top: inherit; }
+  .welcome_body .welcome_button img {
+    margin-top: 10px;
+    width: 50% !important; }
+  .welcome_body .welcome_button .button_label {
+    font-size: 35px; }
+  .welcome_body .icons {
+    height: 75px; }
+  .welcome_body .welcome_left_button_mobile {
+    width: 16%;
+    float: left;
+    margin: 0px 2px 0px 6px; }
+  .welcome_body .jointhehour {
+    margin-top: -5%;
+    padding: 0px; }
+  .welcome_body .welcome_games_icon {
+    width: 25%;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 15px; }
+  .welcome_body .games_container {
+    margin: auto;
+    text-align: center;
+    width: 100%; }
+    .welcome_body .games_container .welcome_games_challenge_link {
+      margin-left: 30px; }
+    .welcome_body .games_container .welcome_games_wikipedia_link {
+      margin-left: 80px; }
+  .welcome_body .games_body_individual .games_title {
+    font-size: 35px;
+    margin-top: 25px; }
+  .welcome_body .games_text {
+    font-size: 13px;
+    padding-bottom: 10px; }
+  .welcome_body .games_body .welcome_games_icon.welcome_games_wikipedia_link {
+    margin-top: inherit; }
+  .welcome_body .welcome_games_wikipedia_link span {
+    font-size: 16px; }
+  .welcome_body .welcome_games_challenge_link span {
+    font-size: 16px; }
+  .welcome_body .welcome_games_forward_link span {
+    font-size: 20px; }
+  .welcome_body .welcome_games_talk_link span {
+    font-size: 20px;
+    margin-top: 20px; }
+  .welcome_body .welcome_games_band_link span {
+    font-size: 18px; }
+  .welcome_body .downloadable {
+    font-size: 22px; }
+  .welcome_body .video iframe {
+    width: 100%;
+    height: 264px;
+    margin-top: 30px; }
+  .welcome_body .quiz_container {
+    position: relative;
+    float: left;
+    padding: 23px;
+    width: inherit; }
+    .welcome_body .quiz_container span {
+      font-size: 13px !important;
+      padding: 29% 27% 0% 27%; }
  }

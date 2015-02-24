@@ -1,9 +1,16 @@
 +popup_welcome_header(main)
 div.container-fluid.welcome_body
+		div.row.mobile_only.icons
+			div.col-xs-12
+				+welcome_mobile_button(one)
+				+welcome_mobile_button(two)
+				+welcome_mobile_button(three)
+				+welcome_mobile_button(four)
+				+welcome_mobile_button(five)
 		div.row
 			div.col-md-1
 				block left_arrow
-			div.col-md-1.left_buttons
+			div.col-md-1.left_buttons.not_mobile
 					+welcome_left_button(one)
 					+welcome_left_button(two)
 					+welcome_left_button(three)
