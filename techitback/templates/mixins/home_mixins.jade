@@ -61,8 +61,8 @@ mixin popup_picture(post, class_link)
 		img(src=post.thumbnail)
 		div()!=post.title
 
-mixin popup_header(title, image, label, link)
-	img#popup_exit(src='images/x.png')
+mixin popup_header(title, image, label, exit_link)
+	img#popup_exit(src='images/x.png', class=exit_link)
 	div.upper_right
 		img(src='images/menu_icons/'+image)
 		span #{label}
@@ -216,7 +216,7 @@ mixin share_story_input_row(text, slug)
 mixin report_it_input_row(text, slug)
 	div.form-group.row
 		div.col-sm-2
-		label(for=slug class='col-sm-4c col-xs-12 control-label') #{text}:
+		label(for=slug class='col-sm-4 col-xs-12 control-label') #{text}:
 		div.col-sm-3
 			input(id=slug, name=slug, type='text', class='form-control')
 		div.col-sm-3

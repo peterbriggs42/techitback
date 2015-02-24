@@ -256,7 +256,7 @@ jQuery(function($) {
 	}
 
 
-	$(document).on('click touchend', "#popup_exit", function (e) {
+	$(document).on('click touchend', ".home_link", function (e) {
 		disablePopup();
     });
 
