@@ -4,7 +4,7 @@ block content
 	+side_menu_foreign
 	div.blog_body
 
-		div.header_container
+		div.header_container.not_mobile
 			table.table.table-header-rotated
 				tr
 					+blog_section_title("Downloadables")
@@ -25,7 +25,7 @@ block content
 			+blog_section_link('/#welcome_games_link','/images/welcome_icons/5.2.png')
 			+blog_section_link('/#welcome_downloadable_link','/images/welcome_icons/5.3.png')
 
-		div.container-fluid.blog_sections
+		div.container-fluid.blog_sections.not_mobile
 			+blog_section('Tech Health', 'tech', 'small', selected)
 			+blog_section('Cybercrime', 'cybercrime', 'small', selected)
 			+blog_section('Cyberbullying', 'cyberbullying', 'small', selected)

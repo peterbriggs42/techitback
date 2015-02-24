@@ -7777,4 +7777,8 @@ html, body {
     .welcome_body .quiz_container span {
       font-size: 13px !important;
       padding: 29% 27% 0% 27%; }
+
+  /* BLOG */
+  .blog_body .blog_article_content .article_content {
+    margin: 5px 0px 30px 0px; }
  }

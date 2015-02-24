@@ -20,7 +20,7 @@
 	width: 205px;
 	line-height: 1.4;
 	text-align: center;
-	margin-top: -21px;
+	margin: 16px 3px 0px 12px;
 	font-size: 34px;
 }
 
@@ -342,6 +342,13 @@
 	}
 }
 
+/* BLOG */
+.blog_body .blog_article_content .article_content {
+	margin: 5px 0px 30px 0px;
+}
+.blog_body .blog_article_content .article_comments .comment_box form .name {
+	width: 50%;
+}
 
 
 

@@ -4,7 +4,7 @@ mixin blog_section_title(text, title_class)
 			span #{text}
 
 mixin blog_section_link(link, image)
-	a(href=link)
+	a(href=link).not_mobile
 		img.section_icon(src=image)
 
 mixin blog_preview(post)
@@ -32,7 +32,7 @@ mixin article_comment(comment)
 		div.text #{comment.text}
 
 mixin blog_favorites(posts)
-	div.popular_articles
+	div.popular_articles.not_mobile
 		div.title Popular Articles
 		div.articles
 			each post in posts
@@ -42,5 +42,5 @@ mixin blog_favorites(posts)
 						div.post_title #{post.title}
 
 mixin blog_submit()
-	a(href='/blog/submit')
+	a(href='/blog/submit').not_mobile
 		div.blog_submit Submit Your Article
