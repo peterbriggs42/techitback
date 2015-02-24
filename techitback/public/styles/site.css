@@ -7402,13 +7402,14 @@ html, body {
     margin-top: -4px; }
 
   .navbar-toggle {
-    margin-right: 0px; }
+    margin-right: 0px;
+    margin-top: 21px; }
 
   .navbar-toggle .icon-bar {
     margin-top: -7px;
     width: 34px;
     height: 3px;
-    background: purple; }
+    background: black; }
 
   .navbar-custom .container-fluid {
     min-height: 77px;
@@ -7547,8 +7548,8 @@ html, body {
     width: 205px;
     line-height: 1.4;
     text-align: center;
-    margin: 16px 3px 0px 12px;
-    font-size: 29px;
+    margin: 16px 0px 0px 0px;
+    font-size: 26px;
     padding: 0px; }
 
   #menu_header {
@@ -7730,7 +7731,7 @@ html, body {
   .welcome_body .icons {
     height: 75px; }
   .welcome_body .welcome_left_button_mobile {
-    width: 16%;
+    width: 17%;
     float: left;
     margin: 0px 2px 0px 6px; }
   .welcome_body .jointhehour {
