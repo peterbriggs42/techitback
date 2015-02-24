@@ -7535,6 +7535,10 @@ html, body {
   #popup_exit {
     margin: 28px 0px 0px 11px; }
 
+  /* high level */
+  .corporate_link img {
+    width: 100%; }
+
   /* toggle stuff */
   .sidebar-left > .toggler {
     left: 297px; }
@@ -7543,8 +7547,9 @@ html, body {
     width: 205px;
     line-height: 1.4;
     text-align: center;
-    margin-top: -21px;
-    font-size: 34px; }
+    margin: 16px 3px 0px 12px;
+    font-size: 29px;
+    padding: 0px; }
 
   #menu_header {
     font-size: 40px;
@@ -7781,4 +7786,25 @@ html, body {
   /* BLOG */
   .blog_body .blog_article_content .article_content {
     margin: 5px 0px 30px 0px; }
+
+  .blog_body .blog_article_content .article_comments .comment_box form .name {
+    width: 50%; }
+
+  /* SCHOOLS + PARENTS */
+  .schools_body .title {
+    font-size: 16px;
+    padding-bottom: 15px; }
+  .schools_body .popup_picture_box div {
+    font-size: 16px; }
+  .schools_body .col-md-2.fifth {
+    width: 80%;
+    margin: auto; }
+  .schools_body .label_text {
+    font-size: 18px !important; }
+
+  /* TIPS FOR TEENS */
+  .teen_tips_body .desc {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px; }
  }

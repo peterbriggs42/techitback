@@ -11,6 +11,11 @@
 	margin: 28px 0px 0px 11px;
 }
 
+/* high level */
+.corporate_link img{
+	width: 100%;
+}
+
 /* toggle stuff */
 .sidebar-left > .toggler {
 	left: 297px;
@@ -21,7 +26,8 @@
 	line-height: 1.4;
 	text-align: center;
 	margin: 16px 3px 0px 12px;
-	font-size: 34px;
+	font-size: 29px;
+	padding: 0px;
 }
 
 #menu_header {
@@ -350,6 +356,32 @@
 	width: 50%;
 }
 
+/* SCHOOLS + PARENTS */
+.schools_body {
+	.title {
+		font-size: 16px;
+		padding-bottom: 15px;
+	} 
+	.popup_picture_box div {
+		font-size: 16px;
+	}
+	.col-md-2.fifth {
+		width: 80%;
+		margin: auto;
+	}
+	.label_text {
+		font-size: 18px !important;
+	}
+}
+
+/* TIPS FOR TEENS */
+.teen_tips_body {
+	.desc {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 25px;
+	}
+}
 
 
 

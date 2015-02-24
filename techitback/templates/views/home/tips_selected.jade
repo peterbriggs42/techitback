@@ -11,12 +11,13 @@ block body
 		div.row
 			div.col-md-6
 				img(src=main.image.url)
+				div.mobile_only.text()!=main.content.brief
 				div.row
 					+thumbnail_pic_four(one)
 					+thumbnail_pic_four(two)
 					+thumbnail_pic_four(three)
 					+thumbnail_pic_four(four)
 			div.col-md-6
-				div.text()!=main.content.brief
+				div.not_mobile.text()!=main.content.brief
 block right_arrow
 	+arrow_with_link("right", right.key)

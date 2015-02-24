@@ -11,6 +11,7 @@ block body
 		div.row
 			div.col-md-6
 				img(src=main.image.url)
+				div.mobile_only.text()!=main.content.brief
 				div.row
 					+thumbnail_pic_five(one)
 					+thumbnail_pic_five(two)
@@ -18,6 +19,6 @@ block body
 					+thumbnail_pic_five(four)
 					+thumbnail_pic_five(five)
 			div.col-md-6
-				div.text()!=main.content.brief
+				div.not_mobile.text()!=main.content.brief
 block right_arrow
 	+arrow_with_link("right", right.key)
