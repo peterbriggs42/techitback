@@ -56,7 +56,7 @@ jQuery(function($) {
 			// Try to close mobile menu, as well
 			if (jPM) {
 				jPM.close();
-				// need to scroll here
+				$("html,body").animate({ scrollTop: 0 }, "fast");
 			}
 
 			// var replaceContent = ".popup";
