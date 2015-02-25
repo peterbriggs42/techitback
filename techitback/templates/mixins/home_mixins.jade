@@ -70,7 +70,7 @@ mixin popup_header(title, image, label, exit_link)
 		div #{title}
 
 mixin popup_welcome_header(section)
-	img#popup_exit(src='images/x.png')
+	img#popup_exit(src='images/x.png', class='welcome_link')
 	div.welcome_upper_left
 		img(src=section.image.url)
 	div.welcome_label
