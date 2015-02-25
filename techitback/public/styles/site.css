@@ -5140,7 +5140,7 @@ textarea {
   font-weight: lighter; }
 
 .jointhehour h2 {
-  font-family: Cardenio Modern;
+  font-family: rbno2;
   font-size: 60px;
   color: #ba1209; }
 
@@ -5174,7 +5174,10 @@ textarea {
   color: black;
   margin: -33px 14px 0px 0px;
   text-align: right;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  right: 115px;
+  background: white; }
 
 /* GENERAL YANNG STYLING */
 .yanng_title {
@@ -5563,7 +5566,10 @@ textarea {
   margin: -33px 14px 0px 0px;
   text-align: right;
   font-size: 20px;
-  font-family: Gotham; }
+  font-family: Gotham;
+  position: absolute;
+  right: 20px;
+  background: white; }
 
 /* YANNG CREATE + SHARE THANK YOU */
 .create_body_thanks {
@@ -6467,10 +6473,13 @@ html, body {
 
 .share_your_stories_share .counter {
   text-align: right;
-  margin: -24px 7px 0px 0px;
+  margin: -30px 7px 0px 0px;
   color: black;
   font-family: Gotham;
-  font-size: 1.4vw; }
+  font-size: 1.4vw;
+  position: absolute;
+  right: 20px;
+  background: white; }
 
 .share_your_stories_share .textarea_popup {
   position: absolute;
@@ -6563,10 +6572,13 @@ html, body {
 
 .report_it_section .counter {
   text-align: right;
-  margin: -24px 7px 0px 0px;
+  margin: -30px 7px 0px 0px;
   color: black;
   font-family: Gotham;
-  font-size: 1.4vw; }
+  font-size: 1.4vw;
+  position: absolute;
+  right: 20px;
+  background: white; }
 
 .report_it_section textarea {
   height: 175px;
@@ -7083,7 +7095,10 @@ html, body {
       margin-top: 6px; }
     .blog_body .blog_submit_page form .counter {
       margin: -35px 14px 12px 0px;
-      text-align: right; }
+      text-align: right;
+      position: absolute;
+      right: 20px;
+      background: white; }
   .blog_body .blog_submit_thanks_page .thanks_title {
     text-align: center;
     font-family: Gotham;
@@ -7118,6 +7133,8 @@ html, body {
 
 .pollathon_body {
   padding: 5px 25px 25px 25px; }
+  .pollathon_body .poll {
+    margin-top: 40px; }
   .pollathon_body h1 {
     font-size: 50px; }
   .pollathon_body h4 {
@@ -7218,7 +7235,10 @@ html, body {
   margin: -35px 12% 20px 0px;
   color: black;
   font-family: Gotham;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  background: white; }
 .schools_body.share_tips .faux_button {
   display: inline-block; }
 .schools_body.share_tips button, .schools_body.share_tips .faux_button {
@@ -7293,7 +7313,10 @@ html, body {
   margin: -35px 12% 20px 0px;
   color: black;
   font-family: Gotham;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  background: white; }
 .contact_body .faux_button {
   display: inline-block; }
 .contact_body button, .contact_body .faux_button {
@@ -7341,7 +7364,10 @@ html, body {
   margin: -35px 12% 20px 0px;
   color: black;
   font-family: Gotham;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  background: white; }
 .corporate_body .faux_button {
   display: inline-block; }
 .corporate_body button, .corporate_body .faux_button {

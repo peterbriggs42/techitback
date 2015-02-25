@@ -251,6 +251,9 @@
 			.counter {
 				margin: -35px 14px 12px 0px;
 				text-align: right;
+				position: absolute;
+				right: 20px;
+				background: white;
 			}
 		}
 	}
@@ -298,6 +301,9 @@
 
 .pollathon_body {
 	padding: 5px 25px 25px 25px;
+	.poll {
+		margin-top: 40px;
+	}
 	h1 {
 		font-size: 50px;
 	}

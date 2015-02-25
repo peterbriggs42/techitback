@@ -1,3 +1,11 @@
+function countWords(words){
+		s = words;
+		s = s.replace(/(^\s*)|(\s*$)/gi,"");
+		s = s.replace(/[ ]{2,}/gi," ");
+		s = s.replace(/\n /,"\n");
+		return s.split(' ').length;
+	}
+
 var popupStatus = 0;
 
 var defaultReplaceArea = "#defaultPopup";
@@ -213,27 +221,40 @@ jQuery(function($) {
 
 
 	/* LISTEN FOR KEY PRESSES */
-	$(document).keydown(function(e) {
-	    if (e.keyCode == 37) {
-	    	$(".arrow")[0].click()
-	    } else if (e.keyCode == 39) {
-	    	$(".arrow")[1].click()
-	    }
-	});
+	// $(document).keydown(function(e) {
+	//     if (e.keyCode == 37) {
+	//     	$(".arrow")[0].click()
+	//     } else if (e.keyCode == 39) {
+	//     	$(".arrow")[1].click()
+	//     }
+	// });
 
 
 	/* FORMS */
+	
+	// Update a counter within the textarea with word count
+	var addCounter = function(body) {
+		var oldValue = "";
+		$(document).on('keyup', body+" textarea", function() {
+			var maxwords = $(this).attr('maxwords');
+			if (!maxwords) maxwords = 500;
+
+			var count = countWords($(this).val());
+			if (count > maxwords) {
+				$(this).val(oldValue);
+				console.log("reached max");
+			} else {
+				oldValue = $(this).val();
+			}
+			$(".counter span").html(count);
+		});
+	}
 
 	// Take a body class and alter the form inside of it.
 	// Disable default form submission, replace popup HTML with response
-	// -- counter: update a counter within the textarea
 	var customizeForm = function(body, counter) {
 
-		if (counter) {
-			$(document).on('keyup', body+" textarea", function() {
-				$(".counter span").html($(this).val().length);
-			});
-		}
+		if (counter) addCounter(body);
 
 		$(document).on("submit", body+" form", function(e) {
 			e.preventDefault();
@@ -261,9 +282,7 @@ jQuery(function($) {
     });
 
 	/* SHARE YOUR STORY */
-	$(document).on('keyup', ".share_your_stories_share textarea", function() {
-		$(".counter span").html($(this).val().length);
-	});
+	addCounter(".share_your_stories_share");
 
 	// User clicks to second page
 	$(document).on('click', ".share_your_stories_share .next_button", function (e) {
@@ -314,9 +333,7 @@ jQuery(function($) {
 
 
 	/* REPORT ONLINE ABUSE */
-	$(document).on('keyup', ".report_it_section textarea", function() {
-		$(".counter span").html($(this).val().length);
-	});
+	addCounter(".report_it_section");
 
 	$(document).on("submit", ".report_it_section form", function(e) {
 		e.preventDefault();
@@ -344,9 +361,7 @@ jQuery(function($) {
 	});
 
 	/* BLOG SUBMIT */
-	$(document).on('keyup', ".blog_submit_page textarea", function() {
-		$(".counter span").html($(this).val().length);
-	});
+	addCounter(".blog_submit_page");
 
 	var blogFormValidate = function() {
 		if ($("input[name='agree']:checked").length < 1) {
@@ -362,9 +377,7 @@ jQuery(function($) {
 	});
 
 	/* SHARE TIPS */
-	$(document).on('keyup', ".share_tips textarea", function() {
-		$(".counter span").html($(this).val().length);
-	});
+	addCounter(".share_tips");
 
 	// User clicks to second page
 	$(document).on('click', ".share_tips #next", function (e) {
@@ -410,9 +423,11 @@ jQuery(function($) {
 	/* SCHOOLS JOIN */
 	customizeForm('schools_body.join');
 	/* CONTACT US */
-	customizeForm('.contact_body');
+	customizeForm('.contact_body', true);
 	/* PARTNER WITH US */
 	customizeForm('.corporate_body', true);
+	/* JOIN THE HOUR */
+	addCounter('.jointhehour');
 
 });
 

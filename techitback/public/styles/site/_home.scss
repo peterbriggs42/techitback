@@ -625,10 +625,13 @@ body {
 }
 .share_your_stories_share .counter {
   text-align: right;
-  margin: -24px 7px 0px 0px;
+  margin: -30px 7px 0px 0px;
   color: black;
   font-family: Gotham;
   font-size: 1.4vw;
+  position: absolute;
+  right: 20px;
+  background: white;
 }
 .share_your_stories_share .textarea_popup {
   position: absolute;
@@ -724,10 +727,13 @@ body {
 }
 .report_it_section .counter {
   text-align: right;
-  margin: -24px 7px 0px 0px;
+  margin: -30px 7px 0px 0px;
   color: black;
   font-family: Gotham;
   font-size: 1.4vw;
+  position: absolute;
+  right: 20px;
+  background: white;
 }
 .report_it_section textarea {
   height: 175px;

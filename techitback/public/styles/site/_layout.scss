@@ -174,7 +174,7 @@ textarea {
 	font-weight: lighter;
 }
 .jointhehour h2 {
-	font-family: Cardenio Modern;
+	font-family: rbno2;
 	font-size: 60px;
 	color: $tib_red;
 }
@@ -209,5 +209,8 @@ textarea {
 	margin: -33px 14px 0px 0px;
 	text-align: right;
 	font-size: 20px;
+	position: absolute;
+	right: 115px;
+	background: white;
 }
 

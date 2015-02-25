@@ -84,13 +84,36 @@ jQuery(function($) {
 
 	/* USER CREATE AND SHARE */
 
+	var addCounter = function(body, num) {
+		var oldValue = "";
+		$(document).on('keyup', body, function() {
+			var maxwords = $(this).attr('maxwords');
+			if (!maxwords) maxwords = 120;
+
+			var count = countWords($(this).val());
+			if (count > maxwords) {
+				$(this).val(oldValue);
+				console.log("reached max");
+			} else {
+				oldValue = $(this).val();
+			}
+			if (num == 0) 
+				$(".counter span").first().html(count);
+			else
+				$(".counter span").last().html(count);
+		});
+	}
 	// Update text counters
-	$(document).on('keyup', ".create_body textarea[name='yes_box']", function() {
-		$(".counter span").first().html($(this).val().length);
-	})
-	$(document).on('keyup', ".create_body textarea[name='no_box']", function() {
-		$("div.counter span").last().html($(this).val().length);
-	})
+	addCounter(".create_body textarea[name='yes_box']", 0);
+	addCounter(".create_body textarea[name='no_box']", 1);
+
+
+	// $(document).on('keyup', ".create_body textarea[name='yes_box']", function() {
+	// 	$(".counter span").first().html($(this).val().length);
+	// })
+	// $(document).on('keyup', ".create_body textarea[name='no_box']", function() {
+	// 	$("div.counter span").last().html($(this).val().length);
+	// })
 
 	// User clicks to second page
 	$(document).on('click', "#createsharenext", function (e) {
@@ -185,7 +208,4 @@ jQuery(function($) {
 			}
 		});
 	});
-	$(document).on('keyup', ".jointhehour textarea", function() {
-		$(".counter span").last().html($(this).val().length);
-	})
 });
