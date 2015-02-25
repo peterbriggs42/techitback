@@ -7116,6 +7116,14 @@ html, body {
       margin: 10px;
       font-size: 18px; }
 
+.pollathon_body {
+  padding: 5px 25px 25px 25px; }
+  .pollathon_body h1 {
+    font-size: 50px; }
+  .pollathon_body h4 {
+    font-family: Gotham;
+    font-size: 20px; }
+
 .schools_body .title {
   font-family: Gotham;
   margin-top: 25px;

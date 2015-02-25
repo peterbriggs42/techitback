@@ -1,0 +1,36 @@
+// HEADERS 
+mixin tib_header()
+	+header
+
+mixin other_header()
+	+header('other')
+
+mixin header(other)
+	div(role="navigation").navbar.navbar-custom.navbar-fixed-top
+				.container-fluid
+					#trigger #
+					.navbar-header#navbar
+						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.navbar-brand(href='/') TECH IT BACK
+					.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							//- each link in navLinks
+							//- 	li(class=(section == link.key ? 'active' : null)): a(href=link.href): img.social_link(src=link.image)
+							if other
+								a(href='/#welcome_join_link')
+									li#join_the_hour JOIN THE HOUR
+							else
+								li#join_the_hour.welcome_join_link JOIN THE HOUR									
+
+// FOOTERS
+mixin yanng_footer()
+	.container: #footer
+			p.yanng_title © 2015 YES AND NO NO GIRLS LLC. ALL RIGHTS RESERVED.
+
+mixin tib_footer()
+	.container: #footer
+			p © 2015 Tech It Back LLC. All Rights Reserved.

@@ -152,6 +152,7 @@ exports = module.exports = function(app) {
 	app.get('/blog_section/:section', routes.blog.section);
 	app.get('/blog/submit', routes.blog.submit);
 	app.post('/blog/submit', routes.blog.submit_blog);
+	app.get('/blog/pollathon', routes.blog.pollathon);
 
 	// Schools and Parents
 	app.get('/ajax/home/schools_home', routes.schools.home);

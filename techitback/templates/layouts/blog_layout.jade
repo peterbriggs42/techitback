@@ -1,4 +1,4 @@
-extends ./default
+extends ./blog_base
 
 block content
 	+side_menu_foreign
@@ -7,6 +7,7 @@ block content
 		div.header_container.not_mobile
 			table.table.table-header-rotated
 				tr
+					+blog_section_title("Poll-A-Thon")
 					+blog_section_title("Downloadables")
 					+blog_section_title("Games")
 					+blog_section_title("Join")
@@ -24,6 +25,7 @@ block content
 			+blog_section_link('/#welcome_join_link','/images/welcome_icons/5.1.png')
 			+blog_section_link('/#welcome_games_link','/images/welcome_icons/5.2.png')
 			+blog_section_link('/#welcome_downloadable_link','/images/welcome_icons/5.3.png')
+			+blog_section_link('/blog/pollathon','/images/welcome_icons/6.11.png')
 
 		div.container-fluid.blog_sections.not_mobile
 			+blog_section('Tech Health', 'tech', 'small', selected)
