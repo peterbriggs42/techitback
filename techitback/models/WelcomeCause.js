@@ -15,7 +15,7 @@ var WelcomeCause = new keystone.List('Welcome Cause', {
 // Customize model
 WelcomeCause.add({
 	title: { type: String, required: true },
-	key: { type:Types.Key, noedit: false},
+	key: { type:Types.Key, noedit: true},
 	image: { type: Types.S3File },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },

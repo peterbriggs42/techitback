@@ -15,7 +15,7 @@ var CyberMistake = new keystone.List('Cyber Mistake', {
 // Customize model
 CyberMistake.add({
 	title: { type: String, required: true },
-	key: { type:Types.Key, noedit: false},
+	key: { type:Types.Key, noedit: true},
 	image: { type: Types.S3File },
 	thumbnail: {type: String, noedit: true},
 	content: {

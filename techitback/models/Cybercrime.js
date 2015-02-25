@@ -15,7 +15,7 @@ var Cybercrime = new keystone.List('Cybercrime', {
 // Customize model
 Cybercrime.add({
 	title: { type: String, required: true },
-	key: { type:Types.Key, noedit: false},
+	key: { type:Types.Key, noedit: true},
 	image: { type: Types.S3File },
 	thumbnail: {type: String, noedit: true},
 	content: {

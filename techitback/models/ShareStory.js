@@ -15,7 +15,7 @@ var ShareStory = new keystone.List('Share Your Story Section', {
 // Customize model
 ShareStory.add({
 	title: { type: String, required: true },
-	key: { type:Types.Key, noedit: false},
+	key: { type:Types.Key, noedit: true},
 	image: { type: Types.S3File },
 });
 

@@ -15,7 +15,7 @@ var CorporatePartners = new keystone.List('CorporatePartners', {
 // Customize model
 CorporatePartners.add({
 	title: { type: String, required: true },
-	key: { type:Types.Key, noedit: false},
+	key: { type:Types.Key, noedit: true},
 	image: { type: Types.S3File },
 });
 
