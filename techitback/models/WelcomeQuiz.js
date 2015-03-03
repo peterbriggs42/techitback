@@ -16,7 +16,7 @@ var WelcomeQuizzes = new keystone.List('Welcome Quiz', {
 WelcomeQuizzes.add({
 	title: { type: String, required: true },
 	key: { type:Types.Key, noedit: true},
-	link: {type: String, noedit: true}
+	link: {type: String, noedit: false}
 });
 
 WelcomeQuizzes.defaultColumns = 'title';

@@ -6955,7 +6955,7 @@ html, body {
     height: 80px;
     text-align: center; }
     .blog_body .blog_section.small {
-      padding-top: 2.5%; }
+      padding-top: 24px; }
     .blog_body .blog_section.tech {
       width: 12%; }
     .blog_body .blog_section.cybercrime {
