@@ -952,7 +952,13 @@ body {
   font-size: 1.5vw;
   font-family: Gotham;
   text-align: center;
-  margin-top: 15%;
+  img {
+    padding: 15px;
+  }
+  &.container {
+    width: 100%; 
+    padding-bottom: 50px;
+  }
 }
 /* WELCOME TO OUR HOUR - VIDEO */
 .welcome_body .video {

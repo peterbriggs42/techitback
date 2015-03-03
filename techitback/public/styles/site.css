@@ -6794,8 +6794,12 @@ html, body {
 .welcome_body .downloadable {
   font-size: 1.5vw;
   font-family: Gotham;
-  text-align: center;
-  margin-top: 15%; }
+  text-align: center; }
+  .welcome_body .downloadable img {
+    padding: 15px; }
+  .welcome_body .downloadable.container {
+    width: 100%;
+    padding-bottom: 50px; }
 
 /* WELCOME TO OUR HOUR - VIDEO */
 .welcome_body .video {

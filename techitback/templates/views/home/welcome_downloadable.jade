@@ -4,6 +4,12 @@ extends ../../layouts/welcome_section
 block left_arrow
 	+arrow("left", five.link)
 block body
-	div.downloadable Downloadable infographics, signs, and flyers coming soon!
+	div.downloadable.container
+		each download, index in downloads
+			div.col-md-4
+				if download
+					a(href=download.file.url)
+						img(src=download.preview.url)
+	div.bottom
 block right_arrow
 	+arrow("right", one.link)
