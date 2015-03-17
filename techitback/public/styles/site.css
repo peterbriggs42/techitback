@@ -5909,7 +5909,8 @@ html, body {
   height: 101%;
   font-size: 40px;
   opacity: 0;
-  font-family: RBNo2; }
+  font-family: inherit;
+  font-weight: bold; }
 
 .textoverlay:hover {
   /*.textoverlay {*/
@@ -5923,30 +5924,38 @@ html, body {
   cursor: pointer; }
 
 .textoverlay.tech_addiction {
-  padding-top: 50%;
-  font-size: 48px;
-  font-family: inherit;
-  text-align: center; }
+  position: absolute;
+  font-size: 1.8vw;
+  text-align: right;
+  padding-right: 4%;
+  padding-top: 88%;
+  font-weight: bold; }
 
 .textoverlay.about_hour {
-  padding-top: 52%;
+  padding-top: 40%;
   text-align: center;
-  font-size: 52px; }
+  font-size: 30px; }
 
 .textoverlay.cyberbullying {
-  text-align: right;
-  font-size: 47px;
-  padding-right: 2%; }
+  text-align: left;
+  font-size: 23px;
+  padding: 2%; }
 
 .textoverlay.hacker {
   padding-left: 3%;
-  font-size: 52px; }
+  font-size: 25px;
+  padding-top: 79%; }
 
 .textoverlay.welcome {
   text-align: center;
   font: inherit;
-  font-size: 75px;
-  padding-top: 9%; }
+  font-size: 6.5vw;
+  font-weight: bold; }
+
+.col-xs-12.welcome_link {
+  background-image: url(/images/home/home_welcome.jpg);
+  height: 125px;
+  background-size: 215px; }
 
 .textoverlay.desk {
   text-align: right;
@@ -5954,25 +5963,26 @@ html, body {
   font-size: 70px; }
 
 .textoverlay.school {
-  padding-top: 32%;
+  padding-top: 8%;
   text-align: right;
   padding-right: 5%;
-  font-size: 44px; }
+  font-size: 18px; }
 
 .textoverlay.contact {
   text-align: right;
-  padding-right: 4%;
-  font-size: 31px; }
+  padding: 4%;
+  font-size: 20px; }
 
 .textoverlay.corporate {
-  font-size: 26px;
+  font-size: 19px;
   text-align: center;
-  color: #9dfaf9; }
+  padding-top: 84%; }
 
 .textoverlay.teenietips {
-  text-align: center;
-  padding-top: 50%;
-  font-size: 84px; }
+  text-align: left;
+  padding-top: 38%;
+  font-size: 27px;
+  padding-left: 10%; }
 
 .textoverlay.blue {
   color: #9dfaf9;

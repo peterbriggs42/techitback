@@ -9,34 +9,37 @@ block content
 
 	div.container-fluid.pictures
 		div.row.row-no-padding
-			div.col-md-5.tech_addiction_link
-				+home_picture("dude_crop.jpg", "TECH ADDICTION", 'tech_addiction blue')
-			div.col-md-7
+			div.col-xs-6
+				img.img-responsive(src='images/home/home_girls.jpg')
+			div.col-xs-6
 				div.row
-					div.col-md-5.about_link
-						+home_picture("hands.png", "ABOUT", 'about_hour')
-					div.col-md-7.cyberbullying_link
-						+home_picture("girls.jpg", "CYBERBULLYING + ABUSE", 'cyberbullying')
-				div.col-md-12.cybercrime_link
-					+home_picture("hacker.jpg", "CYBERCRIME NEWS", "hacker")
+					div.col-xs-6
+						+home_picture("home_dude.jpg", "TECH ADDICTION", 'tech_addiction tech_addiction_link')
+					div.col-xs-6
+						+home_picture("home_shoes.jpg", "CYBERBULLYING + ABUSE", 'cyberbullying cyberbullying_link')
+				div.row
+					div.col-xs-6
+						+home_picture("home_stuff.jpg", "ABOUT", 'about_hour about_link')
+					div.col-xs-6
+						+home_picture("home_cuffs.jpg", "CYBERCRIME NEWS", "hacker cybercrime_link")
 		div.row.row-no-padding
-			div.col-md-12.welcome_link
-				+home_picture("people.jpg", "WELCOME TO OUR HOUR", "welcome blue")
+			div.col-xs-12
+				span.textoverlay(class="welcome welcome_link") WELCOME TO OUR HOUR
 		div.row.row-no-padding
-			div.col-md-4
-				a(href='/blog')
-					div.row
-						+home_picture("desk.jpg", "BLOG", "desk")
+			div.col-xs-6
+				div.row
+					div.col-xs-6
+						a(href='/blog')
+							+home_picture("home_blog.gif", "BLOG", "desk")
+					div.col-xs-6
+						+home_picture("home_lady.jpg", "SCHOOLS + PARENTS", "school schools_link")
 				div.row.row-no-padding
-					div.col-md-12.schools_link
-						+home_picture("class.jpg", "SCHOOLS + PARENTS", "school")
-				div.row.row-no-padding
-					div.col-md-6.contact_us_link
-						+home_picture("phone.jpg", "CONTACT US", "contact")
-					div.col-md-6.corporate_link
-						+home_picture("work.jpg", "CORPORATE PARTNERS", "corporate")
-			div.col-md-8.tips_for_teens_link
-				+home_picture("greengirl.jpg", "TIPS FOR TEENS", "teenietips")
+					div.col-xs-6
+						+home_picture("home_door.jpg", "CONTACT US", "contact contact_us_link")
+					div.col-xs-6
+						+home_picture("home_knees.jpg", "CORPORATE PARTNERS", "corporate corporate_link")
+			div.col-xs-6
+				+home_picture("home_selfie.jpg", "TIPS FOR TEENS", "teenietips tips_for_teens_link")
 
 	a(href="yanng")
 		div.container-fluid.yanng_footer.yanng_link
