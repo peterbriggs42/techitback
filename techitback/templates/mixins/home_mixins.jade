@@ -52,9 +52,12 @@ mixin side_menu_foreign()
 		div.menu_padding
 
 
-mixin home_picture(image, text, span_class)
+mixin home_picture(image, text, span_class, addl_text, addl_class)
 	img.img-responsive(src='images/home/'+image)
 	span.textoverlay(class=span_class) #{text}
+		if addl_text
+			br
+			div(class="minor "+addl_class) #{addl_text}
 
 mixin popup_picture(post, class_link)
 	div.popup_picture_box(class=class_link)

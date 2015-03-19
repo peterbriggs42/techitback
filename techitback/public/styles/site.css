@@ -5923,6 +5923,18 @@ html, body {
   transition: all 0.2s ease-out 0s;
   cursor: pointer; }
 
+.textoverlay .minor {
+  color: lightgray;
+  font-size: 16px;
+  line-height: 12px; }
+  .textoverlay .minor.report_link {
+    text-align: right;
+    padding-right: 52px !important; }
+  .textoverlay .minor.establish-a-tech-policy-link {
+    padding-left: 39% !important; }
+  .textoverlay .minor.share_share_link {
+    padding-left: 17% !important; }
+
 .textoverlay.tech_addiction {
   position: absolute;
   font-size: 1.8vw;
@@ -5938,19 +5950,20 @@ html, body {
 
 .textoverlay.cyberbullying {
   text-align: left;
-  font-size: 23px;
-  padding: 2%; }
+  font-size: 18px;
+  padding: 5%; }
 
 .textoverlay.hacker {
   padding-left: 3%;
   font-size: 25px;
-  padding-top: 79%; }
+  padding-top: 70%; }
 
 .textoverlay.welcome {
   text-align: center;
   font: inherit;
   font-size: 6.5vw;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 3px; }
 
 .col-xs-12.welcome_link {
   background-image: url(/images/home/home_welcome.jpg);
@@ -6060,7 +6073,6 @@ html, body {
 .yanng_footer div {
   font-family: RBNo2;
   text-transform: uppercase;
-  color: #9dfaf9;
   font-size: 3.5vw;
   margin: 4% 2%; }
 
