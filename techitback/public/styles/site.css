@@ -6073,8 +6073,16 @@ html, body {
 .yanng_footer div {
   font-family: RBNo2;
   text-transform: uppercase;
+  color: #18717e;
   font-size: 3.5vw;
   margin: 4% 2%; }
+  .yanng_footer div .create_your_own {
+    position: absolute;
+    margin-top: -17px;
+    font-size: 2.5vw;
+    text-transform: lowercase;
+    text-align: right;
+    width: 36%; }
 
 /*
  * Popup

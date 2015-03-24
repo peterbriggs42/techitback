@@ -81,6 +81,20 @@ jQuery(function($) {
 		yanng_listener(listener['element'], listener['url'], listener['replace']);
 	} );
 
+	// If there is a hash (i.e. techitback.com#games), then go there
+	var hash;
+	if (hash = window.location.hash.replace('#','.')) {
+		console.log(hash);
+		if ('.create' == hash) {
+			$(document).ready(function () {
+				ajaxRequest(null, "ajax/yanng_createshare", '', 'GET', function(data) {
+					$(".yanng_content").html(data);
+					document.location.hash = ''
+				}); 
+			});
+		}
+	}
+
 
 	/* USER CREATE AND SHARE */
 

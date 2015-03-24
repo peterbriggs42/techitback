@@ -215,8 +215,17 @@ body {
 .yanng_footer div {
   font-family: RBNo2;
   text-transform: uppercase;
+  color: rgb(24, 113, 126);
   font-size: 3.5vw;
   margin: 4% 2%;
+  .create_your_own {
+    position: absolute;
+    margin-top: -17px;
+    font-size: 2.5vw;
+    text-transform: lowercase;
+    text-align: right;
+    width: 36%;
+  }
 }
 
 
