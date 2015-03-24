@@ -17,7 +17,7 @@ var WelcomeVideo = new keystone.List('Welcome Video', {
 WelcomeVideo.add({
 	title: { type: String, required: true },
 	key: { type:Types.Key, noedit: true},
-	link: {type: Types.Url, noedit: true},
+	link: {type: Types.Url, noedit: false},
 });
 
 WelcomeVideo.defaultColumns = 'title';
