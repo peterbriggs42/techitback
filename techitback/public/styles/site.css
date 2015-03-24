@@ -5923,6 +5923,12 @@ html, body {
   transition: all 0.2s ease-out 0s;
   cursor: pointer; }
 
+#home_video {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height: 455px; }
+
 #blog1 span {
   opacity: 1;
   padding-top: 40px;
