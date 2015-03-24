@@ -219,6 +219,27 @@ jQuery(function($) {
 		}
 	});
 
+	/* FRONT PAGE LOOP */
+	var section = 0;
+	var changeImage = function () {
+		$(".blog_gif").hide();
+		switch (section) {
+			case 0:
+				$("#blog1").show(); break;
+			case 1:
+				$("#blog2").show(); break;
+			case 2:
+				$("#blog2").show();
+				$("#blog3").show(); break;
+			case 3:
+				$("#blog2").show();
+				$("#blog3").show();
+				$("#blog4").show(); break;
+		}
+		section = (section + 1) % 4
+		setTimeout(changeImage, 1500);
+	};
+	changeImage();
 
 	/* LISTEN FOR KEY PRESSES */
 	// $(document).keydown(function(e) {

@@ -30,7 +30,14 @@ block content
 				div.row
 					div.col-xs-6
 						a(href='/blog')
-							+home_picture("home_blog.gif", "BLOG", "desk")
+							div#blog1.blog_gif
+								+home_picture("home_type.jpg", "read our blog", "")
+							div#blog2.blog_gif
+								div Promote safe tech use
+							div#blog3.blog_gif
+								div Co-create guidelines
+							div#blog4.blog_gif
+								div Educate tech users
 					div.col-xs-6
 						+home_picture("home_lady.jpg", "SCHOOLS + PARENTS", "school schools_link", "share tips", "share-tips-link")
 				div.row.row-no-padding
