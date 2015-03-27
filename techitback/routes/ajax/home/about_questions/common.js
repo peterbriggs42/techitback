@@ -24,7 +24,7 @@ var returnAboutQuestion = function(req, res, keystone, question_key) {
 				.exec(function(err, questions) {
 
 					view.render('home/about_questions', {
-						about_tech: posts.filter(getPostBySlug, "about-tech-it-off")[0],
+						about_tech: posts.filter(getPostBySlug, "about-tech-it-back")[0],
 						about_intralink: posts.filter(getPostBySlug, "about-intralink-global")[0],
 						questions: posts.filter(getPostBySlug, "questions")[0],
 						all_questions : questions,
