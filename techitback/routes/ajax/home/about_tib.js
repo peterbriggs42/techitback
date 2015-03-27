@@ -15,7 +15,7 @@ exports = module.exports = function(req, res) {
 			}
 			
 			view.render('home/about_tib', {
-				about_tech: posts.filter(isType, "about-tech-it-off")[0],
+				about_tech: posts.filter(isType, "about-tech-it-back")[0],
 				about_intralink: posts.filter(isType, "about-intralink-global")[0],
 				questions: posts.filter(isType, "questions")[0]
 			});	
