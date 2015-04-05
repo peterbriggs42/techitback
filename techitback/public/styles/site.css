@@ -5253,7 +5253,7 @@ textarea {
 
 #etiquette img {
   width: 89%;
-  bottom: 27px;
+  bottom: 26px;
   position: absolute; }
 
 .yanng_home .about_link p {
@@ -6140,7 +6140,7 @@ html, body {
 
 #popup_exit {
   cursor: pointer;
-  width: 5% !important;
+  width: 3.5% !important;
   margin: 18px 0px 0px 18px;
   float: left;
   border: none !important; }
@@ -6205,7 +6205,8 @@ html, body {
 .arrow {
   border: none !important;
   margin-top: 225%;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 66% !important; }
 
 /*
  * Cover

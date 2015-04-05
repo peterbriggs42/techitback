@@ -1,4 +1,8 @@
-mixin yanng_header(header_text)
-	div.container-fluid#yanng_header.yanng_title 
-		div.yanng_header_button X
-		h2 #{header_text}
+mixin yanng_header(header_text, home_page_x)
+	div.container-fluid#yanng_header.yanng_title
+		if home_page_x
+			div.yanng_header_button.yanng_main_link X
+			h2 #{header_text}
+		else
+			div.yanng_header_button.yanng_home_link X
+			h2 #{header_text}

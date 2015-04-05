@@ -48,7 +48,7 @@ jQuery(function($) {
 
 	// Add a listener event for element and corresponding ajax request
 	[ 	// Main links	
-		{'element':".yanng_header_button",	'url':'ajax/yanng_home'			, 'replace':null, 'fade':true},
+		{'element':".yanng_home_link",	'url':'ajax/yanng_home'			, 'replace':null, 'fade':true},
 		{'element':".about_link", 			'url':'ajax/yanng_about'		, 'replace':null, 'fade':true},
 		{'element':".yanng_body .next_page",'url':'ajax/yanng_about2'		, 'replace':null, 'fade':true},
 		{'element':"#etiquette", 			'url':'ajax/yanng_etiquette'	, 'replace':null, 'fade':true},
@@ -94,6 +94,11 @@ jQuery(function($) {
 			});
 		}
 	}
+
+	// Adding anchor element makes formatting weird, so listen for .yanng_main_link
+	$(document).on('click touchend', ".yanng_main_link", function (e) {
+		document.location = "/";
+	});
 
 
 	/* USER CREATE AND SHARE */
