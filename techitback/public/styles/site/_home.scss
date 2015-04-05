@@ -1097,23 +1097,26 @@ body {
 .quizzes_body {
   margin-top: 5%;
 }
+.quiz_wrapper {
+  width: 16%;
+  float: left;
+}
 .quiz_container {
   position: relative;
   float: left;
   padding: 10px;
-  width: 16%;
   a {
     display: inline-block;
   }
   &.bottom {
-    margin-top: 10%;
+    margin-top: 35%;
   }
   span {
     font-weight: bold;
     color:black;
     position: absolute;
     left: 0;
-    font-size: 1.4vw;
+    font-size: 14px;
     padding: 14%;
     font-family: Gotham;
     text-transform: uppercase;
@@ -1128,18 +1131,13 @@ body {
   }
   #quiz_cellphone {
     top: 11%;
-    font-size: 1.3vw;
   }
   #quiz_survive {
     top: 10%;
-    font-size: 1.3vw;
-  }
-  #quiz_geek {
-
   }
   #quiz_technology {
     top: 20%;
-    font-size: 1.1vw;
+    font-size: 12px;
   }
 }
 /*

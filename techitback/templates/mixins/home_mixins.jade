@@ -289,8 +289,9 @@ mixin quiz_link(quiz, bottom)
 	- var quiz_class = "quiz_container"
 	if bottom
 		- quiz_class = "quiz_container bottom"
-	div(class=quiz_class)
-		a(href=quiz.link target="_blank")
-			img(src='images/5.61.png')
-		span(id="quiz_"+quiz.key) #{quiz.title}
+	div.quiz_wrapper
+		div(class=quiz_class)
+			a(href=quiz.link target="_blank")
+				img(src='images/5.61.png')
+			span(id="quiz_"+quiz.key) #{quiz.title}
 
