@@ -64,11 +64,12 @@ mixin popup_picture(post, class_link)
 		img(src=post.thumbnail)
 		div()!=post.title
 
-mixin popup_header(title, image, label, exit_link)
+mixin popup_header(title, image, label, exit_link, link)
 	img#popup_exit(src='images/x.png', class=exit_link)
-	div.upper_right
-		img(src='images/menu_icons/'+image)
-		span #{label}
+	if image
+		div.upper_right(class=link)
+			img(src='images/menu_icons/'+image)
+			span #{label}
 	div(class=link).popup_header
 		div #{title}
 

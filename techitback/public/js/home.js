@@ -220,10 +220,12 @@ jQuery(function($) {
 	});
 
 	/* FRONT PAGE LOOP */
-	var section = 0;
-	var changeImage = function () {
+	var defaultTiming = 1500;
+
+	var blogSection = 0;
+	var changeBlogImage = function () {
 		$(".blog_gif").hide();
-		switch (section) {
+		switch (blogSection) {
 			case 0:
 				$("#blog1").show(); break;
 			case 1:
@@ -236,10 +238,40 @@ jQuery(function($) {
 				$("#blog3").show();
 				$("#blog4").show(); break;
 		}
-		section = (section + 1) % 4
-		setTimeout(changeImage, 1500);
+		timing = defaultTiming;
+		if (blogSection == 0) {
+			timing *= 3;
+		}
+		blogSection = (blogSection + 1) % 4
+		setTimeout(changeBlogImage, timing);
 	};
-	changeImage();
+	changeBlogImage();
+
+	var aboutSection = 0;
+	var changeAboutImage = function () {
+		$(".about_gif").hide();
+		switch (aboutSection) {
+			case 0:
+				$("#about2").show(); break;
+			case 1:
+				$("#about2").show();
+				$("#about3").show(); break;
+			case 2:
+				$("#about2").show();
+				$("#about3").show();
+				$("#about4").show(); break;
+			case 3:
+				$("#about1").show(); break;
+		}
+		// timeout
+		timing = defaultTiming;
+		if (aboutSection == 3) {
+			timing *= 3;
+		}
+		aboutSection = (aboutSection + 1) % 4
+		setTimeout(changeAboutImage, timing);
+	};
+	changeAboutImage();
 
 	/* LISTEN FOR KEY PRESSES */
 	// $(document).keydown(function(e) {

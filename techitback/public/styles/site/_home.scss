@@ -90,6 +90,27 @@ body {
   text-align: right;
 }
 
+#about1 .textoverlay {
+  text-align: center;
+  padding-top: 145px;
+}
+#about2, #about3, #about4 {
+  font-weight: bold;
+  line-height: 0px;
+  margin-top: 40px;
+  padding: 0px 25px 0px 20px !important;
+  font-size: 17px;
+}
+#about2 {
+  margin-top: 110px;
+}
+#about3 {
+  text-align: center;
+}
+#about4 {
+  text-align: right;
+}
+
 .textoverlay .minor{
   color: lightgray;
   font-size: 16px;
@@ -306,6 +327,7 @@ body {
   text-align: right;
   text-transform: uppercase;
   margin: 5px 6px 0px 0px;
+  cursor: pointer;
 }
 .upper_right img {
   width: 4% !important;

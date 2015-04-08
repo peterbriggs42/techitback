@@ -5953,6 +5953,26 @@ html, body {
 #blog4 {
   text-align: right; }
 
+#about1 .textoverlay {
+  text-align: center;
+  padding-top: 145px; }
+
+#about2, #about3, #about4 {
+  font-weight: bold;
+  line-height: 0px;
+  margin-top: 40px;
+  padding: 0px 25px 0px 20px !important;
+  font-size: 17px; }
+
+#about2 {
+  margin-top: 110px; }
+
+#about3 {
+  text-align: center; }
+
+#about4 {
+  text-align: right; }
+
 .textoverlay .minor {
   color: lightgray;
   font-size: 16px;
@@ -6155,7 +6175,8 @@ html, body {
   font-size: 30px;
   text-align: right;
   text-transform: uppercase;
-  margin: 5px 6px 0px 0px; }
+  margin: 5px 6px 0px 0px;
+  cursor: pointer; }
 
 .upper_right img {
   width: 4% !important;
@@ -7047,7 +7068,7 @@ html, body {
     .blog_body .blog_section.corporate {
       width: 14%; }
     .blog_body .blog_section.selected {
-      background-color: #efff4b;
+      background-color: #FEF937;
       color: black; }
   .blog_body .preview_column_1 {
     margin-top: 2%; }
