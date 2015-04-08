@@ -125,9 +125,7 @@ jQuery(function($) {
 		}	
 	});
 
-
 	/* USER CREATE AND SHARE */
-
 	var addCounter = function(body, num) {
 		var oldValue = "";
 		$(document).on('keyup', body, function() {
