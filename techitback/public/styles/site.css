@@ -7213,7 +7213,8 @@ html, body {
   background: #f80108;
   width: 100%;
   height: 60px !important;
-  font-family: Geneva; }
+  font-family: Geneva;
+  color: white; }
 
 .jspContainer .feed_item {
   padding: 7px 5px 12px 5px; }
