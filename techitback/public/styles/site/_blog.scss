@@ -20,6 +20,7 @@
 		padding: 10px 10px 0px 10px;
 		border-bottom: 2px solid black;
 		margin-top: 1px;
+		border-top: 4px solid black;
 	}
 	.title {
 		font-size: 40px;
@@ -28,7 +29,7 @@
 	}
 	.section_icon {
 		width: 40px !important;
-		border: 2px solid black !important;
+		border: 3px solid black !important;
 		border-radius: 20px;
 		float: right;
 		margin: 3px 7px 0px 0px;
@@ -47,45 +48,44 @@
 		float: left;
 		border: solid 2px black;
 		text-transform: uppercase;
-		padding: 1.1%;
 		font-size: 1.7vw;
-		height: 80px;
+		height: 75px;
 		text-align: center;
 		&.small {
 			padding-top: 24px;
 		}
 		&.tech {
-			width: 12%;
-		}
-		&.cybercrime {
-			width: 10%;
-		}
-		&.cyberbullying {
-			width: 13%
-		}
-		&.sexting {
-			width: 13%;
-		}
-		&.app {
 			width: 9%;
 		}
-		&.tips {
-			width: 5%;
+		&.cybercrime {
+			width: 8.5%;
 		}
-		&.preparing {
-			width: 12.5%;
+		&.cyberbullying {
+			width: 9.5%
 		}
-		&.op {
-			width: 6.5%;
+		&.sexting {
+			width: 8.5%;
 		}
-		&.ask {
-			width: 7.5%;
-		}
-		&.corporate {
+		&.app {
 			width: 11.5%;
 		}
+		&.tips {
+			width: 10%;
+		}
+		&.preparing {
+			width: 11.5%;
+		}
+		&.op {
+			width: 6%;
+		}
+		&.ask {
+			width: 11.5%;
+		}
+		&.corporate {
+			width: 14%;
+		}
 		&.selected {
-			background-color: $blog_yellow;
+			background-color: #FEF937;
 			color: black;
 		}
 	}
@@ -108,6 +108,7 @@
 			text-align: center;
 			margin-top: 11px;
 			font-size: 25px;
+			color: red;
 		}
 		.content {
 			height: 40px;
@@ -213,7 +214,7 @@
 		font-family: Gotham;
 		text-align: center;
 		margin: 15px;
-		background: yellow;
+		background: #FEF937;
 		border-radius: 15px;
 		padding: 9px 0px 5px 0px;
 		box-shadow: 0px 2px 3px #888888;
@@ -307,7 +308,7 @@
 		text-transform: uppercase;
 		padding: 10px;
 		font-size: 26px;
-		background: #149edf;
+		background: #f80108;
 		width: 100%;
 		height: 60px !important;
 		font-family: Geneva;

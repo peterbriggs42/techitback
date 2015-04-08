@@ -5109,7 +5109,7 @@ textarea {
   cursor: pointer; }
 
 #join_the_hour {
-  background-color: #e0ec0e;
+  background-color: #FEF937;
   width: 264px;
   height: 59px;
   padding-top: 10px;
@@ -5964,6 +5964,10 @@ html, body {
     padding-left: 39% !important; }
   .textoverlay .minor.share_share_link {
     padding-left: 17% !important; }
+
+.textoverlay.welcome_video_link {
+  text-align: center;
+  padding-top: 300px; }
 
 .textoverlay.tech_addiction {
   position: absolute;
@@ -6989,25 +6993,26 @@ html, body {
     writing-mode: lr-tb;
     float: left; }
   .blog_body .title_header {
-    background-color: #149edf;
+    background-color: #f80108;
     color: white;
     padding: 10px 10px 0px 10px;
     border-bottom: 2px solid black;
-    margin-top: 1px; }
+    margin-top: 1px;
+    border-top: 4px solid black; }
   .blog_body .title {
     font-size: 40px;
     text-transform: uppercase;
     float: left; }
   .blog_body .section_icon {
     width: 40px !important;
-    border: 2px solid black !important;
+    border: 3px solid black !important;
     border-radius: 20px;
     float: right;
     margin: 3px 7px 0px 0px; }
   .blog_body .welcome_video_header img {
     margin-right: 20px; }
   .blog_body .blog_sections {
-    background-color: #b142f7;
+    background-color: #6020b0;
     color: white;
     padding: 0px;
     border-bottom: 2px solid black;
@@ -7016,32 +7021,31 @@ html, body {
     float: left;
     border: solid 2px black;
     text-transform: uppercase;
-    padding: 1.1%;
     font-size: 1.7vw;
-    height: 80px;
+    height: 75px;
     text-align: center; }
     .blog_body .blog_section.small {
       padding-top: 24px; }
     .blog_body .blog_section.tech {
-      width: 12%; }
-    .blog_body .blog_section.cybercrime {
-      width: 10%; }
-    .blog_body .blog_section.cyberbullying {
-      width: 13%; }
-    .blog_body .blog_section.sexting {
-      width: 13%; }
-    .blog_body .blog_section.app {
       width: 9%; }
-    .blog_body .blog_section.tips {
-      width: 5%; }
-    .blog_body .blog_section.preparing {
-      width: 12.5%; }
-    .blog_body .blog_section.op {
-      width: 6.5%; }
-    .blog_body .blog_section.ask {
-      width: 7.5%; }
-    .blog_body .blog_section.corporate {
+    .blog_body .blog_section.cybercrime {
+      width: 8.5%; }
+    .blog_body .blog_section.cyberbullying {
+      width: 9.5%; }
+    .blog_body .blog_section.sexting {
+      width: 8.5%; }
+    .blog_body .blog_section.app {
       width: 11.5%; }
+    .blog_body .blog_section.tips {
+      width: 10%; }
+    .blog_body .blog_section.preparing {
+      width: 11.5%; }
+    .blog_body .blog_section.op {
+      width: 6%; }
+    .blog_body .blog_section.ask {
+      width: 11.5%; }
+    .blog_body .blog_section.corporate {
+      width: 14%; }
     .blog_body .blog_section.selected {
       background-color: #efff4b;
       color: black; }
@@ -7058,7 +7062,8 @@ html, body {
     .blog_body .blog_preview_link .preview_title {
       text-align: center;
       margin-top: 11px;
-      font-size: 25px; }
+      font-size: 25px;
+      color: red; }
     .blog_body .blog_preview_link .content {
       height: 40px;
       padding: 0px 10px 0px 10px;
@@ -7133,7 +7138,7 @@ html, body {
     font-family: Gotham;
     text-align: center;
     margin: 15px;
-    background: yellow;
+    background: #FEF937;
     border-radius: 15px;
     padding: 9px 0px 5px 0px;
     box-shadow: 0px 2px 3px #888888;
@@ -7189,7 +7194,7 @@ html, body {
       text-transform: uppercase;
       padding: 10px;
       font-size: 26px;
-      background: #149edf;
+      background: #f80108;
       width: 100%; }
     .blog_body .popular_articles .post_title {
       text-align: center;
@@ -7205,7 +7210,7 @@ html, body {
   text-transform: uppercase;
   padding: 10px;
   font-size: 26px;
-  background: #149edf;
+  background: #f80108;
   width: 100%;
   height: 60px !important;
   font-family: Geneva; }

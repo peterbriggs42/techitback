@@ -250,6 +250,31 @@ jQuery(function($) {
 	//     }
 	// });
 
+	// "Email gate" yanng ebook
+	$(document).on('click', "#conduct_download a", function (e) {
+		e.preventDefault();
+		var email = prompt("Please enter your email", "");
+		var link = this.href;
+		if (email != null) {
+			if (!validateEmail(email)) {
+				alert("Sorry! That doesn't look like a valid email address. Please try again.");
+			} else {
+				$.ajax(
+				{
+					url: "/form/schools/join",
+					type: "POST",
+					data: {"email": email},
+					success:function(data, textStatus, jqXHR) {
+						document.location = link;
+					},
+					error: function(jqXHR, textStatus, errorThrown) {
+						alert("Sorry! We couldn't add your email. Please try again.")
+					}
+				});
+			}
+		}	
+	});
+
 
 	/* FORMS */
 	
@@ -442,7 +467,7 @@ jQuery(function($) {
 	});
 
 	/* SCHOOLS JOIN */
-	customizeForm('schools_body.join');
+	customizeForm('.schools_body.join');
 	/* CONTACT US */
 	customizeForm('.contact_body', true);
 	/* PARTNER WITH US */

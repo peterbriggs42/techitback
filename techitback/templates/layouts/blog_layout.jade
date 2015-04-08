@@ -7,6 +7,7 @@ block content
 		div.header_container.not_mobile
 			table.table.table-header-rotated
 				tr
+					+blog_section_title("YANNG")
 					+blog_section_title("Poll-A-Thon")
 					+blog_section_title("Downloadables")
 					+blog_section_title("Games")
@@ -17,7 +18,7 @@ block content
 
 		div.container-fluid.title_header
 			a(href='/blog')
-				div.title Tech It Off Blog
+				div.title Tech It Back Blog
 			div.welcome_video_header
 				+blog_section_link('/#welcome_video_link','/images/welcome_icons/5.4.png')
 			+blog_section_link('/#welcome_causes_link','/images/welcome_icons/5.5.png')
@@ -26,16 +27,17 @@ block content
 			+blog_section_link('/#welcome_games_link','/images/welcome_icons/5.2.png')
 			+blog_section_link('/#welcome_downloadable_link','/images/welcome_icons/5.3.png')
 			+blog_section_link('/blog/pollathon','/images/welcome_icons/6.11.png')
+			+blog_section_link('/yanng','/images/menu_icons/12.12.png')
 
 		div.container-fluid.blog_sections.not_mobile
 			+blog_section('Tech Health', 'tech', 'small', selected)
 			+blog_section('Cybercrime', 'cybercrime', 'small', selected)
 			+blog_section('Cyberbullying', 'cyberbullying', 'small', selected)
-			+blog_section('Sexting and Other Abuses', 'sexting', none, selected)
-			+blog_section('App Update', 'app', 'small', selected)
-			+blog_section('Tips', 'tips', 'small', selected)
-			+blog_section('Preparing For the Hour', 'preparing', none, selected)
+			+blog_section('Online Abuse', 'sexting', 'small', selected)
+			+blog_section('Technology News', 'app', 'small', selected)
+			+blog_section('Yes and No Nos', 'tips', 'small', selected)
+			+blog_section('Tech It Back Hour', 'preparing', 'small', selected)
 			+blog_section('Op-Ed', 'op', 'small', selected)
-			+blog_section('Ask Tech It Back', 'ask', none, selected)
-			+blog_section('Corporate Initiatives', 'corporate', none, selected)
+			+blog_section('Ask Tech It Back', 'ask', 'small', selected)
+			+blog_section('Corporate Initiatives', 'corporate', 'small', selected)
 		block blog_body

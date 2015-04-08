@@ -10,7 +10,7 @@ exports = module.exports = function(req, res) {
 	var PostCategory = keystone.list('PostCategory');
 	PostCategory.model.find()
 		.where('key', req.params['section'])
-		.exec(function(err, categories) { 
+		.exec(function(err, categories) {
 		
 		// Get posts in that section
 		var BlogSection = keystone.list('Post');
