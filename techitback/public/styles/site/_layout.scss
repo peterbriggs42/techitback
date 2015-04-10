@@ -155,6 +155,10 @@ textarea {
 #loading_body {
 	text-align: center;
 	height: 500px;
+	&.main img{
+		width: 100px;
+		border: none;
+	}
 }
 #loading_body img {
 	margin-top: 230px;

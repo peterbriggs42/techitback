@@ -70,6 +70,7 @@ jQuery(function($) {
 			// var replaceContent = ".popup";
 			// $(replaceContent).html("<div id='loading_body'><img src='images/loading.gif'></div>");
 			loadPopup(defaultReplaceArea);
+			$(defaultReplaceArea).html("<div id='loading_body' class='main'><img src='images/main_loading.gif'></div>");
 
 			// change body
 			ajaxRequest(e, URL, '', 'GET', function(data) {
@@ -209,8 +210,9 @@ jQuery(function($) {
 			if (listener['element'] == hash) {
 
 				$(document).ready(function () {
+					loadPopup(defaultReplaceArea);
+					$(defaultReplaceArea).html("<div id='loading_body' class='main'><img src='images/main_loading.gif'></div>");
 					ajaxRequest(null, listener['url'], '', 'GET', function(data) {
-						loadPopup(defaultReplaceArea);
 						$(defaultReplaceArea).html(data);
 						document.location.hash = ''
 					}); 
