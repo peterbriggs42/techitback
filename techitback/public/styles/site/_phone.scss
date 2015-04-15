@@ -110,9 +110,6 @@
 }
 
 /* FRONT PAGE MODS */
-.loop {
-	min-height: 210px;
-}
 .yanng_girls {
 	width: 280px;
 }
@@ -126,9 +123,53 @@
 		font-size: 18px !important;
 	}
 }
-.textoverlay.welcome_video_link {
-  padding-top: 150px;
+.col-xs-12.welcome_link {
+	height: 95px;
 }
-
+#about1 .textoverlay {
+  padding-top: 70px;
+}
+#about2 {
+	margin-top: 45px;
+}
+#blog2 {
+  margin-top: 40px;
+}
+#about2, #about3, #about4,
+#blog2, #blog3, #blog4 {
+	font-size: 9px;
+}
+#blog1 span {
+  padding-top: 13px;
+  padding-left: 25px;
+  font-size: 12px;
+}
+.textoverlay {
+	font-size: 20px;
+	&.welcome_video_link {
+  		padding-top: 150px;
+  	}
+  	.minor,
+  	&.tech_addiction_link,
+  	&.cyberbullying_link {
+  		font-size: 12px !important;
+  	}
+  	&.hacker {
+  		font-size: 15px !important;
+  	}
+  	&.school {
+  		font-size: 13px !important;
+  	}
+  	&.contact {
+  		font-size: 16px !important;
+  	}
+  	&.corporate {
+		font-size: 15px !important;
+		padding-top: 9% !important;
+	}
+}
+#footer {
+	font-size: 13px;
+}
 
 }
