@@ -5935,7 +5935,7 @@ html, body {
   opacity: 1;
   padding-top: 40px;
   padding-left: 56px;
-  font-size: 1.4vw;
+  font-size: 18px;
   text-transform: uppercase; }
 
 #blog1 .textoverlay:hover {
@@ -5995,7 +5995,7 @@ html, body {
 
 .textoverlay.tech_addiction {
   position: absolute;
-  font-size: 1.8vw;
+  font-size: 22px;
   text-align: right;
   padding-right: 4%;
   padding-top: 88%;
@@ -7650,6 +7650,24 @@ html, body {
   #tips_home .tips_begin_text {
     font-size: 32px;
     margin-top: 7px; }
+
+  /* FRONT PAGE MODS */
+  .loop {
+    min-height: 210px; }
+
+  .yanng_girls {
+    width: 280px; }
+
+  .yanng_footer {
+    height: 145px; }
+    .yanng_footer a[href='yanng'] {
+      font-size: 18px; }
+    .yanng_footer .create_your_own {
+      margin: 0px 0px 0px 85px !important;
+      font-size: 18px !important; }
+
+  .textoverlay.welcome_video_link {
+    padding-top: 150px; }
  }
 
 @media (min-width: 768px) and (max-width: 1024px) {
