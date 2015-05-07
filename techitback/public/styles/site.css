@@ -7702,6 +7702,10 @@ html, body {
 
   #footer {
     font-size: 13px; }
+
+  .video_row {
+    position: relative;
+    height: 320px; }
  }
 
 @media (min-width: 768px) and (max-width: 1024px) {
