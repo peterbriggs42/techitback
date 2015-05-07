@@ -147,6 +147,7 @@ jQuery(function($) {
 		});
 	}
 
+	var home_page = true;
 	[ 	// Tech Addiction links	
 		{'element':".tech_addiction_link",				'url':'ajax/home/tech_addiction'},
 		{'element':".tech_addiction_sleep_link",		'url':'ajax/home/tech_addiction_sleep'},
@@ -277,6 +278,7 @@ jQuery(function($) {
 		if (hash = window.location.hash.replace('#','.')) {
 			if (listener['element'] == hash) {
 
+				home_page = false;
 				$(document).ready(function () {
 					loadPopup(defaultReplaceArea);
 					$(defaultReplaceArea).html("<div id='loading_body' class='main'><img src='images/main_loading.gif'></div>");
@@ -288,6 +290,11 @@ jQuery(function($) {
 			}
 		}
 	});
+
+	// If home page is visible, start video
+	if (home_page) {
+		$("#player").attr("src", "https://player.vimeo.com/video/126772459?autoplay=1&title=0&byline=0&portrait=0")
+	}
 
 	/* FRONT PAGE LOOP (not on mobile) */
 	if (!isMobile.any()) {
@@ -352,13 +359,6 @@ jQuery(function($) {
 	}
 
 	/* LISTEN FOR KEY PRESSES */
-	// $(document).keydown(function(e) {
-	//     if (e.keyCode == 37) {
-	//     	$(".arrow")[0].click()
-	//     } else if (e.keyCode == 39) {
-	//     	$(".arrow")[1].click()
-	//     }
-	// });
 
 	// "Email gate" yanng ebook
 	$(document).on('click', "#conduct_download a", function (e) {
@@ -398,7 +398,6 @@ jQuery(function($) {
 			var count = countWords($(this).val());
 			if (count > maxwords) {
 				$(this).val(oldValue);
-				console.log("reached max");
 			} else {
 				oldValue = $(this).val();
 			}

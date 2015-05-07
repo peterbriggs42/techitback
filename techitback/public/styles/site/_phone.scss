@@ -179,14 +179,22 @@
 
 .home_row {
 	height: 300px;
+	overflow: hidden;
 	img.home_picture {
 		margin-top: -25px;
-	}
-	span {
-		text-align: center;
-		font-size: 14px;
 	}	
 }
+.col-xs-12.welcome_link {
+	height: 275px;
+}
 
+.col-xs-12.welcome_link, .home_row {
+	span.textoverlay {
+		padding-top: 100px !important;
+		font-size: 25px !important;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+}
 
 }

@@ -7708,12 +7708,19 @@ html, body {
     height: 320px; }
 
   .home_row {
-    height: 300px; }
+    height: 300px;
+    overflow: hidden; }
     .home_row img.home_picture {
       margin-top: -25px; }
-    .home_row span {
-      text-align: center;
-      font-size: 14px; }
+
+  .col-xs-12.welcome_link {
+    height: 275px; }
+
+  .col-xs-12.welcome_link span.textoverlay, .home_row span.textoverlay {
+    padding-top: 100px !important;
+    font-size: 25px !important;
+    letter-spacing: 2px;
+    text-align: center; }
  }
 
 @media (min-width: 768px) and (max-width: 1024px) {
