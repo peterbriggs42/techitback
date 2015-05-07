@@ -48,7 +48,7 @@ function onMessageReceived(e) {
 			onReady();
 			break;
 		case 'finish':
-			$(".video_row").fadeOut(1200)
+			$(".video_row").fadeOut(1200);
 			break;
 	}
 }
