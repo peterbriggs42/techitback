@@ -7706,6 +7706,14 @@ html, body {
   .video_row {
     position: relative;
     height: 320px; }
+
+  .home_row {
+    height: 300px; }
+    .home_row img.home_picture {
+      margin-top: -25px; }
+    .home_row span {
+      text-align: center;
+      font-size: 14px; }
  }
 
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -13,15 +13,9 @@ html
 		title= title || 'TechItBack'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
-		//- Customise the stylesheet for your site by editing /public/styles/site.sass
-		link(href="/styles/site.css", rel="stylesheet")
-
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
 			link(href="/keystone/styles/content/editor.min.css", rel="stylesheet")
-
-		// Google fonts
-		link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
 
 		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 		//- Safely remove this block if you are not targeting IE8
@@ -87,6 +81,11 @@ html
 		//- which generate links to edit content for users who can access Keystone
 		if user && user.canAccessKeystone
 			script(src='/keystone/js/content/editor.js')
+
+		// Google fonts
+		link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+		//- Customise the stylesheet for your site by editing /public/styles/site.sass
+		link(href="/styles/site.css", rel="stylesheet")
 
 		//- Add scripts that are globally required by your site here.
 		script(src='/js/main.js')
