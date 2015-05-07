@@ -1,3 +1,71 @@
+/* VIDEO LISTENERS */
+// Handle messages received from the player
+
+// Helper object to test for mobile devices.
+var isMobile = {
+	Android: function() {
+	    return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function() {
+	    return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function() {
+	    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function() {
+	    return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function() {
+	    return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function() {
+	    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	}
+};
+
+var f = $('#player'),
+url = f.attr('src').split('?')[0];
+function post(action, value) {
+	var data = { method: action };
+	if (value) { 
+		data.value = value; 
+	}
+	f[0].contentWindow.postMessage(JSON.stringify(data), url);
+}
+
+function onReady() {
+	post('addEventListener', 'finish');
+	if (isMobile.any()) {
+		window.setTimeout(post('pause'), 400);
+	}
+}
+
+function onMessageReceived(e) {
+	var data = JSON.parse(e.data);
+
+	switch (data.event) {
+		case 'ready':
+			onReady();
+			break;
+		case 'finish':
+			$(".video_row").fadeOut(1200)
+			break;
+	}
+}
+
+$(document).ready(function() {
+	// Listen for messages from the player
+	if (window.addEventListener){
+		window.addEventListener('message', onMessageReceived, false);
+	}
+	else {
+		window.attachEvent('onmessage', onMessageReceived, false);
+	} 
+
+});
+
+/* REST OF JAVASCRIPT */
+
 function countWords(words){
 		s = words;
 		s = s.replace(/(^\s*)|(\s*$)/gi,"");

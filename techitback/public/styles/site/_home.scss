@@ -57,11 +57,11 @@ body {
   transition: all .2s ease-out 0s;
   cursor: pointer;
 }
-#home_video {
+.video_row {
+  height: 90%;
   position: absolute;
-  top: 12%;
   width: 100%;
-  height: 455px;
+  z-index: 1;
 }
 
 #blog1 span {
