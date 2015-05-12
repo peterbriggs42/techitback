@@ -18,11 +18,23 @@
 	background: black;
 }
 .navbar-custom .container-fluid {
-	min-height: 77px;
-	padding-top: 20px;
+	min-height: initial;
+	padding-top: 0px;
 }
 #yanng_header {
 	height:90px;
+}
+#header {
+	height: 69px;
+}
+#navbar {
+	margin-left: 55px;
+	float: left;
+}
+#join_the_hour {
+	width: 75px;
+	font-size: 12px;
+	padding-top: 12px;
 }
 
 #yanng_header h2 {
@@ -174,7 +186,7 @@
 
 .video_row {
 	position: relative;
-	height: 320px;
+	height: 240px;
 }
 
 .home_row {

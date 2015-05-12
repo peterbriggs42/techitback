@@ -5926,7 +5926,6 @@ html, body {
   cursor: pointer; }
 
 .video_row {
-  height: 90%;
   position: absolute;
   width: 100%;
   z-index: 1; }
@@ -7569,11 +7568,23 @@ html, body {
     background: black; }
 
   .navbar-custom .container-fluid {
-    min-height: 77px;
-    padding-top: 20px; }
+    min-height: initial;
+    padding-top: 0px; }
 
   #yanng_header {
     height: 90px; }
+
+  #header {
+    height: 69px; }
+
+  #navbar {
+    margin-left: 55px;
+    float: left; }
+
+  #join_the_hour {
+    width: 75px;
+    font-size: 12px;
+    padding-top: 12px; }
 
   #yanng_header h2 {
     font-size: 9vw;
@@ -7705,7 +7716,7 @@ html, body {
 
   .video_row {
     position: relative;
-    height: 320px; }
+    height: 240px; }
 
   .home_row {
     height: 300px;
@@ -7772,12 +7783,12 @@ html, body {
     left: 297px; }
 
   .navbar-brand {
-    width: 205px;
+    width: 165px;
     line-height: 1.4;
     text-align: center;
     margin: 16px 0px 0px 0px;
-    font-size: 26px;
-    padding: 0px; }
+    font-size: 22px;
+    padding: 7px 0px 0px 0px; }
 
   #menu_header {
     font-size: 40px;
@@ -7796,18 +7807,17 @@ html, body {
 
   #trigger {
     margin-left: -15px;
-    margin-top: -20px;
     padding-top: 9px;
     height: 100%;
     background-color: black;
-    width: 105px;
-    height: 111px;
+    width: 60px;
+    height: 66px;
     position: absolute;
     cursor: pointer;
     color: white;
-    font-size: 100px;
-    line-height: 95px;
-    padding-left: 23px; }
+    font-size: 45px;
+    line-height: 46px;
+    padding-left: 17px; }
 
   /* GENERAL FORMATTING FOR SECTION PAGES */
   .upper_right {

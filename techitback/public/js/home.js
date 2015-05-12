@@ -53,6 +53,13 @@ function onMessageReceived(e) {
 	}
 }
 
+// Resize video
+var ratio = 1.628;
+function sizeVideo() {
+	var height = ($(".video_row").width() / ratio);
+	$(".video_row").height(height);
+}
+
 $(document).ready(function() {
 	// Listen for messages from the player
 	if (window.addEventListener){
@@ -62,7 +69,18 @@ $(document).ready(function() {
 		window.attachEvent('onmessage', onMessageReceived, false);
 	} 
 
+	sizeVideo();
+
+	
 });
+
+$(window).resize(function () { 
+	sizeVideo();
+});
+
+
+
+
 
 /* REST OF JAVASCRIPT */
 
