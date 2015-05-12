@@ -30,6 +30,10 @@
 #navbar {
 	margin-left: 55px;
 	float: left;
+	margin-top: 22px;
+}
+.subheader {
+	display: none;
 }
 #join_the_hour {
 	width: 75px;
@@ -158,13 +162,21 @@
 }
 .textoverlay {
 	font-size: 20px;
+	background-color: rgba(0,0,0,.5);
+	opacity: 1.0;
+	-webkit-transition: all .2s ease-out 0s;
+	-moz-transition: all .2s ease-out 0s;
+	-ms-transition: all .2s ease-out 0s;
+	-o-transition: all .2s ease-out 0s;
+	transition: all .2s ease-out 0s;
+	cursor: pointer;
 	&.welcome_video_link {
   		padding-top: 150px;
   	}
   	.minor,
   	&.tech_addiction_link,
   	&.cyberbullying_link {
-  		font-size: 12px !important;
+  		font-size: 16px !important;
   	}
   	&.hacker {
   		font-size: 15px !important;

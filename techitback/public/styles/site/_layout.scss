@@ -124,9 +124,9 @@ textarea {
 	padding-top: 20px;
 }
 .navbar-brand {
-	font-size: 58px;
+	font-size: 62px;
 	font-weight: bold;
-	float: left;
+	float: initial;
 	margin-top: 7px;
 	color: black;
 }
@@ -140,6 +140,12 @@ textarea {
     text-decoration: none;
     background-color: inherit;
     cursor: pointer;
+}
+.subheader {
+	font-family: Gotham;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px;
 }
 #join_the_hour {
   background-color: #FEF937;

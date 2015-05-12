@@ -5091,9 +5091,9 @@ textarea {
   padding-top: 20px; }
 
 .navbar-brand {
-  font-size: 58px;
+  font-size: 62px;
   font-weight: bold;
-  float: left;
+  float: initial;
   margin-top: 7px;
   color: black; }
 
@@ -5107,6 +5107,12 @@ textarea {
   text-decoration: none;
   background-color: inherit;
   cursor: pointer; }
+
+.subheader {
+  font-family: Gotham;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px; }
 
 #join_the_hour {
   background-color: #FEF937;
@@ -6063,7 +6069,8 @@ html, body {
  * Header
  */
 #navbar {
-  margin-left: 95px; }
+  margin-left: 105px;
+  margin-top: 14px; }
 
 /*
  * Left Menu
@@ -7579,7 +7586,11 @@ html, body {
 
   #navbar {
     margin-left: 55px;
-    float: left; }
+    float: left;
+    margin-top: 22px; }
+
+  .subheader {
+    display: none; }
 
   #join_the_hour {
     width: 75px;
@@ -7696,11 +7707,19 @@ html, body {
     font-size: 12px; }
 
   .textoverlay {
-    font-size: 20px; }
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    cursor: pointer; }
     .textoverlay.welcome_video_link {
       padding-top: 150px; }
     .textoverlay .minor, .textoverlay.tech_addiction_link, .textoverlay.cyberbullying_link {
-      font-size: 12px !important; }
+      font-size: 16px !important; }
     .textoverlay.hacker {
       font-size: 15px !important; }
     .textoverlay.school {
