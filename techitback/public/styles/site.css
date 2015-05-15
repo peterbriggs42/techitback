@@ -7597,7 +7597,8 @@ html, body {
     width: 110px;
     font-size: 12px;
     padding-top: 6px;
-    height: 30px; }
+    height: 30px;
+    float: right; }
 
   #yanng_header h2 {
     font-size: 9vw;
@@ -7804,7 +7805,7 @@ html, body {
     display: none; }
 
   #popup_exit {
-    margin: 28px 0px 0px 17px;
+    margin: 24px 0px 0px 14px;
     width: 5.5% !important; }
 
   /* high level */
@@ -7976,8 +7977,8 @@ html, body {
     margin-left: -200px; }
   .welcome_header .img-textoverlay {
     top: 0%;
-    font-size: 45px;
-    margin-top: 20px; }
+    font-size: 40px;
+    margin-top: 27px; }
 
   .welcome_upper_left img {
     margin: 15% 5% 5% 0%;
