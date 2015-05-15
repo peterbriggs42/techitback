@@ -54,7 +54,7 @@ function onMessageReceived(e) {
 }
 
 // Resize video
-var ratio = 1.628;
+var ratio = 1.6;
 function sizeVideo() {
 	var height = ($(".video_row").width() / ratio);
 	$(".video_row").height(height);
