@@ -7804,7 +7804,8 @@ html, body {
     display: none; }
 
   #popup_exit {
-    margin: 28px 0px 0px 11px; }
+    margin: 28px 0px 0px 17px;
+    width: 5.5% !important; }
 
   /* high level */
   .corporate_link img {
@@ -7979,11 +7980,12 @@ html, body {
     margin-top: 20px; }
 
   .welcome_upper_left img {
-    margin: 5%; }
+    margin: 15% 5% 5% 0%;
+    width: 16% !important; }
 
   .welcome_label {
-    margin: 5%;
-    font-size: 30px; }
+    margin: 15% 0px 10px 0px;
+    font-size: 48px; }
 
   .welcome_body .welcome_button {
     width: 50%;
