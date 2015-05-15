@@ -7751,6 +7751,7 @@ html, body {
 
   .home_row {
     height: 235px;
+    margin-top: -2px;
     overflow: hidden; }
     .home_row img.home_picture {
       margin-top: -25px; }
