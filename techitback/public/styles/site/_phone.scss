@@ -25,20 +25,22 @@
 	height:90px;
 }
 #header {
-	height: 69px;
+	height: 45px;
 }
 #navbar {
-	margin-left: 55px;
+	margin-left: 43px;
 	float: left;
-	margin-top: 22px;
+	margin-top: 10px;
 }
 .subheader {
-	display: none;
+	font-size: 2.9px;
+	padding: initial;
 }
 #join_the_hour {
-	width: 75px;
+	width: 110px;
 	font-size: 12px;
-	padding-top: 12px;
+	padding-top: 6px;
+	height: 30px;
 }
 
 #yanng_header h2 {
@@ -127,12 +129,22 @@
 
 /* FRONT PAGE MODS */
 .yanng_girls {
-	width: 280px;
+	width: 72%;
+	margin-top: initial;
 }
 .yanng_footer {
-	height: 145px;
+	div {
+		font-size: 6.2vw;
+	}
 	a[href='yanng']{
 		font-size: 18px;
+	}
+	img {
+		float: initial;
+	}
+	.logo {
+		width: 15%;
+		margin-left: 6%;
 	}
 	.create_your_own {
 		margin: 0px 0px 0px 85px !important;
@@ -191,6 +203,13 @@
 		font-size: 15px !important;
 		padding-top: 9% !important;
 	}
+	&.teenietips {
+		padding-left: initial;
+	}
+	.minor.establish-a-tech-policy-link,
+	.minor.share_share_link {
+		padding-left: initial !important;
+	}
 }
 #footer {
 	font-size: 13px;
@@ -202,20 +221,20 @@
 }
 
 .home_row {
-	height: 300px;
+	height: 235px;
 	overflow: hidden;
 	img.home_picture {
 		margin-top: -25px;
 	}	
 }
 .col-xs-12.welcome_link {
-	height: 275px;
+	height: 235px;
 }
 
 .col-xs-12.welcome_link, .home_row {
 	span.textoverlay {
 		padding-top: 100px !important;
-		font-size: 25px !important;
+		font-size: 17px !important;
 		letter-spacing: 2px;
 		text-align: center;
 	}
