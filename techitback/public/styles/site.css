@@ -8078,14 +8078,27 @@ html, body {
     width: 100%;
     height: 264px;
     margin-top: 30px; }
+  .welcome_body .quiz_wrapper {
+    float: inherit;
+    margin: auto;
+    width: 155px; }
   .welcome_body .quiz_container {
     position: relative;
     float: left;
     padding: 23px;
     width: inherit; }
+    .welcome_body .quiz_container.bottom {
+      margin-top: inherit; }
     .welcome_body .quiz_container span {
       font-size: 13px !important;
       padding: 29% 27% 0% 27%; }
+    .welcome_body .quiz_container img {
+      width: 115px !important; }
+  .welcome_body .cause_selected img {
+    margin-top: 15px;
+    width: 75% !important; }
+  .welcome_body .cause_selected .selected_text {
+    font-size: 4.2vw; }
 
   /* BLOG */
   .blog_body .blog_article_content .article_content {

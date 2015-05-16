@@ -337,7 +337,15 @@
 		height: 264px;
 		margin-top: 30px;
 	}
+	.quiz_wrapper {
+		float:inherit;
+		margin: auto;
+		width: 155px;
+	}
 	.quiz_container {
+		&.bottom {
+			margin-top: inherit;
+		}
 		position: relative;
 		float: left;
 		padding: 23px;
@@ -345,6 +353,18 @@
 		span {
 			font-size: 13px !important;
 			padding: 29% 27% 0% 27%;
+		}
+		img {
+			width: 115px !important;
+		}
+	}
+	.cause_selected {
+		img {
+			margin-top: 15px;
+			width: 75% !important;
+		}
+		.selected_text {
+			font-size: 4.2vw;
 		}
 	}
 }
