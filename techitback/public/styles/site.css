@@ -8405,3 +8405,276 @@ html, body {
     width: 33%; }
  }
 
+@media (max-width: 418px) {
+  #tip_yes1 {
+    left: 65%;
+    top: 16%;
+    width: 174%; }
+
+  #tip_no1 {
+    right: 48%;
+    top: 43%;
+    width: 166%; }
+
+  #tip_yes1girl {
+    right: 34%;
+    top: 22%;
+    width: 81%; }
+
+  #tip_no1girl {
+    left: 56%;
+    top: 43%;
+    width: 65%; }
+
+  /* Page 2 */
+  #tip_yes2 {
+    left: 99%;
+    width: 113%;
+    top: 18%; }
+
+  #tip_no2 {
+    left: -118%;
+    width: 191%;
+    top: 52%; }
+
+  #tip_yes2girl {
+    left: 16%;
+    width: 64%;
+    top: 21%; }
+
+  #tip_no2girl {
+    left: 41%;
+    width: 84%;
+    top: 39%; }
+
+  /* Page 3 */
+  #tip_yes3 {
+    width: 129%;
+    right: 76%;
+    top: 17%; }
+
+  #tip_no3 {
+    left: 69%;
+    top: 51%;
+    width: 175%; }
+
+  #tip_yes3girl {
+    left: 33%;
+    width: 66%;
+    top: 23%; }
+
+  #tip_no3girl {
+    top: 41%;
+    width: 64%;
+    left: 17%; }
+
+  /* Page 4 */
+  #tip_yes4 {
+    left: 63%;
+    width: 159%;
+    top: 14%; }
+
+  #tip_no4 {
+    right: 41%;
+    width: 173%;
+    top: 49%; }
+
+  #tip_yes4girl {
+    top: 18%;
+    width: 58%;
+    left: 11%; }
+
+  #tip_no4girl {
+    left: 58%;
+    width: 59%;
+    top: 43%; }
+
+  /* Page 5 */
+  #tip_yes5 {
+    top: 17%;
+    left: 73%;
+    width: 154%; }
+
+  #tip_no5 {
+    top: 42%;
+    right: 26%;
+    width: 194%; }
+
+  #tip_yes5girl {
+    width: 45%;
+    top: 24%;
+    left: 26%; }
+
+  #tip_no5girl {
+    width: 60%;
+    left: 74%;
+    top: 54%; }
+
+  /* Page 6 */
+  #tip_yes6 {
+    top: 15%;
+    left: -12%;
+    width: 208%; }
+
+  #tip_no6 {
+    top: 49%;
+    left: -34%;
+    width: 148%; }
+
+  #tip_yes6girl {
+    left: 166%;
+    width: 48%;
+    top: 23%; }
+
+  #tip_no6girl {
+    width: 59%;
+    right: 149%;
+    top: 44%; }
+
+  /* Page 7 */
+  #tip_yes7 {
+    top: 16%;
+    width: 103%;
+    left: 98%; }
+
+  #tip_no7 {
+    right: 61%;
+    width: 144%;
+    top: 42%; }
+
+  #tip_yes7girl {
+    top: 21%;
+    width: 59%;
+    left: 30%; }
+
+  #tip_no7girl {
+    width: 61%;
+    top: 53%;
+    left: 37%; }
+
+  /* Page 8 */
+  #tip_yes8 {
+    left: 80%;
+    top: 14%;
+    width: 114%; }
+
+  #tip_no8 {
+    width: 156%;
+    right: 46%;
+    top: 44%; }
+
+  #tip_yes8girl {
+    left: 5%;
+    top: 19%;
+    width: 58%; }
+
+  #tip_no8girl {
+    left: 52%;
+    top: 48%;
+    width: 58%; }
+
+  /* Page 9 */
+  #tip_yes9 {
+    top: 13%;
+    right: 85%;
+    width: 125%; }
+
+  #tip_no9 {
+    left: 89%;
+    width: 126%;
+    top: 49%; }
+
+  #tip_yes9girl {
+    top: 19%;
+    left: 27%;
+    width: 86%; }
+
+  #tip_no9girl {
+    left: 2%;
+    width: 68%;
+    top: 47%; }
+
+  /* Page 10 */
+  #tip_yes10 {
+    top: 16%;
+    left: 110%;
+    width: 103%; }
+
+  #tip_no10 {
+    right: 28%;
+    top: 52%;
+    width: 193%; }
+
+  #tip_yes10girl {
+    width: 71%;
+    left: 13%;
+    top: 23%; }
+
+  #tip_no10girl {
+    width: 50%;
+    left: 50%;
+    top: 39%; }
+
+  /* Page 11 */
+  #tip_yes11 {
+    left: 57%;
+    width: 161%;
+    top: 13%; }
+
+  #tip_no11 {
+    right: 32%;
+    width: 180%;
+    top: 55%; }
+
+  #tip_yes11girl {
+    width: 42%;
+    top: 20%;
+    left: 17%; }
+
+  #tip_no11girl {
+    left: 63%;
+    top: 44%;
+    width: 53%; }
+
+  /* Page 12 */
+  #tip_yes12 {
+    left: 63%;
+    width: 158%;
+    top: 18%; }
+
+  #tip_no12 {
+    width: 196%;
+    top: 42%;
+    right: 12%; }
+
+  #tip_yes12girl {
+    top: 19%;
+    width: 49%;
+    left: 1%; }
+
+  #tip_no12girl {
+    top: 52%;
+    left: 57%;
+    width: 56%; }
+
+  /* Page 13 */
+  #tip_yes13 {
+    width: 173%;
+    left: -11%;
+    top: 15%; }
+
+  #tip_no13 {
+    top: 47%;
+    right: -25%;
+    width: 184%; }
+
+  #tip_yes13girl {
+    left: 170%;
+    width: 59%;
+    top: 19%; }
+
+  #tip_no13girl {
+    right: 156%;
+    top: 42%;
+    width: 51%; }
+ }
