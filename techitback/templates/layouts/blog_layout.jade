@@ -16,7 +16,7 @@ block content
 					+blog_section_title("Causes")
 					+blog_section_title("Videos", 'welcome_video_diagonal')
 
-		div.container-fluid.title_header
+		div.container-fluid.title_header.not_mobile
 			a(href='/blog')
 				div.title Tech It Back Blog
 			div.welcome_video_header
@@ -28,6 +28,29 @@ block content
 			+blog_section_link('/#welcome_downloadable_link','/images/welcome_icons/5.3.png')
 			+blog_section_link('/blog/pollathon','/images/welcome_icons/6.11.png')
 			+blog_section_link('/yanng','/images/menu_icons/12.12.png')
+
+		nav.navbar.navbar-default.mobile_only.blogmobile
+			.navbar-header
+				button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#blog-sections")
+					span(class="sr-only") Toggle navigation
+					span(class="icon-bar") 
+					span(class="icon-bar") 
+					span(class="icon-bar")
+				a(class="navbar-brand" href="/blog") Tech It Back Blog
+
+			div(class="collapse navbar-collapse" id="blog-sections")
+				ul(class="nav navbar-nav")
+					+blog_section_mobile('Tech Health', 'tech', selected)
+					+blog_section_mobile('Cybercrime', 'cybercrime', selected)
+					+blog_section_mobile('Cyberbullying', 'cyberbullying', selected)
+					+blog_section_mobile('Online Abuse', 'sexting', selected)
+					+blog_section_mobile('Technology News', 'app', selected)
+					+blog_section_mobile('Yes and No Nos', 'tips', selected)
+					+blog_section_mobile('Tech It Back Hour', 'preparing', selected)
+					+blog_section_mobile('Op-Ed', 'op', selected)
+					+blog_section_mobile('Ask Tech It Back', 'ask', selected)
+					+blog_section_mobile('Corporate Initiatives', 'corporate', selected)
+
 
 		div.container-fluid.blog_sections.not_mobile
 			+blog_section('Tech Health', 'tech', 'small', selected)

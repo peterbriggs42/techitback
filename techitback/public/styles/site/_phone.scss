@@ -242,4 +242,49 @@
 	}
 }
 
+/* BLOG */
+.blogmobile {
+	border: none;
+	.navbar-header {
+		background-color: red;
+		border: 2px solid black;
+	}
+	.navbar-brand {
+		  width: 255px;
+		  color: white;
+		  font-size: 40px;
+		  text-transform: uppercase;
+		  float: left;
+		  font-weight: 100;
+		  margin-top: 0px;
+	}
+	button.navbar-toggle {
+		&:focus {
+			background-color: red;
+		}
+		border: none;
+		.icon-bar {
+			background-color: white;
+		}
+	}
+	#blog-sections {
+		background-color: $blog_purple;
+		border: none;
+		li {
+			float: inherit;
+		}
+		a.blog_section_mobile{
+			color:white;
+			text-align: RIGHT;
+			padding: 7px 17px;
+			font-size: 25px;
+		}
+	}
+	
+
+}
+
+
+
+
 }

@@ -7765,6 +7765,37 @@ html, body {
     font-size: 17px !important;
     letter-spacing: 2px;
     text-align: center; }
+
+  /* BLOG */
+  .blogmobile {
+    border: none; }
+    .blogmobile .navbar-header {
+      background-color: red;
+      border: 2px solid black; }
+    .blogmobile .navbar-brand {
+      width: 255px;
+      color: white;
+      font-size: 40px;
+      text-transform: uppercase;
+      float: left;
+      font-weight: 100;
+      margin-top: 0px; }
+    .blogmobile button.navbar-toggle {
+      border: none; }
+      .blogmobile button.navbar-toggle:focus {
+        background-color: red; }
+      .blogmobile button.navbar-toggle .icon-bar {
+        background-color: white; }
+    .blogmobile #blog-sections {
+      background-color: #6020b0;
+      border: none; }
+      .blogmobile #blog-sections li {
+        float: inherit; }
+      .blogmobile #blog-sections a.blog_section_mobile {
+        color: white;
+        text-align: RIGHT;
+        padding: 7px 17px;
+        font-size: 25px; }
  }
 
 @media (min-width: 768px) and (max-width: 1024px) {

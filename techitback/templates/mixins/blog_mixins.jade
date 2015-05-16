@@ -23,6 +23,13 @@ mixin blog_section(text, link, small, selected)
 	a(href='/blog_section/'+link)
 		div.blog_section(class=link+' '+class_addition) #{text}
 
+mixin blog_section_mobile(text, link, selected)
+	- var class_addition = ''
+	if selected == link
+		- class_addition += 'selected'
+	li 
+		a(href='/blog_section/'+link).blog_section_mobile(class=link+' '+class_addition) #{text}
+
 mixin article_comment(comment)
 	div.comment
 		div.date_posted #{moment(comment.created_at).format('MMMM Do[,] YYYY [at] h:mm a')}
