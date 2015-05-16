@@ -7715,7 +7715,7 @@ html, body {
     padding-left: 25px;
     font-size: 12px; }
 
-  .textoverlay {
+  .textoverlay, #blog1 .textoverlay:hover {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
@@ -7725,22 +7725,22 @@ html, body {
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
     cursor: pointer; }
-    .textoverlay.welcome_video_link {
+    .textoverlay.welcome_video_link, #blog1 .textoverlay:hover.welcome_video_link {
       padding-top: 150px; }
-    .textoverlay .minor, .textoverlay.tech_addiction_link, .textoverlay.cyberbullying_link {
+    .textoverlay .minor, .textoverlay.tech_addiction_link, .textoverlay.cyberbullying_link, #blog1 .textoverlay:hover .minor, #blog1 .textoverlay:hover.tech_addiction_link, #blog1 .textoverlay:hover.cyberbullying_link {
       font-size: 16px !important; }
-    .textoverlay.hacker {
+    .textoverlay.hacker, #blog1 .textoverlay:hover.hacker {
       font-size: 15px !important; }
-    .textoverlay.school {
+    .textoverlay.school, #blog1 .textoverlay:hover.school {
       font-size: 13px !important; }
-    .textoverlay.contact {
+    .textoverlay.contact, #blog1 .textoverlay:hover.contact {
       font-size: 16px !important; }
-    .textoverlay.corporate {
+    .textoverlay.corporate, #blog1 .textoverlay:hover.corporate {
       font-size: 15px !important;
       padding-top: 9% !important; }
-    .textoverlay.teenietips {
+    .textoverlay.teenietips, #blog1 .textoverlay:hover.teenietips {
       padding-left: initial; }
-    .textoverlay .minor.establish-a-tech-policy-link, .textoverlay .minor.share_share_link {
+    .textoverlay .minor.establish-a-tech-policy-link, .textoverlay .minor.share_share_link, #blog1 .textoverlay:hover .minor.establish-a-tech-policy-link, #blog1 .textoverlay:hover .minor.share_share_link {
       padding-left: initial !important; }
 
   #footer {
@@ -8013,7 +8013,7 @@ html, body {
 
   .welcome_upper_left img {
     margin: 15% 5% 5% 0%;
-    width: 16% !important; }
+    width: 21% !important; }
 
   .welcome_label {
     margin: 15% 0px 10px 0px;
