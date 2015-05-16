@@ -8126,6 +8126,20 @@ html, body {
     margin: auto;
     margin-bottom: 25px; }
 
+  #shlee img {
+    margin-top: -180px; }
+
+  #shlee_info, #goldie_info {
+    margin-top: 10px; }
+
+  #goldie .name {
+    margin-top: 110px; }
+  #goldie img {
+    margin-top: -98px; }
+
+  #yumi img {
+    margin-top: -140px; }
+
   /* YANNG TIPS */
   .yanng_tips_section .image-center-parent {
     height: 75%; }
@@ -8411,7 +8425,8 @@ html, body {
   #tips_home .tips_picture img {
     position: absolute;
     width: 67%;
-    margin-top: 91px; }
+    margin-top: 91px;
+    margin-left: 0px; }
 
   #tip_yes1 {
     left: 65%;
