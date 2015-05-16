@@ -703,7 +703,14 @@ width: 149%;
 }
 
 }
+/* VERTICAL */
 @media (max-width: 418px) {
+#tips_home .tips_picture img {
+position: absolute;
+	width: 67%;
+	margin-top: 91px;
+	margin-left: 0px;
+}
 
 #tip_yes1 {
 	left: 65%;
