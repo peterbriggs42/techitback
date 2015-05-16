@@ -13,7 +13,7 @@ block blog_body
 						div.article_image
 							img(src=post.image.url)
 					div.article_title #{post.title}
-					div.article_body()!=post.content.brief
+					div.article_body()!=post.content.extended
 				div.article_comments 
 					div.row
 						div.col-md-2
