@@ -15,7 +15,11 @@
 `npm install node-sass-middleware --save`
 
 ## Set up database
-TODO
+copy the database as of 5/22 from the techitback server to your local machine
+`scp -r -i techitback.pem ubuntu@52.0.15.47:~/techitback/techitback/tmp/datadump .`
+import it into your local mongo instance
+`cd datadump/ && mongorestore techitback`
+then, you can delete the `datadump` directory locally.
 
 ## Starting local server
 `node keystone.js`
