@@ -21,6 +21,9 @@ TODO
 
 ## Making changes to server
 `ssh -i techitback.pem ubuntu@52.0.15.47`
+
 `cd techitback/techitback`
+
 Pull in changes from git repo:
+
 `bash pull.sh`
