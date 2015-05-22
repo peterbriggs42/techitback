@@ -2,6 +2,7 @@
 
 ## Install modules
 `npm install node-sass-middleware --save`
+
 `npm install dotenv keystone underscore`
 
 ## Grab secret keys, credentials, etc.
