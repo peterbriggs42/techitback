@@ -12,7 +12,8 @@
    2. Rename `env` to `.env`
   
 ## Start mongo
-`npm install node-sass-middleware --save`
+In another window:
+`sudo mongod`
 
 ## Set up database
 copy the database as of 5/22 from the techitback server to your local machine
